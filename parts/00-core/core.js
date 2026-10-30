@@ -447,6 +447,7 @@
     navList.style.setProperty('--p', frac.toFixed(4));
     topFill.style.transform = 'scaleX(' + total.toFixed(4) + ')';
     pctEl.textContent = 'compilado ' + Math.round(total * 100) + '%';
+    updateDock(W.pageYOffset);
     if (best !== activeIdx) {
       activeIdx = best;
       var sec = sections[best], era = sec.getAttribute('data-era') || 'void';
@@ -456,9 +457,37 @@
         if (j === best) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
         a.classList.toggle('is-past', j < best);
       });
+      flashLabel(navLinks[best]);
       if (factsBtn) factsBtn.hidden = !(G.facts[sec.id] && G.facts[sec.id].items && G.facts[sec.id].items.length);
       D.dispatchEvent(new CustomEvent('gates:chapter', { detail: { id: sec.id, era: era, index: best } }));
     }
+  }
+
+  /* rótulo do capítulo novo aparece por um instante no trilho */
+  var flashT = 0;
+  function flashLabel(a) {
+    navLinks.forEach(function (x) { x.classList.remove('is-flash'); });
+    if (!a) return;
+    a.classList.add('is-flash');
+    clearTimeout(flashT);
+    flashT = setTimeout(function () { a.classList.remove('is-flash'); }, 1800);
+  }
+
+  /* dock: some aos poucos ao descer e reaparece aos poucos ao subir, preso à rolagem
+     (como o título da abertura). --dock-hide vai de 0 (visível) a 1 (sumida).
+     Setas, PageUp/PageDown e espaço rolam a página e passam por aqui do mesmo jeito. */
+  var dockEl = null, dockLastY = 0, dockHide = 0;
+  function updateDock(y) {
+    if (!dockEl) dockEl = D.querySelector('.g-dock');
+    if (!dockEl) return;
+    var dist = Math.max(140, W.innerHeight * 0.2); // rolagem necessária para sumir/voltar por inteiro
+    var dy = y - dockLastY; dockLastY = y;
+    var h = clamp(dockHide + dy / dist, 0, 1);
+    h = Math.min(h, Math.max(0, y) / dist); // no topo da página ela está sempre visível
+    if (h === dockHide) return;
+    dockHide = h;
+    dockEl.style.setProperty('--dock-hide', h.toFixed(3));
+    dockEl.classList.toggle('is-away', h > 0.6); // quase invisível: não intercepta cliques
   }
 
   /* ---------- loop de frames ---------- */
