@@ -1,0 +1,650 @@
+<section class="chapter" id="ch-05" data-era="amber" data-title="Microsoft" data-year="1975–86">
+  <div class="container">
+
+    <!-- ATO 1: o nome -->
+    <header class="c5-head">
+      <p class="c5-date mono">4 de abril de 1975 · Albuquerque, Novo México</p>
+      <h2 class="d1 c5-name" aria-label="Micro-Soft">
+        <span aria-hidden="true">Micro<span class="c5-hy">-</span>Soft</span>
+      </h2>
+      <p class="lead">Dois sócios, um interpretador BASIC e um computador de kit. O nome é de Paul Allen: micro de microcomputador, soft de software.</p>
+      <button class="btn c5-hybtn" type="button" aria-pressed="false">Registrar o nome (26/11/1976)</button>
+      <p class="caption c5-hycap" aria-live="polite"></p>
+      <svg class="c5-desert" viewBox="0 0 800 140" aria-hidden="true" focusable="false">
+        <circle cx="560" cy="96" r="54" fill="var(--accent2)" opacity=".9"/>
+        <path d="M0 96H800V140H0Z" fill="#0c0701"/>
+        <path d="M0 96 90 96 112 70 190 70 206 96 330 96 352 78 430 78 446 96 640 96 660 62 740 62 760 96 800 96" fill="none" stroke="var(--accent)" stroke-width="2"/>
+        <g stroke="var(--accent)" stroke-opacity=".35"><path d="M0 108H800M0 122H800"/></g>
+      </svg>
+    </header>
+
+    <!-- ATO 2: a carta -->
+    <article class="c5-scene c5-letterwrap">
+      <div class="c5-when"><span class="mono">3/2/1976</span><span class="caption">Carta aberta aos hobistas</span></div>
+      <div class="c5-body stack">
+        <p class="lead">A empresa tinha um produto e quase nenhuma receita: US$ 16.005 em 1976.</p>
+        <p class="p">Uma fita de papel do BASIC sumira num seminário, em 1975. Cópias circulavam no Homebrew Computer Club. Gates, assinando como sócio-gerente da Micro-Soft, escreveu o que muitos não queriam ler.</p>
+        <figure class="c5-letter" tabindex="0" aria-label="Trecho da carta">
+          <p class="c5-hand mono">Carta aberta aos hobistas</p>
+          <blockquote>“…<mark>most of you steal your software</mark>.”</blockquote>
+          <figcaption class="caption">Bill Gates, 1976. A maior parte dos usuários, dizia ele, não pagara pelo Altair BASIC. A carta foi impopular, e os números dela foram contestados.</figcaption>
+        </figure>
+        <p class="p">Era uma tese: software dá trabalho, e trabalho se paga.</p>
+      </div>
+    </article>
+
+    <!-- ATO 3: Bellevue -->
+    <article class="c5-scene c5-bel">
+      <div class="c5-when"><span class="mono">1/1/1979</span><span class="caption">Bellevue, Washington</span></div>
+      <div class="c5-body stack">
+        <p class="lead">A empresa volta para casa, perto de Seattle.</p>
+        <p class="p">Em 1980 entra Steve Ballmer (11 de junho). O Z-80 SoftCard vende 5.000 unidades em três meses a US$ 349 e vira a maior receita do ano. Ainda é uma empresa pequena de linguagens de programação.</p>
+        <svg class="c5-window" viewBox="0 0 320 160" role="img" aria-label="Janela de escritório com pinheiros e céu cinzento">
+          <rect x="4" y="4" width="312" height="152" fill="#1a1208" stroke="var(--accent)" stroke-width="3"/>
+          <path d="M162 4V156M4 80H316" stroke="var(--accent)" stroke-width="3"/>
+          <g fill="#3a2a10"><path d="M30 156 52 80 74 156ZM60 156 86 60 112 156ZM200 156 222 70 244 156ZM232 156 262 54 292 156Z"/></g>
+          <g class="c5-rain" stroke="var(--accent)" stroke-opacity=".35"><path d="M20 10 14 30M70 20 64 40M120 8 114 28M190 14 184 34M240 6 234 26M290 18 284 38"/></g>
+        </svg>
+        <p class="p c5-hook">Julho de 1980. O telefone toca. É a IBM.</p>
+      </div>
+    </article>
+
+    <!-- ATO 4: o jogo -->
+    <section class="c5-game" aria-labelledby="c5-gt">
+      <div class="c5-gtxt stack">
+        <h3 class="d2" id="c5-gt">A decisão</h3>
+        <p class="lead">Você está na cadeira de Gates. Três escolhas. Digite A ou B, ou toque nas opções.</p>
+        <p class="hint">Comandos: <span class="mono">A</span>, <span class="mono">B</span>, <span class="mono">HELP</span>, <span class="mono">DIR</span>, <span class="mono">VER</span>, <span class="mono">CLS</span>, <span class="mono">RESTART</span></p>
+      </div>
+
+      <div class="c5-desk">
+        <div class="c5-crt">
+          <div class="c5-glass" id="c5-glass">
+            <div class="c5-screen">
+              <div class="c5-log" role="log" aria-live="polite" aria-label="Terminal do jogo" tabindex="0"></div>
+              <div class="c5-choices" hidden></div>
+              <form class="c5-form" autocomplete="off">
+                <label class="sr-only" for="c5-in">Comando</label>
+                <span class="c5-prompt" aria-hidden="true">C:\&gt;</span>
+                <input id="c5-in" class="c5-in" type="text" inputmode="text" enterkeyhint="send" autocapitalize="characters" autocomplete="off" spellcheck="false" maxlength="24">
+                <span class="c5-cursor" aria-hidden="true"></span>
+              </form>
+            </div>
+            <div class="c5-fx c5-scan" aria-hidden="true"></div>
+            <div class="c5-fx c5-vig" aria-hidden="true"></div>
+            <div class="c5-fx c5-roll" aria-hidden="true"></div>
+            <div class="c5-fx c5-flick" aria-hidden="true"></div>
+            <div class="c5-fx c5-gloss" aria-hidden="true"></div>
+          </div>
+          <div class="c5-bezel-foot" aria-hidden="true"><i class="c5-led"></i><span class="c5-slot"></span><i class="c5-knob"></i></div>
+        </div>
+        <div class="c5-keys" role="group" aria-label="Atalhos de comando">
+          <button type="button" class="c5-key" data-cmd="HELP">HELP</button>
+          <button type="button" class="c5-key" data-cmd="DIR">DIR</button>
+          <button type="button" class="c5-key" data-cmd="VER">VER</button>
+          <button type="button" class="c5-key" data-cmd="CLS">CLS</button>
+        </div>
+        <div class="c5-tray" aria-hidden="true">
+          <div class="c5-slotd" data-i="0"></div><div class="c5-slotd" data-i="1"></div><div class="c5-slotd" data-i="2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATO 5: a fortuna -->
+    <section class="c5-fort" aria-labelledby="c5-ft">
+      <div class="c5-ftxt stack">
+        <h3 class="d2" id="c5-ft">A linha de fortuna</h3>
+        <p class="lead">O acordo fez a empresa crescer. Passe pelos marcos de 1975 a 1987.</p>
+      </div>
+      <div class="c5-ftbox">
+        <div class="c5-readout">
+          <div class="c5-big mono" aria-live="polite"><span class="c5-num">US$ 16.005</span></div>
+          <div class="c5-kind mono">receita anual</div>
+        </div>
+        <svg class="c5-chart" viewBox="0 0 800 300" role="img" aria-label="Gráfico em escala logarítmica de valores da Microsoft e de Gates entre 1976 e 1987" focusable="false">
+          <g class="c5-grid" stroke="var(--accent)" stroke-opacity=".18"></g>
+          <g class="c5-axis" fill="var(--muted)" font-size="13" font-family="IBM Plex Mono, ui-monospace, monospace"></g>
+          <polyline class="c5-line" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+          <g class="c5-pts"></g>
+          <g class="c5-mark"><circle r="11" fill="none" stroke="var(--accent2)" stroke-width="2"/><circle r="4.5" fill="var(--accent2)"/></g>
+        </svg>
+        <p class="caption c5-scale">Escala logarítmica: cada linha vale dez vezes a anterior. Grandezas diferentes na mesma régua (receita da empresa, dinheiro captado, patrimônio pessoal). A linha mostra a ordem de grandeza, não uma série contínua.</p>
+        <div class="c5-steps" role="group" aria-label="Marcos de 1975 a 1987"></div>
+        <div class="c5-card" aria-live="polite">
+          <h4 class="c5-ct d3"></h4>
+          <p class="p c5-cd"></p>
+        </div>
+      </div>
+      <div class="c5-end">
+        <p class="p">Em 1987, aos 31 anos, Gates entrou para a lista dos bilionários. O resto da história é feito de janelas.</p>
+        <button class="btn c5-factbtn" type="button">Ressalvas deste capítulo</button>
+      </div>
+    </section>
+  </div>
+</section>
+
+<style>
+#ch-05{ --c5-ph:#ffb000; --c5-ph2:#ffd37a; position:relative; padding:clamp(72px,12vh,140px) 0 clamp(80px,14vh,160px); }
+@media(min-width:901px){#ch-05 .container{ padding-right:calc(var(--gutter) + max(0px,min(150px - var(--gutter),788px - 50vw - var(--gutter)))) }}
+#ch-05 .container{ display:flex; flex-direction:column; gap:clamp(96px,18vh,190px); }
+#ch-05 .mono{ font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace; }
+
+/* ato 1 */
+#ch-05 .c5-head{ display:flex; flex-direction:column; gap:18px; align-items:flex-start; }
+#ch-05 .c5-date{ color:var(--accent); font-size:.9rem; margin:0; }
+#ch-05 .c5-name{ margin:0; letter-spacing:-.03em; line-height:.95; text-shadow:0 0 28px rgba(255,150,30,.35); }
+#ch-05 .c5-hy{ display:inline-block; transition:transform .7s cubic-bezier(.6,0,.2,1),opacity .5s,width .7s; width:.38em; text-align:center; }
+#ch-05 .c5-head.is-joined .c5-hy{ opacity:0; width:0; transform:translateY(-.4em) scale(.2); }
+#ch-05 .c5-hybtn[aria-pressed="true"]{ opacity:.6; }
+#ch-05 .c5-hycap{ min-height:1.4em; margin:0; max-width:56ch; }
+#ch-05 .c5-desert{ width:100%; max-width:900px; height:auto; margin-top:10px; }
+
+/* cenas */
+#ch-05 .c5-scene{ display:grid; grid-template-columns:minmax(120px,220px) 1fr; gap:clamp(20px,4vw,56px); align-items:start; }
+#ch-05 .c5-when{ display:flex; flex-direction:column; gap:6px; position:sticky; top:96px; border-left:3px solid var(--accent); padding-left:14px; }
+#ch-05 .c5-when .mono{ font-size:clamp(1.3rem,2.4vw,2rem); color:var(--accent); }
+#ch-05 .c5-letter{ margin:6px 0; padding:clamp(22px,4vw,40px); max-width:560px; background:#eadfc0; color:#2a2110; transform:rotate(-1.2deg);
+  background-image:repeating-linear-gradient(0deg,transparent 0 27px,rgba(80,60,20,.12) 27px 28px); box-shadow:0 18px 40px rgba(0,0,0,.55),0 2px 0 #cdbf98; transition:transform .5s cubic-bezier(.2,.8,.2,1); }
+#ch-05 .c5-letter:hover,#ch-05 .c5-letter:focus-visible{ transform:rotate(0) translateY(-4px); }
+#ch-05 .c5-hand{ margin:0 0 14px; font-size:.78rem; opacity:.7; }
+#ch-05 .c5-letter blockquote{ margin:0 0 14px; font-size:clamp(1.3rem,2.6vw,1.9rem); line-height:1.25; font-weight:600; }
+#ch-05 .c5-letter mark{ background:linear-gradient(transparent 55%,rgba(255,170,40,.75) 55%); color:inherit; }
+#ch-05 .c5-letter figcaption{ color:#4b3d20; font-size:.85rem; }
+#ch-05 .c5-window{ width:min(100%,360px); height:auto; }
+#ch-05 .c5-rain{ animation:c5rain 2.4s linear infinite; }
+@keyframes c5rain{ from{ transform:translateY(-4px) } to{ transform:translateY(8px) } }
+#ch-05 .c5-hook{ font-size:clamp(1.3rem,2.4vw,1.8rem); color:var(--accent); }
+
+/* jogo */
+#ch-05 .c5-game{ display:flex; flex-direction:column; gap:32px; }
+#ch-05 .c5-gtxt{ max-width:62ch; }
+#ch-05 .c5-desk{ position:relative; padding:clamp(18px,4vw,48px) clamp(12px,4vw,56px) 28px; border-radius:22px;
+  background:
+   repeating-linear-gradient(90deg,rgba(120,80,30,.0) 0 90px,rgba(120,80,30,.08) 90px 92px),
+   repeating-linear-gradient(2deg,rgba(255,255,255,.05) 0 3px,rgba(110,70,25,.07) 3px 7px),
+   linear-gradient(180deg,#e0c18f,#c9a06a);
+  box-shadow:0 30px 70px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,255,255,.35), inset 0 -10px 24px rgba(90,55,15,.35); }
+#ch-05 .c5-crt{ position:relative; max-width:880px; margin:0 auto; padding:clamp(12px,2.6vw,30px) clamp(12px,2.6vw,30px) 8px; border-radius:26px 26px 18px 18px;
+  background:linear-gradient(160deg,#d6cdb4,#b9ad90 60%,#a89c80); box-shadow:0 26px 40px rgba(60,35,10,.5), inset 0 2px 0 rgba(255,255,255,.55), inset 0 -4px 8px rgba(70,55,30,.4); }
+#ch-05 .c5-glass{ position:relative; overflow:hidden; border-radius:7% / 9%; background:#0b0602; box-shadow:inset 0 0 0 3px #000, inset 0 0 70px rgba(0,0,0,.95), 0 0 0 5px #8e846a, 0 0 0 7px #5e563f;
+  min-height:clamp(380px,62vh,520px); display:flex; }
+#ch-05 .c5-screen{ position:relative; z-index:1; display:flex; flex-direction:column; width:100%; padding:clamp(18px,3.4vw,38px) clamp(16px,3.6vw,44px); color:var(--c5-ph);
+  font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace; font-size:clamp(12.5px,1.45vw,16.5px); line-height:1.5; text-shadow:0 0 5px rgba(255,170,0,.6),0 0 16px rgba(255,110,0,.28); }
+#ch-05 .c5-log{ flex:1; min-height:200px; max-height:clamp(240px,40vh,340px); overflow-y:auto; scrollbar-width:thin; scrollbar-color:#7a5200 transparent; padding-right:6px; outline-offset:4px; }
+#ch-05 .c5-log:focus-visible{ outline:2px dashed var(--c5-ph2); }
+#ch-05 .ln{ white-space:pre-wrap; overflow-wrap:anywhere; animation:c5ln .12s steps(3) both; min-height:1.5em; }
+#ch-05 .ln.hl{ color:var(--c5-ph2); font-weight:600; text-shadow:0 0 8px rgba(255,200,90,.85); }
+#ch-05 .ln.dim{ opacity:.62; }
+#ch-05 .ln.cmd{ color:#ffe3a3; }
+#ch-05 .ln.warn{ color:#ff8a3d; }
+#ch-05 .ln.ok{ color:#ffe08a; }
+@keyframes c5ln{ from{ opacity:0; transform:translateX(-3px) } to{ opacity:1; transform:none } }
+#ch-05 .c5-choices{ display:flex; flex-direction:column; gap:8px; margin:10px 0 4px; }
+#ch-05 .c5-choices[hidden]{ display:none; }
+#ch-05 .c5-opt{ display:flex; gap:12px; align-items:center; min-height:48px; padding:8px 14px; text-align:left; cursor:pointer; color:var(--c5-ph); background:rgba(255,176,0,.06);
+  border:1px solid rgba(255,176,0,.55); border-radius:4px; font:inherit; text-shadow:inherit; transition:background .12s,color .12s,transform .12s; }
+#ch-05 .c5-opt b{ min-width:1.6em; text-align:center; border:1px solid currentColor; padding:0 4px; }
+#ch-05 .c5-opt:hover,#ch-05 .c5-opt:focus-visible{ background:var(--c5-ph); color:#150a00; text-shadow:none; outline:2px solid var(--c5-ph2); outline-offset:2px; }
+#ch-05 .c5-opt:active{ transform:scale(.985); }
+#ch-05 .c5-form{ display:flex; align-items:center; gap:8px; border-top:1px dashed rgba(255,176,0,.35); margin-top:8px; padding-top:10px; position:relative; }
+#ch-05 .c5-in{ flex:1; min-width:0; min-height:36px; background:transparent; border:0; outline:0; color:var(--c5-ph2); font:inherit; font-size:max(16px,1em); text-transform:uppercase; caret-color:transparent; text-shadow:inherit; }
+#ch-05 .c5-form:focus-within{ border-top-color:var(--c5-ph2); }
+#ch-05 .c5-cursor{ display:none; }
+#ch-05 .c5-in:focus{ caret-color:var(--c5-ph2); }
+#ch-05 .c5-fx{ position:absolute; inset:0; pointer-events:none; z-index:3; }
+#ch-05 .c5-scan{ background:repeating-linear-gradient(to bottom,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.2) 2px 3px); mix-blend-mode:multiply; }
+#ch-05 .c5-vig{ background:radial-gradient(ellipse at 50% 48%,transparent 52%,rgba(0,0,0,.55) 100%); }
+#ch-05 .c5-gloss{ background:linear-gradient(115deg,rgba(255,255,255,.07) 0,rgba(255,255,255,0) 28%); border-radius:inherit; }
+#ch-05 .c5-roll{ background:linear-gradient(to bottom,transparent,rgba(255,190,80,.045) 50%,transparent); height:30%; inset:auto 0 auto 0; top:-30%; opacity:0; }
+#ch-05 .c5-flick{ background:rgba(255,160,40,.02); opacity:0; }
+#ch-05.c5-on .c5-roll{ animation:c5roll 7s linear infinite; opacity:1; }
+#ch-05.c5-on .c5-flick{ animation:c5flick 3.1s steps(1) infinite; }
+@keyframes c5roll{ from{ top:-30% } to{ top:110% } }
+@keyframes c5flick{ 0%{opacity:0} 8%{opacity:1} 9%{opacity:.2} 31%{opacity:.7} 32%{opacity:0} 63%{opacity:.5} 64%{opacity:0} 88%{opacity:1} 90%{opacity:0} }
+#ch-05 .c5-bezel-foot{ display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 6px 6px; }
+#ch-05 .c5-led{ width:9px; height:9px; border-radius:50%; background:#ffa01a; box-shadow:0 0 8px #ff9a00; }
+#ch-05 .c5-slot{ flex:1; max-width:220px; height:6px; border-radius:3px; background:#6c634b; box-shadow:inset 0 1px 2px #000; margin-left:auto; }
+#ch-05 .c5-knob{ width:22px; height:22px; border-radius:50%; background:radial-gradient(circle at 35% 30%,#e9e0c7,#8a8064); box-shadow:0 2px 3px rgba(0,0,0,.5); }
+
+#ch-05 .c5-keys{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:26px; }
+#ch-05 .c5-key{ min-width:72px; min-height:46px; padding:0 14px; font:600 .85rem "IBM Plex Mono",ui-monospace,monospace; color:#2c2314; cursor:pointer; border-radius:8px; border:0;
+  background:linear-gradient(#efe6ce,#cdbf9c); box-shadow:0 5px 0 #8c7b52,0 8px 12px rgba(60,35,10,.4); transition:transform .08s,box-shadow .08s; }
+#ch-05 .c5-key:active{ transform:translateY(4px); box-shadow:0 1px 0 #8c7b52,0 2px 4px rgba(60,35,10,.4); }
+#ch-05 .c5-key:focus-visible{ outline:3px solid #150a00; outline-offset:3px; }
+#ch-05 .c5-tray{ display:flex; gap:clamp(10px,3vw,28px); justify-content:center; margin-top:34px; flex-wrap:wrap; }
+#ch-05 .c5-slotd{ width:clamp(86px,22vw,128px); aspect-ratio:1; border:2px dashed rgba(90,55,15,.4); border-radius:6px; position:relative; }
+#ch-05 .c5-disk{ position:absolute; inset:-2px; background:#1c1a17; border-radius:5px 5px 14px 5px; box-shadow:0 8px 14px rgba(40,22,5,.55); }
+#ch-05 .c5-disk::before{ content:""; position:absolute; left:50%; top:0; width:44%; height:30%; transform:translateX(-50%); background:linear-gradient(90deg,#bdb8ad,#e9e5da,#bdb8ad); border-radius:0 0 3px 3px; }
+#ch-05 .c5-disk::after{ content:""; position:absolute; left:50%; bottom:6%; width:22%; height:7%; transform:translateX(-50%); background:#0b0a09; border-radius:2px; }
+#ch-05 .c5-dl{ position:absolute; left:9%; right:9%; top:36%; height:42%; background:#f1ead3; color:#241b0c; display:flex; align-items:center; justify-content:center; text-align:center;
+  font:600 clamp(.58rem,1.5vw,.74rem)/1.15 "IBM Plex Mono",ui-monospace,monospace; padding:3px; transform:rotate(-1.5deg); border-radius:2px; }
+
+/* fortuna */
+#ch-05 .c5-fort{ display:flex; flex-direction:column; gap:30px; }
+#ch-05 .c5-ftxt{ max-width:62ch; }
+#ch-05 .c5-ftbox{ display:grid; grid-template-columns:minmax(220px,300px) 1fr; gap:clamp(16px,3vw,40px); align-items:start; }
+#ch-05 .c5-readout{ grid-column:1; padding:20px; border:1px solid var(--line); border-radius:6px; background:var(--panel); }
+#ch-05 .c5-big{ font-size:clamp(1.8rem,3.6vw,2.8rem); color:var(--accent); line-height:1.1; text-shadow:0 0 18px rgba(255,170,0,.4); overflow-wrap:anywhere; }
+#ch-05 .c5-kind{ margin-top:8px; font-size:.82rem; color:var(--muted); }
+#ch-05 .c5-chart{ grid-column:2; grid-row:1 / span 2; width:100%; height:auto; touch-action:pan-y; cursor:pointer; }
+#ch-05 .c5-scale{ grid-column:1; max-width:34ch; }
+#ch-05 .c5-steps{ grid-column:1 / -1; display:grid; grid-template-columns:repeat(7,1fr); gap:6px; }
+#ch-05 .c5-step{ min-height:48px; padding:4px 2px; font:600 .78rem "IBM Plex Mono",ui-monospace,monospace; color:var(--fg); background:transparent; border:1px solid var(--line); border-radius:4px; cursor:pointer; transition:background .15s,color .15s; }
+#ch-05 .c5-step[aria-pressed="true"]{ background:var(--accent); color:#150a00; border-color:var(--accent); }
+#ch-05 .c5-step:focus-visible{ outline:2px solid var(--accent2); outline-offset:2px; }
+#ch-05 .c5-card{ grid-column:1 / -1; max-width:70ch; border-left:3px solid var(--accent2); padding:4px 0 4px 18px; min-height:7.5em; }
+#ch-05 .c5-card h4{ margin:0 0 6px; }
+#ch-05 .c5-end{ display:flex; flex-direction:column; align-items:flex-start; gap:20px; max-width:56ch; }
+
+@media (max-width:760px){
+  #ch-05 .c5-scene{ grid-template-columns:1fr; gap:14px; }
+  #ch-05 .c5-when{ position:static; flex-direction:row; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  #ch-05 .c5-ftbox{ grid-template-columns:1fr; }
+  #ch-05 .c5-readout,#ch-05 .c5-chart,#ch-05 .c5-scale{ grid-column:1; grid-row:auto; max-width:none; }
+  #ch-05 .c5-steps{ grid-template-columns:repeat(7,minmax(0,1fr)); gap:4px; }
+  #ch-05 .c5-step{ font-size:.66rem; }
+  #ch-05 .c5-glass{ border-radius:5% / 3.5%; }
+  #ch-05 .c5-axis{ font-size:24px; }
+  #ch-05 .c5-axis text[y="288"]{ font-size:20px; }
+}
+@media (prefers-reduced-motion:reduce){
+  #ch-05 .c5-rain,#ch-05.c5-on .c5-roll,#ch-05.c5-on .c5-flick,#ch-05 .ln{ animation:none; }
+  #ch-05 .c5-hy{ transition:none; }
+}
+</style>
+
+<script>
+Gates.chapter('ch-05', function (ctx) {
+  var gsap = ctx.gsap;
+  var $ = ctx.$, $$ = ctx.$$;
+  var root = ctx.root;
+
+  Gates.facts = Gates.facts || {};
+  Gates.facts['ch-05'] = {
+    title: 'Ressalvas: Microsoft e o acordo do século',
+    items: [
+      { text: 'O preço do 86-DOS varia: "menos de US$ 100.000" (History of Microsoft); US$ 25.000 pela licença não exclusiva (dez/1980, "citation needed") mais US$ 50.000 por todos os direitos em jul/1981 (86-DOS). Uma página afirma que a IBM pagou US$ 50.000, o que contradiz as demais. Aqui só aparecem faixas e a soma de cerca de US$ 75 mil, "segundo uma fonte". O valor de US$ 8 milhões da Wikipédia em português foi ignorado.', url: 'https://en.wikipedia.org/wiki/86-DOS' },
+      { text: 'Datas do 86-DOS conflitam: a licença da versão 0.3 aparece como 15/11/1980, dez/1980 e 6/1/1981; a compra, com carimbo de 22/7 e venda datada de 27/7/1981. Usamos "1980–81".', url: 'https://en.wikipedia.org/wiki/86-DOS' },
+      { text: 'A IBM procurou a Microsoft em julho de 1980, depois que as negociações com a Digital Research falharam. As fontes divergem sobre o motivo; o jogo não toma partido.', url: 'https://en.wikipedia.org/wiki/Bill_Gates' },
+      { text: 'Segundo relatos, Mary Gates conheceu John Opel, presidente da IBM, por conselhos como o da United Way. Isso é contexto, não prova de causa no acordo.', url: 'https://ca.news.yahoo.com/bill-gates-parents-bill-sr-184625102.html' },
+      { text: 'Divisão de ações entre Gates e Allen: cerca de 64–36 a favor de Gates; as fontes citam 60–40 e 64–36 em ordens diferentes. Receita de 1983 (US$ 55 mi) é estimativa. O patrimônio de US$ 1,25 bi (1987) vem da Wikipédia/Forbes; o IPO (13/3/1986, US$ 21, US$ 61 mi captados, fechamento a US$ 28) vem da History of Microsoft. A Carta aberta consta como 3/2/1976 (o boletim do Homebrew é de 31/1/1976).', url: 'https://en.wikipedia.org/wiki/History_of_Microsoft' }
+    ]
+  };
+
+  /* ---------- Ato 1: hífen ---------- */
+  var head = $('.c5-head'), hyBtn = $('.c5-hybtn'), hyCap = $('.c5-hycap');
+  hyBtn.addEventListener('click', function () {
+    var on = hyBtn.getAttribute('aria-pressed') !== 'true';
+    hyBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    head.classList.toggle('is-joined', on);
+    ctx.audio.play(on ? 'chime' : 'click', { vol: .5 });
+    hyCap.textContent = on
+      ? 'O hífen caiu em cerca de um ano. “Microsoft” foi registrado no Novo México em 26/11/1976.'
+      : 'Em 1975 ainda era “Micro-Soft”, nome criado por Paul Allen.';
+    ctx.say(hyCap.textContent);
+  });
+  hyBtn.textContent = 'Registrar o nome (26/11/1976)';
+
+  /* ---------- Ato 4: o terminal ---------- */
+  var log = $('.c5-log'), choicesEl = $('.c5-choices'), form = $('.c5-form'), inp = $('.c5-in'), glass = $('.c5-glass');
+  var slots = $$('.c5-slotd');
+  var S = { mode: 'boot', q: 0, picks: [], busy: false, skip: false, booted: false, token: 0 };
+
+  var QS = [
+    {
+      head: ['== 1 de 3 · julho de 1980 ==',
+        'Executivos da IBM estão na sua sala. Querem um sistema operacional para um computador pessoal que ainda não existe.',
+        'Você vende linguagens de programação. Sistema operacional, não.',
+        'O que você diz?'],
+      A: 'Responder à IBM sozinho: “nós fazemos”.',
+      B: 'Indicar a Digital Research, dona do CP/M.',
+      fx: {
+        A: ['Você promete entregar. Mas não tem sistema nenhum, e a IBM tem pressa.'],
+        B: ['Você indica a Digital Research, dona do CP/M, o sistema mais usado da época.', 'As negociações da IBM com a Digital não saem. A IBM volta a olhar para a Microsoft.']
+      },
+      bridge: ['Em Seattle, a Seattle Computer Products tem o 86-DOS, escrito por Tim Paterson.', 'A Microsoft o licencia em 1980–81 e depois o compra. O preço varia por fonte: menos de US$ 100 mil, ou cerca de US$ 75 mil (25 + 50), segundo uma fonte.'],
+      disk: ['86-DOS', 'Seattle Computer']
+    },
+    {
+      head: ['== 2 de 3 · o sistema é seu ==',
+        'A IBM quer lançar o PC. O que ela leva?'],
+      A: 'Vender o sistema por inteiro à IBM.',
+      B: 'Licenciar o uso à IBM e manter a propriedade.',
+      fx: {
+        A: ['Dinheiro na hora. Mas a dona do sistema passa a ser a IBM: quem quiser rodá-lo terá de falar com ela.'],
+        B: ['A IBM usa e vende como “PC DOS”. Você não transfere o copyright.']
+      },
+      bridge: [],
+      disk: { A: ['PC DOS', 'da IBM'], B: ['PC DOS', 'licença'] }
+    },
+    {
+      head: ['== 3 de 3 · a cláusula final ==',
+        'Outros fabricantes vão copiar o IBM PC. Todos precisarão de um sistema.',
+        'O que você pede?'],
+      A: 'Um pagamento único. Negócio fechado.',
+      B: 'Manter o direito de licenciar a qualquer fabricante.',
+      fx: {
+        A: ['Você embolsa o valor combinado. Quando os clones chegarem, o dinheiro deles irá para outro lugar.'],
+        B: ['Os clones chegam. Cada um precisa rodar os mesmos programas, e o sistema compatível é o seu.']
+      },
+      bridge: [],
+      disk: { A: ['PC DOS', 'pagamento único'], B: ['MS-DOS', 'p/ os clones'] }
+    }
+  ];
+
+  var REAL = [
+    { k: 'B', t: 'Indicou a Digital Research. As negociações dela com a IBM não deram certo, e a IBM voltou à Microsoft.', mine: { A: 'prometeu sozinho', B: 'indicou a Digital' } },
+    { k: 'B', t: 'Licenciou o sistema à IBM e não transferiu o copyright.', mine: { A: 'vendeu por inteiro', B: 'licenciou' } },
+    { k: 'B', t: 'Manteve o direito de licenciar o MS-DOS a outros fabricantes.', mine: { A: 'pagamento único', B: 'manteve o direito' } }
+  ];
+
+  function add(l) {
+    if (typeof l === 'string') l = { t: l };
+    var d = document.createElement('div');
+    d.className = 'ln' + (l.c ? ' ' + l.c : '');
+    d.textContent = l.t === '' ? '\u00a0' : l.t;
+    log.appendChild(d);
+    log.scrollTop = log.scrollHeight;
+    return l;
+  }
+  function setBusy(b) {
+    S.busy = b;
+    inp.readOnly = b;
+    $$('.c5-opt', choicesEl).forEach(function (x) { x.disabled = b; });
+  }
+  function print(lines) {
+    var tk = S.token;
+    return new Promise(function (res) {
+      var i = 0;
+      S.skip = false; setBusy(true);
+      (function next() {
+        if (tk !== S.token) return res();
+        if (i >= lines.length) { setBusy(false); return res(); }
+        var l = add(lines[i++]);
+        if (!S.skip && !ctx.reduced) ctx.audio.play('tick', { vol: .12 });
+        var len = (l.t || '').length;
+        var d = (S.skip || ctx.reduced) ? 0 : Math.min(900, 140 + len * 10);
+        setTimeout(next, d);
+      })();
+    });
+  }
+  function hide() { choicesEl.hidden = true; choicesEl.innerHTML = ''; }
+  function showOpts(list) {
+    choicesEl.innerHTML = '';
+    list.forEach(function (o) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'c5-opt'; b.setAttribute('data-k', o.k);
+      b.innerHTML = '<b></b><span></span>';
+      b.firstChild.textContent = o.k; b.lastChild.textContent = o.label;
+      b.addEventListener('click', function () { act(o.k); });
+      choicesEl.appendChild(b);
+    });
+    choicesEl.hidden = false;
+    log.scrollTop = log.scrollHeight;
+  }
+
+  function ask(i, short) {
+    var q = QS[i];
+    S.mode = 'busy';
+    var h = q.head.map(function (t, n) { return { t: t, c: n === 0 ? 'hl' : (n === q.head.length - 1 ? '' : 'dim') }; });
+    if (short) h = [h[0], { t: q.head[q.head.length - 1] }];
+    h.push('');
+    return print(h).then(function () {
+      showOpts([{ k: 'A', label: q.A }, { k: 'B', label: q.B }]);
+      S.mode = 'ask';
+      ctx.say('Escolha ' + (i + 1) + ' de 3. A: ' + q.A + ' B: ' + q.B);
+    });
+  }
+
+  function dropDisk(i, lab) {
+    var s = slots[i]; if (!s) return;
+    s.innerHTML = '<div class="c5-disk"><div class="c5-dl"></div></div>';
+    var l = s.querySelector('.c5-dl');
+    l.innerHTML = lab[0] + '<br>' + lab[1];
+    var dk = s.firstChild;
+    ctx.audio.play('flip', { vol: .5 });
+    if (!ctx.reduced) gsap.fromTo(dk, { y: -140, rotation: -14, opacity: 0 }, { y: 0, rotation: (i - 1) * 3, opacity: 1, duration: .6, ease: 'bounce.out' });
+  }
+
+  function act(k) {
+    if (S.mode !== 'ask' || S.busy) return;
+    var i = S.q, q = QS[i];
+    S.mode = 'busy';
+    S.picks[i] = k;
+    hide();
+    ctx.audio.play('key', { vol: .4 });
+    var lines = [{ t: 'C:\\> ' + k, c: 'cmd' }, ''].concat(q.fx[k].map(function (t) { return { t: t, c: 'ok' }; }));
+    if (q.bridge && q.bridge.length) lines = lines.concat([''], q.bridge.map(function (t) { return { t: t, c: 'dim' }; }));
+    lines.push('');
+    var lab = q.disk.A ? q.disk[k] : q.disk;
+    print(lines).then(function () {
+      dropDisk(i, lab);
+      if (i < 2) { S.q = i + 1; return ask(S.q); }
+      return finale();
+    });
+  }
+
+  function finale() {
+    S.mode = 'busy';
+    var n = 0, out = [{ t: '==============================', c: 'dim' }, { t: 'O QUE GATES DE FATO FEZ', c: 'hl' }, ''];
+    REAL.forEach(function (r, i) {
+      var same = S.picks[i] === r.k; if (same) n++;
+      out.push({ t: (i + 1) + '. ' + r.t, c: 'ok' });
+      out.push({ t: (same ? '   [=] você: ' : '   [≠] você: ') + r.mine[S.picks[i]], c: same ? 'hl' : 'warn' });
+    });
+    out.push('');
+    out.push({ t: 'Você acertou ' + n + ' de 3.', c: 'hl' });
+    out.push('');
+    out.push('12/8/1981: o IBM PC chega com o PC DOS a US$ 40, contra US$ 240 do CP/M. Os clones tornaram o DOS o padrão. Foi o começo do domínio da Microsoft.');
+    out.push({ t: 'Segundo relatos, Mary Gates e John Opel, presidente da IBM, se conheciam do conselho da United Way. Ninguém provou que isso pesou no acordo.', c: 'dim' });
+    out.push({ t: 'É um jogo: a negociação real foi mais longa e confusa que três perguntas.', c: 'dim' });
+    out.push('');
+    out.push({ t: 'Digite RESTART ou toque em jogar de novo.', c: 'dim' });
+    return print(out).then(function () {
+      S.mode = 'end';
+      ctx.audio.play(n >= 2 ? 'success' : 'chime', { vol: .5 });
+      showOpts([{ k: 'R', label: 'Jogar de novo (RESTART)' }]);
+      $('.c5-opt', choicesEl).onclick = restart;
+      ctx.say('Fim do jogo. Você acertou ' + n + ' de 3 decisões de Gates.');
+    });
+  }
+
+  function clearDisks() { slots.forEach(function (s) { s.innerHTML = ''; }); }
+  function restart() {
+    S.token++; S.picks = []; S.q = 0; S.mode = 'busy';
+    hide(); log.innerHTML = ''; clearDisks(); setBusy(false);
+    ask(0);
+  }
+
+  function boot() {
+    if (S.booted) return; S.booted = true;
+    ctx.audio.play('boot', { vol: .5 });
+    print([
+      { t: 'SIMULADOR DE DECISÃO  v1.0', c: 'hl' },
+      { t: 'Jogo narrativo. Não é o MS-DOS.', c: 'dim' },
+      { t: 'Verificando memória... OK', c: 'dim' },
+      { t: 'Digite HELP, ou use as opções.', c: 'dim' },
+      ''
+    ]).then(function () { return ask(0); });
+  }
+
+  var HELP = [
+    { t: 'COMANDOS', c: 'hl' },
+    'A / B ...... escolhe uma opção (também 1 / 2)',
+    'DIR ........ lista a pasta da mesa',
+    'VER ........ versão do simulador',
+    'CLS ........ limpa a tela',
+    'RESTART .... recomeça o jogo',
+    ''
+  ];
+  var DIRL = [
+    ' O volume na unidade C é ESCRITORIO',
+    ' Diretório de C:\\', '',
+    'CPM        <DIR>    Digital Research',
+    '86DOS      SYS      Seattle Computer Products',
+    'BASIC      COM      o que a Microsoft vende hoje',
+    'PROPOSTA   IBM      a conversa de julho de 1980',
+    '        4 arquivo(s)', ''
+  ];
+  var VERL = [
+    'Simulador de Decisão 1.0',
+    { t: 'O PC DOS 1.0 chegou com o IBM PC em 12/8/1981.', c: 'dim' }, ''
+  ];
+
+  function run(raw) {
+    var c = (raw || '').trim(), u = c.toUpperCase();
+    if (!u) return;
+    if (S.busy) { S.skip = true; return; }
+    if (S.mode === 'boot') return;
+    log.appendChild(Object.assign(document.createElement('div'), { className: 'ln cmd', textContent: 'C:\\> ' + c }));
+    log.scrollTop = log.scrollHeight;
+    var ab = u.replace(/[).\s]/g, '');
+    if (ab === 'A' || ab === '1') return choose('A');
+    if (ab === 'B' || ab === '2') return choose('B');
+    if (u === 'HELP' || u === '?') return print(HELP);
+    if (u === 'DIR') return print(DIRL);
+    if (u === 'VER') return print(VERL);
+    if (u === 'CLS') {
+      log.innerHTML = '';
+      if (S.mode === 'ask') { hide(); return ask(S.q, true); }
+      return;
+    }
+    if (u === 'RESTART' || u === 'REINICIAR' || (u === 'R' && S.mode === 'end')) return restart();
+    ctx.audio.play('error', { vol: .35 });
+    print([{ t: 'Comando ou nome de arquivo inválido. Digite HELP.', c: 'warn' }, '']);
+  }
+  function choose(k) {
+    if (S.mode === 'ask') return act(k);
+    ctx.audio.play('error', { vol: .35 });
+    print([{ t: S.mode === 'end' ? 'O jogo acabou. Digite RESTART.' : 'Nenhuma pergunta aberta agora.', c: 'warn' }, '']);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = inp.value; inp.value = '';
+    run(v);
+  });
+  inp.addEventListener('input', function () { ctx.audio.play('key', { vol: .22 }); });
+  $$('.c5-key').forEach(function (b) {
+    b.addEventListener('click', function () {
+      ctx.audio.play('click', { vol: .4 });
+      run(b.getAttribute('data-cmd'));
+    });
+  });
+  glass.addEventListener('pointerdown', function (e) {
+    if (S.busy) S.skip = true;
+    if (!ctx.touch && !e.target.closest('button,input,.c5-log')) inp.focus({ preventScroll: true });
+  });
+  document.addEventListener('keydown', function (e) { if (S.busy && ctx.visible && root.contains(document.activeElement)) S.skip = true; });
+
+  /* ---------- Ato 5: linha de fortuna ---------- */
+  var EV = [
+    { y: 1975.25, lab: '1975', t: 'Abril de 1975 · Albuquerque', d: 'Gates e Allen fundam a Microsoft para vender BASIC ao Altair 8800. Nenhum número de receita verificado aqui.', v: null },
+    { y: 1976.9, lab: '1976', t: '1976 · um ano magro', d: 'A receita do ano foi de US$ 16.005. O nome “Microsoft” é registrado em 26/11/1976.', v: 16005, k: 'receita anual' },
+    { y: 1979.0, lab: '1979', t: '1/1/1979 · Bellevue', d: 'A empresa se muda de Albuquerque para Bellevue, Washington.', v: null },
+    { y: 1981.6, lab: '1981', t: '12/8/1981 · o IBM PC', d: 'O PC chega com o PC DOS. A Microsoft mantém o direito de licenciar o MS-DOS a outros fabricantes. Sem número verificado nesta etapa.', v: null },
+    { y: 1983.5, lab: '1983', t: '1983 · Allen sai', d: 'Receita estimada em cerca de US$ 55 milhões. Paul Allen deixa a empresa após um linfoma de Hodgkin. A divisão inicial das ações foi de cerca de 64–36 a favor de Gates, segundo relatos (as fontes divergem).', v: 55e6, k: 'receita (estimativa)' },
+    { y: 1986.2, lab: '1986', t: '13/3/1986 · IPO', d: 'Ações a US$ 21; o dia fechou a US$ 28. A oferta captou US$ 61 milhões. Gates ficou com cerca de 44,9%. A sede muda para Redmond em 16/2/1986.', v: 61e6, k: 'captado no IPO' },
+    { y: 1987.2, lab: '1987', t: '1987 · bilionário aos 31', d: 'Gates aparece como bilionário pela primeira vez, com cerca de US$ 1,25 bilhão, segundo a Forbes. O mais jovem da lista.', v: 1.25e9, k: 'patrimônio de Gates' }
+  ];
+  var W = 800, H = 300, X0 = 40, X1 = 770, Y0 = 20, Y1 = 262, L0 = 3.7, L1 = 9.4;
+  function px(y) { return X0 + (y - 1974.8) / (1987.8 - 1974.8) * (X1 - X0); }
+  function py(v) { return Y1 - (Math.log10(v) - L0) / (L1 - L0) * (Y1 - Y0); }
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(n, a) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); return e; }
+  var grid = $('.c5-grid'), axis = $('.c5-axis'), pts = $('.c5-pts'), line = $('.c5-line'), mark = $('.c5-mark');
+  [[4, 'US$ 10 mil'], [5, '100 mil'], [6, '1 mi'], [7, '10 mi'], [8, '100 mi'], [9, '1 bi']].forEach(function (g) {
+    var y = Y1 - (g[0] - L0) / (L1 - L0) * (Y1 - Y0);
+    grid.appendChild(el('line', { x1: X0, x2: X1, y1: y, y2: y }));
+    var t = el('text', { x: X0 + 4, y: y - 5 }); t.textContent = g[1]; axis.appendChild(t);
+  });
+  EV.forEach(function (e) {
+    var t = el('text', { x: px(e.y), y: 288, 'text-anchor': 'middle' }); t.textContent = e.lab; axis.appendChild(t);
+  });
+  var known = EV.filter(function (e) { return e.v; });
+  line.setAttribute('points', known.map(function (e) { return px(e.y) + ',' + py(e.v); }).join(' '));
+  function yAt(e) {
+    if (e.v) return py(e.v);
+    var a = null, b = null;
+    known.forEach(function (k) { if (k.y <= e.y) a = k; if (k.y > e.y && !b) b = k; });
+    if (!a && b) return Y1; // antes do primeiro valor: na base
+    if (a && !b) return py(a.v);
+    var f = (e.y - a.y) / (b.y - a.y);
+    return py(a.v) + (py(b.v) - py(a.v)) * f;
+  }
+  EV.forEach(function (e) {
+    var c = el('circle', { cx: px(e.y), cy: yAt(e), r: e.v ? 6 : 4, fill: e.v ? 'var(--accent)' : 'none', stroke: 'var(--accent)', 'stroke-width': 2 });
+    pts.appendChild(c);
+  });
+
+  var stepsEl = $('.c5-steps'), numEl = $('.c5-num'), kindEl = $('.c5-kind'), ct = $('.c5-ct'), cd = $('.c5-cd');
+  var cur = -1, shown = { v: 0 };
+  var stepBtns = EV.map(function (e, i) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'c5-step'; b.textContent = e.lab; b.setAttribute('aria-pressed', 'false');
+    b.addEventListener('click', function () { ctx.audio.play('tick', { vol: .5 }); goto(i); });
+    stepsEl.appendChild(b); return b;
+  });
+  function fmt(v) {
+    var f = function (n, d) { return n.toLocaleString('pt-BR', { maximumFractionDigits: d, minimumFractionDigits: 0 }); };
+    if (v < 1e6) return 'US$ ' + f(Math.round(v), 0);
+    if (v < 1e9) return 'US$ ' + f(v / 1e6, 0) + ' mi';
+    return 'US$ ' + f(v / 1e9, 2) + ' bi';
+  }
+  function goto(i, instant) {
+    if (i === cur) return;
+    cur = i; var e = EV[i];
+    stepBtns.forEach(function (b, n) { b.setAttribute('aria-pressed', n === i ? 'true' : 'false'); });
+    ct.textContent = e.t; cd.textContent = e.d;
+    var tx = px(e.y), ty = yAt(e);
+    if (instant || ctx.reduced) gsap.set(mark, { x: tx, y: ty }); else gsap.to(mark, { x: tx, y: ty, duration: .7, ease: 'power3.out' });
+    if (e.v) {
+      kindEl.textContent = e.k;
+      if (instant || ctx.reduced) { numEl.textContent = fmt(e.v); shown.v = e.v; }
+      else {
+        var from = shown.v || Math.max(1, e.v / 20);
+        var o = { p: 0 };
+        gsap.to(o, { p: 1, duration: .9, ease: 'power2.out', onUpdate: function () {
+          var v = Math.exp(Math.log(from) + (Math.log(e.v) - Math.log(from)) * o.p);
+          numEl.textContent = fmt(v);
+        }, onComplete: function () { numEl.textContent = fmt(e.v); shown.v = e.v; } });
+      }
+    } else {
+      kindEl.textContent = 'sem número verificado';
+      numEl.textContent = '—';
+    }
+  }
+  var chart = $('.c5-chart'), dragging = false;
+  function pick(ev) {
+    var r = chart.getBoundingClientRect();
+    var x = (ev.clientX - r.left) / r.width * W, best = 0, bd = 1e9;
+    EV.forEach(function (e, i) { var d = Math.abs(px(e.y) - x); if (d < bd) { bd = d; best = i; } });
+    if (best !== cur) { ctx.audio.play('tick', { vol: .4 }); goto(best); }
+  }
+  chart.addEventListener('pointerdown', function (e) { dragging = true; pick(e); });
+  chart.addEventListener('pointermove', function (e) { if (dragging && e.pointerType === 'mouse') pick(e); });
+  window.addEventListener('pointerup', function () { dragging = false; });
+  goto(1, true);
+
+  $('.c5-factbtn').addEventListener('click', function () { ctx.fact('ch-05'); });
+
+  /* ---------- ciclo de vida ---------- */
+  var powered = false;
+  function powerOn() {
+    if (powered) return; powered = true;
+    if (!ctx.reduced) {
+      gsap.fromTo($('.c5-screen'), { scaleY: .02, scaleX: .6, filter: 'brightness(3)' }, { scaleY: 1, scaleX: 1, filter: 'brightness(1)', duration: .7, ease: 'power3.out', onComplete: boot });
+    } else boot();
+  }
+  if (window.ScrollTrigger) {
+    ctx.ScrollTrigger.create({ trigger: glass, start: 'top 70%', once: true, onEnter: powerOn });
+  }
+
+  return {
+    enter: function () { root.classList.add('c5-on'); },
+    leave: function () { root.classList.remove('c5-on'); },
+    progress: function () {},
+    resize: function () {}
+  };
+});
+</script>

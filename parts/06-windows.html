@@ -1,0 +1,844 @@
+<section class="chapter" id="ch-06" data-era="win" data-title="Windows" data-year="1985–2008">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="c6-pc" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="17" rx="1" style="fill:var(--ic-a);stroke:var(--ic-b);stroke-width:2"/><rect x="7" y="7" width="18" height="11" style="fill:var(--ic-c)"/><rect x="11" y="23" width="10" height="3" style="fill:var(--ic-b)"/><rect x="7" y="26" width="18" height="2.5" style="fill:var(--ic-b)"/></symbol>
+    <symbol id="c6-note" viewBox="0 0 32 32"><path d="M7 3h14l5 5v21H7z" style="fill:var(--ic-a);stroke:var(--ic-b);stroke-width:2"/><path d="M11 12h10M11 17h10M11 22h7" style="stroke:var(--ic-c);stroke-width:2"/></symbol>
+    <symbol id="c6-mine" viewBox="0 0 32 32"><circle cx="16" cy="16" r="7" style="fill:var(--ic-b)"/><path d="M16 3v26M3 16h26M7 7l18 18M25 7L7 25" style="stroke:var(--ic-b);stroke-width:2.4"/><circle cx="13.5" cy="13.5" r="2" style="fill:var(--ic-a)"/></symbol>
+    <symbol id="c6-brush" viewBox="0 0 32 32"><path d="M26 3l3 3-12 14-4-4z" style="fill:var(--ic-a);stroke:var(--ic-b);stroke-width:2"/><path d="M12 18c-4 0-6 3-6 6 0 3-2 4-3 4 5 2 11 1 12-5z" style="fill:var(--ic-c);stroke:var(--ic-b);stroke-width:2"/></symbol>
+    <symbol id="c6-globe" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" style="fill:var(--ic-c);stroke:var(--ic-b);stroke-width:2"/><path d="M4 16h24M16 4c-7 6-7 18 0 24M16 4c7 6 7 18 0 24" style="fill:none;stroke:var(--ic-a);stroke-width:1.8"/></symbol>
+  </svg>
+
+  <div class="c6-intro">
+    <div class="container">
+      <h2 class="d2">Janelas</h2>
+      <p class="lead">Em 1985 o Windows era uma ideia de janelas. Em 2001, uma casa. Gire o tempo e veja a mesma máquina mudar de rosto, enquanto a empresa muda de tamanho.</p>
+      <p class="p c6-sub">Tudo aqui foi desenhado do zero: evoca cada época, sem copiar marca nem ícone.</p>
+    </div>
+  </div>
+
+  <div class="container c6-tm">
+    <div class="tm-ctl">
+      <label class="tm-lab" for="c6-range"><span class="tm-k">Controle do tempo</span> <output id="c6-out" class="mono">1995 · Windows 95</output></label>
+      <input id="c6-range" type="range" min="0" max="4" step="1" value="1" aria-describedby="c6-hint">
+      <div class="tm-ticks" role="group" aria-label="Ir direto a um ano">
+        <button type="button" data-i="0">1985</button><button type="button" data-i="1">1995</button><button type="button" data-i="2">2001</button><button type="button" data-i="3">2009</button><button type="button" data-i="4">2021</button>
+      </div>
+    </div>
+
+    <div class="desk" data-v="95" role="region" aria-label="Área de trabalho interativa da máquina do tempo">
+      <div class="desk-year" aria-hidden="true">1995</div>
+      <div class="desk-flash" aria-hidden="true"></div>
+      <div class="icons">
+        <button type="button" class="ic" data-app="sys"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-pc"/></svg><span>Este computador</span></button>
+        <button type="button" class="ic" data-app="notes"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-note"/></svg><span>LEIA-ME</span></button>
+        <button type="button" class="ic" data-app="mines"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-mine"/></svg><span>Minas</span></button>
+        <button type="button" class="ic" data-app="paint"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-brush"/></svg><span>Pincel</span></button>
+        <button type="button" class="ic" data-app="net"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-globe"/></svg><span>Internet</span></button>
+      </div>
+
+      <div class="wins">
+        <div class="w" data-app="sys" data-x="112" data-y="22" data-w="400" data-h="340" role="dialog" aria-label="Propriedades do sistema" hidden>
+          <div class="w-bar" tabindex="0" aria-label="Propriedades do sistema. Setas movem a janela."><span class="w-t">Propriedades do sistema</span><span class="w-cb"><button type="button" data-a="min" aria-label="Minimizar">_</button><button type="button" data-a="max" aria-label="Maximizar">□</button><button type="button" data-a="close" aria-label="Fechar">×</button></span></div>
+          <div class="w-body sys"><div class="sys-top"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-pc"/></svg><div><strong class="sys-os">Windows 95</strong><br><span class="sys-sub">Sistema, de uma época</span></div></div><dl class="sys-dl"></dl></div>
+        </div>
+
+        <div class="w" data-app="notes" data-x="530" data-y="58" data-w="380" data-h="310" role="dialog" aria-label="Bloco de notas" hidden>
+          <div class="w-bar" tabindex="0" aria-label="LEIA-ME.TXT, bloco de notas. Setas movem a janela."><span class="w-t">LEIA-ME.TXT – Bloco de notas</span><span class="w-cb"><button type="button" data-a="min" aria-label="Minimizar">_</button><button type="button" data-a="max" aria-label="Maximizar">□</button><button type="button" data-a="close" aria-label="Fechar">×</button></span></div>
+          <div class="w-body"><div class="np" tabindex="0" role="document" aria-label="Texto da época"></div></div>
+        </div>
+
+        <div class="w" data-app="mines" data-x="930" data-y="26" data-w="244" data-h="340" role="dialog" aria-label="Minas" hidden>
+          <div class="w-bar" tabindex="0" aria-label="Minas. Setas movem a janela."><span class="w-t">Minas</span><span class="w-cb"><button type="button" data-a="min" aria-label="Minimizar">_</button><button type="button" data-a="close" aria-label="Fechar">×</button></span></div>
+          <div class="w-body mn">
+            <div class="mn-top"><output class="mn-cnt mono" aria-label="Minas restantes">009</output><button type="button" class="b6 mn-face" aria-label="Reiniciar">:)</button><button type="button" class="b6 mn-flag" aria-pressed="false">Bandeira</button></div>
+            <div class="mn-grid" role="grid" aria-label="Campo de 8 por 8 com 9 minas"></div>
+          </div>
+        </div>
+
+        <div class="w" data-app="paint" data-x="130" data-y="170" data-w="470" data-h="370" role="dialog" aria-label="Pincel" hidden>
+          <div class="w-bar" tabindex="0" aria-label="Pincel. Setas movem a janela."><span class="w-t">sem título – Pincel</span><span class="w-cb"><button type="button" data-a="min" aria-label="Minimizar">_</button><button type="button" data-a="max" aria-label="Maximizar">□</button><button type="button" data-a="close" aria-label="Fechar">×</button></span></div>
+          <div class="w-body pt">
+            <div class="pt-tools" role="group" aria-label="Cores">
+              <button type="button" class="pt-c" data-c="#000000" style="--c:#000" aria-label="Preto"></button><button type="button" class="pt-c" data-c="#000080" style="--c:#000080" aria-label="Azul-marinho" aria-pressed="true"></button><button type="button" class="pt-c" data-c="#008080" style="--c:#008080" aria-label="Verde-azulado"></button><button type="button" class="pt-c" data-c="#c0392b" style="--c:#c0392b" aria-label="Vermelho"></button><button type="button" class="pt-c" data-c="#f1c40f" style="--c:#f1c40f" aria-label="Amarelo"></button><button type="button" class="pt-c" data-c="#27ae60" style="--c:#27ae60" aria-label="Verde"></button><button type="button" class="pt-c" data-c="#ffffff" style="--c:#fff" aria-label="Borracha (branco)"></button>
+              <button type="button" class="b6 pt-sz" aria-label="Alternar espessura do traço">Traço 4</button><button type="button" class="b6 pt-clr">Limpar</button>
+            </div>
+            <canvas class="pt-cv" width="440" height="230" aria-label="Tela de desenho. Desenhe com o mouse ou o dedo."></canvas>
+            <p class="pt-cap">Desenhe o logotipo da sua empresa. Ele sobrevive à viagem no tempo.</p>
+          </div>
+        </div>
+
+        <div class="w" data-app="net" data-x="290" data-y="80" data-w="540" data-h="390" role="dialog" aria-label="Internet" hidden>
+          <div class="w-bar" tabindex="0" aria-label="Internet, navegador fictício. Setas movem a janela."><span class="w-t">Internet – página interna</span><span class="w-cb"><button type="button" data-a="min" aria-label="Minimizar">_</button><button type="button" data-a="max" aria-label="Maximizar">□</button><button type="button" data-a="close" aria-label="Fechar">×</button></span></div>
+          <div class="w-body nt">
+            <div class="nt-bar"><button type="button" class="b6 nt-back" aria-label="Voltar" disabled>&lt;</button><span class="nt-url mono">memo://tidal-wave</span></div>
+            <div class="nt-pg" tabindex="0"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="smenu" hidden role="menu" aria-label="Menu Iniciar">
+        <div class="sm-side" aria-hidden="true"><span>Gates OS</span></div>
+        <div class="sm-list">
+          <button type="button" role="menuitem" data-app="sys"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-pc"/></svg>Propriedades do sistema</button>
+          <button type="button" role="menuitem" data-app="notes"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-note"/></svg>LEIA-ME</button>
+          <button type="button" role="menuitem" data-app="mines"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-mine"/></svg>Minas</button>
+          <button type="button" role="menuitem" data-app="paint"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-brush"/></svg>Pincel</button>
+          <button type="button" role="menuitem" data-app="net"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#c6-globe"/></svg>Internet</button>
+          <hr>
+          <button type="button" role="menuitem" data-act="reboot">Reiniciar a máquina</button>
+        </div>
+      </div>
+
+      <div class="taskbar">
+        <button type="button" class="start" aria-haspopup="menu" aria-expanded="false" aria-label="Menu Iniciar"><i class="st-ico" aria-hidden="true"></i><span class="st-lbl">Iniciar</span></button>
+        <div class="tasks"></div>
+        <div class="tray" aria-hidden="true"><i class="tr-vol"></i><span class="tr-clk mono">12:00</span></div>
+      </div>
+    </div>
+    <p class="hint c6-hint" id="c6-hint">Arraste o controle ou escolha um ano. Dê duplo clique nos ícones (ou toque), arraste as barras de título, abra o menu Iniciar. Em 1985, as janelas se arrumam lado a lado.</p>
+
+    <div class="prod" role="group" aria-label="Linha de produtos: toque para viajar até o ano">
+      <button type="button" data-i="0"><b>20/11/1985</b> Windows 1.0</button>
+      <button type="button" data-i="1"><b>8/8/1989</b> Office</button>
+      <button type="button" data-i="1"><b>22/5/1990</b> Windows 3.0</button>
+      <button type="button" data-i="1"><b>1992</b> Windows 3.1</button>
+      <button type="button" data-i="1"><b>24/8/1995</b> Windows 95</button>
+      <button type="button" data-i="2"><b>10/3/2000</b> Xbox anunciado</button>
+      <button type="button" data-i="2"><b>25/10/2001</b> Windows XP</button>
+      <button type="button" data-i="2"><b>15/11/2001</b> Xbox, US$ 299</button>
+    </div>
+  </div>
+
+  <div class="c6-apple">
+    <div class="container">
+      <div class="ap-grid">
+        <div class="ap-main">
+          <h3 class="d2">6 de agosto de 1997</h3>
+          <p class="lead">A rival cuja interface inspirara o Windows estava sem dinheiro. Em Boston, no Macworld, a notícia veio por quem a anunciou: Steve Jobs. Bill Gates apareceu por satélite e foi vaiado.</p>
+          <div class="ap-big"><span data-count="150" data-prefix="US$ " data-suffix=" mi">US$ 150 mi</span><small>em ações sem direito a voto da Apple</small></div>
+        </div>
+        <div class="ap-sat" aria-hidden="true"><div class="ap-scan"></div><p class="mono">SINAL · SATÉLITE<br>BOSTON · 6.8.1997</p><div class="ap-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      </div>
+      <div class="ap-doc">
+        <details open><summary>O que estava no acordo</summary><p>Investimento de US$ 150 milhões em ações sem voto. Office e Internet Explorer para o Mac por cinco anos. Licença cruzada de patentes.</p></details>
+        <details><summary>A cena</summary><p>Jobs anuncia no palco do Macworld Boston. Gates fala por satélite e é vaiado. Dizem que a plateia não esperava ver os dois rivais do mesmo lado.</p></details>
+        <details><summary>Cuidado com um número</summary><p>Alguns textos citam “US$ 200 milhões”. É a conversão de dólares australianos num site local. O valor do acordo é US$ 150 milhões.</p></details>
+      </div>
+      <div class="ap-rule" aria-label="Comparação de escala">
+        <p class="caption">Quanto é US$ 150 milhões, na régua da própria Microsoft?</p>
+        <div class="ap-bars" data-max="150">
+          <div style="--v:150"><span>Investimento na Apple, 1997</span><i></i><b>US$ 150 mi</b></div>
+          <div style="--v:61"><span>Levantado no IPO, 13/3/1986</span><i></i><b>US$ 61 mi</b></div>
+          <div style="--v:55"><span>Receita de 1983 (estimativa)</span><i></i><b>~US$ 55 mi</b></div>
+          <div style="--v:0.4"><span>Receita de 1976</span><i></i><b>US$ 16.005</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c6-court">
+    <div class="container">
+      <h3 class="d2">O tribunal</h3>
+      <p class="lead">Entre 1998 e 2004, a pergunta foi se um sistema operacional pode carregar um navegador dentro de si. Role pela ata. Toque num evento para iluminar quem fala na sala.</p>
+      <div class="ct-grid">
+        <figure class="ct-plan">
+          <svg viewBox="0 0 400 320" role="img" aria-label="Planta esquemática de uma sala de tribunal: juiz no alto, testemunha ao lado, mesa do governo à esquerda, mesa da Microsoft à direita e a plateia embaixo.">
+            <rect class="z z-bench" x="140" y="18" width="120" height="40" rx="3"/><text x="200" y="43" text-anchor="middle">Juiz</text>
+            <rect class="z z-wit" x="276" y="40" width="96" height="44" rx="3"/><text x="324" y="66" text-anchor="middle">Testemunha</text>
+            <rect class="z z-gov" x="50" y="120" width="128" height="46" rx="3"/><text x="114" y="148" text-anchor="middle">Governo</text>
+            <rect class="z z-ms" x="222" y="120" width="128" height="46" rx="3"/><text x="286" y="148" text-anchor="middle">Microsoft</text>
+            <g class="z z-gal" id="c6-gal"></g>
+            <text x="200" y="308" text-anchor="middle" class="ct-lab">plateia e imprensa</text>
+          </svg>
+          <figcaption class="caption">Planta esquemática, não a da sala real.</figcaption>
+          <div class="ct-out" aria-hidden="true">Fora da sala: Bruxelas</div>
+        </figure>
+        <ol class="ct-steps"></ol>
+      </div>
+
+      <div class="ty">
+        <h3 class="d3">O navegador embutido</h3>
+        <p class="p">O centro do caso. Alterne o ponto de vista e veja o que muda no desenho.</p>
+        <div class="ty-sw" role="group" aria-label="Ponto de vista"><button type="button" class="ty-b" data-s="gov" aria-pressed="true">Segundo o governo</button><button type="button" class="ty-b" data-s="ms" aria-pressed="false">Segundo a Microsoft</button></div>
+        <div class="ty-stack" data-side="gov">
+          <div class="ty-l ty-app">Aplicativos</div>
+          <div class="ty-l ty-br"><span>Navegador</span><em class="ty-tag"></em></div>
+          <div class="ty-l ty-os"><span>Sistema operacional</span></div>
+          <div class="ty-net" aria-hidden="true">Netscape e outros navegadores</div>
+        </div>
+        <p class="ty-txt" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="c6-pass">
+    <div class="container">
+      <h3 class="d2">A passagem de bastão</h3>
+      <p class="lead">Em janeiro de 2000, o homem que escrevera o primeiro BASIC deixou a cadeira de CEO. Depois, saiu aos poucos, em quatro portas. Role: o crachá muda a cada porta.</p>
+      <div class="ps-grid">
+        <ol class="ps-steps"></ol>
+        <aside class="ps-side">
+          <div class="badge" aria-live="polite">
+            <div class="bd-h"><span class="bd-co">Crachá de visitante do tempo</span></div>
+            <div class="bd-ph" aria-hidden="true"><svg viewBox="0 0 80 80"><circle cx="40" cy="30" r="14"/><path d="M12 76c0-18 12-28 28-28s28 10 28 28z"/></svg></div>
+            <div class="bd-n">William H. Gates III</div>
+            <div class="bd-r" id="c6-role">CEO</div>
+            <div class="bd-d mono" id="c6-bdate">1975–2000</div>
+            <div class="bd-row"><span>No comando</span><b id="c6-ceo">Ele mesmo</b></div>
+            <div class="bd-row"><span>Presença no dia a dia</span><span class="bd-pres" id="c6-pres" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+            <p class="bd-note">Escala ilustrativa, sem medida real.</p>
+          </div>
+          <div class="trk" aria-hidden="true"><div class="trk-f" id="c6-trk"></div><i></i><i></i><i></i><i></i><i></i></div>
+        </aside>
+      </div>
+
+      <figure class="rev">
+        <figcaption class="d3">Receita anual da Microsoft, em US$ bilhões</figcaption>
+        <div class="rev-b">
+          <div style="--v:60.4"><b>60,4</b><i></i><span>FY2008</span></div>
+          <div style="--v:86.8"><b>86,8</b><i></i><span>FY2014</span></div>
+          <div style="--v:125"><b>125</b><i></i><span>FY2019</span></div>
+          <div style="--v:143"><b>143</b><i></i><span>FY2020</span></div>
+        </div>
+        <p class="caption">Valores arredondados, segundo a Wikipedia. Em 1976 a receita foi de US$ 16.005. Em abril de 2019 a empresa passou de US$ 1 trilhão em valor de mercado.</p>
+      </figure>
+
+      <div class="ps-end">
+        <p class="p">No mesmo janeiro de 2000, Gates e Melinda lançaram uma fundação. O próximo capítulo é sobre o que ele fez com o dinheiro.</p>
+        <button type="button" class="btn c6-fact">Ressalvas deste capítulo</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+#ch-06{position:relative;overflow:clip;--sans:Tahoma,"Segoe UI",system-ui,sans-serif}
+#ch-06 button{font:inherit;color:inherit}
+#ch-06 .c6-intro{padding:clamp(72px,12vh,140px) 0 36px;color:#fff}
+#ch-06 .c6-intro .d2{color:#fff;text-shadow:3px 3px 0 #003c3c;letter-spacing:-.01em}
+#ch-06 .c6-intro .lead{color:#fff;max-width:56ch;text-shadow:1px 1px 0 #003c3c}
+#ch-06 .c6-sub{color:#cfeeee;margin-top:.6em}
+#ch-06 .c6-tm{padding-bottom:clamp(56px,10vh,110px)}
+#ch-06 .tm-ctl{background:#c0c0c0;color:#000;padding:14px 16px 12px;font-family:var(--sans);box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf;margin-bottom:10px}
+#ch-06 .tm-lab{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:8px;font-size:14px}
+#ch-06 .tm-k{font-weight:700}
+#ch-06 #c6-range{width:100%;height:44px;accent-color:#000080;cursor:grab;margin:0}
+#ch-06 #c6-range:active{cursor:grabbing}
+#ch-06 .tm-ticks{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+#ch-06 .tm-ticks button,#ch-06 .prod button,#ch-06 .b6,#ch-06 .ty-b{min-height:44px;background:#c0c0c0;border:0;cursor:pointer;font-family:var(--sans);color:#000;box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+#ch-06 .tm-ticks button[aria-pressed="true"],#ch-06 .ty-b[aria-pressed="true"]{box-shadow:inset 1px 1px #0a0a0a,inset -1px -1px #fff,inset 2px 2px #808080,inset -2px -2px #dfdfdf;font-weight:700;background:#b4b4b4}
+#ch-06 button:focus-visible,#ch-06 [tabindex]:focus-visible,#ch-06 summary:focus-visible,#ch-06 input:focus-visible{outline:2px dotted #ffb000;outline-offset:2px}
+
+/* ===== área de trabalho ===== */
+#ch-06 .desk{position:relative;height:640px;overflow:hidden;isolation:isolate;font:var(--fs)/1.35 var(--font);background:var(--dbg);transition:background-color .6s;border:3px solid #000;touch-action:manipulation;
+  --ic-a:#fff;--ic-b:#000;--ic-c:#8bd}
+#ch-06 .desk.warp{animation:c6warp .7s cubic-bezier(.2,.8,.2,1)}
+@keyframes c6warp{0%{filter:blur(0) saturate(1);transform:scale(1)}30%{filter:blur(6px) saturate(2.2) hue-rotate(40deg);transform:scale(1.025)}100%{filter:none;transform:none}}
+#ch-06 .desk-year{position:absolute;inset:0 0 var(--th) 0;display:grid;place-items:center;font:800 clamp(7rem,20vw,16rem)/1 "Bricolage Grotesque",system-ui,sans-serif;color:#fff;opacity:0;pointer-events:none;mix-blend-mode:overlay;z-index:1}
+#ch-06 .desk.warp .desk-year{animation:c6yr .9s ease-out}
+@keyframes c6yr{0%{opacity:0;transform:scale(.7)}25%{opacity:.95}100%{opacity:0;transform:scale(1.3)}}
+#ch-06 .desk-flash{position:absolute;inset:0;background:radial-gradient(circle,#fff 0,#fff0 70%);opacity:0;pointer-events:none;z-index:900}
+#ch-06 .desk.warp .desk-flash{animation:c6fl .5s ease-out}
+@keyframes c6fl{0%{opacity:.75}100%{opacity:0}}
+#ch-06 .icons{position:absolute;left:12px;top:12px;display:flex;flex-direction:column;flex-wrap:wrap;gap:6px;max-height:calc(100% - var(--th) - 20px);z-index:2}
+#ch-06 .ic{width:84px;min-height:72px;background:none;border:1px dotted transparent;display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px;color:var(--icfg);cursor:pointer;text-shadow:var(--icsh)}
+#ch-06 .ic svg{width:34px;height:34px;filter:drop-shadow(1px 1px 0 #0006)}
+#ch-06 .ic span{font-size:11.5px;line-height:1.15;text-align:center;padding:1px 3px;border-radius:var(--btnr)}
+#ch-06 .ic:hover span,#ch-06 .ic:focus-visible span{background:var(--selbg);color:var(--selfg);text-shadow:none}
+#ch-06 .wins{position:absolute;inset:0 0 var(--th) 0;z-index:3;pointer-events:none}
+#ch-06 .w{position:absolute;pointer-events:auto;display:flex;flex-direction:column;background:var(--frame);color:var(--wfg);border:var(--wbd);border-radius:var(--wr);box-shadow:var(--wsh);padding:var(--wpad);min-width:200px;overflow:hidden;-webkit-backdrop-filter:var(--wbf);backdrop-filter:var(--wbf);font:var(--fs)/1.35 var(--font);transition:border-radius .5s,box-shadow .5s,background-color .5s,opacity .2s}
+#ch-06 .w[hidden],#ch-06 .w.min{display:none}
+#ch-06 .desk.tiling .w{transition:left .45s,top .45s,width .45s,height .45s}
+#ch-06 .w.max{left:0!important;top:0!important;width:100%!important;height:100%!important;border-radius:0}
+#ch-06 .w-bar{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:var(--barh);padding:0 3px 0 6px;background:var(--barbgoff);color:var(--barfgoff);border-bottom:var(--barbd);border-radius:var(--barr);cursor:move;user-select:none;touch-action:none;font-weight:700;text-shadow:var(--bartsh)}
+#ch-06 .w.front .w-bar{background:var(--barbg);color:var(--barfg)}
+#ch-06 .w-t{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;flex:1;text-align:var(--bartx)}
+#ch-06 .w-cb{display:flex;gap:2px}
+#ch-06 .w-cb button{width:var(--cbs);height:var(--cbs);padding:0;display:grid;place-items:center;line-height:1;font-size:12px;font-weight:700;background:var(--cbbg);color:var(--cbfg);border:0;border-radius:var(--cbr);box-shadow:var(--cbsh);cursor:pointer}
+#ch-06 .w-cb button[data-a="close"]:hover{background:#d33;color:#fff}
+#ch-06 .w-body{flex:1;min-height:0;background:var(--paper);color:var(--ink);overflow:auto;padding:8px;margin-top:var(--bodygap);border-radius:var(--bodyr)}
+#ch-06 .b6{padding:2px 10px;border-radius:var(--btnr);background:var(--btnbg);box-shadow:var(--btnsh);min-height:30px}
+#ch-06 .b6:active,#ch-06 .b6[aria-pressed="true"]{box-shadow:var(--btnsh-d)}
+#ch-06 .sys-top{display:flex;gap:12px;align-items:center;padding:6px 4px 10px}
+#ch-06 .sys-top svg{width:46px;height:46px}
+#ch-06 .sys-os{font-size:1.25em}
+#ch-06 .sys-sub{opacity:.75}
+#ch-06 .sys-dl{margin:0;background:var(--field);box-shadow:var(--fieldsh);padding:6px 8px}
+#ch-06 .sys-dl div{display:grid;grid-template-columns:34% 1fr;gap:8px;padding:4px 0;border-bottom:1px dotted #8887}
+#ch-06 .sys-dl div:last-child{border-bottom:0}
+#ch-06 .sys-dl dt{opacity:.7}
+#ch-06 .sys-dl dd{margin:0}
+#ch-06 .sys-dl .gk dd{font-weight:700}
+#ch-06 .np{background:var(--field);box-shadow:var(--fieldsh);padding:10px 12px;height:100%;min-height:150px;overflow:auto;font:13px/1.55 "IBM Plex Mono",ui-monospace,Consolas,monospace;white-space:pre-wrap;color:#000}
+#ch-06 .mn-top{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-bottom:8px}
+#ch-06 .mn-cnt{background:#000;color:#f33;padding:2px 6px;font-size:18px;min-width:52px;text-align:center}
+#ch-06 .mn-face{min-width:44px;font-weight:700}
+#ch-06 .mn-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:0;background:var(--field);box-shadow:var(--fieldsh);padding:2px;max-width:216px;margin:0 auto}
+#ch-06 .mn-grid button{aspect-ratio:1;min-height:26px;padding:0;border:0;background:var(--btnbg);box-shadow:var(--btnsh);border-radius:0;font:700 14px/1 var(--font);cursor:pointer}
+#ch-06 .mn-grid button.o{background:var(--field);box-shadow:inset 0 0 0 1px #8885;cursor:default}
+#ch-06 .mn-grid button.x{background:#e55}
+#ch-06 .mn-grid [data-n="1"]{color:#0000ff}#ch-06 .mn-grid [data-n="2"]{color:#007b00}#ch-06 .mn-grid [data-n="3"]{color:#f00}#ch-06 .mn-grid [data-n="4"]{color:#000080}#ch-06 .mn-grid [data-n="5"]{color:#800000}#ch-06 .mn-grid [data-n="6"]{color:#008080}
+#ch-06 .pt{display:flex;flex-direction:column;gap:6px}
+#ch-06 .pt-tools{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+#ch-06 .pt-c{width:30px;height:30px;min-height:30px;padding:0;background:var(--c);border:2px solid #0006;border-radius:var(--btnr);cursor:pointer}
+#ch-06 .pt-c[aria-pressed="true"]{outline:2px solid #fa0;outline-offset:1px}
+#ch-06 .pt-cv{width:100%;height:auto;aspect-ratio:440/230;background:#fff;box-shadow:var(--fieldsh);touch-action:none;cursor:crosshair;display:block}
+#ch-06 .pt-cap{margin:0;font-size:11px;opacity:.75}
+#ch-06 .nt{display:flex;flex-direction:column;gap:6px;padding:6px}
+#ch-06 .nt-bar{display:flex;gap:6px;align-items:center}
+#ch-06 .nt-url{flex:1;background:var(--field);box-shadow:var(--fieldsh);padding:6px 8px;font-size:12px;min-height:30px;overflow:hidden;white-space:nowrap}
+#ch-06 .nt-pg{flex:1;background:#fff;color:#111;box-shadow:var(--fieldsh);padding:14px 16px;overflow:auto;font:14px/1.5 Georgia,"Times New Roman",serif}
+#ch-06 .nt-pg h4{margin:0 0 .3em;font:700 1.5em/1.1 Georgia,serif;color:#00008b}
+#ch-06 .nt-pg p{margin:.5em 0}
+#ch-06 .nt-pg a,#ch-06 .nt-pg button.lk{color:#00e;text-decoration:underline;background:none;border:0;padding:0;cursor:pointer;font:inherit}
+#ch-06 .nt-pg .stamp{display:inline-block;border:2px solid #a00;color:#a00;padding:0 6px;font:700 11px var(--sans);transform:rotate(-2deg)}
+#ch-06 .taskbar{position:absolute;left:0;right:0;bottom:0;height:var(--th);display:flex;align-items:center;gap:6px;padding:var(--tbpad);background:var(--tbbg);color:var(--tbfg);box-shadow:var(--tbsh);-webkit-backdrop-filter:var(--tbbf);backdrop-filter:var(--tbbf);z-index:800;transition:height .5s}
+#ch-06 .start{display:flex;align-items:center;gap:6px;height:calc(var(--th) - var(--tbpv));min-width:44px;padding:0 10px;background:var(--startbg);color:var(--startfg);box-shadow:var(--startsh);border:0;border-radius:var(--startr);cursor:pointer;font-weight:700;font-size:var(--startfs);font-style:var(--startst);flex:none}
+#ch-06 .st-ico{width:18px;height:18px;background:var(--stico);border-radius:var(--stir);flex:none;transition:border-radius .5s}
+#ch-06 .tasks{flex:1;display:flex;gap:4px;min-width:0;justify-content:var(--tbj)}
+#ch-06 .task{height:calc(var(--th) - var(--tbpv));min-width:44px;max-width:170px;padding:0 10px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background:var(--taskbg);color:var(--tbfg);border:0;border-radius:var(--taskr);box-shadow:var(--tasksh);cursor:pointer}
+#ch-06 .task.on{background:var(--taskon);box-shadow:var(--tasksh-on)}
+#ch-06 .task[hidden]{display:none}
+#ch-06 .tray{display:flex;gap:8px;align-items:center;padding:0 8px;font-size:11.5px;box-shadow:var(--traysh);height:calc(var(--th) - var(--tbpv))}
+#ch-06 .tr-vol{width:12px;height:10px;background:currentColor;clip-path:polygon(0 30%,35% 30%,70% 0,70% 100%,35% 70%,0 70%)}
+#ch-06 .smenu{position:absolute;bottom:var(--th);left:var(--smx);transform:var(--smt);z-index:850;display:flex;min-width:250px;background:var(--smbg);color:var(--smfg);box-shadow:var(--smsh);border-radius:var(--smr);overflow:hidden;-webkit-backdrop-filter:var(--tbbf);backdrop-filter:var(--tbbf)}
+#ch-06 .smenu[hidden]{display:none}
+#ch-06 .smenu:not([hidden]){animation:c6sm .18s ease-out}
+@keyframes c6sm{from{opacity:0;translate:0 10px}}
+#ch-06 .sm-side{width:26px;background:var(--smside);color:#fff;display:var(--smsd);align-items:flex-end;justify-content:center;padding:8px 0;writing-mode:vertical-rl;transform:rotate(180deg);font:700 16px var(--font);letter-spacing:.04em}
+#ch-06 .sm-list{flex:1;padding:4px;display:flex;flex-direction:column}
+#ch-06 .sm-list button{display:flex;align-items:center;gap:10px;min-height:42px;padding:0 12px;background:none;border:0;text-align:left;cursor:pointer;color:inherit;border-radius:var(--btnr)}
+#ch-06 .sm-list button:hover,#ch-06 .sm-list button:focus-visible{background:var(--selbg);color:var(--selfg)}
+#ch-06 .sm-list svg{width:24px;height:24px;flex:none;--ic-a:#fff;--ic-b:#000;--ic-c:#8bd}
+#ch-06 .sm-list hr{border:0;border-top:1px solid #8886;margin:4px 6px}
+
+/* ----- eras ----- */
+#ch-06 .desk[data-v="85"]{--dbg:#f2f0e6 repeating-linear-gradient(45deg,#0000000f 0 2px,transparent 2px 7px);--font:"Helvetica Neue",Helvetica,Arial,sans-serif;--fs:12px;--frame:#fff;--wpad:0;--wfg:#000;--wbd:2px solid #000;--wr:0;--wsh:4px 4px 0 #000;--wbf:none;--barh:22px;--barbg:#000;--barfg:#fff;--barbgoff:#fff;--barfgoff:#000;--barbd:2px solid #000;--barr:0;--bartx:center;--bartsh:none;--cbs:18px;--cbbg:#fff;--cbfg:#000;--cbr:0;--cbsh:inset 0 0 0 1px #000;--paper:#fff;--ink:#000;--field:#fff;--fieldsh:inset 0 0 0 1px #000;--bodygap:0;--bodyr:0;--btnbg:#fff;--btnsh:inset 0 0 0 1px #000;--btnsh-d:inset 0 0 0 2px #000;--btnr:0;--th:36px;--tbpv:8px;--tbpad:0 6px;--tbbg:#fff;--tbfg:#000;--tbsh:inset 0 2px #000;--tbbf:none;--startbg:#fff;--startfg:#000;--startsh:inset 0 0 0 2px #000;--startr:0;--startfs:12px;--startst:normal;--stico:#000;--stir:0;--taskbg:#fff;--taskr:0;--tasksh:inset 0 0 0 1px #000;--taskon:#000;--tasksh-on:none;--traysh:none;--tbj:flex-start;--smx:6px;--smt:none;--smbg:#fff;--smfg:#000;--smsh:inset 0 0 0 2px #000,4px 4px 0 #000;--smr:0;--smside:#000;--smsd:flex;--selbg:#000;--selfg:#fff;--icfg:#000;--icsh:none;--ic-a:#fff;--ic-b:#000;--ic-c:#fff}
+#ch-06 .desk[data-v="85"] .task.on{color:#fff}
+#ch-06 .desk[data-v="95"]{--dbg:#008080;--font:Tahoma,"MS Sans Serif",Verdana,sans-serif;--fs:12px;--frame:#c0c0c0;--wpad:3px;--wfg:#000;--wbd:0;--wr:0;--wsh:inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px #808080,inset 2px 2px #fff,5px 5px 0 #0004;--wbf:none;--barh:20px;--barbg:linear-gradient(90deg,#000080,#1084d0);--barfg:#fff;--barbgoff:linear-gradient(90deg,#808080,#b4b4b4);--barfgoff:#c0c0c0;--barbd:0;--barr:0;--bartx:left;--bartsh:none;--cbs:16px;--cbbg:#c0c0c0;--cbfg:#000;--cbr:0;--cbsh:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080;--paper:#c0c0c0;--ink:#000;--field:#fff;--fieldsh:inset -1px -1px #fff,inset 1px 1px #808080,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;--bodygap:3px;--bodyr:0;--btnbg:#c0c0c0;--btnsh:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf;--btnsh-d:inset 1px 1px #0a0a0a,inset -1px -1px #fff,inset 2px 2px #808080;--btnr:0;--th:36px;--tbpv:8px;--tbpad:0 4px;--tbbg:#c0c0c0;--tbfg:#000;--tbsh:inset 0 1px #dfdfdf,inset 0 2px #fff;--tbbf:none;--startbg:#c0c0c0;--startfg:#000;--startsh:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf;--startr:0;--startfs:13px;--startst:normal;--stico:linear-gradient(135deg,#000080 50%,#008080 50%);--stir:0;--taskbg:#c0c0c0;--taskr:0;--tasksh:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf;--taskon:#dcdcdc;--tasksh-on:inset 1px 1px #0a0a0a,inset -1px -1px #fff,inset 2px 2px #808080;--traysh:inset 1px 1px #808080,inset -1px -1px #fff;--tbj:flex-start;--smx:4px;--smt:none;--smbg:#c0c0c0;--smfg:#000;--smsh:inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px #808080,inset 2px 2px #fff,4px 4px 0 #0004;--smr:0;--smside:linear-gradient(0deg,#000080,#1084d0);--smsd:flex;--selbg:#000080;--selfg:#fff;--icfg:#fff;--icsh:1px 1px 0 #000;--ic-a:#fff;--ic-b:#000;--ic-c:#7fd}
+#ch-06 .desk[data-v="01"]{--dbg:radial-gradient(130% 62% at 22% 118%,#58b232 0 58%,transparent 59%),radial-gradient(110% 55% at 92% 124%,#3c9a24 0 52%,transparent 53%),linear-gradient(#2a6fd6,#78b6f0 62%,#cfe8fb);--font:"Trebuchet MS",Tahoma,Verdana,sans-serif;--fs:12.5px;--frame:#0a4fd0;--wpad:0 3px 3px;--wfg:#000;--wbd:0;--wr:9px 9px 2px 2px;--wsh:0 6px 18px #0009;--wbf:none;--barh:28px;--barbg:linear-gradient(#4a96fa,#0a5fe0 12%,#0a52d4 85%,#0a40b4);--barfg:#fff;--barbgoff:linear-gradient(#8aaeea,#6d93de 85%);--barfgoff:#e8eefc;--barbd:0;--barr:8px 8px 0 0;--bartx:left;--bartsh:1px 1px 0 #0a2a80;--cbs:21px;--cbbg:linear-gradient(135deg,#6a9df5,#2457d4);--cbfg:#fff;--cbr:4px;--cbsh:inset 0 0 0 1px #fffa;--paper:#ece9d8;--ink:#000;--field:#fff;--fieldsh:inset 0 0 0 1px #7f9db9;--bodygap:0;--bodyr:0;--btnbg:linear-gradient(#fff,#ece9d8 85%,#d6d0c0);--btnsh:inset 0 0 0 1px #003c74;--btnsh-d:inset 0 0 0 2px #e68b2c;--btnr:4px;--th:40px;--tbpv:6px;--tbpad:0 0 0 0;--tbbg:linear-gradient(#3b78e6,#245edc 12%,#245edc 88%,#1941a5);--tbfg:#fff;--tbsh:none;--tbbf:none;--startbg:linear-gradient(#5cb85c,#3c9a3c 20%,#2f8a2f 85%,#1f6d1f);--startfg:#fff;--startsh:2px 0 4px #0006;--startr:0 16px 16px 0;--startfs:18px;--startst:italic;--stico:radial-gradient(circle at 30% 30%,#ffe 0,#fc6 40%,#d33 100%);--stir:50%;--taskbg:linear-gradient(#3d82f0,#2a62d8);--taskr:4px;--tasksh:inset 0 0 0 1px #0a3aa8;--taskon:#1941a5;--tasksh-on:inset 1px 1px 3px #000a;--traysh:inset 1px 0 #0a3aa8;--tbj:flex-start;--smx:0;--smt:none;--smbg:#fff;--smfg:#000;--smsh:0 0 0 3px #245edc,4px -4px 14px #0008;--smr:8px 8px 0 0;--smside:linear-gradient(0deg,#245edc,#5b9cf5);--smsd:flex;--selbg:#316ac5;--selfg:#fff;--icfg:#fff;--icsh:1px 1px 2px #000;--ic-a:#fff;--ic-b:#123;--ic-c:#9cf}
+#ch-06 .desk[data-v="09"]{--dbg:radial-gradient(ellipse at 72% 8%,#a8e4ff 0,#2f86d8 24%,#0d3c80 62%,#06214a);--font:"Segoe UI",Tahoma,Verdana,sans-serif;--fs:12.5px;--frame:rgba(176,214,250,.5);--wpad:7px;--wfg:#000;--wbd:1px solid #fffa;--wr:9px;--wsh:0 10px 30px #0008,inset 0 0 0 1px #0005;--wbf:blur(12px) saturate(1.5);--barh:24px;--barbg:transparent;--barfg:#000;--barbgoff:transparent;--barfgoff:#334;--barbd:0;--barr:0;--bartx:left;--bartsh:0 0 8px #fff,0 0 3px #fff;--cbs:20px;--cbbg:linear-gradient(#f2f6fb,#b8cce4);--cbfg:#123;--cbr:0 0 4px 4px;--cbsh:inset 0 0 0 1px #5a7aa6;--paper:#f0f4fa;--ink:#101828;--field:#fff;--fieldsh:inset 0 0 0 1px #8aa;--bodygap:0;--bodyr:3px;--btnbg:linear-gradient(#f6f8fb,#dfe6ef 50%,#cbd5e3 50%,#dbe3ee);--btnsh:inset 0 0 0 1px #707070,inset 0 0 0 2px #fffa;--btnsh-d:inset 0 0 0 1px #2c628b;--btnr:3px;--th:44px;--tbpv:6px;--tbpad:0 8px;--tbbg:linear-gradient(#3c5f90aa,#10223ed8 50%,#050c18e6);--tbfg:#fff;--tbsh:inset 0 1px #fff7;--tbbf:blur(10px);--startbg:radial-gradient(circle at 50% 30%,#a8e8ff,#2a8ae0 55%,#0a3c90);--startfg:#fff;--startsh:0 0 12px #5cf8,inset 0 0 0 2px #fff6;--startr:50%;--startfs:0;--startst:normal;--stico:transparent;--stir:50%;--taskbg:linear-gradient(#ffffff30,#ffffff10);--taskr:4px;--tasksh:inset 0 0 0 1px #fff5;--taskon:linear-gradient(#ffffff55,#7ab6ff44);--tasksh-on:inset 0 0 0 1px #fffa,0 0 10px #4af6;--traysh:none;--tbj:flex-start;--smx:6px;--smt:none;--smbg:rgba(24,48,86,.78);--smfg:#fff;--smsh:0 0 0 1px #fff6,0 10px 30px #000a;--smr:8px;--smside:transparent;--smsd:none;--selbg:#ffffff33;--selfg:#fff;--icfg:#fff;--icsh:0 1px 3px #000;--ic-a:#fff;--ic-b:#0b2a55;--ic-c:#7cf}
+#ch-06 .desk[data-v="21"]{--dbg:radial-gradient(48% 55% at 28% 38%,#7aa8ff 0,transparent 70%),radial-gradient(45% 50% at 74% 62%,#d09bff 0,transparent 70%),radial-gradient(40% 45% at 56% 24%,#6ee7d8cc 0,transparent 70%),#e4eaf8;--font:"Segoe UI Variable","Segoe UI",system-ui,sans-serif;--fs:13px;--frame:#fff;--wpad:0;--wfg:#111;--wbd:1px solid #0002;--wr:12px;--wsh:0 14px 44px #0003;--wbf:none;--barh:34px;--barbg:#f3f5fa;--barfg:#111;--barbgoff:#f9fafc;--barfgoff:#666;--barbd:0;--barr:0;--bartx:left;--bartsh:none;--cbs:28px;--cbbg:transparent;--cbfg:#111;--cbr:6px;--cbsh:none;--paper:#fff;--ink:#111;--field:#f6f7fb;--fieldsh:inset 0 0 0 1px #0002;--bodygap:0;--bodyr:0;--btnbg:#f6f7fb;--btnsh:inset 0 0 0 1px #0002;--btnsh-d:inset 0 0 0 1px #2d5bff;--btnr:7px;--th:52px;--tbpv:10px;--tbpad:0 12px;--tbbg:rgba(244,246,252,.78);--tbfg:#111;--tbsh:inset 0 1px #fff,0 -1px #0001;--tbbf:blur(22px) saturate(1.6);--startbg:transparent;--startfg:#111;--startsh:none;--startr:8px;--startfs:0;--startst:normal;--stico:linear-gradient(135deg,#2d5bff,#7a5cff);--stir:6px;--taskbg:transparent;--taskr:7px;--tasksh:none;--taskon:#ffffffc0;--tasksh-on:inset 0 -3px #2d5bff;--traysh:none;--tbj:center;--smx:50%;--smt:translateX(-50%);--smbg:rgba(246,248,253,.9);--smfg:#111;--smsh:0 0 0 1px #0002,0 20px 50px #0004;--smr:12px;--smside:transparent;--smsd:none;--selbg:#2d5bff1c;--selfg:#111;--icfg:#14213d;--icsh:0 0 6px #fff;--ic-a:#fff;--ic-b:#2a3555;--ic-c:#bcd0ff}
+#ch-06 .desk[data-v="21"] .sm-list button{border-radius:8px}
+#ch-06 .desk[data-v="09"] .task{color:#fff}
+#ch-06 .desk[data-v="09"] .w-bar,#ch-06 .desk[data-v="21"] .w-bar{font-weight:400}
+#ch-06 .desk[data-v="09"] .smenu .sm-list svg{filter:none}
+#ch-06 .prod{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+#ch-06 .prod button{flex:1 1 150px;text-align:left;padding:6px 10px;font-size:13px;line-height:1.25}
+#ch-06 .prod b{display:block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px}
+#ch-06 .c6-hint{color:#e8fafa;margin-top:12px}
+
+/* ===== Apple ===== */
+#ch-06 .c6-apple{background:#f4f3ef;color:#111;padding:clamp(72px,14vh,160px) 0;position:relative}
+#ch-06 .c6-apple .d2,#ch-06 .c6-apple .lead,#ch-06 .c6-apple p{color:#111}
+#ch-06 .c6-apple .d2{margin-bottom:.35em;font-weight:800;letter-spacing:-.03em}
+#ch-06 .ap-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(24px,5vw,72px);align-items:center}
+#ch-06 .ap-big{margin-top:28px;display:flex;flex-direction:column}
+#ch-06 .ap-big>span{font:800 clamp(3.6rem,10vw,9rem)/.95 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.04em}
+#ch-06 .ap-big small{font-size:1rem;margin-top:8px;color:#444}
+#ch-06 .ap-sat{aspect-ratio:4/3;background:#07090c;border-radius:14px;position:relative;overflow:hidden;color:#9fe;padding:18px;box-shadow:0 0 0 8px #d9d8d2,0 0 0 9px #0003;display:flex;flex-direction:column;justify-content:space-between}
+#ch-06 .ap-sat p{margin:0;color:#9fe!important;font-size:.85rem;line-height:1.6}
+#ch-06 .ap-scan{position:absolute;inset:0;background:repeating-linear-gradient(#0000 0 2px,#0006 2px 3px);animation:c6sc 6s linear infinite}
+@keyframes c6sc{to{background-position:0 60px}}
+#ch-06 .ap-wave{display:flex;align-items:flex-end;gap:5px;height:44%}
+#ch-06 .ap-wave i{flex:1;background:#9fe;opacity:.8;animation:c6wv 1.1s ease-in-out infinite alternate}
+#ch-06 .ap-wave i:nth-child(3n){animation-duration:.7s}#ch-06 .ap-wave i:nth-child(4n){animation-duration:1.5s;animation-delay:-.4s}#ch-06 .ap-wave i:nth-child(5n){animation-duration:.9s;animation-delay:-.2s}
+@keyframes c6wv{from{height:12%}to{height:100%}}
+#ch-06 .ap-doc{margin-top:48px;border-top:3px solid #111;display:grid;grid-template-columns:repeat(3,1fr);gap:0 28px}
+#ch-06 .ap-doc details{padding:14px 0;border-bottom:1px solid #1114}
+#ch-06 .ap-doc summary{font-weight:700;cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:1.05rem}
+#ch-06 .ap-doc p{margin:.4em 0 0;max-width:46ch}
+#ch-06 .ap-rule{margin-top:52px;max-width:760px}
+#ch-06 .ap-rule .caption{color:#444}
+#ch-06 .ap-bars>div{display:grid;grid-template-columns:minmax(150px,230px) 1fr auto;gap:12px;align-items:center;margin:10px 0}
+#ch-06 .ap-bars i{height:18px;background:#111;width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1);min-width:2px;display:block}
+#ch-06 .ap-bars.in i{width:calc(var(--v)/150*100%)}
+#ch-06 .ap-bars span{font-size:.9rem}#ch-06 .ap-bars b{font:600 .9rem "IBM Plex Mono",monospace}
+
+/* ===== tribunal ===== */
+#ch-06 .c6-court{background:#1b1713 linear-gradient(#1b1713,#14110e);color:#ece6d3;padding:clamp(72px,14vh,160px) 0;position:relative}
+#ch-06 .c6-court .d2,#ch-06 .c6-court .d3{color:#f6efd9}
+#ch-06 .c6-court .lead{color:#d8d0b8}
+#ch-06 .ct-grid{display:grid;grid-template-columns:minmax(280px,.9fr) 1.2fr;gap:clamp(24px,5vw,64px);margin-top:48px;align-items:start}
+#ch-06 .ct-plan{position:sticky;top:84px;margin:0}
+#ch-06 .ct-plan svg{width:100%;height:auto;display:block;background:#241e18;border:1px solid #6b5a3e;border-radius:6px}
+#ch-06 .ct-plan .z{fill:#3a3027;stroke:#7d6a49;stroke-width:1.5;transition:fill .35s,stroke .35s,filter .35s}
+#ch-06 .ct-plan text{fill:#cdbf9c;font:12px var(--sans);pointer-events:none}
+#ch-06 .ct-plan .z-gal rect{fill:#2e261e;stroke:#6b5a3e;stroke-width:1;transition:fill .35s}
+#ch-06 .ct-plan[data-z~="gov"] .z-gov,#ch-06 .ct-plan[data-z~="ms"] .z-ms,#ch-06 .ct-plan[data-z~="bench"] .z-bench,#ch-06 .ct-plan[data-z~="wit"] .z-wit{fill:#e8c46a;stroke:#ffe9a6;filter:drop-shadow(0 0 8px #e8c46a99)}
+#ch-06 .ct-plan[data-z~="bench"] .z-bench+text,#ch-06 .ct-plan[data-z~="wit"] .z-wit+text,#ch-06 .ct-plan[data-z~="gov"] .z-gov+text,#ch-06 .ct-plan[data-z~="ms"] .z-ms+text{fill:#1d1810;font-weight:700}
+#ch-06 .ct-plan[data-z~="gal"] .z-gal rect{fill:#c98f4a;stroke:#ffd9a0}
+#ch-06 .ct-plan .ct-lab{fill:#8f8265}
+#ch-06 .ct-plan figcaption{color:#a79a7c;margin-top:8px}
+#ch-06 .ct-out{margin-top:10px;font:700 12px var(--sans);color:#a79a7c;border:1px dashed #6b5a3e;padding:8px 10px;opacity:.5;transition:opacity .3s,color .3s,border-color .3s}
+#ch-06 .ct-plan[data-z~="out"] .ct-out{opacity:1;color:#ffe9a6;border-color:#ffe9a6}
+#ch-06 .ct-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+#ch-06 .ct-steps button{display:block;width:100%;text-align:left;background:#efe8d3;color:#1d1810;border:0;border-radius:2px;padding:16px 18px 16px 22px;cursor:pointer;position:relative;box-shadow:0 1px 0 #0004;min-height:44px;opacity:.58;transition:opacity .3s,transform .3s,box-shadow .3s;border-left:6px solid #b8aa83}
+#ch-06 .ct-steps button[aria-current="true"]{opacity:1;transform:translateX(8px);box-shadow:0 10px 30px #0008;border-left-color:#b02a1c}
+#ch-06 .ct-steps .dt{font:600 .85rem "IBM Plex Mono",monospace;color:#6a5a38}
+#ch-06 .ct-steps .tt{display:block;font:700 1.2rem/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:3px 0 5px}
+#ch-06 .ct-steps .tx{display:block;font-size:.98rem;line-height:1.5;max-width:52ch}
+#ch-06 .ct-steps .stp{position:absolute;right:14px;top:14px;border:2px solid #b02a1c;color:#b02a1c;font:700 .7rem var(--sans);padding:1px 6px;transform:rotate(4deg);opacity:0;transition:opacity .3s}
+#ch-06 .ct-steps button[aria-current="true"] .stp{opacity:.9}
+#ch-06 .ty{margin-top:clamp(64px,10vh,120px);max-width:760px}
+#ch-06 .ty-sw{display:flex;gap:8px;margin:18px 0}
+#ch-06 .ty-b{padding:6px 16px}
+#ch-06 .ty-stack{position:relative;display:grid;gap:6px;max-width:460px;font-family:var(--sans)}
+#ch-06 .ty-l{padding:16px 18px;color:#111;font-weight:700;border:2px solid #111;transition:all .6s cubic-bezier(.2,.8,.2,1)}
+#ch-06 .ty-app{background:#bdb;}
+#ch-06 .ty-br{background:#9bd;display:flex;justify-content:space-between;gap:10px;align-items:center;order:2}
+#ch-06 .ty-os{background:#dcdcdc;order:3}
+#ch-06 .ty-app{order:1}
+#ch-06 .ty-tag{font:600 .75rem var(--sans);font-style:normal;padding:2px 8px;background:#111;color:#fff}
+#ch-06 .ty-net{order:4;border:2px dashed #8e8165;color:#bfb08c;padding:10px 18px;font-size:.9rem;margin-top:4px;transition:opacity .5s}
+#ch-06 .ty-stack[data-side="gov"] .ty-br{margin-bottom:10px;border-style:dashed;transform:translateY(0)}
+#ch-06 .ty-stack[data-side="gov"] .ty-br .ty-tag::before{content:"amarrado ao Windows"}
+#ch-06 .ty-stack[data-side="gov"] .ty-os{box-shadow:0 0 0 3px #e8c46a}
+#ch-06 .ty-stack[data-side="ms"] .ty-br{margin-bottom:-2px;border-bottom:0;background:#8fc7e0}
+#ch-06 .ty-stack[data-side="ms"] .ty-os{border-top:0;background:#cfd6dc;margin-top:-6px;box-shadow:0 0 0 3px #7fd0ff}
+#ch-06 .ty-stack[data-side="ms"] .ty-br .ty-tag::before{content:"parte do sistema"}
+#ch-06 .ty-stack[data-side="ms"] .ty-net{opacity:.3}
+#ch-06 .ty-txt{margin-top:16px;font-size:1.05rem;line-height:1.55;max-width:56ch;min-height:5.5em;color:#e9e1c9}
+
+/* ===== passagem ===== */
+#ch-06 .c6-pass{background:linear-gradient(#008080 0,#0a5d6a 35%,#06222b 100%);color:#fff;padding:clamp(72px,14vh,160px) 0 clamp(80px,14vh,160px)}
+#ch-06 .c6-pass .d2,#ch-06 .c6-pass .d3,#ch-06 .c6-pass .lead,#ch-06 .c6-pass .p{color:#fff}
+#ch-06 .ps-grid{display:grid;grid-template-columns:1.2fr minmax(260px,.8fr);gap:clamp(24px,6vw,80px);margin-top:48px;align-items:start}
+#ch-06 .ps-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:clamp(18px,3vh,40px)}
+#ch-06 .ps-steps button{display:block;width:100%;text-align:left;background:#0003;border:0;border-left:4px solid #ffffff55;padding:16px 18px;cursor:pointer;color:#fff;min-height:44px;opacity:.55;transition:opacity .3s,background .3s,border-color .3s}
+#ch-06 .ps-steps button[aria-current="true"]{opacity:1;background:#0007;border-left-color:#ffd166}
+#ch-06 .ps-steps .dt{font:600 .85rem "IBM Plex Mono",monospace;color:#ffd166}
+#ch-06 .ps-steps .tt{display:block;font:700 1.35rem/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:2px 0 6px}
+#ch-06 .ps-steps .tx{display:block;line-height:1.5;max-width:52ch;color:#e8f4f4}
+#ch-06 .ps-side{position:sticky;top:90px}
+#ch-06 .badge{background:#f2f2ec;color:#111;width:min(100%,300px);margin:0 auto;border-radius:12px;padding:0 0 16px;box-shadow:0 0 0 2px #0003,0 24px 50px #0007;overflow:hidden;font-family:var(--sans)}
+#ch-06 .bd-h{background:#000080;color:#fff;padding:12px;text-align:center;font-weight:700;font-size:.8rem}
+#ch-06 .bd-ph{width:96px;height:96px;margin:16px auto 8px;background:#dde;border-radius:50%;display:grid;place-items:center;overflow:hidden}
+#ch-06 .bd-ph svg{width:80px;fill:#889}
+#ch-06 .bd-n{text-align:center;font-weight:700;font-size:1.05rem}
+#ch-06 .bd-r{text-align:center;font:800 1.3rem/1.15 "Bricolage Grotesque",system-ui,sans-serif;color:#000080;padding:4px 14px;min-height:2.5em;display:grid;place-items:center}
+#ch-06 .bd-d{text-align:center;font-size:.85rem;color:#555;margin-bottom:10px}
+#ch-06 .bd-row{display:flex;justify-content:space-between;gap:8px;padding:6px 18px;font-size:.85rem;border-top:1px solid #0002;align-items:center}
+#ch-06 .bd-pres{display:flex;gap:3px}#ch-06 .bd-pres i{width:14px;height:10px;background:#cdd;transition:background .4s}#ch-06 .bd-pres i.on{background:#000080}
+#ch-06 .bd-note{margin:6px 18px 0;font-size:.7rem;color:#777}
+#ch-06 .trk{position:relative;height:6px;background:#ffffff33;margin:26px auto 0;width:min(100%,300px);border-radius:3px;display:flex;justify-content:space-between;align-items:center}
+#ch-06 .trk-f{position:absolute;left:0;top:0;height:100%;background:#ffd166;border-radius:3px;transition:width .6s cubic-bezier(.2,.8,.2,1);width:0}
+#ch-06 .trk i{position:relative;width:14px;height:14px;background:#06222b;border:3px solid #ffffff88;border-radius:50%}
+#ch-06 .rev{margin:clamp(72px,12vh,140px) 0 0;max-width:820px}
+#ch-06 .rev-b{display:flex;gap:clamp(10px,3vw,36px);align-items:flex-end;height:260px;margin:22px 0 10px}
+#ch-06 .rev-b>div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;gap:6px}
+#ch-06 .rev-b i{display:block;width:100%;background:#ffd166;height:0;transition:height 1.2s cubic-bezier(.2,.8,.2,1)}
+#ch-06 .rev-b.in i{height:calc(var(--v)/143*80%)}
+#ch-06 .rev-b b{font:700 1.15rem "IBM Plex Mono",monospace}#ch-06 .rev-b span{font:.85rem var(--sans);color:#cfe}
+#ch-06 .rev .caption{color:#bfe3e3;max-width:60ch}
+#ch-06 .ps-end{margin-top:clamp(56px,10vh,110px);display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+#ch-06 .ps-end .p{max-width:48ch}
+
+#ch-06 .c6-fact{background:#c0c0c0;color:#000;border:0;border-radius:0;font-family:var(--sans);min-height:44px;padding:0 20px;box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+#ch-06 .c6-fact:active{box-shadow:inset 1px 1px #0a0a0a,inset -1px -1px #fff,inset 2px 2px #808080}
+@media(min-width:901px){#ch-06 .container{padding-right:calc(var(--gutter) + max(0px,min(150px - var(--gutter),788px - 50vw - var(--gutter))))}}
+@media (max-width:900px){
+  #ch-06 .ap-grid,#ch-06 .ct-grid,#ch-06 .ps-grid{grid-template-columns:1fr}
+  #ch-06 .ap-doc{grid-template-columns:1fr}
+  #ch-06 .ct-plan{position:sticky;top:56px;z-index:5;background:#1b1713;padding:6px 0}
+  #ch-06 .ct-plan svg{max-height:27vh}
+  #ch-06 .ct-plan figcaption{display:none}
+  #ch-06 .ps-side{position:sticky;top:56px;z-index:5;order:-1}
+  #ch-06 .badge{width:100%;max-width:340px;display:grid;grid-template-columns:70px 1fr;column-gap:8px;padding-bottom:6px}
+  #ch-06 .badge>*{grid-column:1/-1}
+  #ch-06 .trk{display:none}
+  #ch-06 .badge::after{content:"";grid-column:1/-1;height:4px;margin-top:6px;background:linear-gradient(#000080,#000080) 0 0/var(--pg,0%) 100% no-repeat,#cdd}
+  #ch-06 .bd-ph{width:56px;height:56px;margin:8px;grid-column:1;grid-row:2/5}
+  #ch-06 .bd-ph svg{width:46px}
+  #ch-06 .bd-n,#ch-06 .bd-r,#ch-06 .bd-d{grid-column:2;text-align:left}
+  #ch-06 .bd-r{min-height:0;display:block;padding:0;font-size:1.05rem}
+  #ch-06 .bd-note{display:none}
+  #ch-06 .ap-sat{max-width:420px}
+}
+@media (max-width:700px){
+  #ch-06 .desk{height:600px}
+  #ch-06 .wins{top:78px}
+  #ch-06 .w{left:0!important;top:0!important;width:100%!important;height:100%!important;border-radius:0}
+  #ch-06 .w:not(.front){display:none}
+  #ch-06 .w-bar{cursor:default}
+  #ch-06 .w-cb button[data-a="max"]{display:none}
+  #ch-06 .icons{flex-direction:row;flex-wrap:wrap;right:8px;left:8px;max-height:none}
+  #ch-06 .ic{width:calc(20% - 5px);min-height:66px;padding:2px}
+  #ch-06 .icons{z-index:4;gap:4px}
+  #ch-06 .ic span{font-size:10px}
+  #ch-06 .tray .tr-clk,#ch-06 .tray{display:none}
+  #ch-06 .tm-ticks button{font-size:12px;padding:0}
+  #ch-06 .ap-bars>div{grid-template-columns:1fr auto}
+  #ch-06 .ap-bars i{grid-column:1/-1;grid-row:2}
+  #ch-06 .ct-steps button[aria-current="true"]{transform:none}
+  #ch-06 .smenu{min-width:230px}
+  #ch-06 .desk[data-v="21"] .smenu{left:50%}
+}
+@media (prefers-reduced-motion:reduce){
+  #ch-06 .desk.warp,#ch-06 .desk.warp .desk-year,#ch-06 .desk.warp .desk-flash,#ch-06 .ap-scan,#ch-06 .ap-wave i{animation:none}
+  #ch-06 .ap-bars i,#ch-06 .rev-b i,#ch-06 .trk-f{transition:none}
+}
+</style>
+
+<script>
+Gates.chapter('ch-06', function (ctx) {
+  const $ = ctx.$, $$ = ctx.$$, root = ctx.root;
+  const snd = (n, o) => { try { ctx.audio && ctx.audio.play(n, o); } catch (e) {} };
+  const mq = window.matchMedia('(max-width:700px)');
+  const narrow = () => mq.matches;
+
+  Gates.facts = Gates.facts || {};
+  Gates.facts['ch-06'] = { title: 'Windows, antitruste e saída: ressalvas', items: [
+    { text: 'Windows 3.1: a data varia (1/3/1992 no texto, 6/4/1992 na tabela da Wikipedia). Por isso o capítulo diz só “1992”.', url: 'https://en.wikipedia.org/wiki/Microsoft_Windows' },
+    { text: 'Memorando “Internet Tidal Wave” (26/5/1995): o tamanho varia (cerca de 3.000 ou 5.600 palavras) e a versão pública de nov/1995 foi editada. A página “Internet” é um resumo editorial, sem trechos do original; a frase famosa só aparece em resultado de busca e não foi usada.', url: 'https://archive.seattletimes.com/archive/19971207/2576751/two-years-ago-gates-dropped-a-warhead-that-is-still-exploding' },
+    { text: 'Ordem de divisão: 7/6/2000. Algumas páginas dão 3/4/2000, que é a data das conclusões de direito (monopolização, tentativa e venda casada).', url: 'https://en.wikipedia.org/wiki/United_States_v._Microsoft_Corp.' },
+    { text: 'Acordo com a Apple (6/8/1997): US$ 150 mi em ações sem voto. O valor de “US$ 200 milhões” vem de conversão de dólar australiano e foi ignorado. Fonte secundária.', url: 'https://www.neowin.net/news/a-quick-look-back-at-when-microsoft-invested-150-million-in-apple-46-years-ago-today/' },
+    { text: 'O depoimento de Gates em 1998 foi descrito como evasivo pela imprensa; é uma caracterização, não uma conclusão do tribunal. A planta da sala é esquemática.', url: 'https://en.wikipedia.org/wiki/Bill_Gates' },
+    { text: 'Receita: as notas de pesquisa traziam FY2014 (US$ 86,8 bi) ao lado de FY2015 com o mesmo valor; o número correto de FY2014 é cerca de US$ 86,8 bi (FY2015 foi maior), e os valores são arredondados. A frase de 2006 (“não é uma aposentadoria…”) vem de fonte secundária e está em tradução livre.', url: 'https://en.wikipedia.org/wiki/Microsoft' },
+    { text: 'A saída do conselho em 2020: o WSJ (2021) relatou uma investigação interna sobre suposto relacionamento com uma funcionária; a Microsoft atribuiu a saída à filantropia. É alegação reportada, não fato apurado.', url: 'https://news.microsoft.com/source/2020/03/13/microsoft-announces-change-to-its-board-of-directors/' },
+    { text: 'As interfaces da máquina do tempo são recriações estilizadas, sem marcas oficiais. Windows 7 a 11 ocorreram sem Gates em papel executivo.' }
+  ]};
+
+  /* ---------- dados por época ---------- */
+  const ERAS = [
+    { y: 1985, v: '85', os: 'Windows 1.0', start: 'Executivo',
+      sub: 'Uma camada sobre o MS-DOS',
+      rows: [['Lançamento', '20/11/1985'], ['Interface', 'Janelas lado a lado, sem sobreposição'], ['A empresa', 'Abre capital em 13/3/1986: US$ 21 por ação, US$ 61 mi levantados'], ['Patrimônio', 'Bilionário em 1987, aos 31 anos (US$ 1,25 bi)'], ['Gates', 'Presidente, com cerca de 44,9% das ações após o IPO', 1]],
+      note: 'WINDOWS 1.0 · 20 de novembro de 1985\n\nÉ uma camada sobre o MS-DOS. As janelas se arrumam lado a lado, sem se sobrepor.\n\nA empresa tem dez anos. Em março do ano seguinte abre capital: US$ 21 por ação, US$ 61 milhões levantados.\n\nEm 1987, Gates é bilionário aos 31.' },
+    { y: 1995, v: '95', os: 'Windows 95', start: 'Iniciar',
+      sub: 'O Iniciar e a barra de tarefas',
+      rows: [['Lançamento', '24/8/1995, junto com o MSN'], ['Vendas', 'Mais de 1 milhão de cópias em quatro dias'], ['Antes dele', 'Office (8/8/1989); Windows 3.0 (22/5/1990: 100 mil cópias em duas semanas); 3.1 (1992: mais de 3 milhões em dois meses)'], ['Internet', 'Memorando “Tidal Wave” em 26/5/1995. O navegador só vinha no pacote Plus! e em máquinas de fábrica'], ['Gates', 'Presidente e CEO, 39 anos', 1]],
+      note: 'WINDOWS 95 · 24 de agosto de 1995\n\nAntes vieram o Office (8/8/1989), o Windows 3.0 (22/5/1990: 100 mil cópias em duas semanas) e o 3.1 (1992: mais de 3 milhões em dois meses).\n\nEm 26/5/1995, o memorando “Internet Tidal Wave”. Em 24/8/1995, Windows 95 e MSN: mais de 1 milhão de cópias em quatro dias.\n\n(A data exata do 3.1 varia entre fontes; por isso só “1992”.)' },
+    { y: 2001, v: '01', os: 'Windows XP', start: 'iniciar',
+      sub: 'Janelas viraram casa',
+      rows: [['Lançamento', 'Pronto em 24/8/2001; ao público em 25/10/2001'], ['Xbox', 'Anunciado por Gates em 10/3/2000; à venda em 15/11/2001 por US$ 299'], ['Tribunal', 'Acordo com o Departamento de Justiça em 1/11/2001'], ['Gates', 'Chief Software Architect. O CEO é Steve Ballmer desde jan/2000', 1]],
+      note: 'WINDOWS XP · 2001\n\nEm janeiro de 2000, Gates passou o cargo de CEO a Steve Ballmer e virou arquiteto-chefe de software.\n\nEm 10/3/2000, anunciou o Xbox. O console chegou em 15/11/2001, por US$ 299.\n\nO XP vem ao público em 25/10/2001. Duas semanas depois, o acordo com o governo.' },
+    { y: 2009, v: '09', os: 'Windows 7', start: '',
+      sub: 'Vidro e transparência',
+      rows: [['Lançamento', '22/10/2009 (o Vista saíra em 30/1/2007)'], ['Receita', 'US$ 60,4 bi no exercício de 2008'], ['Gates', 'Deixou o dia a dia em 27/6/2008. Presidia o conselho em meio período', 1], ['Nota', 'Esta versão nasceu sem ele em papel executivo']],
+      note: 'WINDOWS 7 · 22 de outubro de 2009\n\nEm 27/6/2008, Gates deixou o dia a dia. Em 2006, ao anunciar, disse (em tradução livre) que não era aposentadoria, e sim uma reordenação de prioridades.\n\nO Windows 7 chega sem ele no comando.' },
+    { y: 2021, v: '21', os: 'Windows 11', start: '',
+      sub: 'Uma tela limpa, sem ele',
+      rows: [['Lançamento', '5/10/2021 (anunciado em 24/6/2021)'], ['Receita', 'US$ 143 bi no exercício de 2020; a empresa passou de US$ 1 trilhão em abril de 2019'], ['Gates', 'Presidência deixada em 4/2/2014; conselho deixado em 13/3/2020', 1], ['Nota', 'Seguiu como conselheiro técnico do CEO, Satya Nadella']],
+      note: 'WINDOWS 11 · 5 de outubro de 2021\n\nGates deixou a presidência do conselho em 4/2/2014 e o próprio conselho em 13/3/2020, para se dedicar à filantropia.\n\nA empresa que ele fundou passou de US$ 1 trilhão em valor em abril de 2019.' }
+  ];
+
+  /* ---------- elementos ---------- */
+  const desk = $('.desk'), wins = $('.wins'), range = $('#c6-range'), out = $('#c6-out');
+  const W = {}; $$('.w').forEach(w => { W[w.dataset.app] = w; });
+  const tasksEl = $('.tasks'), startBtn = $('.start'), menu = $('.smenu'), stLbl = $('.st-lbl'), yearEl = $('.desk-year');
+  let cur = 1, z = 20, front = null;
+
+  const titles = { sys: 'Propriedades', notes: 'LEIA-ME', mines: 'Minas', paint: 'Pincel', net: 'Internet' };
+  Object.keys(W).forEach(k => {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'task'; b.dataset.app = k; b.hidden = true; b.textContent = titles[k];
+    tasksEl.appendChild(b);
+  });
+
+  function vis(w) { return !w.hidden; }
+  function openWins() { return Object.values(W).filter(w => vis(w) && !w.classList.contains('min')); }
+  function syncTasks() {
+    $$('.task').forEach(t => { const w = W[t.dataset.app]; t.hidden = !vis(w); t.classList.toggle('on', w === front && !w.classList.contains('min')); });
+  }
+  function focusW(w) {
+    z++; w.style.zIndex = z; front = w;
+    Object.values(W).forEach(x => x.classList.toggle('front', x === w));
+    syncTasks();
+  }
+  function nextFront() {
+    const o = openWins(); o.sort((a, b) => (+b.style.zIndex || 0) - (+a.style.zIndex || 0));
+    front = o[0] || null; Object.values(W).forEach(x => x.classList.toggle('front', x === front)); syncTasks();
+  }
+  function place(w) {
+    const r = wins.getBoundingClientRect(), d = w.dataset;
+    const ww = Math.min(+d.w, r.width - 16), hh = Math.min(+d.h, r.height - 8);
+    w.style.width = ww + 'px'; w.style.height = hh + 'px';
+    w.style.left = Math.max(0, Math.min(+d.x, r.width - ww - 4)) + 'px';
+    w.style.top = Math.max(0, Math.min(+d.y, r.height - hh - 4)) + 'px';
+    d.placed = '1';
+  }
+  function openApp(app, quiet) {
+    const w = W[app]; if (!w) return;
+    if (w.hidden) { w.hidden = false; if (!w.dataset.placed) place(w); if (!quiet) snd('pop', { vol: .6 }); }
+    w.classList.remove('min');
+    focusW(w); if (cur === 0) tile();
+    if (app === 'mines' && !quiet) { const f = $('.mn-grid button'); f && !narrow() && f.focus({ preventScroll: true }); }
+  }
+  function closeApp(w) { w.hidden = true; w.classList.remove('min', 'max'); if (front === w) nextFront(); else syncTasks(); if (cur === 0) tile(); snd('click', { vol: .5 }); }
+  function minApp(w) { w.classList.add('min'); if (front === w) nextFront(); else syncTasks(); if (cur === 0) tile(); snd('click', { vol: .5 }); }
+
+  /* 1985: janelas em tiles, como no Windows 1.0 */
+  function tile() {
+    if (narrow()) return;
+    const o = openWins().filter(w => !w.classList.contains('max')); if (!o.length) return;
+    const r = wins.getBoundingClientRect(), n = o.length, cols = n === 1 ? 1 : n <= 4 ? 2 : 3, rows = Math.ceil(n / cols);
+    const off = 108, cw = (r.width - off) / cols, ch = r.height / rows;
+    desk.classList.add('tiling');
+    o.forEach((w, i) => {
+      if (!w._geo) w._geo = { l: w.style.left, t: w.style.top, w: w.style.width, h: w.style.height };
+      w.style.left = off + (i % cols) * cw + 'px'; w.style.top = Math.floor(i / cols) * ch + 'px'; w.style.width = cw + 'px'; w.style.height = ch + 'px';
+    });
+    clearTimeout(tile.t); tile.t = setTimeout(() => desk.classList.remove('tiling'), 500);
+  }
+  function untile() {
+    desk.classList.add('tiling');
+    Object.values(W).forEach(w => { if (w._geo) { w.style.left = w._geo.l; w.style.top = w._geo.t; w.style.width = w._geo.w; w.style.height = w._geo.h; w._geo = null; } });
+    clearTimeout(tile.t); tile.t = setTimeout(() => desk.classList.remove('tiling'), 500);
+  }
+
+  /* arrastar e teclado */
+  Object.values(W).forEach(w => {
+    const bar = w.querySelector('.w-bar');
+    w.addEventListener('pointerdown', () => { if (front !== w) focusW(w); });
+    bar.addEventListener('pointerdown', e => {
+      if (e.target.closest('button') || narrow() || w.classList.contains('max') || e.button > 0) return;
+      const r = w.getBoundingClientRect(), dr = wins.getBoundingClientRect();
+      const ox = e.clientX - r.left, oy = e.clientY - r.top; bar.setPointerCapture(e.pointerId);
+      const mv = ev => {
+        const x = Math.max(-r.width + 90, Math.min(dr.width - 60, ev.clientX - dr.left - ox));
+        const y = Math.max(0, Math.min(dr.height - 28, ev.clientY - dr.top - oy));
+        w.style.left = x + 'px'; w.style.top = y + 'px';
+      };
+      const up = () => { bar.removeEventListener('pointermove', mv); bar.removeEventListener('pointerup', up); bar.removeEventListener('pointercancel', up); };
+      bar.addEventListener('pointermove', mv); bar.addEventListener('pointerup', up); bar.addEventListener('pointercancel', up);
+    });
+    bar.addEventListener('keydown', e => {
+      const k = { ArrowLeft: [-16, 0], ArrowRight: [16, 0], ArrowUp: [0, -16], ArrowDown: [0, 16] }[e.key]; if (!k || narrow()) return;
+      e.preventDefault(); w.style.left = (parseFloat(w.style.left) || 0) + k[0] + 'px'; w.style.top = Math.max(0, (parseFloat(w.style.top) || 0) + k[1]) + 'px';
+    });
+    bar.addEventListener('dblclick', e => { if (!e.target.closest('button') && w.querySelector('[data-a="max"]')) w.classList.toggle('max'); });
+    w.addEventListener('click', e => {
+      const b = e.target.closest('.w-cb button'); if (!b) return;
+      if (b.dataset.a === 'close') closeApp(w); else if (b.dataset.a === 'min') minApp(w); else { w.classList.toggle('max'); snd('click', { vol: .5 }); }
+    });
+  });
+  tasksEl.addEventListener('click', e => {
+    const t = e.target.closest('.task'); if (!t) return; const w = W[t.dataset.app];
+    if (front === w && !w.classList.contains('min')) minApp(w); else openApp(t.dataset.app, true);
+    snd('click', { vol: .5 });
+  });
+
+  /* ícones do desktop */
+  $$('.ic').forEach(b => {
+    b.addEventListener('dblclick', () => openApp(b.dataset.app));
+    b.addEventListener('click', () => { if (ctx.touch || narrow()) openApp(b.dataset.app); else snd('click', { vol: .3 }); });
+    b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openApp(b.dataset.app); } });
+  });
+
+  /* menu Iniciar */
+  function closeMenu() { if (!menu.hidden) { menu.hidden = true; startBtn.setAttribute('aria-expanded', 'false'); } }
+  function toggleMenu() {
+    const o = menu.hidden; menu.hidden = !o; startBtn.setAttribute('aria-expanded', String(o)); snd('click', { vol: .6 });
+    if (o) { const f = menu.querySelector('.sm-list button'); f && f.focus({ preventScroll: true }); }
+  }
+  startBtn.addEventListener('click', e => { e.stopPropagation(); toggleMenu(); });
+  menu.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.act === 'reboot') { reboot(); } else if (b.dataset.app) openApp(b.dataset.app);
+    closeMenu(); if (b.dataset.act !== 'reboot') startBtn.focus({ preventScroll: true });
+  });
+  menu.addEventListener('keydown', e => {
+    const items = Array.from(menu.querySelectorAll('button')); const i = items.indexOf(document.activeElement);
+    if (e.key === 'ArrowDown') { e.preventDefault(); items[(i + 1) % items.length].focus(); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); items[(i - 1 + items.length) % items.length].focus(); }
+    else if (e.key === 'Escape') { closeMenu(); startBtn.focus(); }
+  });
+  document.addEventListener('pointerdown', e => { if (!menu.hidden && !menu.contains(e.target) && !startBtn.contains(e.target)) closeMenu(); });
+
+  function reboot() {
+    Object.values(W).forEach(w => { w.hidden = true; w.classList.remove('min', 'max'); w._geo = null; delete w.dataset.placed; });
+    front = null; snd('boot', { vol: .6 });
+    desk.classList.remove('warp'); void desk.offsetWidth; desk.classList.add('warp');
+    openApp('sys', true); openApp('notes', true);
+    if (cur === 0) tile();
+  }
+
+  /* ---------- conteúdo dependente da época ---------- */
+  function renderSys() {
+    const E = ERAS[cur], dl = $('.sys-dl');
+    $('.sys-os').textContent = E.os; $('.sys-sub').textContent = E.sub;
+    dl.innerHTML = '';
+    E.rows.forEach(r => { const d = document.createElement('div'); if (r[2]) d.className = 'gk'; const t = document.createElement('dt'), v = document.createElement('dd'); t.textContent = r[0]; v.textContent = r[1]; d.append(t, v); dl.appendChild(d); });
+  }
+  function renderNotes() { $('.np').textContent = ERAS[cur].note; }
+
+  function setEra(i, user) {
+    i = Math.max(0, Math.min(4, i)); const prev = cur; cur = i; const E = ERAS[i];
+    desk.dataset.v = E.v; range.value = i;
+    out.textContent = E.y + ' · ' + E.os; range.setAttribute('aria-valuetext', E.y + ', ' + E.os);
+    $$('.tm-ticks button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.i === i)));
+    stLbl.textContent = E.start; stLbl.style.display = E.start ? '' : 'none'; yearEl.textContent = E.y;
+    renderSys(); renderNotes(); closeMenu();
+    if (E.v === '85' && prev !== 0) { openWins().forEach(w => w.classList.remove('max')); tile(); }
+    else if (prev === 0 && E.v !== '85') untile();
+    if (user && prev !== i) {
+      if (!ctx.reduced) { desk.classList.remove('warp'); void desk.offsetWidth; desk.classList.add('warp'); }
+      snd('chime', { vol: .5, rate: .8 + i * .12 }); ctx.say('Ano ' + E.y + ': ' + E.os);
+    }
+  }
+  range.addEventListener('input', () => setEra(+range.value, true));
+  $$('.tm-ticks button, .prod button').forEach(b => b.addEventListener('click', () => { setEra(+b.dataset.i, true); desk.scrollIntoView({ behavior: ctx.reduced ? 'auto' : 'smooth', block: 'center' }); }));
+
+  /* ---------- Minas ---------- */
+  const N = 8, M = 9, grid = $('.mn-grid'), face = $('.mn-face'), cnt = $('.mn-cnt'), flagBtn = $('.mn-flag');
+  let cells = [], over = false, planted = false, flagMode = false;
+  const btns = [];
+  for (let i = 0; i < N * N; i++) { const b = document.createElement('button'); b.type = 'button'; b.dataset.i = i; grid.appendChild(b); btns.push(b); }
+  function nb(i) { const x = i % N, y = (i / N) | 0, a = []; for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) { const nx = x + dx, ny = y + dy; if ((dx || dy) && nx >= 0 && ny >= 0 && nx < N && ny < N) a.push(ny * N + nx); } return a; }
+  function mReset() { cells = Array.from({ length: N * N }, () => ({ m: 0, o: 0, f: 0, n: 0 })); over = false; planted = false; face.textContent = ':)'; mDraw(); }
+  function plant(safe) { let k = 0; while (k < M) { const r = (Math.random() * N * N) | 0; if (r === safe || cells[r].m) continue; cells[r].m = 1; k++; } cells.forEach((c, i) => { c.n = nb(i).filter(j => cells[j].m).length; }); planted = true; }
+  function mDraw() {
+    let fl = 0;
+    cells.forEach((c, i) => {
+      const b = btns[i]; fl += c.f; b.className = c.o ? 'o' : (over && c.m && !c.f ? 'o x' : '');
+      b.textContent = c.o ? (c.m ? '*' : (c.n || '')) : c.f ? 'P' : (over && c.m ? '*' : '');
+      if (c.o && !c.m && c.n) b.dataset.n = c.n; else delete b.dataset.n;
+      const x = i % N + 1, y = ((i / N) | 0) + 1;
+      b.setAttribute('aria-label', 'linha ' + y + ', coluna ' + x + ', ' + (c.o ? (c.m ? 'mina' : c.n + ' minas vizinhas') : c.f ? 'bandeira' : 'fechada'));
+    });
+    cnt.textContent = String(Math.max(0, M - fl)).padStart(3, '0');
+  }
+  function reveal(i) {
+    const st = [i];
+    while (st.length) { const k = st.pop(), c = cells[k]; if (c.o || c.f) continue; c.o = 1; if (!c.n && !c.m) nb(k).forEach(j => st.push(j)); }
+  }
+  function mAct(i, flag) {
+    if (over) return; const c = cells[i];
+    if (flag) { if (!c.o) { c.f = c.f ? 0 : 1; snd('tick', { vol: .5 }); } mDraw(); return; }
+    if (c.f || c.o) return;
+    if (!planted) plant(i);
+    if (c.m) { over = true; cells.forEach(x => { if (x.m) x.o = 0; }); face.textContent = 'X('; snd('error', { vol: .6 }); mDraw(); return; }
+    reveal(i); snd('key', { vol: .5 });
+    if (cells.every(x => x.m || x.o)) { over = true; face.textContent = '8)'; snd('success', { vol: .6 }); }
+    mDraw();
+  }
+  grid.addEventListener('click', e => { const b = e.target.closest('button'); if (b) mAct(+b.dataset.i, flagMode); });
+  grid.addEventListener('contextmenu', e => { const b = e.target.closest('button'); if (b) { e.preventDefault(); mAct(+b.dataset.i, true); } });
+  face.addEventListener('click', () => { mReset(); snd('click', { vol: .5 }); });
+  flagBtn.addEventListener('click', () => { flagMode = !flagMode; flagBtn.setAttribute('aria-pressed', String(flagMode)); });
+  mReset();
+
+  /* ---------- Pincel ---------- */
+  const cv = $('.pt-cv'), g = cv.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, cv.width, cv.height);
+  let pc = '#000080', ps = 4, pdown = false, plast = null;
+  const pp = e => { const r = cv.getBoundingClientRect(); return [(e.clientX - r.left) * cv.width / r.width, (e.clientY - r.top) * cv.height / r.height]; };
+  cv.addEventListener('pointerdown', e => { pdown = true; cv.setPointerCapture(e.pointerId); plast = pp(e); g.fillStyle = pc; g.beginPath(); g.arc(plast[0], plast[1], ps / 2, 0, 7); g.fill(); });
+  cv.addEventListener('pointermove', e => { if (!pdown) return; const p = pp(e); g.strokeStyle = pc; g.lineWidth = ps; g.lineCap = 'round'; g.beginPath(); g.moveTo(plast[0], plast[1]); g.lineTo(p[0], p[1]); g.stroke(); plast = p; });
+  const pu = () => { pdown = false; }; cv.addEventListener('pointerup', pu); cv.addEventListener('pointercancel', pu);
+  $$('.pt-c').forEach(b => b.addEventListener('click', () => { pc = b.dataset.c; $$('.pt-c').forEach(x => x.setAttribute('aria-pressed', String(x === b))); snd('click', { vol: .4 }); }));
+  const szs = [2, 4, 9, 16]; let si = 1;
+  $('.pt-sz').addEventListener('click', e => { si = (si + 1) % szs.length; ps = szs[si]; e.currentTarget.textContent = 'Traço ' + ps; });
+  $('.pt-clr').addEventListener('click', () => { g.fillStyle = '#fff'; g.fillRect(0, 0, cv.width, cv.height); snd('whoosh', { vol: .4 }); });
+
+  /* ---------- Internet ---------- */
+  const pages = {
+    memo: { url: 'memo://tidal-wave', html: '<h4>Internet Tidal Wave</h4><p><span class="stamp">RESUMO EDITORIAL</span></p><p>Em 26 de maio de 1995, Bill Gates escreveu um memorando interno que recolocou a internet no centro da estratégia da Microsoft. Dois meses antes do Windows 95, a empresa passava a tratá-la como prioridade máxima.</p><p>O texto circulou em versões diferentes. Há quem fale em cerca de 3.000 palavras e quem fale em 5.600, e a versão pública, de novembro de 1995, foi editada.</p><p><i>Esta página resume o episódio. Não reproduz trechos do original.</i></p><p><button class="lk" data-go="depois">O que veio depois &gt;</button></p>' },
+    depois: { url: 'memo://depois', html: '<h4>O que veio depois</h4><p>24/8/1995: Windows 95 e MSN chegam no mesmo dia. O navegador não vinha no Windows 95 de loja, só no pacote Plus! e em máquinas vendidas já com ele.</p><p>1997: o Internet Explorer 4.0 começa a tomar o mercado da Netscape.</p><p>1998: o governo dos EUA processa a empresa. O ponto central: o navegador amarrado ao Windows.</p><p><button class="lk" data-go="tribunal">Ir ao tribunal</button> &middot; <button class="lk" data-go="memo">&lt; Início</button></p>' }
+  };
+  const ntPg = $('.nt-pg'), ntUrl = $('.nt-url'), ntBack = $('.nt-back'); let ntHist = [];
+  function goto(k, push) {
+    if (k === 'tribunal') { const t = $('.c6-court'); t && t.scrollIntoView({ behavior: ctx.reduced ? 'auto' : 'smooth' }); return; }
+    if (push !== false) ntHist.push(k); const p = pages[k]; ntUrl.textContent = p.url; ntPg.innerHTML = p.html; ntBack.disabled = ntHist.length < 2; ntPg.scrollTop = 0;
+  }
+  ntPg.addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) { snd('click', { vol: .5 }); goto(b.dataset.go); } });
+  ntBack.addEventListener('click', () => { ntHist.pop(); goto(ntHist[ntHist.length - 1] || 'memo', false); ntBack.disabled = ntHist.length < 2; });
+  goto('memo');
+
+  /* ---------- selo de revelação das réguas ---------- */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .35 });
+  $$('.ap-bars, .rev-b').forEach(el => io.observe(el));
+
+  /* ---------- tribunal ---------- */
+  const gal = $('#c6-gal'); const NS = 'http://www.w3.org/2000/svg';
+  for (let r = 0; r < 3; r++) for (let c = 0; c < 10; c++) { const q = document.createElementNS(NS, 'rect'); q.setAttribute('x', 62 + c * 28); q.setAttribute('y', 196 + r * 30); q.setAttribute('width', 20); q.setAttribute('height', 18); q.setAttribute('rx', 4); gal.appendChild(q); }
+  const plan = $('.ct-plan');
+  const CT = [
+    { d: '18/5/1998', t: 'O processo', x: 'O Departamento de Justiça, vinte estados e o Distrito de Colúmbia processam a Microsoft.', z: 'gov' },
+    { d: '1998', t: 'O depoimento', x: 'Gates depõe. A imprensa descreveu o depoimento como evasivo.', z: 'wit' },
+    { d: '5/11/1999', t: 'Os fatos', x: 'O juiz conclui, nos fatos, que a empresa tem monopólio no mercado de sistemas para processadores x86.', z: 'bench' },
+    { d: '3/4/2000', t: 'A lei', x: 'Conclusões de direito: monopolização, tentativa de monopolização e venda casada. As ações caem cerca de 15% num dia.', z: 'bench gal' },
+    { d: '7/6/2000', t: 'A ordem de divisão', x: 'O tribunal manda dividir a empresa em duas.', z: 'bench gov ms' },
+    { d: '28/6/2001', t: 'A reviravolta', x: 'O tribunal de apelação reverte a divisão e diz que o juiz Jackson deveria ter se declarado impedido.', z: 'bench' },
+    { d: '1/11/2001', t: 'O acordo', x: 'A Microsoft e o Departamento de Justiça chegam a um acordo.', z: 'gov ms' },
+    { d: '1/11/2002', t: 'A juíza aceita', x: 'A juíza Kollar-Kotelly aceita a maior parte do acordo.', z: 'bench' },
+    { d: '30/6/2004', t: 'O fim da apelação', x: 'A apelação aprova o acordo. Em março de 2004, a União Europeia já multara a empresa em 497 milhões de euros (cerca de US$ 613 mi).', z: 'out bench' }
+  ];
+  const ctList = $('.ct-steps'), ctB = [];
+  CT.forEach((s, i) => {
+    const li = document.createElement('li'), b = document.createElement('button'); b.type = 'button';
+    b.innerHTML = '<span class="stp">NOS AUTOS</span><span class="dt"></span><span class="tt"></span><span class="tx"></span>';
+    b.children[1].textContent = s.d; b.children[2].textContent = s.t; b.children[3].textContent = s.x;
+    b.addEventListener('click', () => { ctSet(i); snd('bell', { vol: .35 }); });
+    li.appendChild(b); ctList.appendChild(li); ctB.push(b);
+  });
+  let ctI = -1;
+  function ctSet(i) { if (i === ctI) return; ctI = i; ctB.forEach((b, k) => b.setAttribute('aria-current', String(k === i))); plan.dataset.z = CT[i].z; }
+  /* escolhe o item mais próximo do meio da janela; robusto a rolagens rápidas (IntersectionObserver perdia saltos) */
+  function bandPick(btns, set) {
+    let raf = 0;
+    const run = () => {
+      raf = 0; const vh = innerHeight;
+      const f = btns[0].getBoundingClientRect(), l = btns[btns.length - 1].getBoundingClientRect();
+      if (f.top > vh * .9 || l.bottom < vh * .1) return;
+      let b = 0, bd = 1e9;
+      btns.forEach((x, i) => { const r = x.getBoundingClientRect(), m = vh * .5, d = (r.top <= m && r.bottom >= m) ? 0 : Math.min(Math.abs(r.top - m), Math.abs(r.bottom - m)); if (d < bd) { bd = d; b = i; } });
+      set(b);
+    };
+    addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(run); }, { passive: true });
+    addEventListener('resize', run);
+    run();
+  }
+  ctSet(0); bandPick(ctB, ctSet);
+
+  const tyStack = $('.ty-stack'), tyTxt = $('.ty-txt');
+  const TY = {
+    gov: 'O governo dizia que o navegador era um produto à parte, amarrado ao Windows. Quem comprava o sistema recebia o Internet Explorer junto, e os concorrentes, como a Netscape, brigavam contra algo que já vinha instalado.',
+    ms: 'A Microsoft dizia que o navegador era parte do sistema: integrar a internet ao Windows era inovação, como já tinham sido a rede e o som. Separar o navegador seria quebrar o produto.'
+  };
+  function tySet(s) { tyStack.dataset.side = s; tyTxt.textContent = TY[s]; $$('.ty-b').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.s === s))); }
+  $$('.ty-b').forEach(b => b.addEventListener('click', () => { tySet(b.dataset.s); snd('flip', { vol: .5 }); }));
+  tySet('gov');
+
+  /* ---------- passagem de bastão ---------- */
+  const PS = [
+    { d: 'Jan/2000', t: 'Ballmer assume como CEO', x: 'Steve Ballmer entrara em 11/6/1980 e virara presidente em 1998. Gates, CEO por cerca de 25 anos, passa a Chief Software Architect. No mesmo ano nasce a Bill & Melinda Gates Foundation.', role: 'Chief Software Architect', date: 'jan/2000', ceo: 'Steve Ballmer', p: 5 },
+    { d: '15/6/2006', t: 'Anuncia a saída gradual', x: 'Em tradução livre de uma fonte secundária: “não é uma aposentadoria, é uma reordenação das minhas prioridades”. Warren Buffett promete ações à fundação.', role: 'Arquiteto-chefe, de saída', date: '2006 → 2008', ceo: 'Steve Ballmer', p: 4 },
+    { d: '27/6/2008', t: 'Deixa o dia a dia', x: 'A transição termina. Ray Ozzie e Craig Mundie assumem as frentes técnicas. Gates segue como presidente do conselho, em meio período.', role: 'Presidente do conselho (meio período)', date: '2008–2014', ceo: 'Steve Ballmer', p: 3 },
+    { d: '4/2/2014', t: 'Deixa a presidência', x: 'Satya Nadella vira CEO e John Thompson passa a presidir o conselho. Gates fica como conselheiro de tecnologia.', role: 'Conselheiro de tecnologia', date: 'fev/2014', ceo: 'Satya Nadella', p: 2 },
+    { d: '13/3/2020', t: 'Deixa o conselho', x: 'Sai para se dedicar à filantropia (saúde global, desenvolvimento, educação e clima) e segue como conselheiro técnico de Nadella. Em 2021, o WSJ relatou uma investigação do conselho sobre um suposto relacionamento com uma funcionária; a Microsoft atribuiu a saída à filantropia. É alegação reportada, não fato apurado.', role: 'Conselheiro técnico, fora do conselho', date: '13/3/2020', ceo: 'Satya Nadella', p: 1 }
+  ];
+  const psList = $('.ps-steps'), psB = [];
+  PS.forEach((s, i) => {
+    const li = document.createElement('li'), b = document.createElement('button'); b.type = 'button';
+    b.innerHTML = '<span class="dt"></span><span class="tt"></span><span class="tx"></span>';
+    b.children[0].textContent = s.d; b.children[1].textContent = s.t; b.children[2].textContent = s.x;
+    b.addEventListener('click', () => { psSet(i); snd('click', { vol: .4 }); });
+    li.appendChild(b); psList.appendChild(li); psB.push(b);
+  });
+  const role = $('#c6-role'), bdate = $('#c6-bdate'), ceoEl = $('#c6-ceo'), pres = $$('#c6-pres i'), trk = $('#c6-trk');
+  let psI = -1;
+  function psSet(i) {
+    if (i === psI) return; const first = psI < 0; psI = i; const s = PS[i];
+    psB.forEach((b, k) => b.setAttribute('aria-current', String(k === i)));
+    role.textContent = s.role; bdate.textContent = s.date; ceoEl.textContent = s.ceo;
+    pres.forEach((el, k) => el.classList.toggle('on', k < s.p));
+    trk.style.width = (i / (PS.length - 1) * 100) + '%'; $('.ps-side').style.setProperty('--pg', (i / (PS.length - 1) * 100) + '%');
+    if (!first) snd('flip', { vol: .4 });
+  }
+  psSet(0); bandPick(psB, psSet);
+
+  $('.c6-fact').addEventListener('click', () => { if (ctx.fact) ctx.fact('ch-06'); });
+
+  /* ---------- relógio e arranque ---------- */
+  const clk = $('.tr-clk'); let clkT = null;
+  function tick() { const d = new Date(); clk.textContent = String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0'); }
+  setEra(1, false);
+  openApp('sys', true); openApp('notes', true);
+  mq.addEventListener && mq.addEventListener('change', () => { if (narrow()) { Object.values(W).forEach(w => w.classList.remove('max')); } });
+
+  return {
+    enter() { tick(); clearInterval(clkT); clkT = setInterval(tick, 30000); },
+    leave() { clearInterval(clkT); closeMenu(); },
+    resize() { if (cur === 0) tile(); }
+  };
+});
+</script>

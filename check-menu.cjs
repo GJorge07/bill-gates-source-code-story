@@ -4,7 +4,7 @@ const { chromium } = require('playwright');
 const { pathToFileURL } = require('node:url');
 const { join } = require('node:path');
 
-const W = 390, H = 844;
+const W = Number(process.argv[2]) || 390, H = 844;
 
 (async () => {
   const browser = await chromium.launch();

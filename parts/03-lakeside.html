@@ -1,0 +1,723 @@
+<section class="chapter" id="ch-03" data-era="teletype" data-title="Lakeside" data-year="1968–72">
+  <div class="container">
+    <header class="tt-intro stack">
+      <h2 class="d2">Uma máquina de escrever que respondia</h2>
+      <p class="lead">Em 1968, o Clube das Mães de uma escola de Seattle comprou um terminal. Ele não tinha tela. Respondia no papel, letra por letra.</p>
+      <p class="hint tt-hint">Sente-se à máquina. Digite 1 a 9, toque na ficha ou nas teclas. Entre uma partida e outra, ela imprime as cartas deste capítulo.</p>
+    </header>
+
+    <div class="tt-desk" id="ch03-desk">
+      <div class="tt-lamp" aria-hidden="true"></div>
+
+      <div class="tt-rig" tabindex="0" role="group" aria-label="Teletipo. Digite os números de 1 a 9 para jogar o jogo da velha. Qualquer tecla acelera a impressão. O papel impresso é rolável.">
+        <div class="tt-sheet">
+          <div class="tt-paper" role="log" aria-live="off" aria-label="Papel do teletipo">
+            <pre class="tt-out"></pre>
+            <span class="tt-probe" aria-hidden="true">00000000000000000000</span>
+          </div>
+          <button type="button" class="tt-tail" hidden aria-label="Voltar ao fim do papel">fim da fita</button>
+        </div>
+
+        <div class="tt-machine">
+          <div class="tt-platen" aria-hidden="true">
+            <span class="tt-knob l"></span><span class="tt-knob r"></span>
+            <span class="tt-ribbon"></span>
+            <span class="tt-head"></span>
+          </div>
+          <div class="tt-body" aria-hidden="true">
+            <svg class="tt-spool" viewBox="0 0 60 60" width="54" height="54"><circle cx="30" cy="30" r="28" fill="#17181a"/><circle cx="30" cy="30" r="22" fill="#4b33b8"/><circle cx="30" cy="30" r="22" fill="none" stroke="#7a62f0" stroke-width="2" stroke-dasharray="3 5"/><circle cx="30" cy="30" r="8" fill="#26272a"/><path d="M30 22v16M22 30h16" stroke="#9a9a94" stroke-width="2"/></svg>
+            <div class="tt-plate"><b>TELETYPE</b><span>sala de matemática</span></div>
+            <svg class="tt-spool r2" viewBox="0 0 60 60" width="54" height="54"><circle cx="30" cy="30" r="28" fill="#17181a"/><circle cx="30" cy="30" r="15" fill="#4b33b8"/><circle cx="30" cy="30" r="15" fill="none" stroke="#7a62f0" stroke-width="2" stroke-dasharray="3 5"/><circle cx="30" cy="30" r="8" fill="#26272a"/><path d="M30 22v16M22 30h16" stroke="#9a9a94" stroke-width="2"/></svg>
+            <div class="tt-led"><i></i><span>pronto</span></div>
+          </div>
+          <div class="tt-keys" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="tt-aside">
+        <div class="tt-asidein">
+          <div class="tt-slip">
+            <p class="tt-slip-h">Jogo da velha</p>
+            <div class="tt-grid" role="group" aria-label="Tabuleiro 3 por 3. Casas de 1 a 9, da esquerda para a direita, de cima para baixo."></div>
+            <p class="tt-score" aria-hidden="true"></p>
+          </div>
+          <p class="tt-status" role="status"></p>
+          <div class="tt-level" role="group" aria-label="Nível da máquina">
+            <button type="button" class="tt-btn" data-level="humano" aria-pressed="true">Nível humano</button>
+            <button type="button" class="tt-btn" data-level="perfeito" aria-pressed="false">Nível perfeito</button>
+          </div>
+          <div class="tt-actions">
+            <button type="button" class="tt-btn" data-act="new">Nova partida</button>
+            <button type="button" class="tt-btn" data-act="letter">Próxima carta</button>
+            <button type="button" class="tt-btn" data-act="skip">Acelerar</button>
+            <button type="button" class="tt-btn" data-act="facts">Ressalvas</button>
+          </div>
+          <p class="tt-meter"></p>
+        </div>
+        <div class="tt-kent" aria-hidden="true">
+          <p>Kent Evans, o melhor amigo de Bill e parceiro de quase todos os projetos da Lakeside, morreu em 1972 num acidente de montanhismo, ainda adolescente.</p>
+          <p class="q">Anos depois, Gates o chamaria de “the only negative thing in my childhood”: a única coisa negativa da infância.</p>
+          <button type="button" class="tt-btn" data-act="cont">Continuar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sr-only" id="ch03-sr"></div>
+
+    <footer class="tt-outro stack">
+      <p class="d3">1973. A sala de matemática ficou pequena.</p>
+      <p class="p">Bill se formou na Lakeside como National Merit Scholar. O SAT:</p>
+      <p class="tt-sat" aria-label="1590 em 1600 no SAT"><span class="tt-satn">1590</span><small> / 1600</small></p>
+      <p class="p">No outono, Harvard. O hábito de pedir a uma máquina que obedeça já tinha dono e sócio.</p>
+      <p><button type="button" class="btn" data-act="facts2">Ressalvas deste capítulo</button></p>
+    </footer>
+  </div>
+</section>
+
+<style>
+#ch-03 { --ink:#4228b4; --paper:#e6d79c; --metal1:#3b3e42; --metal2:#1f2123; position:relative; padding:clamp(60px,10vh,120px) 0 clamp(60px,10vh,130px); font-family:'Courier New','IBM Plex Mono',ui-monospace,monospace; }
+@media (min-width:1100px) { #ch-03 > .container { padding-right:90px; } }
+#ch-03::before { content:''; position:absolute; left:0; right:0; top:0; height:clamp(120px,22vh,220px); background:linear-gradient(#05060d,rgba(5,6,13,0)); pointer-events:none; }
+#ch-03 .tt-intro { margin-bottom:clamp(28px,5vw,56px); max-width:62ch; }
+#ch-03 .tt-intro .d2 { color:var(--fg); }
+#ch-03 .tt-hint { color:var(--muted,#b9b49a); }
+
+/* mesa */
+#ch-03 .tt-desk { position:relative; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr); gap:clamp(20px,3.4vw,46px); align-items:start; padding:clamp(14px,3vw,38px); border-radius:14px; isolation:isolate;
+  background:
+    repeating-linear-gradient(91deg, rgba(0,0,0,0) 0 9px, rgba(0,0,0,.14) 9px 10px, rgba(255,200,140,.035) 10px 17px, rgba(0,0,0,.07) 17px 19px),
+    linear-gradient(180deg,#38241a,#22140d);
+  box-shadow:0 40px 90px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,220,170,.08), inset 0 -50px 90px rgba(0,0,0,.45); overflow:hidden; }
+#ch-03 .tt-lamp { position:absolute; inset:0; z-index:5; pointer-events:none; mix-blend-mode:screen; opacity:1; transition:opacity 1.8s ease;
+  background:radial-gradient(90% 70% at 6% -12%, rgba(255,190,100,.42), rgba(255,170,80,.12) 45%, transparent 70%); }
+#ch-03 .tt-desk.is-hush .tt-lamp { opacity:.05; }
+#ch-03 .tt-desk.is-hush .tt-rig { filter:brightness(.5) saturate(.7); }
+#ch-03 .tt-desk.is-booting, #ch-03 .tt-desk.is-booting * { transition:none !important; }
+#ch-03 .tt-rig { transition:filter 1.8s ease; position:relative; display:flex; flex-direction:column; align-items:stretch; outline:none; min-width:0; }
+#ch-03 .tt-rig:focus-visible { box-shadow:0 0 0 3px var(--accent2); border-radius:12px; }
+
+/* papel */
+#ch-03 .tt-sheet { position:relative; z-index:1; width:88%; margin:0 auto; --padx:22px; }
+#ch-03 .tt-paper { --fs:clamp(11px, calc((100vw - 96px) / 22.8), 15px); height:clamp(260px,44vh,400px); overflow-y:auto; overscroll-behavior:auto; scrollbar-width:thin; scrollbar-color:#a08f56 transparent;
+  padding:34px var(--padx) 8px; font-size:var(--fs); line-height:1.5; cursor:grab; touch-action:pan-y;
+  background:
+    repeating-linear-gradient(0deg, rgba(120,95,30,.05) 0 1px, transparent 1px 3px) local,
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.28), transparent 40%) local,
+    linear-gradient(180deg,#eadca4,#e2d295) local;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 46px); mask-image:linear-gradient(180deg,transparent 0,#000 46px); }
+#ch-03 .tt-paper:active { cursor:grabbing; }
+#ch-03 .tt-sheet::after { content:''; position:absolute; inset:0; pointer-events:none; background:linear-gradient(90deg,rgba(60,40,0,.32),transparent 7%,transparent 93%,rgba(60,40,0,.34)); }
+#ch-03 .tt-out { margin:0; white-space:pre; font:inherit; font-weight:700; color:var(--ink); text-shadow:0 0 .6px rgba(66,40,180,.7); min-height:1.5em; }
+#ch-03 .tt-out .hd { letter-spacing:.04em; }
+#ch-03 .tt-out .free { opacity:.8; }
+#ch-03 .tt-out .kent { display:inline; font-size:1.55em; letter-spacing:.16em; color:rgba(66,40,180,.78); text-shadow:none; line-height:2.2; }
+#ch-03 .tt-probe { position:absolute; visibility:hidden; white-space:pre; font-size:var(--fs); font-weight:700; left:0; top:0; }
+#ch-03 .tt-tail { position:absolute; right:10px; bottom:8px; z-index:3; min-height:44px; padding:0 12px; font:700 12px 'Courier New',monospace; color:#fff; background:rgba(66,40,180,.92); border:0; border-radius:20px; cursor:pointer; }
+#ch-03 .tt-tail[hidden] { display:none; }
+
+/* máquina */
+#ch-03 .tt-machine { position:relative; z-index:2; margin-top:-12px; }
+#ch-03 .tt-platen { position:relative; height:30px; margin:0 4%; border-radius:14px 14px 4px 4px;
+  background:linear-gradient(180deg,#0b0b0c 0,#4a4c50 35%,#232427 60%,#050506 100%); box-shadow:0 8px 14px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.18); }
+#ch-03 .tt-knob { position:absolute; top:-4px; width:28px; height:38px; border-radius:7px; background:repeating-linear-gradient(90deg,#8d8e90 0 2px,#3a3b3d 2px 5px); box-shadow:0 3px 6px rgba(0,0,0,.6); }
+#ch-03 .tt-knob.l { left:-18px; } #ch-03 .tt-knob.r { right:-18px; }
+#ch-03 .tt-ribbon { position:absolute; left:calc(var(--padx,22px) + 4%); right:calc(var(--padx,22px) + 4%); top:-5px; height:4px; border-radius:2px; background:linear-gradient(180deg,#8b74ff,#3a24a0); opacity:.85; }
+#ch-03 .tt-head { position:absolute; top:-17px; left:0; width:16px; height:34px; border-radius:3px 3px 8px 8px; background:linear-gradient(90deg,#8a8c90,#4a4c50 55%,#2b2c2e); box-shadow:0 4px 6px rgba(0,0,0,.6);
+  transform:translateX(calc(var(--hx,0px) + var(--hoff,0px))); transition:transform 40ms linear; }
+#ch-03 .tt-head::after { content:''; position:absolute; left:50%; bottom:3px; width:5px; height:5px; margin-left:-2.5px; border-radius:50%; background:#8b74ff; box-shadow:0 0 6px #8b74ff; }
+#ch-03 .tt-head.snap { transition:transform .22s cubic-bezier(.3,1.4,.5,1); }
+#ch-03 .tt-body { transform:perspective(900px) rotateX(6deg); transform-origin:50% 0; margin-top:-4px; padding:14px 18px; display:flex; align-items:center; justify-content:space-between; gap:10px;
+  background:linear-gradient(180deg,var(--metal1),var(--metal2)); border-radius:6px 6px 0 0; box-shadow:inset 0 1px 0 rgba(255,255,255,.14); }
+#ch-03 .tt-spool { flex:none; width:clamp(34px,10vw,54px); height:auto; }
+#ch-03 .tt-desk.is-printing .tt-spool { animation:ch03spin 2.6s linear infinite; }
+#ch-03 .tt-desk.is-printing .tt-spool.r2 { animation-duration:1.7s; animation-direction:reverse; }
+@keyframes ch03spin { to { transform:rotate(360deg); } }
+#ch-03 .tt-plate { flex:1; min-width:0; text-align:center; font:700 clamp(11px,3vw,15px) 'Courier New',monospace; color:#b9b7a8; letter-spacing:.16em; text-shadow:0 1px 0 #000; }
+#ch-03 .tt-plate span { display:block; font-weight:400; font-size:.72em; letter-spacing:.08em; opacity:.8; }
+#ch-03 .tt-led { flex:none; display:flex; align-items:center; gap:6px; font:11px 'Courier New',monospace; color:#b9b7a8; }
+#ch-03 .tt-led i { width:10px; height:10px; border-radius:50%; background:#e6d27a; box-shadow:0 0 8px #e6d27a; }
+#ch-03 .tt-desk.is-printing .tt-led i { animation:ch03led .5s steps(2) infinite; }
+#ch-03 .tt-desk.is-hush .tt-led i { background:#3a3320; box-shadow:none; }
+@keyframes ch03led { 50% { opacity:.25; } }
+#ch-03 .tt-keys { --k:clamp(24px,6.6vw,36px); transform:perspective(900px) rotateX(10deg); transform-origin:50% 0; padding:14px 8px 18px; display:flex; flex-direction:column; align-items:center; gap:7px;
+  background:linear-gradient(180deg,#26282a,#161718); border-radius:0 0 12px 12px; box-shadow:0 18px 30px rgba(0,0,0,.55); }
+#ch-03 .tt-row { display:flex; gap:4px; justify-content:center; }
+#ch-03 .tt-key { width:var(--k); height:var(--k); flex:none; border-radius:50%; border:0; padding:0; cursor:pointer; user-select:none; -webkit-tap-highlight-color:transparent;
+  font:700 calc(var(--k) * .42) 'Courier New',monospace; color:#14110d;
+  background:radial-gradient(circle at 36% 30%,#f5f1e2,#cbc5ae 58%,#8e8976); box-shadow:0 4px 0 #080808, 0 7px 8px rgba(0,0,0,.5), inset 0 0 0 3px #34363a; transition:transform 60ms, box-shadow 60ms; }
+#ch-03 .tt-key[data-g] { box-shadow:0 4px 0 #080808, 0 7px 8px rgba(0,0,0,.5), inset 0 0 0 3px #b79f3f; }
+#ch-03 .tt-key.wide { width:calc(var(--k) * 4.6); border-radius:calc(var(--k) / 2); font-size:calc(var(--k) * .32); }
+#ch-03 .tt-key.ret { width:calc(var(--k) * 2.3); border-radius:calc(var(--k) / 2); font-size:calc(var(--k) * .3); }
+#ch-03 .tt-key.down, #ch-03 .tt-key:active { transform:translateY(3px); box-shadow:0 1px 0 #080808, 0 2px 4px rgba(0,0,0,.5), inset 0 0 0 3px #34363a; }
+
+/* lateral */
+#ch-03 .tt-aside { position:relative; min-width:0; }
+#ch-03 .tt-asidein { display:flex; flex-direction:column; gap:14px; transition:opacity 1.4s ease; }
+#ch-03 .tt-desk.is-hush .tt-asidein { opacity:0; }
+#ch-03 .tt-slip { position:relative; background:linear-gradient(180deg,#eadca4,#dccd8f); color:#2b2166; padding:16px 16px 14px; transform:rotate(-1.1deg); box-shadow:0 14px 26px rgba(0,0,0,.5), 0 2px 0 rgba(255,255,255,.3) inset; border-radius:2px; }
+#ch-03 .tt-slip-h { margin:0 0 10px; font:700 14px 'Courier New',monospace; letter-spacing:.06em; text-align:center; }
+#ch-03 .tt-grid { display:grid; grid-template-columns:repeat(3,1fr); width:min(100%,264px); margin:0 auto; }
+#ch-03 .tt-cell { position:relative; aspect-ratio:1; min-height:64px; background:transparent; border:0; color:#2b2166; cursor:pointer; padding:0; font:700 clamp(34px,9vw,52px)/1 'Courier New',monospace; border-right:3px solid #2b2166; border-bottom:3px solid #2b2166; -webkit-tap-highlight-color:transparent; }
+#ch-03 .tt-cell:nth-child(3n) { border-right:0; } #ch-03 .tt-cell:nth-child(n+7) { border-bottom:0; }
+#ch-03 .tt-cell .n { position:absolute; left:7px; top:4px; font-size:11px; font-weight:400; opacity:.5; }
+#ch-03 .tt-cell:hover:not(.on) { background:rgba(66,40,180,.1); }
+#ch-03 .tt-cell:focus-visible { outline:3px solid #2b2166; outline-offset:-5px; }
+#ch-03 .tt-cell.on .n { display:none; }
+#ch-03 .tt-cell .m { display:inline-block; }
+#ch-03 .tt-cell.stamp .m { animation:ch03stamp .28s cubic-bezier(.2,1.6,.4,1); }
+@keyframes ch03stamp { from { transform:scale(1.7); opacity:0; filter:blur(3px); } to { transform:none; opacity:1; filter:none; } }
+#ch-03 .tt-cell.shake { animation:ch03shake .3s; }
+@keyframes ch03shake { 25% { transform:translateX(-4px); } 75% { transform:translateX(4px); } }
+#ch-03 .tt-cell.win { background:rgba(66,40,180,.2); }
+#ch-03 .tt-score { margin:10px 0 0; text-align:center; font:12px 'Courier New',monospace; }
+#ch-03 .tt-status { margin:0; min-height:2.8em; font:14px/1.4 'Courier New','IBM Plex Mono',monospace; color:#f1e8c4; }
+#ch-03 .tt-level, #ch-03 .tt-actions { display:flex; flex-wrap:wrap; gap:8px; }
+#ch-03 .tt-btn { min-height:44px; padding:0 14px; font:700 13px 'Courier New','IBM Plex Mono',monospace; color:#ece7c9; background:rgba(0,0,0,.3); border:1px solid rgba(240,220,160,.4); border-radius:6px; cursor:pointer; transition:background .15s, transform .08s; }
+#ch-03 .tt-btn:hover:not(:disabled) { background:rgba(240,220,160,.14); }
+#ch-03 .tt-btn:active:not(:disabled) { transform:translateY(2px); }
+#ch-03 .tt-btn:focus-visible, #ch-03 .tt-tail:focus-visible, #ch-03 .btn:focus-visible { outline:3px solid var(--accent2); outline-offset:2px; }
+#ch-03 .tt-btn[aria-pressed="true"] { background:#e6d27a; color:#1b1630; border-color:#e6d27a; }
+#ch-03 .tt-btn:disabled { opacity:.4; cursor:default; }
+#ch-03 .tt-meter { margin:0; font:12px 'Courier New',monospace; color:var(--muted,#b9b49a); }
+
+/* Kent */
+#ch-03 .tt-kent { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; gap:14px; opacity:0; visibility:hidden; transition:opacity 2s ease 0s, visibility 0s 2s; color:#d9d3b4; font:16px/1.55 'Bricolage Grotesque',system-ui,sans-serif; }
+#ch-03 .tt-kent p { margin:0; }
+#ch-03 .tt-kent .q { color:#a9a58f; font-size:14px; }
+#ch-03 .tt-kent .tt-btn { align-self:flex-start; }
+#ch-03 .tt-desk.is-hush.is-hushtext .tt-kent { opacity:1; visibility:visible; transition:opacity 2.4s ease, visibility 0s; }
+
+/* final */
+#ch-03 .tt-outro { margin-top:clamp(50px,9vw,110px); max-width:56ch; color:var(--fg); font-family:'Bricolage Grotesque',system-ui,sans-serif; }
+#ch-03 .tt-sat { margin:0; font:700 clamp(54px,12vw,120px)/1 'Courier New','IBM Plex Mono',monospace; color:var(--accent2); }
+#ch-03 .tt-sat small { font-size:.36em; opacity:.7; }
+
+@media (max-width:860px) {
+  #ch-03 .tt-desk { grid-template-columns:minmax(0,1fr); }
+  #ch-03 .tt-sheet { width:100%; }
+  #ch-03 .tt-paper { --fs:clamp(10px, calc((100vw - 112px) / 22.8), 15px); }
+  #ch-03 .tt-paper { height:clamp(240px,38vh,330px); }
+  #ch-03 .tt-sheet { --padx:12px; }
+  #ch-03 .tt-kent { position:relative; inset:auto; display:none; }
+  #ch-03 .tt-desk.is-hush .tt-kent { display:flex; }
+  #ch-03 .tt-desk.is-hush .tt-asidein { display:none; }
+}
+@media (prefers-reduced-motion:reduce) {
+  #ch-03 .tt-desk.is-printing .tt-spool, #ch-03 .tt-desk.is-printing .tt-led i { animation:none; }
+  #ch-03 .tt-cell.stamp .m { animation:none; }
+  #ch-03 .tt-head, #ch-03 .tt-head.snap { transition:none; }
+}
+</style>
+
+<script>
+Gates.chapter('ch-03', function (ctx) {
+  const $ = ctx.$, $$ = ctx.$$;
+  let COLS = 38;
+  const desk = $('#ch03-desk'), out = $('.tt-out'), paper = $('.tt-paper'), head = $('.tt-head');
+  const keysEl = $('.tt-keys'), gridEl = $('.tt-grid'), statusEl = $('.tt-status');
+  const tailBtn = $('.tt-tail'), scoreEl = $('.tt-score'), meterEl = $('.tt-meter');
+  const asideIn = $('.tt-asidein');
+  const SP = ctx.reduced ? 0.2 : 1;
+
+  Gates.facts = Gates.facts || {};
+  Gates.facts['ch-03'] = {
+    title: 'Ressalvas: Lakeside, 1968–72',
+    items: [
+      { text: 'Entrada na Lakeside: "1968, aos 13 anos" é o que a maioria das fontes diz; uma nota pesquisada aponta 1967, e a série varia (8ª série segundo o Seattle Times; da 7ª à 12ª segundo a Cascade PBS).', url: 'https://en.wikipedia.org/wiki/Bill_Gates' },
+      { text: 'Primeiro programa: a Wikipedia diz jogo da velha; o Seattle Times diz um conversor de bases numéricas. O modelo do terminal (Teletype Model 33) vem da Wikipedia; o Tatler fala só em terminal e tempo em um computador GE.', url: 'https://tatler.lakesideschool.org/7088/science-technology/a-history-of-cs-at-lakeside/' },
+      { text: 'Computer Center Corporation: banimento "por algumas semanas" e contratação posterior para achar falhas; a empresa faliu em 1970. A cena da lixeira vem de uma reencenação do documentário da Netflix, não de registro da época.', url: 'https://tatler.lakesideschool.org/7088/science-technology/a-history-of-cs-at-lakeside/' },
+      { text: 'Horários das aulas: 1971 segundo a Wikipedia; o livro (via resenha) liga o projeto à morte do professor Bob Haig em 1972. Kent Evans morreu em 1972; a idade (17) aparece só na AP. A frase "the only negative thing in my childhood" vem de entrevistas sobre Source Code.', url: 'https://exame.com/tecnologia/prisoes-e-uso-de-drogas-autobiografia-de-bill-gates-mostra-sua-face-menos-conhecida/' },
+      { text: '"Deixem o Bill ser o Bill" ("let young Bill be Bill") é o conselho do terapeuta segundo o relato de uma resenha do livro, não uma citação conferida no original.', url: 'https://www.cascadepbs.org/mossback/2025/03/becoming-bill-gates-new-memoir-retraces-road-microsoft' },
+      { text: 'Traf-O-Data: fundada em 1972, extinta em 1975. A idade de Gates na fundação diverge entre fontes e os valores também (o Tatler cita US$ 20.000; a Wikipedia não cita cifra).', url: 'https://en.wikipedia.org/wiki/Traf-O-Data' }
+    ]
+  };
+
+  /* ---------- áudio ---------- */
+  const snd = (n, o) => { try { ctx.audio.play(n, o); } catch (e) {} };
+  let lastClack = 0;
+  function clack() {
+    const t = performance.now();
+    if (t - lastClack < 42) return;
+    lastClack = t;
+    snd('key', { vol: 0.32, rate: 0.85 + Math.random() * 0.35 });
+  }
+
+  /* ---------- estado de impressão ---------- */
+  let col = 0, lines = 0, chW = 9, inView = false, started = false;
+  let skip = false, pending = 0, chain = Promise.resolve(), printing = 0, hushed = false, stuck = true;
+  const waiters = [], timers = [];
+
+  function measure() { const p = $('.tt-probe'); const w = p.getBoundingClientRect().width / 20; if (w > 2) chW = w; const cs = getComputedStyle(paper), iw = paper.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight); if (iw > 100 && chW > 2) COLS = Math.max(26, Math.min(60, Math.floor(iw / chW) - 1)); moveHead(); }
+  function moveHead(snap) {
+    head.style.setProperty('--hx', (col * chW) + 'px');
+    const pl = parseFloat(getComputedStyle(paper).paddingLeft) || 22;
+    const sheet = paper.parentElement, plat = head.parentElement;
+    const off = (sheet.getBoundingClientRect().left - plat.getBoundingClientRect().left) + pl - 8;
+    head.style.setProperty('--hoff', off + 'px');
+    if (snap) { head.classList.add('snap'); setTimeout(() => head.classList.remove('snap'), 260); }
+  }
+  function sleep(ms, hard) {
+    return new Promise(r => {
+      if (!hard && (skip || ms <= 0)) return r();
+      const t = setTimeout(() => { const i = timers.findIndex(x => x.t === t); if (i >= 0) timers.splice(i, 1); r(); }, ms);
+      timers.push({ t, r, hard: !!hard });
+    });
+  }
+  function skipNow() {
+    if (hushed) return;
+    if (bootTl) bootTl.progress(1);
+    skip = true;
+    for (const x of timers.slice()) if (!x.hard) { clearTimeout(x.t); timers.splice(timers.indexOf(x), 1); x.r(); }
+  }
+  async function gate() { while (!inView) await new Promise(r => waiters.push(r)); }
+  function setPrinting(d) { printing += d; desk.classList.toggle('is-printing', printing > 0 && !hushed); }
+  function stick() { if (stuck) paper.scrollTop = paper.scrollHeight; }
+  function updMeter() { meterEl.textContent = 'Papel impresso: ' + (lines * 0.00423).toFixed(2).replace('.', ',') + ' m'; }
+  function nl(mute) { lines++; col = 0; moveHead(true); if (!mute && !skip) snd('teletype', { vol: 0.45 }); updMeter(); }
+
+  async function typeText(text, o) {
+    o = o || {};
+    const span = document.createElement('span');
+    if (o.cls) span.className = o.cls;
+    const node = document.createTextNode('');
+    span.appendChild(node); out.appendChild(span);
+    setPrinting(1);
+    for (const ch of text) {
+      if (!o.hard && !skip) await gate();
+      if (ch === '\n') { node.appendData('\n'); nl(o.mute); }
+      else { node.appendData(ch); col++; moveHead(); if (!o.mute && !skip && ch !== ' ') clack(); }
+      stick();
+      if (o.speed && !(skip && !o.hard)) {
+        const extra = /[.,;:?!]/.test(ch) ? o.speed * (o.pause || 4) : 0;
+        await sleep((o.speed + extra) * SP, o.hard);
+      }
+    }
+    setPrinting(-1);
+  }
+  function wrap(s) {
+    return s.split('\n').map(par => {
+      const words = par.split(' '); let line = '', res = [];
+      for (const w of words) {
+        if ((line + ' ' + w).trim().length > COLS) { res.push(line); line = w; }
+        else line = (line ? line + ' ' : '') + w;
+      }
+      res.push(line); return res.join('\n');
+    }).join('\n');
+  }
+  function job(fn) {
+    pending++;
+    chain = chain.then(fn).catch(e => console.error(e)).then(() => { pending--; if (!pending) skip = false; });
+    return chain;
+  }
+
+  /* papel: rolagem, arrastar, voltar ao fim */
+  paper.addEventListener('scroll', () => {
+    stuck = paper.scrollHeight - paper.scrollTop - paper.clientHeight < 40;
+    tailBtn.hidden = stuck;
+  }, { passive: true });
+  tailBtn.addEventListener('click', () => { paper.scrollTo({ top: paper.scrollHeight, behavior: ctx.reduced ? 'auto' : 'smooth' }); });
+  (function drag() {
+    let down = false, y0 = 0, s0 = 0, v = 0, ly = 0, lt = 0, raf = 0;
+    paper.addEventListener('pointerdown', e => {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      down = true; y0 = ly = e.clientY; s0 = paper.scrollTop; v = 0; lt = performance.now(); cancelAnimationFrame(raf);
+      paper.setPointerCapture(e.pointerId);
+    });
+    paper.addEventListener('pointermove', e => {
+      if (!down) return;
+      paper.scrollTop = s0 - (e.clientY - y0);
+      const t = performance.now(); v = (ly - e.clientY) / Math.max(1, t - lt); ly = e.clientY; lt = t;
+    });
+    const up = () => {
+      if (!down) return; down = false;
+      const step = () => { if (Math.abs(v) < 0.02) return; paper.scrollTop += v * 16; v *= 0.93; raf = requestAnimationFrame(step); };
+      if (!ctx.reduced) step();
+    };
+    paper.addEventListener('pointerup', up); paper.addEventListener('pointercancel', up);
+  })();
+
+  /* ---------- teclado desenhado ---------- */
+  const ROWS = ['1234567890', 'QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'];
+  ROWS.forEach(r => {
+    const row = document.createElement('div'); row.className = 'tt-row';
+    for (const c of r) {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'tt-key'; b.tabIndex = -1; b.textContent = c; b.dataset.k = c;
+      if (/[1-9]/.test(c)) b.dataset.g = '1';
+      row.appendChild(b);
+    }
+    keysEl.appendChild(row);
+  });
+  (function lastRow() {
+    const row = document.createElement('div'); row.className = 'tt-row';
+    const sp = document.createElement('button'); sp.type = 'button'; sp.tabIndex = -1; sp.className = 'tt-key wide'; sp.textContent = 'ESPAÇO'; sp.dataset.k = ' ';
+    const rt = document.createElement('button'); rt.type = 'button'; rt.tabIndex = -1; rt.className = 'tt-key ret'; rt.textContent = 'RETURN'; rt.dataset.k = 'Enter';
+    row.append(sp, rt); keysEl.appendChild(row);
+  })();
+  function flashKey(k) {
+    const b = keysEl.querySelector('[data-k="' + (k === ' ' ? ' ' : k.toUpperCase()) + '"]') || (k === 'Enter' ? keysEl.querySelector('[data-k="Enter"]') : null);
+    if (!b) return;
+    b.classList.add('down'); setTimeout(() => b.classList.remove('down'), 110);
+  }
+  keysEl.addEventListener('pointerdown', e => {
+    const b = e.target.closest('.tt-key'); if (!b) return;
+    e.preventDefault(); b.classList.add('down'); setTimeout(() => b.classList.remove('down'), 110);
+    handleKey(b.dataset.k);
+  });
+
+  /* ---------- jogo da velha ---------- */
+  const LINES = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+  let board = Array(9).fill(''), over = false, level = 'humano', gameNo = 1, score = { v: 0, e: 0, d: 0 }, perfectDraws = 0;
+  const cells = [];
+  for (let i = 0; i < 9; i++) {
+    const c = document.createElement('button'); c.type = 'button'; c.className = 'tt-cell';
+    c.innerHTML = '<span class="n">' + (i + 1) + '</span><span class="m"></span>';
+    c.setAttribute('aria-label', 'Casa ' + (i + 1) + ', vazia');
+    c.addEventListener('click', () => play(i));
+    gridEl.appendChild(c); cells.push(c);
+  }
+  function winner(b) {
+    for (const l of LINES) if (b[l[0]] && b[l[0]] === b[l[1]] && b[l[0]] === b[l[2]]) return { w: b[l[0]], line: l };
+    return b.every(Boolean) ? { w: 'D' } : null;
+  }
+  function mm(b, turn, d) {
+    const r = winner(b);
+    if (r) return r.w === 'O' ? 10 - d : r.w === 'X' ? d - 10 : 0;
+    let best = turn === 'O' ? -99 : 99;
+    for (let i = 0; i < 9; i++) if (!b[i]) {
+      b[i] = turn; const s = mm(b, turn === 'O' ? 'X' : 'O', d + 1); b[i] = '';
+      best = turn === 'O' ? Math.max(best, s) : Math.min(best, s);
+    }
+    return best;
+  }
+  const freeCells = () => board.map((v, i) => v ? -1 : i).filter(i => i >= 0);
+  const rnd = a => a[Math.floor(Math.random() * a.length)];
+  function pick() {
+    const f = freeCells();
+    if (level === 'perfeito') {
+      let best = -99, opts = [];
+      for (const i of f) { board[i] = 'O'; const s = mm(board, 'X', 1); board[i] = ''; if (s > best) { best = s; opts = [i]; } else if (s === best) opts.push(i); }
+      return rnd(opts);
+    }
+    // humano: ganha se puder; bloqueia só às vezes; senão joga solto
+    for (const i of f) { board[i] = 'O'; const w = winner(board); board[i] = ''; if (w && w.w === 'O') return i; }
+    if (Math.random() < 0.5) for (const i of f) { board[i] = 'X'; const w = winner(board); board[i] = ''; if (w && w.w === 'X') return i; }
+    return rnd(f);
+  }
+  function place(i, m) {
+    board[i] = m; const c = cells[i];
+    c.classList.add('on', 'stamp'); c.querySelector('.m').textContent = m;
+    c.setAttribute('aria-label', 'Casa ' + (i + 1) + ', ' + m);
+    snd('click', { vol: 0.5 });
+    setTimeout(() => c.classList.remove('stamp'), 400);
+  }
+  function resetCells() {
+    cells.forEach((c, i) => { c.classList.remove('on', 'win', 'stamp'); c.querySelector('.m').textContent = ''; c.setAttribute('aria-label', 'Casa ' + (i + 1) + ', vazia'); });
+  }
+  function status(t, speak) { statusEl.textContent = t; if (speak) ctx.say(t); }
+  function updScore() { scoreEl.textContent = 'Você ' + score.v + '  ·  Empates ' + score.e + '  ·  Eu ' + score.d; }
+  function boardText() {
+    const c = i => board[i] || String(i + 1);
+    return ' ' + c(0) + ' | ' + c(1) + ' | ' + c(2) + '\n---+---+---\n ' + c(3) + ' | ' + c(4) + ' | ' + c(5) + '\n---+---+---\n ' + c(6) + ' | ' + c(7) + ' | ' + c(8) + '\n';
+  }
+  async function printBoard() { await typeText('\n' + boardText() + '\n', { speed: 9 }); }
+
+  function play(i) {
+    if (hushed) return;
+    if (pending) { skipNow(); return; }
+    if (over) { status('Partida encerrada. Tecle Enter ou use Nova partida.', true); return; }
+    if (board[i]) { cells[i].classList.add('shake'); setTimeout(() => cells[i].classList.remove('shake'), 320); snd('error', { vol: 0.35 }); status('A casa ' + (i + 1) + ' já está ocupada.', true); return; }
+    place(i, 'X');
+    job(async () => {
+      await typeText('VOCÊ  ' + (i + 1) + '\n', { speed: 28 });
+      let r = winner(board); if (r) return finish(r);
+      status('Pensando…');
+      await sleep(380 + Math.random() * 520);
+      const m = pick(); place(m, 'O');
+      await typeText('EU    ' + (m + 1) + '\n', { speed: 28 });
+      await printBoard();
+      r = winner(board); if (r) return finish(r);
+      status('Sua vez. Casas livres: ' + freeCells().map(x => x + 1).join(' ') + '.', true);
+    });
+  }
+
+  async function finish(r) {
+    over = true;
+    let msg, cmt;
+    if (r.line) r.line.forEach(i => cells[i].classList.add('win'));
+    await printBoard();
+    if (r.w === 'X') {
+      score.v++; snd('success', { vol: 0.6 });
+      msg = 'Você venceu.';
+      cmt = 'VOCÊ VENCEU. Isso só acontece no nível humano, onde eu erro como gente. Troque para o nível perfeito e tente de novo. Aviso: não vai dar.';
+    } else if (r.w === 'O') {
+      score.d++; snd('error', { vol: 0.4 });
+      msg = 'A máquina venceu.';
+      cmt = level === 'perfeito'
+        ? 'Venci. No nível perfeito, aliás, ninguém ganha de mim: o melhor que existe é empatar. Joga certo e o jogo da velha termina em nada.'
+        : 'Venci desta vez. No nível humano você pode ganhar: eu deixo escapar jogadas. Tente outra partida.';
+    } else {
+      score.e++; snd('bell', { vol: 0.55 });
+      msg = 'Empate.';
+      if (level === 'perfeito') {
+        perfectDraws++;
+        cmt = 'EMPATE. Contra o nível perfeito, é o teto. Dizem que o jogo da velha foi o primeiro programa de Bill, aos 13 anos. Aqui, a máquina nunca perde porque cada jogada é calculada, linha por linha.';
+      } else cmt = 'Empate. No nível humano você ainda pode ganhar. No perfeito, empatar já é o máximo.';
+    }
+    updScore(); status(msg + ' Tecle Enter para outra partida.', true);
+    await sleep(500);
+    await typeText(wrap(cmt) + '\n\n', { speed: 22, cls: 'hd' });
+    await sleep(500);
+    if (letterIdx < LETTERS.length) await deliverLetter();
+    else await typeText(wrap('TECLE ENTER PARA OUTRA PARTIDA.') + '\n\n', { speed: 20, cls: 'hd' });
+  }
+
+  function newGame() {
+    if (hushed) return;
+    if (pending) { skipNow(); return; }
+    board = Array(9).fill(''); over = false; gameNo++; resetCells();
+    const machineFirst = gameNo % 2 === 0;
+    job(async () => {
+      await typeText('\n— PARTIDA ' + gameNo + ' · NÍVEL ' + level.toUpperCase() + ' —\n', { speed: 18, cls: 'hd' });
+      if (machineFirst) {
+        status('Pensando…'); await sleep(500);
+        const m = pick(); place(m, 'O');
+        await typeText('EU    ' + (m + 1) + '\n', { speed: 28 });
+        await printBoard();
+        status('Eu comecei. Sua vez.', true);
+      } else {
+        await typeText('VOCÊ COMEÇA. X É SEU.\n\n', { speed: 18 });
+        status('Você começa. Digite 1 a 9 ou toque numa casa.', true);
+      }
+    });
+  }
+
+  /* ---------- cartas ---------- */
+  const LETTERS = [
+    { t: 'ANTES DA MÁQUINA', p: [
+      'Bill é pequeno para a idade, tem a cabeça rápida demais para a sala de aula e uma vontade de ganhar que não cabe em casa. Os pais, o advogado Bill Gates Sr. e a professora Mary, o levam a um conselheiro.',
+      'Segundo o que se conta do livro Source Code, o conselho foi: deixem o Bill ser o Bill. Daí, a Lakeside, escola particular de Seattle.'] },
+    { t: '1968 · O TERMINAL', p: [
+      'Em 1968 (algumas fontes dizem 1967) o Clube das Mães da Lakeside compra um terminal Teletype, provavelmente um Model 33, e tempo num computador GE. A máquina fica no departamento de matemática.',
+      'O professor Bill Dougall defende que os alunos possam usá-la. Bill tem 13 anos. A série em que ele entrou depende de quem conta.'] },
+    { t: 'PRIMEIRO PROGRAMA', p: [
+      'O primeiro programa dele? Há duas versões: um jogo da velha, como o que você jogou, ou um conversor de bases numéricas. Ninguém tem certeza.',
+      'O que se sabe é que programar o atraía porque ali ele mesmo definia a medida do sucesso. Paul Allen, dois anos mais velho, logo aparece na sala. Com Ric Weiland e Kent Evans, nasce o Lakeside Programmers Group.'] },
+    { t: 'A COMPUTER CENTER CORPORATION', p: [
+      'A turma passa a usar o computador da Computer Center Corporation, um PDP-10. Explora falhas do sistema. É pega. Fica banida por algumas semanas, em 1968.',
+      'Depois a própria empresa os contrata para procurar defeitos, em troca de tempo de máquina. A CCC fecha em 1970. O documentário da Netflix reencena Allen e Bill vasculhando uma lixeira atrás de código do PDP-10.',
+      'Vem então a Information Sciences Inc.: tempo livre e royalties por um programa de folha de pagamento.'] },
+    { t: '1971 · OS HORÁRIOS', p: [
+      'A escola precisa montar o horário das aulas. Bill e Kent Evans escrevem o programa que faz isso, em 1971 segundo a maioria das fontes. Funciona. Dizem que Bill deu um jeito de cair nas turmas de que gostava.',
+      'Kent era o melhor amigo dele, e o sócio em quase tudo.'] },
+    { kent: true, t: 'KENT EVANS' },
+    { t: 'TRAF-O-DATA · 1972', p: [
+      'Com Paul Allen e Paul Gilbert, estudante de engenharia elétrica, Bill funda a Traf-O-Data. A ideia: ler as fitas de papel dos contadores de tráfego, fitas como esta, e transformar em relatórios.',
+      'Gilbert monta o computador em volta de um chip Intel 8008. Allen escreve um emulador do chip num PDP-10. Na demonstração a um funcionário do condado, o protótipo não funciona. Depois, o estado oferece o serviço de graça, e o mercado some.',
+      'Os valores variam: uma fonte fala em cerca de US$ 20 mil, outras não dão cifra. A empresa é extinta em 1975. Allen diria que ela foi fundamental para prepará-los para o primeiro produto da Microsoft (tradução livre).'] },
+    { t: 'ÚLTIMA CARTA', p: [
+      'Em 1972 Bill é pajem na Câmara dos Representantes dos Estados Unidos. Em 1973 se forma na Lakeside, com 1590 de 1600 no SAT.',
+      'A sala de matemática ficou para trás. O papel, não: esta fita continua sua. Pode rolar, ler de novo, ou jogar mais uma.'] }
+  ];
+  let letterIdx = 0;
+  const letterBtn = $('[data-act="letter"]');
+  function updLetterBtn() {
+    letterBtn.disabled = letterIdx >= LETTERS.length;
+    letterBtn.textContent = letterBtn.disabled ? 'Sem mais cartas' : 'Próxima carta (' + (letterIdx + 1) + '/' + LETTERS.length + ')';
+  }
+  async function runLetter(i) {
+    const L = LETTERS[i];
+    if (L.kent) return kentRite();
+    snd('bell', { vol: 0.35 });
+    await typeText('\n' + wrap('CARTA ' + (i + 1) + '/' + LETTERS.length + ' · ' + L.t) + '\n\n', { speed: 16, cls: 'hd' });
+    for (const p of L.p) {
+      await typeText(wrap(p) + '\n\n', { speed: 22 });
+      await sleep(260);
+    }
+  }
+  async function deliverLetter() {
+    if (letterIdx >= LETTERS.length) return;
+    const i = letterIdx++; updLetterBtn();
+    await runLetter(i);
+    if (i === LETTERS.length - 1) await typeText(wrap('FIM DAS CARTAS.') + '\n\n', { speed: 22, cls: 'hd' });
+    else if (!over) { /* jogo em andamento */ }
+    else await typeText('TECLE ENTER PARA OUTRA PARTIDA.\n\n', { speed: 18, cls: 'hd' });
+  }
+
+  /* ---------- Kent Evans ---------- */
+  let contResolve = null;
+  async function kentRite() {
+    hushed = true; desk.classList.add('is-hush'); desk.classList.remove('is-printing');
+    asideIn.inert = true;
+    ctx.say('O teletipo para. Silêncio.');
+    await sleep(2400, true);
+    await typeText('\n\n', { mute: true, hard: true });
+    await typeText('KENT EVANS\n', { speed: 150, mute: true, hard: true, cls: 'kent' });
+    await sleep(1500, true);
+    await typeText('1972\n', { speed: 240, mute: true, hard: true, cls: 'kent' });
+    await sleep(2200, true);
+    desk.classList.add('is-hushtext');
+    const kent = $('.tt-kent'); kent.setAttribute('aria-hidden', 'false');
+    ctx.say('Kent Evans, 1972. Melhor amigo de Bill, morreu num acidente de montanhismo.');
+    if (innerWidth <= 860) { try { kent.scrollIntoView({ block: 'center', behavior: ctx.reduced ? 'auto' : 'smooth' }); } catch (e) {} }
+    await sleep(900, true);
+    const cont = $('[data-act="cont"]'); try { cont.focus({ preventScroll: true }); } catch (e) {}
+    await new Promise(r => { contResolve = r; });
+    desk.classList.remove('is-hushtext'); kent.setAttribute('aria-hidden', 'true');
+    desk.classList.remove('is-hush'); asideIn.inert = false; hushed = false;
+    await sleep(1600, true);
+    snd('teletype', { vol: 0.5 });
+    await typeText('\n', { speed: 0 });
+  }
+
+  /* ---------- digitação livre ---------- */
+  function freeType(ch) {
+    if (pending || hushed) return;
+    let s = out.lastElementChild;
+    if (!s || !s.classList.contains('free')) { s = document.createElement('span'); s.className = 'free'; s.appendChild(document.createTextNode('')); out.appendChild(s); }
+    s.firstChild.appendData(ch); col++; moveHead(); clack();
+    if (col >= COLS) { s.firstChild.appendData('\n'); nl(); }
+    stick();
+  }
+  let noteT = 0;
+  function handleKey(k) {
+    if (hushed) return;
+    if (/^[1-9]$/.test(k)) { play(+k - 1); return; }
+    if (k === 'Enter') {
+      if (pending) { skipNow(); return; }
+      if (over) { newGame(); return; }
+      let s = out.lastElementChild;
+      if (!s || !s.classList.contains('free')) { s = document.createElement('span'); s.className = 'free'; s.appendChild(document.createTextNode('')); out.appendChild(s); }
+      s.firstChild.appendData('\n'); nl(); stick(); return;
+    }
+    if (k === 'Backspace') {
+      status('O papel não apaga. O que foi batido, ficou.');
+      clearTimeout(noteT); noteT = setTimeout(() => status(over ? 'Tecle Enter para outra partida.' : 'Sua vez.'), 2200);
+      snd('error', { vol: 0.25 }); return;
+    }
+    if (k.length === 1) {
+      if (pending) { skipNow(); return; }
+      freeType(k.toUpperCase());
+    }
+  }
+  function deskActive() {
+    const r = desk.getBoundingClientRect(), vh = innerHeight;
+    return Math.min(r.bottom, vh) - Math.max(r.top, 0) > Math.min(r.height, vh) * 0.5;
+  }
+  document.addEventListener('keydown', e => {
+    if (e.ctrlKey || e.metaKey || e.altKey || e.isComposing) return;
+    if (!ctx.visible || !deskActive()) return;
+    const t = e.target, tag = t && t.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (t && t.isContentEditable)) return;
+    const k = e.key;
+    if (k === 'Enter' || k === ' ') { if (tag === 'BUTTON' || tag === 'A') return; if (k === ' ' && !desk.contains(t)) return; }
+    if (k === ' ') { e.preventDefault(); if (hushed) return; if (pending) { skipNow(); return; } freeType(' '); flashKey(' '); return; }
+    if (/^[1-9]$/.test(k) || k === 'Enter' || k === 'Backspace' || (k.length === 1 && /[A-Za-zÀ-ÿ0.,?!'\-:;]/.test(k))) {
+      if (hushed) return;
+      if (k === 'Enter' || /^[1-9]$/.test(k)) e.preventDefault();
+      flashKey(k); handleKey(k);
+    }
+  });
+
+  /* ---------- botões ---------- */
+  $$('[data-level]').forEach(b => b.addEventListener('click', () => {
+    if (hushed) return;
+    level = b.dataset.level;
+    $$('[data-level]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    snd('click', { vol: 0.5 });
+    status(level === 'perfeito' ? 'Nível perfeito: a máquina não erra. Dá para empatar, não para ganhar.' : 'Nível humano: a máquina erra como gente. Dá para ganhar.', true);
+    if (!pending) job(async () => { await typeText(wrap(level === 'perfeito' ? 'NÍVEL PERFEITO. EU NÃO ERRO. NO MÁXIMO, EMPATAMOS.' : 'NÍVEL HUMANO. EU ERRO COMO GENTE.') + '\n', { speed: 18, cls: 'hd' }); });
+  }));
+  $$('[data-act]').forEach(b => b.addEventListener('click', () => {
+    const a = b.dataset.act;
+    if (a === 'new') { snd('click', { vol: 0.5 }); if (!pending && !over) { over = true; } newGame(); }
+    else if (a === 'letter') { if (!hushed && letterIdx < LETTERS.length) { snd('click', { vol: 0.5 }); job(deliverLetter); } }
+    else if (a === 'skip') skipNow();
+    else if (a === 'cont') { if (contResolve) { const r = contResolve; contResolve = null; r(); } }
+    else if (a === 'facts' || a === 'facts2') ctx.fact('ch-03');
+  }));
+
+  /* ---------- sr-only: texto completo ---------- */
+  (function sr() {
+    const el = $('#ch03-sr');
+    const h = document.createElement('div');
+    h.innerHTML = '<h3>Cartas do teletipo, texto completo</h3>' + LETTERS.map(L => L.kent
+      ? '<h4>Kent Evans, 1972</h4><p>O teletipo para, em silêncio. Kent Evans, melhor amigo de Bill, morreu em 1972 num acidente de montanhismo.</p>'
+      : '<h4>' + L.t + '</h4>' + L.p.map(p => '<p>' + p + '</p>').join('')).join('');
+    el.appendChild(h);
+  })();
+
+  (function sat() {
+    const el = $('.tt-satn'); if (!el || ctx.reduced) return;
+    const io2 = new IntersectionObserver(es => { if (!es[0].isIntersecting) return; io2.disconnect();
+      const o = { n: 0 }; el.textContent = '0';
+      ctx.gsap.to(o, { n: 1590, duration: 1.6, ease: 'power2.out', onUpdate: () => { el.textContent = String(Math.round(o.n)); }, onComplete: () => { el.textContent = '1590'; } });
+    }, { threshold: .6 });
+    io2.observe(el);
+  })();
+
+  /* ---------- entrada: a sala acende, a máquina liga ---------- */
+  const G = ctx.gsap, BOOT = !ctx.reduced && !!G;
+  const lamp = $('.tt-lamp'), sheet = $('.tt-sheet'), machine = $('.tt-machine'), slip = $('.tt-slip');
+  const keys = $$('.tt-key'), asideRest = $$('.tt-asidein > :not(.tt-slip)');
+  let bootTl = null;
+  if (BOOT) {
+    G.from($$('.tt-intro > *'), { y: 26, opacity: 0, duration: .9, ease: 'power3.out', stagger: .14,
+      scrollTrigger: { trigger: $('.tt-intro'), start: 'top 82%', once: true } });
+    G.set(lamp, { opacity: 0 });
+    G.set([sheet, machine, slip].concat(asideRest), { autoAlpha: 0 });
+  }
+  function lampFlicker(tl) {
+    // TODO(human): acender a lâmpada (lamp) na timeline tl, terminando em opacity 1
+    tl.to(lamp, { opacity: 1, duration: .6 });
+  }
+  function boot() {
+    if (!BOOT) return Promise.resolve();
+    desk.classList.add('is-booting');
+    return new Promise(done => {
+      bootTl = G.timeline({ onComplete: () => {
+        bootTl = null; desk.classList.remove('is-booting');
+        G.set([lamp, sheet, machine, slip].concat(keys, asideRest), { clearProps: 'all' });
+        measure(); done();
+      } });
+      lampFlicker(bootTl);
+      bootTl
+        .fromTo(machine, { autoAlpha: 0, y: 60 }, { autoAlpha: 1, y: 0, duration: .8, ease: 'power3.out' }, '-=0.2')
+        .from(keys, { scale: .4, opacity: 0, duration: .32, ease: 'back.out(2.4)', stagger: { each: .012, from: 'random' } }, '-=0.45')
+        // o papel sobe a partir do rolo
+        .fromTo(sheet, { autoAlpha: 0, clipPath: 'inset(100% 0 0 0)' }, { autoAlpha: 1, clipPath: 'inset(0% 0 0 0)', duration: .7, ease: 'power2.out' }, '-=0.2')
+        .fromTo(slip, { autoAlpha: 0, y: -40, rotation: -9 }, { autoAlpha: 1, y: 0, rotation: -1.1, duration: .7, ease: 'back.out(1.6)' }, '<0.1')
+        .fromTo(asideRest, { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: .5, stagger: .08, ease: 'power2.out' }, '-=0.35');
+    });
+  }
+
+  /* ---------- início: só quando a mesa aparece ---------- */
+  const io = new IntersectionObserver(es => {
+    es.forEach(en => {
+      inView = en.isIntersecting && en.intersectionRatio > 0.12;
+      if (inView) { waiters.splice(0).forEach(r => r()); if (!started && en.intersectionRatio > 0.3) start(); }
+    });
+  }, { threshold: [0, 0.12, 0.3, 0.6] });
+  io.observe(desk);
+  function start() {
+    started = true;
+    updScore(); updLetterBtn(); updMeter(); measure();
+    status('Sua vez. Digite 1 a 9 ou toque numa casa.');
+    job(boot);
+    job(async () => {
+      await typeText('LAKESIDE SCHOOL · SEATTLE\nSALA DE MATEMÁTICA · LINHA ABERTA\n', { speed: 26, cls: 'hd' });
+      await sleep(300);
+      await deliverLetter();
+      await typeText('SUA VEZ. DIGITE 1-9 OU TOQUE NA FICHA.\n\n', { speed: 20, cls: 'hd' });
+    });
+  }
+  updScore(); updLetterBtn(); updMeter();
+  setTimeout(measure, 300);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+
+  return {
+    enter() { measure(); },
+    leave() {},
+    resize() { measure(); }
+  };
+});
+</script>

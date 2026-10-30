@@ -1,0 +1,889 @@
+<section class="chapter" id="ch-04" data-era="altair" data-title="Altair" data-year="1973–75">
+
+  <!-- ATO 1 · O dormitório -->
+  <div class="c4-dorm">
+    <div class="c4-dorm-in container">
+      <div class="c4-dorm-copy stack">
+        <p class="mono caption">Cambridge, Massachusetts · outono de 1973</p>
+        <h2 class="d2">Harvard, três da manhã</h2>
+        <p class="lead">Gates chega sem escolher curso. Faz Math 55, matérias de pós-graduação e passa as noites num computador grande que, nas palavras dele (tradução livre), ninguém supervisionava.</p>
+        <p class="p">No segundo ano, na Currier House, a sala comum vira a “Poker Room”: Seven Card Stud, noites de mais de US$ 1.000 ganhos ou perdidos. Dizem que ele repetia “estou melhorando” mesmo perdendo. No mesmo corredor mora Steve Ballmer.</p>
+        <button class="btn c4-deal" type="button">Dar as cartas</button>
+        <p class="caption c4-deal-note" aria-live="polite">Sete cartas, três viradas para baixo. Toque nas cartas para virar.</p>
+      </div>
+      <div class="c4-table" aria-label="Mesa de pôquer com sete cartas">
+        <div class="c4-hand"></div>
+        <div class="c4-lamp" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATO 2 · A capa e a ligação -->
+  <div class="c4-cover-sec container">
+    <div class="c4-mag-wrap">
+      <figure class="c4-mag" aria-label="Capa de revista desenhada: Altair 8800, o primeiro kit de minicomputador">
+        <div class="c4-mag-top"><span>Popular Electronics</span><em>Jan. 1975</em></div>
+        <svg class="c4-mini" viewBox="0 0 240 110" role="img" aria-label="Desenho do Altair 8800"></svg>
+        <p class="c4-mag-h">Projeto do mês: o primeiro kit de minicomputador do mundo, capaz de rivalizar com os comerciais</p>
+        <p class="c4-mag-b">Altair 8800 · cerca de US$ 400 em kit</p>
+      </figure>
+    </div>
+    <div class="stack c4-call-copy">
+      <h3 class="d3">A revista que chegou ao quarto</h3>
+      <p class="p">A capa da Popular Electronics é da edição de janeiro de 1975. Chegou às bancas em dezembro de 1974. Paul Allen a compra em Harvard Square e corre até a Currier.</p>
+      <p class="p">Dentro está o Altair 8800, da MITS, de Albuquerque: um kit com o chip 8080 da Intel. Sem teclado, sem tela, sem programas.</p>
+      <button class="btn c4-ring" type="button">Ligar para Albuquerque</button>
+      <ol class="c4-chat" aria-live="polite"></ol>
+    </div>
+  </div>
+
+  <!-- ATO 3 · A máquina dentro da máquina -->
+  <div class="c4-nest-sec container">
+    <div class="c4-nest-copy stack">
+      <h3 class="d3">Uma máquina que só existia na cabeça</h3>
+      <p class="p">Nenhum dos dois tinha um Altair. Allen escreve, no computador de Harvard, um simulador do 8080. Gates escreve o BASIC para rodar dentro dele. Monte Davidoff, colega de Harvard, faz as rotinas de ponto flutuante: por US$ 400, segundo o relato.</p>
+      <p class="caption c4-nest-cap" aria-live="polite">Toque em uma camada.</p>
+    </div>
+    <div class="c4-nest" role="group" aria-label="Três camadas: computador de Harvard, simulador do 8080, BASIC">
+      <div role="button" tabindex="0" class="c4-n1" data-k="1" aria-label="Camada 1: o computador de Harvard"><span>PDP-10 de Harvard</span>
+        <div role="button" tabindex="0" class="c4-n2" data-k="2" aria-label="Camada 2: o simulador do 8080"><span>simulador do 8080 · Allen</span>
+          <span class="c4-n3" data-k="3" role="button" tabindex="0" aria-label="Camada 3: o interpretador BASIC"><span>BASIC · Gates e Davidoff</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATO 4 · O avião -->
+  <div class="c4-fly container">
+    <div class="stack">
+      <h3 class="d3">Boston → Albuquerque</h3>
+      <p class="p">Fim de fevereiro de 1975: o interpretador cabe em cerca de 3 KB. Allen embarca com a fita de papel. Gates fica em Cambridge.</p>
+    </div>
+    <svg class="c4-map" viewBox="0 0 800 300" aria-hidden="true">
+      <g stroke="currentColor" opacity=".12"><path d="M0 60H800M0 120H800M0 180H800M0 240H800M160 0V300M320 0V300M480 0V300M640 0V300"/></g>
+      <path class="c4-route" d="M690 70 Q450 -30 200 235" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 7" opacity=".7"/>
+      <circle cx="690" cy="70" r="5" fill="var(--accent2)"/><circle cx="200" cy="235" r="5" fill="var(--accent)"/>
+      <text x="690" y="52" text-anchor="middle" fill="currentColor" font-size="13" font-family="IBM Plex Mono, monospace">Cambridge</text>
+      <text x="200" y="262" text-anchor="middle" fill="currentColor" font-size="13" font-family="IBM Plex Mono, monospace">Albuquerque</text>
+      <polygon class="c4-plane" points="16,0 4,-3 -2,-16 -6,-16 -4,-3 -12,-2 -14,-6 -17,-6 -15,0 -17,6 -14,6 -12,2 -4,3 -6,16 -2,16 4,3" fill="var(--fg)"/>
+    </svg>
+    <p class="c4-fly-cap lead" aria-live="off">Allen embarca.</p>
+  </div>
+
+  <!-- ATO 5 · O painel -->
+  <div class="c4-bench">
+    <div class="container stack c4-bench-head">
+      <h3 class="d2">Fale com a máquina, chave por chave</h3>
+      <p class="lead">Foi assim que se falava com um Altair. Cada alavanca é um bit. Missão: ensine o 8080 a somar 2 + 3.</p>
+      <p class="hint">Toque nas alavancas ou use Tab e Espaço. Siga a faixa azul abaixo do painel.</p>
+    </div>
+
+    <div class="container c4-wrap">
+      <div class="c4-panel" role="group" aria-label="Painel frontal do Altair 8800">
+        <i class="c4-screw s1"></i><i class="c4-screw s2"></i><i class="c4-screw s3"></i><i class="c4-screw s4"></i>
+        <div class="c4-plate"><b>Altair 8800</b><span>computador de 8 bits · kit</span></div>
+        <div class="c4-cols">
+          <div class="c4-statrow"><div class="c4-stat" aria-hidden="true"></div></div>
+          <div class="c4-addr" aria-hidden="true"></div>
+          <div class="c4-datawrap"><div class="c4-data" aria-hidden="true"></div></div>
+          <div class="c4-braces" aria-hidden="true"><span class="b1">endereço (A15 a A0)</span><span class="b2">dados (D7 a D0)</span></div>
+          <div class="c4-sws"></div>
+        </div>
+        <div class="c4-ctrl">
+          <div class="pair" data-p="run"><span class="lab">RUN</span><button type="button" class="half up" data-act="run" aria-label="RUN: executar o programa"></button><i class="lv"></i><button type="button" class="half dn" data-act="stop" aria-label="STOP: parar"></button><span class="lab">STOP</span></div>
+          <div class="pair" data-p="ex"><span class="lab">EXAMINE</span><button type="button" class="half up" data-act="examine" aria-label="EXAMINE: ler o endereço marcado nas chaves"></button><i class="lv"></i><button type="button" class="half dn" data-act="examnext" aria-label="EXAMINE NEXT: ler o próximo endereço"></button><span class="lab">NEXT</span></div>
+          <div class="pair" data-p="dep"><span class="lab">DEPOSIT</span><button type="button" class="half up" data-act="deposit" aria-label="DEPOSIT: gravar as chaves de dados neste endereço"></button><i class="lv"></i><button type="button" class="half dn" data-act="depnext" aria-label="DEPOSIT NEXT: ir ao próximo endereço e gravar"></button><span class="lab">NEXT</span></div>
+          <div class="pair" data-p="rst"><span class="lab">RESET</span><button type="button" class="half up" data-act="reset" aria-label="RESET: voltar ao endereço zero"></button><i class="lv"></i><span class="half dn ghost"></span><span class="lab">&nbsp;</span></div>
+        </div>
+      </div>
+
+      <div class="c4-now" role="status" aria-live="polite">
+        <p class="c4-now-t"></p>
+        <p class="c4-read mono"></p>
+        <div class="c4-now-b">
+          <button type="button" class="btn c4-auto">Colocar as chaves para mim</button>
+          <label class="c4-tog"><input type="checkbox" class="c4-hints" checked> Mostrar dicas nas chaves</label>
+        </div>
+      </div>
+
+      <div class="c4-prog">
+        <h4 class="d3">O programa, byte a byte</h4>
+        <table class="c4-tbl"><caption class="sr-only">Programa de oito bytes</caption>
+          <thead><tr><th scope="col">End.</th><th scope="col">Byte</th><th scope="col">Significa</th></tr></thead>
+          <tbody></tbody></table>
+        <p class="caption">O 8080 lê um byte por vez. “MVI A” põe um número no acumulador; “ADI” soma; “STA” guarda na memória; “HLT” para. Troque o 2 ou o 3 por outros números e rode de novo.</p>
+        <div class="c4-boot" hidden>
+          <p class="p">Funciona. Mas o BASIC tem milhares de bytes: ninguém os digitaria em chaves. Na vida real, um carregador minúsculo, entrado nas chaves, lia o resto de uma fita de papel.</p>
+          <button type="button" class="btn c4-load">Carregar o BASIC da fita</button>
+          <p class="caption c4-load-st" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATO 6 · O BASIC -->
+  <div class="c4-basic container" hidden>
+    <div class="c4-bhead stack">
+      <h3 class="d2">E então ele responde</h3>
+      <p class="lead">Digite <code class="mono">PRINT 2+2</code> e aperte Enter. Em Albuquerque, essa foi a prova.</p>
+    </div>
+    <div class="c4-bgrid">
+      <div class="c4-term">
+        <div class="c4-out" role="log" aria-label="Saída do BASIC" tabindex="0"></div>
+        <form class="c4-form" autocomplete="off">
+          <label for="c4-in" class="sr-only">Comando BASIC</label>
+          <span class="c4-pr" aria-hidden="true">&gt;</span>
+          <input id="c4-in" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" enterkeyhint="send">
+          <button class="btn" type="submit">Enter</button>
+        </form>
+      </div>
+      <div class="c4-side stack">
+        <p class="caption">Sem saber programar? Toque num exemplo:</p>
+        <div class="c4-ex">
+          <button type="button" class="btn" data-ex="0">PRINT 2+2</button>
+          <button type="button" class="btn" data-ex="1">Variáveis</button>
+          <button type="button" class="btn" data-ex="2">Laço FOR</button>
+          <button type="button" class="btn" data-ex="3">Decisão IF</button>
+          <button type="button" class="btn" data-ex="4">Contagem regressiva</button>
+        </div>
+        <ul class="c4-goals">
+          <li data-g="print"><span aria-hidden="true">○</span> Escrever na tela: PRINT</li>
+          <li data-g="let"><span aria-hidden="true">○</span> Guardar um valor: A=7</li>
+          <li data-g="for"><span aria-hidden="true">○</span> Repetir: FOR … NEXT</li>
+          <li data-g="if"><span aria-hidden="true">○</span> Decidir: IF … THEN</li>
+        </ul>
+        <p class="caption">Comandos: RUN, LIST, NEW. Linhas com número viram programa (10 PRINT “OI”). Setas para cima/baixo repetem comandos.</p>
+        <div class="c4-demo" hidden role="note">
+          <p class="d3">Deu certo.</p>
+          <p class="p">Segundo relatos, Ed Roberts, da MITS, teria exclamado: “Meu Deus, ele imprimiu 4!” A demonstração funcionou de primeira.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATO 7 · Depois da demo -->
+  <div class="c4-after container">
+    <div class="c4-after-head stack">
+      <h3 class="d2">Albuquerque, e um diploma que espera</h3>
+      <p class="lead">O BASIC vira produto. A dupla vira empresa. A faculdade fica em pausa.</p>
+    </div>
+    <ol class="c4-tl">
+      <li><time>Jul. 1975</time><p>A MITS licencia o Altair BASIC: royalties por cópia, com teto de US$ 180.000. Assinatura em 22 de julho, segundo a fonte.</p></li>
+      <li><time>1975</time><p>Allen dá o nome “Micro-Soft”. A empresa nasce em Albuquerque (4 de abril de 1975, segundo a Wikipédia). “Microsoft” só é registrada em 26 de novembro de 1976.</p></li>
+      <li><time>Nov. 1975</time><p>Gates tira licença de Harvard para trabalhar com Allen na MITS. “Se não desse certo, eu sempre poderia voltar à escola. Oficialmente, eu estava de licença.” (tradução livre)</p></li>
+      <li><time>1976</time><p>Volta por um tempo, depois sai de vez, sem se formar. As fontes divergem: a AP fala em 1977.</p></li>
+      <li class="c4-last"><time>2007</time><p>Volta a Harvard para discursar na formatura e recebe um diploma honorário. Começa com uma frase para o pai: <q>Pai, eu sempre disse que voltaria para pegar meu diploma.</q></p></li>
+    </ol>
+    <p class="p c4-friction">Nem tudo foi tranquilo: ele usou muito o PDP-10 financiado pelo Departamento de Defesa e deixou Allen, que não era aluno, usar sua senha. O conselho administrativo o deixou ficar, mas vetou não alunos. “Foi meio assustador”, disse depois.</p>
+    <button type="button" class="btn c4-facts">Ressalvas deste capítulo</button>
+  </div>
+</section>
+
+<style>
+#ch-04{position:relative;color:var(--fg);overflow:hidden}
+#ch-04 [hidden]{display:none!important}
+#ch-04 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#ch-04 .container{width:min(1180px,100% - 40px);margin-inline:auto}
+@media(min-width:901px){#ch-04 .container{padding-right:max(0px,min(130px,740px - 50vw))}}
+@media(max-width:820px){#ch-04 .c4-map text{font-size:22px}#ch-04 .c4-map{max-height:none}}
+#ch-04 .stack{display:flex;flex-direction:column;gap:14px}
+#ch-04 button{font:inherit}
+#ch-04 .c4-ring,#ch-04 .c4-deal,#ch-04 .c4-load,#ch-04 .c4-auto,#ch-04 .c4-facts,#ch-04 .c4-ex .btn,#ch-04 .c4-form .btn{min-height:44px;padding:10px 18px;border:1px solid var(--line,#ffffff40);border-radius:6px;background:color-mix(in srgb,var(--accent2) 14%,transparent);color:var(--fg);cursor:pointer;align-self:flex-start}
+#ch-04 .c4-ring:hover,#ch-04 .c4-deal:hover,#ch-04 .c4-load:hover,#ch-04 .c4-auto:hover,#ch-04 .c4-facts:hover,#ch-04 .c4-ex .btn:hover{background:color-mix(in srgb,var(--accent2) 28%,transparent)}
+#ch-04 button:focus-visible,#ch-04 input:focus-visible,#ch-04 [role=button]:focus-visible,#ch-04 .c4-out:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+
+/* Ato 1 */
+#ch-04 .c4-dorm{background:radial-gradient(60% 70% at 78% 40%,#4a3a22 0%,#1d1710 45%,#0a0a0d 100%);color:#efe6d2;padding:clamp(56px,10vw,120px) 0}
+#ch-04 .c4-dorm-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);align-items:center}
+#ch-04 .c4-dorm .caption,#ch-04 .c4-dorm .p{color:#d9cdb2}
+#ch-04 .c4-dorm .btn{color:#efe6d2}
+#ch-04 .c4-table{position:relative;min-height:300px;display:flex;align-items:center;justify-content:center;border-radius:50%/34%;background:radial-gradient(closest-side,#1d5a3f,#0f3a28 70%,transparent 72%);box-shadow:0 30px 80px #0008}
+#ch-04 .c4-hand{display:flex;gap:0;padding:20px;perspective:700px}
+#ch-04 .c4-card{width:clamp(40px,6.4vw,62px);aspect-ratio:5/7;margin-left:calc(clamp(40px,6.4vw,62px)*-.3);border:0;padding:0;background:none;cursor:pointer;position:relative;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.3,1.4,.5,1);transform:translateY(0) rotate(var(--r,0deg))}
+#ch-04 .c4-card:first-child{margin-left:0}
+#ch-04 .c4-card:hover{transform:translateY(-8px) rotate(var(--r,0deg))}
+#ch-04 .c4-card i{position:absolute;inset:0;border-radius:6px;backface-visibility:hidden;display:grid;place-items:center;font-style:normal;box-shadow:0 3px 8px #0006}
+#ch-04 .c4-card .f{background:#f8f3e6;color:#222;transform:rotateY(180deg);font:700 clamp(14px,2.2vw,22px)/1.1 ui-serif,Georgia,serif;text-align:center}
+#ch-04 .c4-card .b{background:repeating-linear-gradient(45deg,#7a1f2b 0 5px,#5b1520 5px 10px);border:3px solid #f8f3e6}
+#ch-04 .c4-card.up{transform:translateY(-6px) rotateY(180deg) rotate(var(--r,0deg))}
+#ch-04 .c4-card.red .f{color:#b3212e}
+#ch-04 .c4-lamp{position:absolute;right:6%;top:-6%;width:90px;height:90px;border-radius:50%;background:radial-gradient(#ffd98a99,transparent 70%);pointer-events:none;animation:c4-flick 5s infinite}
+@keyframes c4-flick{0%,100%{opacity:.9}47%{opacity:1}50%{opacity:.6}53%{opacity:1}}
+
+/* Ato 2 */
+#ch-04 .c4-cover-sec{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:clamp(24px,6vw,90px);align-items:center;padding:clamp(56px,9vw,110px) 0}
+#ch-04 .c4-mag-wrap{perspective:900px;display:grid;place-items:center}
+#ch-04 .c4-mag{margin:0;width:min(300px,78vw);aspect-ratio:3/4;background:#f1e7cc;color:#1a1a1a;padding:14px;border-radius:3px 8px 8px 3px;box-shadow:-8px 0 0 #c9bb92 inset,0 24px 50px #000a;transform:rotateY(-12deg) rotateZ(-2deg);transition:transform .15s;display:flex;flex-direction:column;gap:8px;position:relative}
+#ch-04 .c4-mag-top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px solid #b3262b;padding-bottom:4px}
+#ch-04 .c4-mag-top span{font:italic 800 clamp(17px,4.6vw,22px) Georgia,serif;color:#b3262b}
+#ch-04 .c4-mag-top em{font:12px ui-monospace,monospace}
+#ch-04 .c4-mini{width:100%;background:#0f2339;border-radius:4px}
+#ch-04 .c4-mag-h{margin:0;font:700 14px/1.25 Georgia,serif}
+#ch-04 .c4-mag-b{margin:auto 0 0;font:600 12px ui-monospace,monospace;background:#1a1a1a;color:#f1e7cc;padding:4px 8px;align-self:flex-start}
+#ch-04 .c4-chat{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;max-width:58ch}
+#ch-04 .c4-chat li{padding:10px 14px;border-left:3px solid var(--accent2);background:color-mix(in srgb,var(--fg) 6%,transparent);border-radius:0 8px 8px 0;animation:c4-in .35s ease-out}
+#ch-04 .c4-chat li.q{border-left-color:var(--accent);font-style:italic}
+@keyframes c4-in{from{opacity:0;transform:translateX(-10px)}}
+
+/* Ato 3 */
+#ch-04 .c4-nest-sec{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);align-items:center;padding:clamp(40px,7vw,90px) 0}
+#ch-04 .c4-nest [role=button]{display:flex;flex-direction:column;gap:14px;text-align:left;color:var(--fg);cursor:pointer;border:1.5px solid color-mix(in srgb,var(--fg) 45%,transparent);border-radius:14px;padding:16px;background:color-mix(in srgb,var(--fg) 4%,transparent);transition:background .25s,border-color .25s,box-shadow .25s;min-height:44px}
+#ch-04 .c4-nest span{font:500 13px ui-monospace,monospace}
+#ch-04 .c4-nest .on{background:color-mix(in srgb,var(--accent2) 22%,transparent);border-color:var(--accent2);box-shadow:0 0 28px color-mix(in srgb,var(--accent2) 50%,transparent)}
+#ch-04 .c4-n3{background:color-mix(in srgb,var(--accent) 12%,transparent)!important}
+
+/* Ato 4 */
+#ch-04 .c4-fly{padding:clamp(40px,7vw,90px) 0;display:flex;flex-direction:column;gap:12px}
+#ch-04 .c4-map{width:100%;max-height:320px;color:var(--fg)}
+#ch-04 .c4-fly-cap{margin:0;min-height:3.4em}
+
+/* Ato 5 · painel */
+#ch-04 .c4-bench{padding:clamp(48px,8vw,100px) 0;background:radial-gradient(80% 60% at 50% 40%,#12304f 0%,transparent 70%)}
+#ch-04 .c4-bench-head{margin-bottom:28px}
+#ch-04 .c4-wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;max-width:980px}
+#ch-04 .c4-panel{position:relative;padding:20px clamp(10px,2.4vw,28px) 20px;border-radius:10px;color:#cfe0f5;background:repeating-linear-gradient(90deg,#ffffff06 0 1px,transparent 1px 3px),linear-gradient(180deg,#34608f 0%,#27496f 45%,#1d3755 100%);box-shadow:inset 0 2px 0 #8fb8e8aa,inset 0 -3px 0 #0b1a2c,0 2px 0 #0b1a2c,0 30px 70px #000c,0 0 0 2px #0b1a2c}
+#ch-04 .c4-screw{position:absolute;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#dfe9f6,#6b7f97 55%,#2b3a4d);box-shadow:0 1px 2px #000a}
+#ch-04 .c4-screw::after{content:"";position:absolute;left:2px;right:2px;top:6px;height:2px;background:#1b2636;transform:rotate(30deg)}
+#ch-04 .s1{left:10px;top:10px}#ch-04 .s2{right:10px;top:10px}#ch-04 .s3{left:10px;bottom:10px}#ch-04 .s4{right:10px;bottom:10px}
+#ch-04 .c4-plate{display:flex;align-items:baseline;gap:14px;margin:0 0 16px 10px;flex-wrap:wrap}
+#ch-04 .c4-plate b{font:800 clamp(20px,3.4vw,30px) "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:.04em;color:#eef5ff;text-shadow:0 -1px 0 #0b1a2c,0 1px 0 #7aa5d6}
+#ch-04 .c4-plate span{font:12px ui-monospace,monospace;color:#a9c4e4}
+#ch-04 .c4-cols{padding:14px clamp(6px,1.6vw,16px);background:#16293f;border-radius:8px;box-shadow:inset 0 3px 8px #000b,0 1px 0 #6f9bd0;display:flex;flex-direction:column;gap:6px}
+#ch-04 .c4-addr,#ch-04 .c4-sws{display:grid;grid-template-columns:repeat(16,1fr)}
+#ch-04 .c4-datawrap{display:grid;grid-template-columns:repeat(16,1fr)}
+#ch-04 .c4-data{grid-column:9/span 8;display:grid;grid-template-columns:repeat(8,1fr)}
+#ch-04 .c4-statrow{display:flex}
+#ch-04 .c4-stat{display:flex;gap:clamp(6px,1.4vw,16px);flex-wrap:wrap}
+#ch-04 .led{display:flex;flex-direction:column;align-items:center;gap:3px;font:9px ui-monospace,monospace;color:#7f9cbf}
+#ch-04 .led i{width:13px;height:13px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#7a3b3b,#3c0f10 60%,#1d0707);box-shadow:inset 0 1px 2px #000,0 0 0 2px #0a1522;transition:background .06s,box-shadow .06s}
+#ch-04 .led.on i{background:radial-gradient(circle at 35% 30%,#fff1ea,#ff4b3d 40%,#c3150f);box-shadow:0 0 8px 2px #ff3b3bcc,0 0 22px 5px #ff3b3b66,0 0 0 2px #0a1522}
+#ch-04 .led.st i{width:10px;height:10px}
+#ch-04 .led.st.on i{background:radial-gradient(circle at 35% 30%,#fff7d8,#ffc23d 40%,#c98400);box-shadow:0 0 8px 2px #ffb92ecc,0 0 0 2px #0a1522}
+#ch-04 .c4-braces{display:grid;grid-template-columns:repeat(16,1fr);font:10px ui-monospace,monospace;color:#8eaed3;margin-top:4px}
+#ch-04 .c4-braces span{border-top:2px solid #5f84b3;padding-top:2px;text-align:center}
+#ch-04 .b1{grid-column:1/span 8}#ch-04 .b2{grid-column:9/span 8}
+#ch-04 .sw{position:relative;height:84px;width:100%;max-width:46px;margin-inline:auto;padding:0;border:0;background:none;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;display:block}
+#ch-04 .sw .slot{position:absolute;left:28%;right:28%;top:4px;bottom:20px;border-radius:12px;background:linear-gradient(90deg,#03070d,#142238 50%,#03070d);box-shadow:inset 0 2px 5px #000,0 1px 0 #5d86b8}
+#ch-04 .sw .lever{position:absolute;left:50%;top:calc((100% - 20px)/2 + 4px - 2px);width:10px;margin-left:-5px;height:32px;transform-origin:50% 2px;transition:transform .18s cubic-bezier(.3,1.7,.5,1);transform:rotate(180deg);pointer-events:none}
+#ch-04 .sw .lever::before{content:"";position:absolute;inset:0 0 6px;border-radius:5px;background:linear-gradient(90deg,#4b596b,#fdfdfd 38%,#9aaabd 62%,#3a4658)}
+#ch-04 .sw .lever::after{content:"";position:absolute;left:-5px;right:-5px;bottom:-6px;height:20px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--tip,#c9d9ee) 45%,#53647a 90%);box-shadow:0 3px 4px #0009}
+#ch-04 .sw[aria-checked=false] .lever{transform:rotate(0)}
+#ch-04 .sw[aria-checked=true] .lever{transform:rotate(180deg)}
+#ch-04 .sw:nth-child(n+1){--tip:#d6e6fb}
+#ch-04 .sw.g1{--tip:#ffffff}
+#ch-04 .sw .n{position:absolute;bottom:0;left:0;right:0;text-align:center;font:10px ui-monospace,monospace;color:#9bb8dc}
+#ch-04 .sw .want{position:absolute;left:50%;width:0;height:0;margin-left:-7px;opacity:0;pointer-events:none;border:7px solid transparent}
+#ch-04 .sw[data-want="1"] .want{opacity:1;top:-13px;border-bottom:10px solid var(--accent2);border-top:0;animation:c4-bob 1s infinite}
+#ch-04 .sw[data-want="0"] .want{opacity:1;bottom:12px;border-top:10px solid var(--accent2);border-bottom:0;animation:c4-bob 1s infinite}
+@keyframes c4-bob{50%{transform:translateY(3px)}}
+#ch-04 .c4-ctrl{display:flex;justify-content:space-around;gap:6px;margin-top:16px;padding:12px 4px 4px;border-top:1px solid #6f9bd066}
+#ch-04 .pair{position:relative;width:clamp(64px,16vw,120px);height:112px;display:flex;flex-direction:column;align-items:center;font:10px ui-monospace,monospace;color:#cfe0f5}
+#ch-04 .pair .lab{height:14px;text-align:center;white-space:nowrap;letter-spacing:.03em}
+#ch-04 .pair .half{flex:1;width:100%;min-height:36px;background:none;border:0;cursor:pointer;position:relative;z-index:2;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#ch-04 .pair .lv{position:absolute;left:50%;top:50%;margin-left:-5px;width:10px;height:30px;margin-top:-1px;transform-origin:50% 0;transform:rotate(var(--r,0deg)) scaleY(var(--s,.2));transition:transform .16s cubic-bezier(.3,1.7,.5,1);pointer-events:none;z-index:1;background:linear-gradient(90deg,#4b596b,#fdfdfd 38%,#9aaabd 62%,#3a4658);border-radius:5px 5px 14px 14px}
+#ch-04 .pair::before{content:"";position:absolute;left:50%;margin-left:-14px;top:34px;bottom:34px;width:28px;border-radius:14px;background:linear-gradient(90deg,#03070d,#142238 50%,#03070d);box-shadow:inset 0 2px 5px #000,0 1px 0 #5d86b8}
+#ch-04 .pair.u .lv{--r:180deg;--s:1}#ch-04 .pair.d .lv{--r:0deg;--s:1}
+#ch-04 .pair .half.hot::after{content:"";position:absolute;inset:6px 18%;border-radius:10px;border:2px solid var(--accent2);box-shadow:0 0 16px var(--accent2);animation:c4-pulse 1s infinite}
+#ch-04 .pair .ghost{display:block}
+@keyframes c4-pulse{50%{opacity:.25}}
+#ch-04 .c4-now{background:color-mix(in srgb,var(--accent2) 16%,#0b1a2b);border:1px solid color-mix(in srgb,var(--accent2) 60%,transparent);border-radius:10px;padding:14px 18px;display:flex;flex-direction:column;gap:8px}
+#ch-04 .c4-now-t{margin:0;font-size:clamp(16px,2.2vw,19px);line-height:1.4}
+#ch-04 .c4-read{margin:0;font-size:12.5px;color:var(--muted,#9ab);min-height:1.4em}
+#ch-04 .c4-now-b{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+#ch-04 .c4-tog{font-size:14px;display:flex;gap:8px;align-items:center;min-height:44px}
+#ch-04 .c4-tog input{width:20px;height:20px}
+#ch-04 .c4-prog{display:flex;flex-direction:column;gap:12px}
+#ch-04 .c4-tbl{width:100%;border-collapse:collapse;font:13px ui-monospace,monospace}
+#ch-04 .c4-tbl th{text-align:left;color:var(--muted,#9ab);font-weight:500;padding:4px 8px;border-bottom:1px solid var(--line,#fff3)}
+#ch-04 .c4-tbl td{padding:6px 8px;border-bottom:1px solid var(--line,#fff2)}
+#ch-04 .c4-tbl tr.ok td{color:var(--fg)}#ch-04 .c4-tbl tr:not(.ok) td{color:var(--muted,#9ab)}
+#ch-04 .c4-tbl tr.ok td:first-child::before{content:"✓ ";color:#6fe3a0}
+#ch-04 .c4-boot{display:flex;flex-direction:column;gap:12px;padding:14px;border:1px dashed var(--accent2);border-radius:10px}
+#ch-04 .c4-bar{height:6px;background:#fff2;border-radius:3px;overflow:hidden}
+#ch-04 .c4-bar i{display:block;height:100%;width:0;background:var(--accent2)}
+
+/* Ato 6 · BASIC */
+#ch-04 .c4-basic{padding:clamp(40px,7vw,90px) 0;display:flex;flex-direction:column;gap:22px}
+#ch-04 .c4-bgrid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;align-items:start}
+#ch-04 .c4-term{background:#050c16;border:2px solid #284a70;border-radius:12px;box-shadow:inset 0 0 60px #1d4a7a55,0 18px 50px #0009;overflow:hidden;position:relative}
+#ch-04 .c4-term::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,#0000 0 2px,#00000030 2px 3px)}
+#ch-04 .c4-out{height:clamp(260px,46vh,420px);overflow:auto;padding:16px 18px 6px;font:15px/1.5 "IBM Plex Mono",ui-monospace,monospace;color:#bfe3ff;text-shadow:0 0 6px #5fb0ff88;white-space:pre-wrap;word-break:break-word}
+#ch-04 .c4-out div{min-height:1.5em}
+#ch-04 .c4-form{display:flex;gap:8px;align-items:center;padding:6px 12px 12px;position:relative;z-index:2}
+#ch-04 .c4-pr{color:#bfe3ff;font:16px "IBM Plex Mono",monospace}
+#ch-04 .c4-form input{flex:1;min-width:0;min-height:44px;background:#0a1a2c;color:#e6f4ff;border:1px solid #284a70;border-radius:6px;padding:8px 10px;font:16px "IBM Plex Mono",ui-monospace,monospace}
+#ch-04 .c4-ex{display:flex;flex-wrap:wrap;gap:8px}
+#ch-04 .c4-goals{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:15px}
+#ch-04 .c4-goals li.done{color:#6fe3a0}
+#ch-04 .c4-goals li.done span{color:#6fe3a0}
+#ch-04 .c4-demo{border-left:4px solid var(--accent);padding:6px 14px;animation:c4-in .5s}
+#ch-04 .c4-demo .d3{margin:0 0 4px}
+
+/* Ato 7 */
+#ch-04 .c4-after{padding:clamp(48px,8vw,110px) 0 clamp(56px,9vw,120px);display:flex;flex-direction:column;gap:26px}
+#ch-04 .c4-tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line,#fff3);display:flex;flex-direction:column;gap:22px;max-width:720px}
+#ch-04 .c4-tl li{position:relative}
+#ch-04 .c4-tl li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+#ch-04 .c4-tl time{font:600 14px "IBM Plex Mono",ui-monospace,monospace;color:var(--accent2)}
+#ch-04 .c4-tl p{margin:4px 0 0;max-width:60ch;line-height:1.5}
+#ch-04 .c4-last p{font-size:clamp(18px,2.4vw,24px)}
+#ch-04 .c4-friction{color:var(--muted,#9ab);max-width:62ch}
+
+@media (max-width:820px){
+  #ch-04 .c4-dorm-in,#ch-04 .c4-cover-sec,#ch-04 .c4-nest-sec,#ch-04 .c4-bgrid{grid-template-columns:1fr}
+  #ch-04 .c4-addr,#ch-04 .c4-sws,#ch-04 .c4-datawrap{grid-template-columns:repeat(8,1fr)}
+  #ch-04 .c4-data{grid-column:1/-1}
+  #ch-04 .c4-braces{display:none}
+  #ch-04 .c4-addr{row-gap:6px}#ch-04 .c4-sws{row-gap:2px}
+  #ch-04 .sw{max-width:44px}
+  #ch-04 .led{font-size:8px}
+  #ch-04 .pair{width:22%}
+  #ch-04 .c4-table{min-height:220px}
+}
+@media (prefers-reduced-motion:reduce){#ch-04 *{animation:none!important;transition:none!important}}
+</style>
+
+<script>
+Gates.chapter('ch-04', function (ctx) {
+  const $ = ctx.$, $$ = ctx.$$;
+  const au = (n, o) => { try { ctx.audio.play(n, o); } catch (e) {} };
+  const say = (t) => { try { ctx.say(t); } catch (e) {} };
+  const bin = (v, n) => v.toString(2).padStart(n, '0');
+  const wait = (ms) => new Promise(r => setTimeout(r, ctx.reduced ? Math.min(ms, 30) : ms));
+
+  Gates.facts = Gates.facts || {};
+  Gates.facts['ch-04'] = {
+    title: 'Ressalvas: Harvard e o Altair',
+    items: [
+      { text: 'Data da Popular Electronics: Harvard Magazine e Gazette citam dezembro de 1974; a Wikipédia dá janeiro de 1975 (a edição chegou às bancas em dezembro, com data de capa de janeiro).', url: 'https://news.harvard.edu/gazette/story/2013/09/dawn-of-a-revolution' },
+      { text: 'A ligação com Gates fingindo ser Allen, a exclamação de Ed Roberts (“Oh my God. It printed ‘4’!”) e o carregador escrito no avião são histórias muito repetidas, baseadas em relatos; não há registro independente. Trate como relato.', url: 'https://en.wikipedia.org/wiki/Bill_Gates' },
+      { text: 'Harvard: Gates tirou licença em 1975 (novembro, segundo uma fonte) e saiu de vez em 1976. A AP, ao resenhar o livro, fala em 1977. A licença da MITS é de 22/7/1975 (fonte secundária). O diploma honorário é de 2007.', url: 'https://www.harvardmagazine.com/print/42922?page=all' },
+      { text: 'Autoria: o Altair BASIC foi escrito por Gates e Allen com as rotinas de ponto flutuante de Monte Davidoff (US$ 400, segundo o relato).', url: 'https://news.harvard.edu/gazette/story/2013/09/dawn-of-a-revolution' },
+      { text: 'O painel e o BASIC desta página são simplificações didáticas: um subconjunto de instruções do 8080 e um mini-interpretador escrito para este site, não o código original.' }
+    ]
+  };
+
+  /* ===== Ato 1: cartas ===== */
+  const hand = $('.c4-hand');
+  const suits = ['♠', '♥', '♦', '♣'], ranks = ['A', 'K', 'Q', 'J', '10', '9', '8', '7', '6', '5', '4', '3', '2'];
+  const cards = [];
+  for (let i = 0; i < 7; i++) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'c4-card'; b.style.setProperty('--r', ((i - 3) * 3) + 'deg');
+    b.setAttribute('aria-label', 'Carta ' + (i + 1) + ', virada para baixo');
+    b.innerHTML = '<i class="b"></i><i class="f"></i>';
+    b.addEventListener('click', () => flip(b));
+    hand.appendChild(b); cards.push(b);
+  }
+  function deal() {
+    const used = new Set();
+    cards.forEach(c => {
+      let k; do { k = Math.floor(Math.random() * 52); } while (used.has(k)); used.add(k);
+      const s = suits[k % 4], r = ranks[Math.floor(k / 4)];
+      c.querySelector('.f').innerHTML = r + '<br>' + s;
+      c.classList.toggle('red', s === '♥' || s === '♦');
+      c.dataset.l = r + ' de ' + ['espadas', 'copas', 'ouros', 'paus'][k % 4];
+      c.classList.remove('up');
+    });
+  }
+  function flip(c) {
+    if (!c.dataset.l) deal();
+    c.classList.toggle('up'); au('flip');
+    c.setAttribute('aria-label', c.classList.contains('up') ? c.dataset.l : 'Carta virada para baixo');
+  }
+  $('.c4-deal').addEventListener('click', async () => {
+    deal(); say('Cartas dadas');
+    for (let i = 0; i < cards.length; i++) { cards[i].classList.remove('up'); }
+    await wait(250);
+    for (let i = 0; i < cards.length; i++) {
+      if (i < 2 || i === 6 || i === 5) { cards[i].classList.add('up'); cards[i].setAttribute('aria-label', cards[i].dataset.l); }
+      au('flip', { rate: 0.9 + i * 0.04 }); await wait(130);
+    }
+    $('.c4-deal-note').textContent = 'Quatro cartas abertas, três escondidas. É assim que o Seven Card Stud é jogado. Toque nas outras para virar.';
+  });
+
+  /* ===== Ato 2: revista e ligação ===== */
+  function drawMini(svg) {
+    let s = '<rect x="2" y="2" width="236" height="106" rx="6" fill="#2d5584"/>';
+    for (let i = 0; i < 24; i++) s += '<circle cx="' + (22 + i * 8.6) + '" cy="24" r="2.6" fill="' + ((i * 7) % 5 < 2 ? '#ff4b3d' : '#4a1717') + '"/>';
+    for (let i = 0; i < 16; i++) { const x = 20 + i * 12.4; s += '<rect x="' + (x - 2) + '" y="48" width="4" height="30" rx="2" fill="#0a1522"/><circle cx="' + x + '" cy="' + ((i * 5) % 3 ? 52 : 74) + '" r="3.6" fill="#e6efff"/>'; }
+    s += '<text x="20" y="98" font-size="9" fill="#cfe0f5" font-family="monospace">ALTAIR 8800</text>';
+    svg.innerHTML = s;
+  }
+  drawMini($('.c4-mini'));
+  const mag = $('.c4-mag');
+  if (!ctx.touch && !ctx.reduced) {
+    mag.parentElement.addEventListener('pointermove', e => {
+      const r = mag.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      mag.style.transform = 'rotateY(' + (-12 + x * 18) + 'deg) rotateX(' + (-y * 14) + 'deg) rotateZ(-2deg)';
+    });
+    mag.parentElement.addEventListener('pointerleave', () => { mag.style.transform = ''; });
+  }
+  const chatLines = [
+    ['Inverno de 1974–75. Allen leva a revista ao quarto de Gates, na Currier.', ''],
+    ['“Isso está acontecendo sem a gente.” (tradução livre do que Allen teria dito)', 'q'],
+    ['Os dois ligam para a MITS, em Albuquerque, e dizem ter um BASIC para o Altair.', ''],
+    ['Não têm o BASIC. Não têm nem o Altair.', ''],
+    ['Segundo relatos, Gates faz a ligação fingindo ser Allen, com voz grave.', ''],
+    ['Do outro lado, interesse: venham mostrar funcionando.', ''],
+    ['Agora é preciso fazer funcionar uma máquina que nenhum dos dois jamais tocou.', 'q']
+  ];
+  let ringing = false;
+  $('.c4-ring').addEventListener('click', async function () {
+    if (ringing) return; ringing = true; this.disabled = true;
+    const ol = $('.c4-chat'); ol.innerHTML = '';
+    au('bell'); await wait(900); au('bell'); await wait(700);
+    for (const [t, c] of chatLines) {
+      const li = document.createElement('li'); li.textContent = t; if (c) li.className = c; ol.appendChild(li);
+      au('tick'); await wait(1100);
+    }
+    this.disabled = false; this.textContent = 'Ouvir de novo'; ringing = false;
+  });
+
+  /* ===== Ato 3: camadas ===== */
+  const nestCap = $('.c4-nest-cap');
+  const nestTxt = {
+    1: 'O PDP-10 do Aiken Lab, em Harvard: a máquina real onde tudo roda. Gates o usou tanto que a escola reclamou.',
+    2: 'O simulador do 8080, escrito por Allen: finge ser o chip do Altair, que eles ainda não tinham.',
+    3: 'O interpretador BASIC: Gates e Allen, com as contas de ponto flutuante de Davidoff. Cabe em cerca de 3 KB.'
+  };
+  const nestEls = $$('.c4-nest [data-k]');
+  function nestPick(k, ev) {
+    if (ev) ev.stopPropagation();
+    nestEls.forEach(e => e.classList.toggle('on', e.dataset.k === String(k)));
+    nestCap.textContent = nestTxt[k]; au('click', { rate: 0.8 + k * 0.15 });
+  }
+  nestEls.forEach(e => {
+    e.addEventListener('click', ev => nestPick(e.dataset.k, ev));
+    e.addEventListener('keydown', ev => { if (e.tagName !== 'BUTTON' && (ev.key === 'Enter' || ev.key === ' ')) { ev.preventDefault(); nestPick(e.dataset.k, ev); } });
+  });
+
+  /* ===== Ato 4: avião ===== */
+  (function(){ const m = $('.c4-map'); if (m && window.matchMedia('(max-width:820px)').matches) m.setAttribute('viewBox', '60 10 720 290'); })();
+  const route = $('.c4-route'), plane = $('.c4-plane'), flyCap = $('.c4-fly-cap');
+  const flyTxt = [[0, 'Allen embarca em Boston.'], [.3, 'No ar, a conta que faltava: o carregador, o programa que lê a fita para a memória.'], [.6, 'Conta-se que ele o escreveu ali mesmo, no avião. É a versão mais repetida; trate como relato.'], [.92, 'Albuquerque. A máquina é de verdade, e a fita, também.']];
+  function setPlane(p) {
+    const L = route.getTotalLength(), a = route.getPointAtLength(p * L), b = route.getPointAtLength(Math.min(L, p * L + 1));
+    plane.setAttribute('transform', 'translate(' + a.x + ' ' + a.y + ') rotate(' + (Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI) + ') scale(1.3)');
+    let t = flyTxt[0][1]; flyTxt.forEach(f => { if (p >= f[0]) t = f[1]; }); if (flyCap.textContent !== t) flyCap.textContent = t;
+  }
+  setPlane(0);
+  if (ctx.reduced) setPlane(1);
+  else ctx.ScrollTrigger.create({ trigger: $('.c4-fly'), start: 'top 70%', end: 'bottom 35%', onUpdate: s => setPlane(s.progress) });
+
+  /* ===== Ato 5: Altair ===== */
+  const mem = new Uint8Array(65536);
+  let sw = 0, addr = 0, data = 0, A = 0, B = 0, C = 0, running = false, halted = false, steps = 0;
+  let usedEx = false, ranOk = false, done = false, booted = false, loading = false, auto = false;
+  const dep = new Array(8).fill(false);
+  const T = [0x3E, 2, 0xC6, 3, 0x32, 8, 0, 0x76];
+  const TXT = ['MVI A', 'o número 2', 'ADI', 'o número 3', 'STA', 'endereço 8 (parte baixa)', 'endereço 8 (parte alta)', 'HLT'];
+  const WHY = ['põe um número em A', '', 'soma ao que está em A', '', 'guarda A na memória', '', '', 'para o processador'];
+
+  const mk = (host, labels, cls) => labels.map(l => {
+    const e = document.createElement('span'); e.className = 'led ' + cls; e.innerHTML = '<i></i><b>' + l + '</b>'; host.appendChild(e); return e;
+  });
+  const aL = mk($('.c4-addr'), Array.from({ length: 16 }, (_, i) => 'A' + (15 - i)), '');
+  const dL = mk($('.c4-data'), Array.from({ length: 8 }, (_, i) => 'D' + (7 - i)), '');
+  const stNames = ['INTE', 'MEMR', 'M1', 'OUT', 'HLTA', 'WAIT'];
+  const sL = mk($('.c4-stat'), stNames, 'st');
+  const stat = { INTE: false, MEMR: false, M1: false, OUT: false, HLTA: false, WAIT: true };
+  const setOn = (els, v, n) => els.forEach((e, i) => e.classList.toggle('on', !!((v >> (n - 1 - i)) & 1)));
+  function paint() {
+    setOn(aL, addr, 16); setOn(dL, data, 8);
+    sL.forEach((e, i) => e.classList.toggle('on', stat[stNames[i]]));
+  }
+
+  const swHost = $('.c4-sws'), sws = [];
+  for (let b = 15; b >= 0; b--) {
+    const el = document.createElement('button');
+    el.type = 'button'; el.className = 'sw' + ((Math.floor(b / 3) % 2) ? ' g1' : ''); el.setAttribute('role', 'switch');
+    el.dataset.bit = b; el.setAttribute('aria-checked', 'false');
+    el.innerHTML = '<span class="slot"></span><span class="lever"></span><span class="want"></span><span class="n" aria-hidden="true">' + b + '</span>';
+    const lab = () => 'Chave A' + b + ' (valor ' + (1 << b) + '), ' + (((sw >> b) & 1) ? 'para cima, 1' : 'para baixo, 0');
+    el.setAttribute('aria-label', lab());
+    el.addEventListener('click', () => { setSw(b, !((sw >> b) & 1), true); });
+    swHost.appendChild(el); sws[b] = el; el._lab = lab;
+  }
+  function setSw(b, up, snd) {
+    sw = up ? (sw | (1 << b)) : (sw & ~(1 << b));
+    sws[b].setAttribute('aria-checked', up ? 'true' : 'false'); sws[b].setAttribute('aria-label', sws[b]._lab());
+    if (snd) au('click', { rate: 0.85 + Math.random() * 0.3 });
+    refreshHint();
+  }
+
+  const pairs = {}; $$('.pair').forEach(p => pairs[p.dataset.p] = p);
+  function tilt(p, dir) { p.classList.remove('u', 'd'); if (dir) p.classList.add(dir); }
+  function momentary(p, dir) { tilt(p, dir); setTimeout(() => { if (p.dataset.p !== 'run') tilt(p, null); }, 220); }
+
+  function ok(i) { return dep[i] && ((i === 1 || i === 3) ? true : mem[i] === T[i]); }
+  function mismatchReport() {
+    const n = $$('.c4-tbl tbody tr');
+    n.forEach((r, i) => r.classList.toggle('ok', ok(i)));
+  }
+  const tb = $('.c4-tbl tbody');
+  T.forEach((v, i) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td>' + i + '</td><td>' + bin(v, 8) + '</td><td>' + TXT[i] + (WHY[i] ? ' · ' + WHY[i] : '') + '</td>';
+    tb.appendChild(tr);
+  });
+
+  /* Hint engine */
+  function hint() {
+    if (done) return { t: 'Missão cumprida: 2 + 3 = 5, em binário 00000101. Quer experimentar? Troque o byte do endereço 1 ou 3 e rode de novo (RESET, RUN, EXAMINE 8).', act: null };
+    if (running) return { t: 'Rodando. O processador busca um byte por vez: veja o endereço subir.', act: null };
+    let idx = -1; for (let i = 0; i < 8; i++) if (!ok(i)) { idx = i; break; }
+    if (idx >= 0) {
+      if (idx === 0 && !usedEx) return { t: 'Aponte para o endereço 0: chaves todas para baixo e acione EXAMINE.', act: 'examine', val: 0, mask: 0xFFFF };
+      if (addr === idx) return { t: 'Endereço ' + idx + ': ajuste as chaves da direita para ' + bin(T[idx], 8) + ' (' + TXT[idx] + ') e acione DEPOSIT.', act: 'deposit', val: T[idx], mask: 0xFF };
+      if (addr === idx - 1) return { t: 'Próximo byte, endereço ' + idx + ': chaves da direita em ' + bin(T[idx], 8) + ' (' + TXT[idx] + ') e acione DEPOSIT NEXT.', act: 'depnext', val: T[idx], mask: 0xFF };
+      return { t: 'Volte ao endereço ' + idx + ': ponha as chaves em ' + idx + ' (' + bin(idx, 4) + ' à direita) e acione EXAMINE.', act: 'examine', val: idx, mask: 0xFFFF };
+    }
+    if (!ranOk) return addr !== 0 ? { t: 'Programa na memória. Acione RESET: o processador volta ao endereço 0.', act: 'reset' } : { t: 'Tudo pronto. Acione RUN e observe os LEDs.', act: 'run' };
+    return { t: 'Parou. O resultado foi guardado no endereço 8. Chaves: só A3 para cima (valor 8). Acione EXAMINE e leia os LEDs de dados.', act: 'examine', val: 8, mask: 0xFFFF };
+  }
+  const actHalf = { run: ['run', 'up'], examine: ['ex', 'up'], examnext: ['ex', 'dn'], deposit: ['dep', 'up'], depnext: ['dep', 'dn'], reset: ['rst', 'up'], stop: ['run', 'dn'] };
+  function refreshHint() {
+    const on = $('.c4-hints').checked, h = hint();
+    $('.c4-now-t').textContent = h.t;
+    $$('.pair .half').forEach(x => x.classList.remove('hot'));
+    sws.forEach(s => { s.removeAttribute('data-want'); });
+    if (on && h.act) {
+      const [p, d] = actHalf[h.act]; const hf = pairs[p].querySelector('.half.' + d); if (hf && !(h.val != null && ((sw ^ h.val) & h.mask))) hf.classList.add('hot');
+      if (h.val != null) for (let b = 0; b < 16; b++) if ((h.mask >> b) & 1 && (((sw ^ h.val) >> b) & 1)) sws[b].dataset.want = (h.val >> b) & 1;
+    }
+    $('.c4-auto').hidden = !(h.val != null); $('.c4-auto').disabled = running;
+    $('.c4-read').textContent = 'endereço ' + addr + ' · dado ' + bin(data, 8) + ' = ' + data + (booted ? '' : ' (decimal)');
+    mismatchReport();
+    if (done && !booted) $('.c4-boot').hidden = false;
+    hintCur = h;
+  }
+  let hintCur = null;
+  $('.c4-hints').addEventListener('change', refreshHint);
+  $('.c4-auto').addEventListener('click', async () => {
+    const h = hint(); if (h.val == null || auto) return; auto = true;
+    for (let b = 15; b >= 0; b--) if ((h.mask >> b) & 1) { const want = !!((h.val >> b) & 1); if (!!((sw >> b) & 1) !== want) { setSw(b, want, true); await wait(90); } }
+    auto = false; refreshHint();
+  });
+
+  /* 8080 mínimo */
+  const w = (v) => v & 255;
+  function exec1() {
+    const op = mem[addr], p1 = mem[(addr + 1) & 65535], p2 = mem[(addr + 2) & 65535];
+    data = op; stat.M1 = true; stat.MEMR = true;
+    const adv = (k) => { addr = (addr + k) & 65535; };
+    switch (op) {
+      case 0x00: adv(1); break;
+      case 0x3E: A = p1; adv(2); break;
+      case 0x06: B = p1; adv(2); break;
+      case 0x0E: C = p1; adv(2); break;
+      case 0xC6: A = w(A + p1); adv(2); break;
+      case 0xD6: A = w(A - p1); adv(2); break;
+      case 0x80: A = w(A + B); adv(1); break;
+      case 0x81: A = w(A + C); adv(1); break;
+      case 0x47: B = A; adv(1); break;
+      case 0x4F: C = A; adv(1); break;
+      case 0x78: A = B; adv(1); break;
+      case 0x79: A = C; adv(1); break;
+      case 0x3C: A = w(A + 1); adv(1); break;
+      case 0x3D: A = w(A - 1); adv(1); break;
+      case 0x3A: A = mem[p1 | (p2 << 8)]; adv(3); break;
+      case 0x32: mem[p1 | (p2 << 8)] = A; stat.OUT = true; adv(3); break;
+      case 0xC3: addr = p1 | (p2 << 8); break;
+      case 0x76: return 'halt';
+      default: return 'bad';
+    }
+    return null;
+  }
+  let acc = 0;
+  function startRun() {
+    if (running) return; running = true; halted = false; steps = 0; acc = 0; stat.WAIT = false; stat.HLTA = false; tilt(pairs.run, 'u'); au('click'); refreshHint(); say('Programa em execução');
+  }
+  function stopRun(why) {
+    running = false; stat.WAIT = true; stat.M1 = false; stat.MEMR = false; stat.OUT = false; tilt(pairs.run, 'd');
+    if (why === 'halt') {
+      halted = true; stat.HLTA = true; au('chime');
+      if (mem[0] === 0x3E && mem[2] === 0xC6 && mem[4] === 0x32 && mem[5] === 8 && mem[6] === 0 && mem[7] === 0x76 && addr === 7) ranOk = true;
+      say('O processador parou na instrução HLT');
+    } else if (why === 'bad') { au('error'); $('.c4-now-t').textContent = 'Instrução fora do subconjunto desta demonstração. Acione RESET e confira os bytes.'; paint(); return; }
+    else if (why === 'long') { au('error'); }
+    paint(); refreshHint();
+  }
+  ctx.onFrame((t, dt) => {
+    if (!running) return;
+    acc += dt; steps0();
+    function steps0() {
+      const slow = steps < 16, per = slow ? 170 : 1;
+      let n = 0;
+      while ((slow ? acc >= per : n < 400) && running) {
+        if (slow) acc -= per; n++; steps++;
+        const r = exec1();
+        if (r) { stopRun(r); return; }
+        if (slow) { au('tick', { vol: .4 }); break; }
+        if (steps > 6000) { stopRun('long'); $('.c4-now-t').textContent = 'O processador seguiu por endereços vazios (bytes 0 = NOP). Em uma máquina real, só o STOP ou o RESET o salvam.'; return; }
+      }
+      paint();
+    }
+  });
+
+  function act(a) {
+    if (a === 'stop') { if (running) stopRun('stop'); else { au('click'); } momentary(pairs.run, 'd'); return; }
+    if (running) { au('error'); $('.c4-now-t').textContent = 'A máquina está rodando. Acione STOP primeiro.'; return; }
+    au('click', { rate: 1.1 });
+    const P = { examine: 'ex', examnext: 'ex', deposit: 'dep', depnext: 'dep', reset: 'rst', run: 'run' }[a];
+    if (a === 'run') { startRun(); return; }
+    momentary(pairs[P], ['examnext', 'depnext'].includes(a) ? 'd' : 'u');
+    stat.WAIT = true;
+    if (a === 'examine') { addr = sw; data = mem[addr]; usedEx = true; }
+    else if (a === 'examnext') { addr = (addr + 1) & 65535; data = mem[addr]; }
+    else if (a === 'deposit' || a === 'depnext') {
+      if (a === 'depnext') addr = (addr + 1) & 65535;
+      mem[addr] = sw & 255; data = mem[addr]; if (addr < 8) dep[addr] = true; au('key');
+    } else if (a === 'reset') { addr = 0; data = mem[0]; halted = false; stat.HLTA = false; }
+    paint(); refreshHint();
+    if (!done && ranOk && addr === 8 && mem[8] === ((mem[1] + mem[3]) & 255) && (a === 'examine' || a === 'examnext')) {
+      done = true; au('success'); say('Missão cumprida. O resultado é ' + mem[8]); refreshHint();
+    }
+  }
+  $$('.pair .half[data-act]').forEach(b => b.addEventListener('click', () => act(b.dataset.act)));
+
+  /* Carregador simbólico */
+  $('.c4-load').addEventListener('click', async function () {
+    if (loading || booted) return; loading = true; this.disabled = true;
+    const st = $('.c4-load-st'); st.textContent = 'Lendo a fita de papel…'; stat.WAIT = false; au('whoosh');
+    const total = ctx.reduced ? 5 : 40;
+    for (let i = 0; i < total; i++) {
+      addr = (i * 101) & 0x0FFF; data = (Math.random() * 256) | 0; paint();
+      if (i % 3 === 0) au('tick', { vol: .35 });
+      await wait(60);
+    }
+    addr = 0; data = 0; stat.WAIT = true; paint(); au('chime');
+    st.textContent = 'Pronto. O Altair agora entende BASIC.'; booted = true; loading = false;
+    $('.c4-basic').hidden = false; $('.c4-read').textContent = '';
+    bootBasic();
+    setTimeout(() => { $('.c4-basic').scrollIntoView({ behavior: ctx.reduced ? 'auto' : 'smooth', block: 'start' }); }, 200);
+  });
+
+  /* ===== Ato 6: BASIC ===== */
+  const outEl = $('.c4-out'), inEl = $('#c4-in');
+  let curDiv = null;
+  function write(s) {
+    s = String(s).replace(/\r/g, '');
+    const parts = s.split('\n');
+    parts.forEach((p, i) => {
+      if (i > 0) curDiv = null;
+      if (p === '' && i > 0 && i === parts.length - 1) return;
+      if (!curDiv) { curDiv = document.createElement('div'); outEl.appendChild(curDiv); }
+      curDiv.textContent += p;
+      if (i < parts.length - 1) curDiv = null;
+    });
+    while (outEl.children.length > 400) outEl.removeChild(outEl.firstChild);
+    outEl.scrollTop = outEl.scrollHeight;
+  }
+  const colNow = () => (curDiv ? curDiv.textContent.length : 0);
+  const nl = () => { if (curDiv) curDiv = null; else { curDiv = document.createElement('div'); outEl.appendChild(curDiv); curDiv = null; } };
+  let onUse = () => {};
+  const B_ = (function () {
+    const prog = new Map(); let V = Object.create(null);
+    class Err extends Error {}
+    const E = (c) => { throw new Err(c); };
+    const num = (x) => { if (typeof x !== 'number') E('TM'); return x; };
+    const up = (s) => { let q = false, r = ''; for (const c of s) { if (c === '"') { q = !q; r += c; } else r += q ? c : c.toUpperCase(); } return r; };
+    const fmt = (n) => { const t = Number.isInteger(n) ? String(n) : String(parseFloat(n.toPrecision(7))); return (n < 0 ? '' : ' ') + t + ' '; };
+    const F = {
+      INT: x => Math.floor(num(x)), ABS: x => Math.abs(num(x)), SGN: x => Math.sign(num(x)),
+      SQR: x => num(x) < 0 ? E('FC') : Math.sqrt(x), RND: () => Math.random(), LEN: x => (typeof x === 'string' ? x.length : E('TM'))
+    };
+    function Ex(s) {
+      let i = 0;
+      const ws = () => { while (s[i] === ' ') i++; };
+      const peek = () => { ws(); return s[i]; };
+      function cmp() {
+        let a = add();
+        for (;;) {
+          ws(); const m = /^(<=|>=|<>|><|=<|=>|<|>|=)/.exec(s.slice(i, i + 2)); if (!m) return a;
+          i += m[1].length; const b = add(), o = m[1];
+          if (typeof a !== typeof b) E('TM');
+          const r = o === '=' ? a === b : (o === '<>' || o === '><') ? a !== b : (o === '<') ? a < b : (o === '>') ? a > b : (o === '<=' || o === '=<') ? a <= b : a >= b;
+          a = r ? -1 : 0;
+        }
+      }
+      function add() {
+        let a = mul();
+        for (;;) {
+          const c = peek();
+          if (c === '+') { i++; const b = mul(); a = (typeof a === 'string' || typeof b === 'string') ? (typeof a === typeof b ? a + b : E('TM')) : a + b; }
+          else if (c === '-') { i++; const b = mul(); a = num(a) - num(b); } else return a;
+        }
+      }
+      function mul() {
+        let a = unary();
+        for (;;) {
+          const c = peek();
+          if (c === '*') { i++; a = num(a) * num(unary()); }
+          else if (c === '/') { i++; const b = num(unary()); if (b === 0) E('/0'); a = num(a) / b; } else return a;
+        }
+      }
+      function unary() { const c = peek(); if (c === '-') { i++; return -num(unary()); } if (c === '+') { i++; return unary(); } return pow(); }
+      function pow() { const b = prim(); if (peek() === '^') { i++; return Math.pow(num(b), num(unary())); } return b; }
+      function prim() {
+        const c = peek();
+        if (c === '(') { i++; const v = cmp(); if (peek() !== ')') E('SN'); i++; return v; }
+        if (c === '"') { const j = s.indexOf('"', i + 1); const t = j < 0 ? s.slice(i + 1) : s.slice(i + 1, j); i = j < 0 ? s.length : j + 1; return t; }
+        let m = /^(\d+\.?\d*|\.\d+)(E[+-]?\d+)?/.exec(s.slice(i));
+        if (m) { i += m[0].length; return parseFloat(m[0]); }
+        m = /^[A-Z][A-Z0-9]*\$?/.exec(s.slice(i));
+        if (m) {
+          const nm = m[0];
+          if (F[nm] && s[i + nm.length] === '(') { i += nm.length + 1; const v = nm === 'RND' ? (cmp(), 0) : cmp(); if (peek() !== ')') E('SN'); i++; return F[nm](v); }
+          i += nm.length; const key = nm.slice(0, 2).replace('$', '') + (nm.endsWith('$') ? '$' : '');
+          return key in V ? V[key] : (nm.endsWith('$') ? '' : 0);
+        }
+        E('SN');
+      }
+      return { expr: cmp, peek, end: () => { ws(); return i >= s.length; }, eat: (ch) => { if (peek() === ch) { i++; return true; } return false; }, pos: () => i };
+    }
+    const key = (nm) => nm.slice(0, 2).replace('$', '') + (nm.endsWith('$') ? '$' : '');
+    function split(text) {
+      const parts = []; let cur = '', q = false;
+      for (const ch of text) { if (ch === '"') q = !q; if (ch === ':' && !q) { parts.push(cur); cur = ''; } else cur += ch; }
+      parts.push(cur);
+      const out = [];
+      for (let k = 0; k < parts.length; k++) {
+        const t = parts[k].trim(); if (!t) continue;
+        if (/^(IF|REM)\b/.test(t)) { out.push(parts.slice(k).join(':').trim()); break; }
+        out.push(t);
+      }
+      return out;
+    }
+    function X(t, S, lines) {
+      let m;
+      if (/^REM\b/.test(t)) return false;
+      if ((m = /^(?:PRINT|\?)(.*)$/.exec(t))) { onUse('print'); doPrint(m[1]); return false; }
+      if ((m = /^IF\s+(.*?)\s+THEN\s*(.*)$/.exec(t)) || (m = /^IF\s+(.*?)\s+(GOTO\s*\d+)$/.exec(t))) {
+        onUse('if'); const ex = Ex(m[1]); const c = ex.expr(); if (!ex.end()) E('SN');
+        if (num(c) === 0) return false;
+        const rest = m[2].trim();
+        if (/^\d+$/.test(rest)) return jump(+rest, S, lines);
+        for (const st of split(rest)) { if (X(st, S, lines) || S.end) return true; }
+        return false;
+      }
+      if ((m = /^GO\s*TO\s*(\d+)\s*$/.exec(t))) return jump(+m[1], S, lines);
+      if ((m = /^FOR\s+([A-Z][A-Z0-9]?)\s*=\s*(.+?)\s+TO\s+(.+?)(?:\s+STEP\s+(.+))?$/.exec(t))) {
+        onUse('for'); const k = key(m[1]);
+        const ev = (s) => { const e = Ex(s); const v = num(e.expr()); if (!e.end()) E('SN'); return v; };
+        V[k] = ev(m[2]); const f = { k, end: ev(m[3]), step: m[4] ? ev(m[4]) : 1, li: S.li, si: S.si };
+        S.fs = S.fs.filter(x => x.k !== k); S.fs.push(f); return false;
+      }
+      if ((m = /^NEXT(?:\s+([A-Z][A-Z0-9]?))?\s*$/.exec(t))) {
+        const k = m[1] ? key(m[1]) : null; let idx = -1;
+        for (let j = S.fs.length - 1; j >= 0; j--) if (!k || S.fs[j].k === k) { idx = j; break; }
+        if (idx < 0) E('NF');
+        const f = S.fs[idx]; S.fs.length = idx + 1; V[f.k] += f.step;
+        if (f.step >= 0 ? V[f.k] <= f.end : V[f.k] >= f.end) { S.li = f.li; S.si = f.si + 1; return true; }
+        S.fs.pop(); return false;
+      }
+      if (/^(END|STOP)\s*$/.test(t)) { S.end = true; return true; }
+      if ((m = /^(?:LET\s+)?([A-Z][A-Z0-9]?\$?)\s*=(.*)$/.exec(t))) {
+        onUse('let'); const e = Ex(m[2]), v = e.expr(); if (!e.end()) E('SN');
+        if (m[1].endsWith('$') !== (typeof v === 'string')) E('TM'); V[key(m[1])] = v; return false;
+      }
+      E('SN');
+    }
+    function jump(n, S, lines) { const j = lines.findIndex(l => l.n === n); if (j < 0) E('UL'); S.li = j; S.si = 0; return true; }
+    function doPrint(arg) {
+      const e = Ex(arg); let nlf = true;
+      while (!e.end()) {
+        nlf = true;
+        if (e.eat(';')) { nlf = false; continue; }
+        if (e.eat(',')) { nlf = false; const c = colNow(); write(' '.repeat(14 - (c % 14))); continue; }
+        const v = e.expr(); write(typeof v === 'number' ? fmt(v) : v);
+      }
+      if (nlf) write('\n');
+    }
+    function execute(lines) {
+      const cache = lines.map(l => split(l.t)); const S = { li: 0, si: 0, end: false, fs: [] }; let n = 0;
+      try {
+        while (S.li < lines.length && !S.end) {
+          const st = cache[S.li];
+          if (S.si >= st.length) { if (lines[S.li].n === 0) break; S.li++; S.si = 0; continue; }
+          if (++n > 60000) { if (curDiv) write('\n'); write('BREAK' + (lines[S.li].n ? ' IN ' + lines[S.li].n : '') + '\n'); return; }
+          if (!X(st[S.si], S, lines)) S.si++;
+        }
+      } catch (err) {
+        const c = err instanceof Err ? err.message : 'SN';
+        if (curDiv) write('\n');
+        write('?' + c + ' ERROR' + (lines[S.li] && lines[S.li].n ? ' IN ' + lines[S.li].n : '') + '\n'); au('error');
+      }
+    }
+    const sorted = () => [...prog.keys()].sort((a, b) => a - b).map(n => ({ n, t: prog.get(n) }));
+    return {
+      line(raw) {
+        let t = up(raw.trim()); if (!t) return; let m;
+        if ((m = /^(\d+)\s*(.*)$/.exec(t))) { if (m[2]) prog.set(+m[1], m[2]); else prog.delete(+m[1]); return; }
+        if (t === 'NEW') { prog.clear(); V = Object.create(null); return; }
+        if (t === 'LIST') { sorted().forEach(l => write(l.n + ' ' + l.t + '\n')); return; }
+        if (t === 'RUN') { V = Object.create(null); const L = sorted(); if (L.length) execute(L); return; }
+        execute([{ n: 0, t }, ...sorted()]);
+      },
+      size: () => prog.size
+    };
+  })();
+
+  const goals = { print: false, let: false, for: false, if: false };
+  onUse = (g) => {
+    if (goals[g] === false) {
+      goals[g] = true; const li = $('.c4-goals [data-g="' + g + '"]'); li.classList.add('done'); li.firstElementChild.textContent = '✓';
+      setTimeout(() => au('chime', { vol: .5 }), 120);
+      if (Object.values(goals).every(Boolean)) say('Você acaba de programar em BASIC.');
+    }
+  };
+  const hist = []; let hi = 0, busy = false, bootedB = false;
+  function submit(txt) {
+    const line = txt.trim(); if (!line) return;
+    if (hist[hist.length - 1] !== line) hist.push(line); hi = hist.length;
+    write(line + '\n');
+    B_.line(line);
+    write('OK\n');
+    if (/^(PRINT|\?)\s*2\s*\+\s*2\s*$/i.test(line) && $('.c4-demo').hidden) {
+      $('.c4-demo').hidden = false; au('success'); say('Imprimiu 4. A demonstração funcionou.');
+    }
+  }
+  async function typeIn(txt) {
+    inEl.value = ''; for (const ch of txt) { inEl.value += ch; au('key', { vol: .5 }); await wait(ctx.reduced ? 1 : 28); }
+    await wait(120); const v = inEl.value; inEl.value = ''; submit(v);
+  }
+  const EX = [
+    ['PRINT 2+2'],
+    ['A=7', 'B=6', 'PRINT A*B', 'PRINT "A RESPOSTA E "; A*B'],
+    ['10 FOR I=1 TO 5', '20 PRINT I, I*I', '30 NEXT I', 'RUN'],
+    ['IF 3>2 THEN PRINT "SIM, 3 E MAIOR"', 'IF 1>2 THEN PRINT "NUNCA APARECE"'],
+    ['NEW', '10 N=5', '20 PRINT N', '30 N=N-1', '40 IF N>0 THEN GOTO 20', '50 PRINT "FOGO!"', 'RUN']
+  ];
+  $$('.c4-ex .btn').forEach(b => b.addEventListener('click', async () => {
+    if (busy) return; busy = true; inEl.readOnly = true; $$('.c4-ex .btn, .c4-form .btn').forEach(x => x.disabled = true);
+    for (const l of EX[+b.dataset.ex]) await typeIn(l);
+    busy = false; inEl.readOnly = false; $$('.c4-ex .btn, .c4-form .btn').forEach(x => x.disabled = false);
+  }));
+  $('.c4-form').addEventListener('submit', e => { e.preventDefault(); if (busy) return; const v = inEl.value; inEl.value = ''; au('key'); submit(v); });
+  inEl.addEventListener('keydown', e => {
+    if (e.key === 'ArrowUp' && hist.length) { e.preventDefault(); hi = Math.max(0, hi - 1); inEl.value = hist[hi]; }
+    else if (e.key === 'ArrowDown' && hist.length) { e.preventDefault(); hi = Math.min(hist.length, hi + 1); inEl.value = hist[hi] || ''; }
+    else if (e.key.length === 1) au('key', { vol: .35 });
+  });
+  async function bootBasic() {
+    if (bootedB) return; bootedB = true; busy = true;
+    for (const l of ['MEMORY SIZE? 4096', 'TERMINAL WIDTH? 72', 'WANT SIN-COS-TAN-ATN? N', '', 'OK']) { write(l + '\n'); au('teletype', { vol: .5 }); await wait(420); }
+    busy = false; if (!ctx.touch) inEl.focus({ preventScroll: true });
+  }
+
+  $('.c4-facts').addEventListener('click', () => ctx.fact('ch-04'));
+
+  paint(); refreshHint();
+  return {
+    enter() {},
+    leave() { if (running) stopRun('stop'); },
+    resize() {}
+  };
+});
+</script>

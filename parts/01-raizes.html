@@ -1,0 +1,547 @@
+<section class="chapter" id="ch-01" data-era="newsprint" data-title="Raízes" data-year="1900–1955">
+
+  <div class="rz-paper" aria-hidden="true"></div>
+  <div class="rz-rain" aria-hidden="true"><canvas></canvas></div>
+
+  <!-- ATO 1 · abertura -->
+  <header class="rz-open container">
+    <p class="rz-code mono">// antes de qualquer linha de código</p>
+    <h2 class="rz-title">A parte<br>que <em>não muda</em>.</h2>
+    <p class="lead rz-lead">No livro <i>Código-fonte</i>, Bill Gates divide uma vida em <b>constantes</b> e <b>variáveis</b>. As variáveis vêm depois: computadores, Harvard, Paul Allen. Primeiro vêm as constantes, e elas já estavam escritas em Seattle antes dele nascer.</p>
+    <p class="hint rz-hint">Passe o ponteiro (ou o dedo) pela chuva. Ela desvia.</p>
+  </header>
+
+  <!-- ATO 2 · Seattle em datas -->
+  <div class="rz-dates container">
+    <h3 class="rz-h3">Seattle, em datas</h3>
+    <p class="p rz-sub">O que já existia no chão antes de Bill.</p>
+    <ol class="rz-cols">
+      <li><span class="rz-yr mono">1909</span><p>A Exposição Alasca-Yukon-Pacífico acontece no campus da Universidade de Washington, onde, décadas depois, os pais de Bill se conhecerão.</p></li>
+      <li><span class="rz-yr mono">1916</span><p>William Boeing funda em Seattle a empresa de aviões que mais tarde viraria a Boeing (o nome atual vem de 1917).</p></li>
+      <li><span class="rz-yr mono">1919</span><p>Greve geral de Seattle, em fevereiro: a cidade para por alguns dias.</p></li>
+      <li><span class="rz-yr mono">1944</span><p>O G.I. Bill promete estudos a veteranos da guerra. Depois do Exército, William H. Gates Sr. estudará na Universidade de Washington.</p></li>
+      <li><span class="rz-yr mono">1951</span><p>Mary Maxwell e Bill Sr. se casam. A árvore ainda tem um galho vazio.</p></li>
+    </ol>
+  </div>
+
+  <!-- ATO 3 · a árvore que compila -->
+  <div class="rz-tree container">
+    <h3 class="rz-h3">A árvore que compila</h3>
+    <p class="p rz-sub">Cada nó é uma pessoa. Toque para ler; cada leitura compila uma constante e a herança desce pelas arestas.</p>
+
+    <div class="rz-grid">
+      <div class="rz-stagewrap">
+        <div class="rz-stage" role="group" aria-label="Árvore genealógica interativa da família de Bill Gates">
+          <canvas class="rz-edges" aria-hidden="true"></canvas>
+
+          <button class="rz-node rz-dash" data-id="pat" style="left:16%;top:11%" type="button" aria-label="Linha paterna, sem registro">
+            <span class="rz-nc mono">avos_paternos</span><span class="rz-nn">Linha paterna</span><span class="rz-nm mono">// TODO</span>
+          </button>
+          <button class="rz-node" data-id="jw" style="left:50%;top:11%" type="button" aria-label="J. W. Maxwell, avô materno">
+            <span class="rz-nc mono">jw_maxwell</span><span class="rz-nn">J. W. Maxwell</span><span class="rz-nm mono">avô materno</span>
+          </button>
+          <button class="rz-node" data-id="ad" style="left:84%;top:11%" type="button" aria-label="Adele Maxwell, a avó Gami">
+            <span class="rz-nc mono">adele_maxwell</span><span class="rz-nn">Adele Maxwell</span><span class="rz-nm mono">avó materna</span>
+          </button>
+          <button class="rz-node" data-id="sr" style="left:20%;top:47%" type="button" aria-label="William H. Gates Sr., o pai">
+            <span class="rz-nc mono">gates_sr</span><span class="rz-nn">Bill Gates Sr.</span><span class="rz-nm mono">1925–2020</span>
+          </button>
+          <button class="rz-node" data-id="ma" style="left:67%;top:47%" type="button" aria-label="Mary Maxwell Gates, a mãe">
+            <span class="rz-nc mono">mary_maxwell</span><span class="rz-nn">Mary Maxwell Gates</span><span class="rz-nm mono">c. 1929–1994</span>
+          </button>
+          <button class="rz-node rz-final" data-id="fin" style="left:44%;top:86%" type="button" aria-label="Nó final ainda sem nome. Exige as quatro constantes.">
+            <span class="rz-q" aria-hidden="true">?</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="rz-side">
+        <article class="rz-card" id="rz-card" role="region" aria-live="polite" aria-label="Cartão da pessoa selecionada">
+          <p class="rz-card-empty mono">// selecione um nó</p>
+        </article>
+        <div class="rz-const" aria-label="Constantes compiladas">
+          <p class="mono rz-const-h">const CONSTANTES = {</p>
+          <ul class="mono">
+            <li data-k="familia"><span class="rz-ck">familia:</span> <span class="rz-cv">…</span></li>
+            <li data-k="competicao"><span class="rz-ck">competicao:</span> <span class="rz-cv">…</span></li>
+            <li data-k="leitura"><span class="rz-ck">leitura:</span> <span class="rz-cv">…</span></li>
+            <li data-k="curiosidade"><span class="rz-ck">curiosidade:</span> <span class="rz-cv">…</span></li>
+          </ul>
+          <p class="mono rz-const-h">};</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATO 4 · o casal -->
+  <footer class="rz-end container">
+    <svg class="rz-couple" viewBox="0 0 600 360" role="img" aria-label="Desenho de duas pessoas de mãos dadas, cada uma sob um guarda-chuva, que se tocam">
+      <path class="rz-fillA" d="M60 150 Q60 40 190 40 Q320 40 320 150 Q288 128 255 150 Q222 128 190 150 Q158 128 125 150 Q92 128 60 150 Z"/>
+      <path class="rz-fillB" d="M290 150 Q290 40 410 40 Q530 40 530 150 Q502 128 470 150 Q440 128 410 150 Q380 128 350 150 Q320 128 290 150 Z"/>
+      <g class="rz-ink" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path pathLength="1" d="M60 150 Q60 40 190 40 Q320 40 320 150 Q288 128 255 150 Q222 128 190 150 Q158 128 125 150 Q92 128 60 150 Z"/>
+        <path pathLength="1" d="M290 150 Q290 40 410 40 Q530 40 530 150 Q502 128 470 150 Q440 128 410 150 Q380 128 350 150 Q320 128 290 150 Z"/>
+        <path pathLength="1" d="M190 40 V24 M190 150 V300 Q190 320 172 318"/>
+        <path pathLength="1" d="M410 40 V24 M410 150 V300 Q410 320 392 318"/>
+        <circle pathLength="1" cx="244" cy="205" r="13"/>
+        <circle pathLength="1" cx="356" cy="205" r="13"/>
+        <path pathLength="1" d="M244 218 V270 M244 270 L231 324 M244 270 L257 324 M244 236 L300 248"/>
+        <path pathLength="1" d="M356 218 V270 M356 270 L343 324 M356 270 L369 324 M356 236 L300 248"/>
+        <path pathLength="1" d="M20 334 H580" opacity=".5"/>
+      </g>
+    </svg>
+
+    <div class="rz-endtext">
+      <p class="rz-year mono">1951</p>
+      <p class="lead">Mary Maxwell e William H. Gates Sr. se casam. Eles tinham se conhecido na Universidade de Washington, e entre os dois já cabia uma família inteira de cartas, livros, comitês e perguntas à mesa.</p>
+      <p class="rz-turn">Faltava um nó.<br><em>Quatro anos depois, ele ganharia nome.</em></p>
+      <button class="btn rz-facts" type="button">Ressalvas deste capítulo</button>
+    </div>
+  </footer>
+</section>
+
+<style>
+#ch-01 { --bg:#cfd2cc; --fg:#1b2230; --muted:#4d5663; --accent:#2f6f73; --accent2:#a8492f; --line:rgba(27,34,48,.3); --panel:#dcded8; position: relative; overflow: clip; background: #cfd2cc; color: var(--fg); padding-bottom: clamp(60px, 10vh, 140px); }
+@media (min-width: 1100px) { #ch-01 .container { padding-right: 90px; } }
+#ch-01 .rz-paper { position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: .55; mix-blend-mode: multiply;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .1  0 0 0 0 .13  0 0 0 0 .18  0 0 0 .5 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>"),
+    repeating-linear-gradient(90deg, transparent 0 calc(100%/6 - 1px), rgba(27,34,48,.07) calc(100%/6 - 1px) calc(100%/6));
+}
+#ch-01 .rz-rain { position: sticky; top: 0; height: 100vh; height: 100svh; margin-bottom: -100vh; margin-bottom: -100svh; z-index: 1; pointer-events: none; }
+#ch-01 .rz-rain canvas { width: 100%; height: 100%; display: block; }
+#ch-01 .container, #ch-01 header, #ch-01 footer { position: relative; z-index: 2; }
+
+#ch-01 .rz-open { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; justify-content: center; gap: 1.4rem; padding-block: 12vh 8vh; }
+#ch-01 .rz-code { color: var(--accent); font-size: .95rem; letter-spacing: 0; }
+#ch-01 .rz-title { font-size: clamp(3.4rem, 12.5vw, 11rem); line-height: .88; font-weight: 800; letter-spacing: -.045em; margin: 0; text-wrap: balance; }
+#ch-01 .rz-title em { font-style: normal; color: var(--accent2); background: linear-gradient(var(--accent2), var(--accent2)) 0 92% / 100% .06em no-repeat; }
+#ch-01 .rz-lead { max-width: 56ch; margin: 0; }
+#ch-01 .rz-lead b { color: var(--accent); font-weight: 700; }
+#ch-01 .rz-hint { color: var(--muted); }
+
+#ch-01 .rz-h3 { font-size: clamp(1.8rem, 4.2vw, 3.2rem); font-weight: 800; letter-spacing: -.03em; margin: 0 0 .3rem; line-height: 1; }
+#ch-01 .rz-sub { color: var(--muted); margin: 0 0 1.6rem; max-width: 56ch; }
+
+#ch-01 .rz-dates { padding-block: 10vh 12vh; }
+#ch-01 .rz-cols { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 4px solid var(--fg); }
+#ch-01 .rz-cols li { padding: 14px 16px 6px 0; margin-right: 16px; border-right: 1px solid color-mix(in srgb, var(--fg) 30%, transparent); }
+#ch-01 .rz-cols li:last-child { border-right: 0; margin-right: 0; }
+#ch-01 .rz-yr { display: block; font-size: clamp(1.8rem, 3.2vw, 2.8rem); font-weight: 700; letter-spacing: -.04em; color: var(--accent); margin-bottom: .4rem; transition: color .2s; }
+#ch-01 .rz-cols li:hover .rz-yr { color: var(--accent2); }
+#ch-01 .rz-cols p { margin: 0; font-size: .98rem; line-height: 1.45; max-width: 26ch; }
+
+#ch-01 .rz-tree { padding-block: 6vh 10vh; }
+#ch-01 .rz-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr); gap: clamp(20px, 3vw, 44px); align-items: start; }
+#ch-01 .rz-stagewrap { position: relative; }
+#ch-01 .rz-stage { position: relative; height: clamp(520px, 74vh, 640px); border: 1.5px solid var(--fg); background: color-mix(in srgb, var(--bg) 60%, #fff); }
+#ch-01 .rz-edges { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+#ch-01 .rz-node { position: absolute; transform: translate(-50%, -50%) translateY(10px); width: clamp(100px, 24vw, 190px); min-height: 56px; padding: 8px 10px 9px; text-align: left; cursor: pointer;
+  color: var(--fg); font: inherit; background: var(--bg); border: 1.5px solid var(--fg); box-shadow: 4px 4px 0 var(--fg); opacity: 0; pointer-events: none;
+  transition: opacity .5s, transform .25s cubic-bezier(.3,1.4,.5,1), box-shadow .2s, background .3s; display: flex; flex-direction: column; gap: 1px; }
+#ch-01 .rz-node.on { opacity: 1; pointer-events: auto; transform: translate(-50%, -50%); }
+#ch-01 .rz-node.on:hover { transform: translate(calc(-50% - 2px), calc(-50% - 2px)); box-shadow: 6px 6px 0 var(--fg); }
+#ch-01 .rz-node.on:active { transform: translate(calc(-50% + 3px), calc(-50% + 3px)); box-shadow: 1px 1px 0 var(--fg); }
+#ch-01 .rz-node:focus-visible { outline: 3px solid var(--accent2); outline-offset: 4px; }
+#ch-01 .rz-node.sel { background: var(--fg); color: var(--bg); }
+#ch-01 .rz-node.sel .rz-nc, #ch-01 .rz-node.sel .rz-nm { color: color-mix(in srgb, var(--bg) 75%, transparent); }
+#ch-01 .rz-node.read::after { content: "✓"; position: absolute; top: -11px; right: -9px; width: 22px; height: 22px; display: grid; place-items: center; font: 700 13px/1 var(--mono, 'IBM Plex Mono', ui-monospace, monospace); background: var(--accent); color: #fff; border-radius: 50%; }
+#ch-01 .rz-nc { font-size: .66rem; color: var(--accent); }
+#ch-01 .rz-nn { font-weight: 700; font-size: clamp(.82rem, 2.6vw, 1.02rem); line-height: 1.1; letter-spacing: -.01em; }
+#ch-01 .rz-nm { font-size: .68rem; color: var(--muted); }
+#ch-01 .rz-dash { border-style: dashed; box-shadow: none; background: transparent; }
+#ch-01 .rz-dash.on:hover { box-shadow: none; }
+#ch-01 .rz-final { width: 92px; height: 92px; min-height: 92px; border-radius: 50%; border: 2px dashed var(--accent2); background: transparent; box-shadow: none; display: grid; place-items: center; padding: 0; }
+#ch-01 .rz-final.on:hover, #ch-01 .rz-final.on:active { box-shadow: none; }
+#ch-01 .rz-q { font-size: 2.6rem; font-weight: 800; color: var(--accent2); line-height: 1; }
+#ch-01 .rz-final.on .rz-q { animation: rz-beat 1.8s ease-in-out infinite; }
+#ch-01 .rz-final.ready { border-style: solid; background: var(--accent2); box-shadow: 0 0 0 0 var(--accent2); animation: rz-ring 1.3s ease-out infinite; }
+#ch-01 .rz-final.ready .rz-q { color: #fff; animation-duration: 1s; }
+#ch-01 .rz-final.done { background: var(--accent); border-color: var(--accent); animation: none; }
+@keyframes rz-beat { 0%, 100% { transform: scale(1); opacity: .75 } 50% { transform: scale(1.18); opacity: 1 } }
+@keyframes rz-ring { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent2) 60%, transparent) } 100% { box-shadow: 0 0 0 30px transparent } }
+
+#ch-01 .rz-side { display: flex; flex-direction: column; gap: 18px; position: sticky; top: 14px; }
+#ch-01 .rz-card { border: 1.5px solid var(--fg); background: var(--bg); padding: 16px 18px 18px; min-height: 120px; box-shadow: 5px 5px 0 var(--fg); }
+#ch-01 .rz-card-empty { margin: 0; color: var(--muted); }
+#ch-01 .rz-card h4 { margin: 0; font-size: 1.5rem; line-height: 1.05; letter-spacing: -.025em; font-weight: 800; }
+#ch-01 .rz-card .rz-role { margin: 4px 0 10px; font-size: .78rem; color: var(--accent); }
+#ch-01 .rz-card p { margin: 0 0 8px; font-size: .97rem; line-height: 1.45; }
+#ch-01 .rz-card .rz-gets { margin-top: 12px; padding: 8px 10px; font-size: .8rem; background: color-mix(in srgb, var(--fg) 8%, transparent); border-left: 3px solid var(--accent2); }
+#ch-01 .rz-card.rz-in { animation: rz-in .35s ease-out; }
+@keyframes rz-in { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
+
+#ch-01 .rz-const { background: var(--fg); color: var(--bg); padding: 14px 16px; font-size: .86rem; }
+#ch-01 .rz-const p { margin: 0; opacity: .6; }
+#ch-01 .rz-const ul { list-style: none; margin: 4px 0; padding-left: 1.2em; }
+#ch-01 .rz-const li { padding: 2px 0; opacity: .45; transition: opacity .4s; }
+#ch-01 .rz-const li.on { opacity: 1; }
+#ch-01 .rz-const li.on .rz-cv { color: #8fe0d6; }
+#ch-01 .rz-ck { color: #f1b49f; }
+
+#ch-01 .rz-end { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 80px); align-items: center; padding-block: 10vh 4vh; }
+#ch-01 .rz-couple { width: 100%; height: auto; max-height: 52vh; overflow: visible; }
+#ch-01 .rz-ink * { stroke: var(--fg); stroke-width: 3; stroke-dasharray: 1; stroke-dashoffset: 0; }
+#ch-01 .rz-fillA { fill: var(--accent); opacity: .22; }
+#ch-01 .rz-fillB { fill: var(--accent2); opacity: .22; }
+#ch-01 .rz-year { font-size: clamp(3rem, 8vw, 6rem); font-weight: 700; letter-spacing: -.06em; line-height: 1; margin: 0 0 .5rem; color: var(--accent); }
+#ch-01 .rz-turn { font-size: clamp(1.7rem, 4vw, 3rem); line-height: 1.05; font-weight: 800; letter-spacing: -.035em; margin: 1.6rem 0 1.6rem; }
+#ch-01 .rz-turn em { font-style: normal; color: var(--accent2); }
+#ch-01 .rz-facts { font-size: .9rem; }
+
+@media (max-width: 899px) {
+  #ch-01 .rz-cols { grid-template-columns: 1fr; border-top-width: 3px; }
+  #ch-01 .rz-cols li { border-right: 0; margin: 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 30%, transparent); padding: 14px 0 12px; display: grid; grid-template-columns: 84px 1fr; gap: 0 12px; align-items: baseline; }
+  #ch-01 .rz-cols .rz-yr { margin: 0; font-size: 1.7rem; }
+  #ch-01 .rz-cols p { max-width: none; }
+  #ch-01 .rz-grid { grid-template-columns: 1fr; }
+  #ch-01 .rz-stage { height: 560px; }
+  #ch-01 .rz-side { position: static; }
+  #ch-01 .rz-card { position: sticky; bottom: 10px; z-index: 5; max-height: 52vh; overflow: auto; }
+  #ch-01 .rz-end { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #ch-01 .rz-final.on .rz-q, #ch-01 .rz-final.ready { animation: none; }
+  #ch-01 .rz-card.rz-in { animation: none; }
+  #ch-01 .rz-node { transition: none; }
+}
+</style>
+
+<script>
+Gates.chapter('ch-01', function (ctx) {
+  var root = ctx.root, $ = ctx.$, $$ = ctx.$$, gsap = ctx.gsap, ST = ctx.ScrollTrigger;
+  var reduced = ctx.reduced;
+
+  Gates.facts = Gates.facts || {};
+  Gates.facts['ch-01'] = {
+    title: 'Ressalvas: Raízes',
+    items: [
+      { text: 'Apelido "Trey": o Seattle Times (1993) atribui à avó materna; a Wikipedia diz apenas que vem de "three" (o terceiro do nome). Aqui a origem fica em aberto.', url: 'https://archive.seattletimes.com/archive/19930110/1679199/power-user----he-saw-the-future-and-it-was-him' },
+      { text: 'A avó aparece como "Gam" (Seattle Times) e "Gami" (resenhas do livro). Adotei "Gami" no texto.', url: 'https://www.seudinheiro.com/2025/lifestyle/em-livro-de-memorias-bill-gates-resgata-impacto-da-curiosidade-na-fonte-de-seu-sucesso-edvl/' },
+      { text: 'Bill Sr. (1925–2020, 94 anos) e Mary (cerca de 1929/30–1994): anos de nascimento vêm de fontes secundárias; os anos de diploma foram omitidos por falta de confirmação.', url: 'https://ca.news.yahoo.com/bill-gates-parents-bill-sr-184625102.html' },
+      { text: 'O encontro de Mary com John Opel (IBM) via United Way é relatado, mas nenhuma fonte prova que isso influenciou o acordo da IBM com a Microsoft.', url: 'https://ca.news.yahoo.com/bill-gates-parents-bill-sr-184625102.html' },
+      { text: 'Avós paternos: não encontrei fontes e por isso aparecem como TODO. Associar cada constante a uma pessoa é leitura editorial desta página, a partir de resenhas do livro; não é divisão feita por Gates.' },
+      { text: 'Datas de Seattle (1909, exposição no campus da UW; 1916, empresa de Boeing, rebatizada em 1917; fevereiro de 1919, greve geral) e do G.I. Bill (1944) são contexto histórico de conhecimento público, não vêm das notas sobre Gates. O casamento em 1951 vem de fonte secundária.' }
+    ]
+  };
+
+  /* ---------- dados ---------- */
+  var LBL = { familia: 'família', competicao: 'competição', leitura: 'leitura', curiosidade: 'curiosidade' };
+  var P = {
+    pat: { name: 'Linha paterna', role: 'avós de Bill Sr.', k: null,
+      text: ['// TODO: preencher.', 'As fontes que reuni não documentam os avós paternos de Bill. Em vez de inventar, deixo o nó pendente, como código honesto.'] },
+    jw: { name: 'J. W. Maxwell', role: 'avô materno', k: 'familia', val: 'a casa das expectativas',
+      text: ['Presidente de um banco nacional, segundo a Wikipedia.', 'Mary cresceu numa família de banqueiros com posses e com ideias firmes sobre como se cria uma criança.'],
+      gets: 'compila: família. Uma casa com expectativas altas, que Bill descreve como "atmosfera de potencial ilimitado".' },
+    ad: { name: 'Adele Maxwell', role: 'avó materna, "Gami"', k: 'competicao', val: 'cartas, bridge, a louça em jogo',
+      text: ['Ensinou ao neto paciência dupla, fish, gin e bridge, repetindo "Think smart, think smart!".', 'Na família, até quem lavava a louça se decidia no baralho.', 'Segundo o Seattle Times, foi dela o apelido "Trey". Outras fontes dizem só que vem de "three".'],
+      gets: 'compila: competição. Jogar para vencer, e pensar antes de jogar.' },
+    ma: { name: 'Mary Maxwell Gates', role: 'mãe · c. 1929–1994', k: 'leitura', val: 'livros sem limite de gasto',
+      text: ['Estudou na Universidade de Washington e foi professora. Depois foi regente da universidade e, em 1983, a primeira mulher a presidir o conselho da United Way of America.',
+        'Segundo relatos, foi nesse circuito que conheceu John Opel, presidente da IBM. Se esse fio puxou algo adiante, nenhuma fonte que reuni afirma.'],
+      gets: 'compila: leitura. Segundo o livro, os pais nunca questionavam gastos com livros.' },
+    sr: { name: 'William H. Gates Sr.', role: 'pai · 1925–2020', k: 'curiosidade', val: 'apoio e pressão, na dose certa',
+      text: ['Serviu no Exército e depois estudou na Universidade de Washington: bacharelado e direito, entre o fim dos anos 1940 e o início dos 1950, segundo uma fonte secundária.',
+        'Conheceu Mary na universidade e casou com ela em 1951. Foi cofundador do escritório de advocacia que viraria o K&L Gates.'],
+      gets: 'compila: curiosidade. Gates diz que os pais deram uma "mistura precisa de apoio e pressão".' }
+  };
+  var EDGES = [ { f: 'pat', t: 'sr', lt: .5 }, { f: 'jw', t: 'ma', lt: .36 }, { f: 'ad', t: 'ma', lt: .36 }, { f: 'sr', t: 'fin', lt: .3 }, { f: 'ma', t: 'fin', lt: .62 } ];
+  EDGES.forEach(function (e) { e.grow = 0; e.flow = 0; e.parts = []; e.acc = 0; });
+
+  var read = {}, nodes = {}, selected = null, compiled = false, nDone = 0, ready = false, done = false;
+  $$('.rz-node').forEach(function (b) { nodes[b.dataset.id] = b; });
+  var stage = $('.rz-stage'), cv = $('.rz-edges'), c2 = cv.getContext('2d');
+  var card = $('#rz-card'), constEls = {};
+  $$('.rz-const li').forEach(function (li) { constEls[li.dataset.k] = li; });
+
+  function parentsOf(n) { return EDGES.filter(function (e) { return e.t === n; }).map(function (e) { return e.f; }); }
+  function inherited(n) {
+    var out = [];
+    (function walk(x) { if (read[x] && P[x] && P[x].k) out.push(P[x].k); parentsOf(x).forEach(walk); })(n);
+    return out;
+  }
+  function edgeLabel(e) {
+    if (e.f === 'pat') return '// ?';
+    var ks = inherited(e.f).map(function (k) { return LBL[k]; });
+    return ks.length ? ks.reverse().join(' · ') : '';
+  }
+
+  /* ---------- geometria e desenho da árvore ---------- */
+  var W = 0, H = 0, dpr = 1, ink = '#1b2230', acc = '#2f6f73', acc2 = '#a8492f', paper = '#cfd2cc';
+  function readColors() {
+    var cs = getComputedStyle(root);
+    ink = (cs.getPropertyValue('--fg') || ink).trim() || ink;
+    acc = (cs.getPropertyValue('--accent') || acc).trim() || acc;
+    acc2 = (cs.getPropertyValue('--accent2') || acc2).trim() || acc2;
+    paper = (cs.getPropertyValue('--bg') || paper).trim() || paper;
+  }
+  function pos(id, edge) {
+    var el = nodes[id], sr = stage.getBoundingClientRect(), r = el.getBoundingClientRect();
+    var cx = r.left - sr.left + r.width / 2, cy = r.top - sr.top + r.height / 2;
+    // r inclui o translateY de entrada; usa o layout nominal
+    cy = parseFloat(el.style.top) / 100 * H;
+    cx = parseFloat(el.style.left) / 100 * W;
+    var hh = el.offsetHeight / 2;
+    return { x: cx, y: edge === 'out' ? cy + hh : cy - hh };
+  }
+  var geo = [];
+  function layout() {
+    var r = stage.getBoundingClientRect();
+    W = r.width; H = r.height; dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    c2.setTransform(dpr, 0, 0, dpr, 0, 0);
+    geo = EDGES.map(function (e) {
+      var a = pos(e.f, 'out'), b = pos(e.t, 'in'), d = (b.y - a.y) * .55;
+      return { a: a, b: b, c1: { x: a.x, y: a.y + d }, c2: { x: b.x, y: b.y - d } };
+    });
+    readColors();
+  }
+  function bz(g, t) {
+    var u = 1 - t, a = u * u * u, b = 3 * u * u * t, c = 3 * u * t * t, d = t * t * t;
+    return { x: a * g.a.x + b * g.c1.x + c * g.c2.x + d * g.b.x, y: a * g.a.y + b * g.c1.y + c * g.c2.y + d * g.b.y };
+  }
+  function drawTree(dt) {
+    c2.clearRect(0, 0, W, H);
+    // retícula de "papel milimetrado" discreta
+    c2.strokeStyle = ink; c2.globalAlpha = .06; c2.lineWidth = 1;
+    c2.beginPath();
+    for (var gx = 0; gx < W; gx += 32) { c2.moveTo(gx + .5, 0); c2.lineTo(gx + .5, H); }
+    for (var gy = 0; gy < H; gy += 32) { c2.moveTo(0, gy + .5); c2.lineTo(W, gy + .5); }
+    c2.stroke(); c2.globalAlpha = 1;
+
+    EDGES.forEach(function (e, i) {
+      var g = geo[i]; if (!g || e.grow <= 0) return;
+      var N = 36, upto = Math.max(1, Math.round(N * e.grow));
+      c2.lineWidth = 1.6; c2.strokeStyle = ink; c2.globalAlpha = e.f === 'pat' ? .45 : .5;
+      c2.setLineDash(e.f === 'pat' ? [6, 6] : []);
+      c2.beginPath();
+      for (var k = 0; k <= upto; k++) { var p = bz(g, k / N); k ? c2.lineTo(p.x, p.y) : c2.moveTo(p.x, p.y); }
+      c2.stroke(); c2.setLineDash([]); c2.globalAlpha = 1;
+      if (e.flow > 0.01) {
+        c2.lineWidth = 3; c2.strokeStyle = acc; c2.globalAlpha = e.flow;
+        c2.beginPath();
+        for (var m = 0; m <= N; m++) { var q = bz(g, m / N); m ? c2.lineTo(q.x, q.y) : c2.moveTo(q.x, q.y); }
+        c2.stroke(); c2.globalAlpha = 1;
+        // partículas de herança
+        if (!reduced) {
+          e.acc += dt / 1000 * (ctx.touch ? 2.2 : 3.4) * e.flow;
+          while (e.acc > 1) { e.acc -= 1; e.parts.push(0); }
+        }
+        c2.fillStyle = acc2;
+        for (var j = e.parts.length - 1; j >= 0; j--) {
+          e.parts[j] += dt / 1000 * .32;
+          if (e.parts[j] >= 1) { e.parts.splice(j, 1); continue; }
+          var pp = bz(g, e.parts[j]);
+          c2.beginPath(); c2.arc(pp.x, pp.y, 3.6, 0, 6.2832); c2.fill();
+        }
+        if (reduced) { var mp0 = bz(g, .5); c2.fillStyle = acc2; c2.beginPath(); c2.arc(mp0.x, mp0.y, 3.6, 0, 6.2832); c2.fill(); }
+      }
+      // rótulo da herança no meio da aresta
+      if (e.grow >= 1) {
+        var txt = edgeLabel(e);
+        if (txt) {
+          var mp = bz(g, e.lt || .5);
+          c2.font = (W < 520 ? '600 10px' : '600 11px') + ' "IBM Plex Mono", ui-monospace, monospace';
+          var tw = c2.measureText(txt).width + 10, tx = Math.min(Math.max(mp.x, tw / 2 + 4), W - tw / 2 - 4);
+          c2.fillStyle = paper; c2.globalAlpha = .92; c2.fillRect(tx - tw / 2, mp.y - 9, tw, 18); c2.globalAlpha = 1;
+          c2.fillStyle = e.flow > .5 ? acc : ink; c2.textAlign = 'center'; c2.textBaseline = 'middle';
+          c2.fillText(txt, tx, mp.y + 1);
+        }
+      }
+    });
+  }
+
+  /* ---------- compilação (entrada dos nós) ---------- */
+  function typeCode(el) {
+    var full = el.textContent; if (reduced) return;
+    var o = { n: 0 };
+    el.textContent = '';
+    gsap.to(o, { n: full.length, duration: .5, ease: 'none', onUpdate: function () { el.textContent = full.slice(0, Math.round(o.n)); }, onComplete: function () { el.textContent = full; } });
+  }
+  function compile() {
+    if (compiled) return; compiled = true;
+    layout();
+    var order = [['pat', 'jw', 'ad'], ['sr', 'ma'], ['fin']];
+    var delay = 0;
+    order.forEach(function (row, ri) {
+      row.forEach(function (id, ci) {
+        var d = delay + ci * .12;
+        setTimeout(function () {
+          nodes[id].classList.add('on');
+          var c = nodes[id].querySelector('.rz-nc'); if (c) typeCode(c);
+          ctx.audio.play('tick', { vol: .5, rate: 1 + ri * .15 });
+        }, reduced ? 0 : d * 1000);
+      });
+      delay += .55;
+    });
+    EDGES.forEach(function (e, i) {
+      var d = e.t === 'sr' || e.t === 'ma' ? .35 : 1;
+      if (reduced) e.grow = 1; else gsap.to(e, { grow: 1, duration: .8, delay: d + (i % 2) * .1, ease: 'power2.out' });
+    });
+  }
+
+  /* ---------- leitura de um nó ---------- */
+  function setSelected(id) {
+    Object.keys(nodes).forEach(function (k) { nodes[k].classList.toggle('sel', k === id && k !== 'fin'); });
+    selected = id;
+  }
+  function renderCard(id) {
+    var p = P[id], h = '';
+    h += '<h4>' + p.name + '</h4><p class="rz-role mono">' + p.role + '</p>';
+    p.text.forEach(function (t) { h += '<p>' + t + '</p>'; });
+    if (p.gets) h += '<p class="rz-gets mono">' + p.gets + '</p>';
+    card.innerHTML = h;
+    card.classList.remove('rz-in'); void card.offsetWidth; card.classList.add('rz-in');
+  }
+  function compileConst(k, val) {
+    var li = constEls[k]; if (!li || li.classList.contains('on')) return;
+    li.classList.add('on');
+    li.querySelector('.rz-cv').textContent = '"' + val + '",';
+    nDone++;
+    ctx.audio.play('chime', { vol: .5, rate: .9 + nDone * .12 });
+    ctx.say('Constante compilada: ' + LBL[k] + '. ' + nDone + ' de 4.');
+    if (nDone === 4) igniteFinal();
+  }
+  function igniteFinal() {
+    ready = true;
+    var f = nodes.fin; f.classList.add('ready');
+    f.setAttribute('aria-label', 'Nó final ainda sem nome. Pronto: ativar para executar nova_instancia.');
+    ctx.say('As quatro constantes estão compiladas. O nó final está pronto para executar.');
+  }
+  function onNode(id) {
+    ctx.audio.play('pop', { vol: .6 });
+    if (id === 'fin') { return finalClick(); }
+    setSelected(id); renderCard(id);
+    if (!read[id]) {
+      read[id] = true; nodes[id].classList.add('read');
+      EDGES.forEach(function (e) { if (e.f === id && id !== 'pat') gsap.to(e, { flow: 1, duration: 1, ease: 'power1.out' }); });
+      // rótulos herdados também iluminam a próxima aresta
+      if (P[id].k) compileConst(P[id].k, P[id].val);
+    }
+  }
+  function finalClick() {
+    setSelected(null);
+    if (!ready) {
+      var left = 4 - nDone;
+      card.innerHTML = '<h4>Nó sem nome</h4><p class="rz-role mono">nova_instancia()</p><p>Ainda faltam ' + left + (left === 1 ? ' constante' : ' constantes') + '. Leia as pessoas da árvore; cada uma entrega o que tem.</p>';
+      card.classList.remove('rz-in'); void card.offsetWidth; card.classList.add('rz-in');
+      ctx.audio.play('error', { vol: .3 });
+      return;
+    }
+    if (done) return;
+    done = true;
+    var f = nodes.fin; f.classList.remove('ready'); f.classList.add('done');
+    f.querySelector('.rz-q').textContent = '✓';
+    f.setAttribute('aria-label', 'Executado: nova instância criada.');
+    EDGES.forEach(function (e) { if (e.t === 'fin') gsap.to(e, { flow: 1, duration: .6 }); });
+    card.innerHTML = '<h4>nova_instancia()</h4><p class="rz-role mono">// 28/10/1955 · Seattle</p><p>Quatro constantes, duas famílias, um endereço. A função recebe os argumentos e o nó deixa de ser pergunta.</p><p class="rz-gets mono">próximo: o nascimento</p>';
+    card.classList.remove('rz-in'); void card.offsetWidth; card.classList.add('rz-in');
+    ctx.audio.play('heartbeat', { vol: .8 });
+    ctx.say('Nova instância criada. O próximo capítulo é o nascimento.');
+  }
+  $$('.rz-node').forEach(function (b) {
+    b.addEventListener('click', function () { onNode(b.dataset.id); });
+  });
+
+  /* ---------- chuva que reage ao ponteiro ---------- */
+  var rc = $('.rz-rain canvas'), rx = rc.getContext('2d');
+  var RW = 0, RH = 0, drops = [], splashes = [], ptr = { x: -999, y: -999, on: 0 };
+  var NDROPS = ctx.touch ? 70 : 150, UMB = ctx.touch ? 64 : 78;
+  function rainSize() {
+    var r = rc.getBoundingClientRect(), d = Math.min(window.devicePixelRatio || 1, 2);
+    RW = r.width; RH = r.height; rc.width = Math.round(RW * d); rc.height = Math.round(RH * d);
+    rx.setTransform(d, 0, 0, d, 0, 0);
+    drops = [];
+    for (var i = 0; i < NDROPS; i++) drops.push(newDrop(true));
+  }
+  function newDrop(any) {
+    var l = 10 + Math.random() * 16;
+    return { x: Math.random() * (RW + 120) - 60, y: any ? Math.random() * RH : -l - Math.random() * 80, l: l, v: 520 + Math.random() * 380 };
+  }
+  function movePtr(e) {
+    var r = rc.getBoundingClientRect();
+    ptr.x = e.clientX - r.left; ptr.y = e.clientY - r.top; ptr.t = performance.now();
+  }
+  root.addEventListener('pointermove', movePtr, { passive: true });
+  root.addEventListener('pointerdown', movePtr, { passive: true });
+  root.addEventListener('pointerleave', function () { ptr.x = ptr.y = -999; });
+  var WIND = .22;
+  function drawRain(dt) {
+    rx.clearRect(0, 0, RW, RH);
+    var fade = ptr.x > -900 && performance.now() - (ptr.t || 0) < (ctx.touch ? 1600 : 6000) ? 1 : 0;
+    ptr.on += (fade - ptr.on) * Math.min(1, dt / 160);
+    rx.strokeStyle = ink; rx.lineWidth = 1.1; rx.globalAlpha = .26; rx.lineCap = 'round';
+    rx.beginPath();
+    var s = dt / 1000;
+    for (var i = 0; i < drops.length; i++) {
+      var d = drops[i];
+      d.y += d.v * s; d.x += d.v * WIND * s;
+      if (ptr.on > .05) {
+        var dx = d.x - ptr.x, dy = d.y - ptr.y;
+        if (dy < 6 && dx * dx + dy * dy < UMB * UMB && dy > -UMB) {
+          splashes.push({ x: d.x, y: Math.min(d.y, ptr.y + 2), t: 0 });
+          if (splashes.length > 60) splashes.shift();
+          Object.assign(d, newDrop(false)); continue;
+        }
+      }
+      if (d.y > RH + 20 || d.x > RW + 80) { Object.assign(d, newDrop(false)); continue; }
+      rx.moveTo(d.x, d.y); rx.lineTo(d.x - d.l * WIND, d.y - d.l);
+    }
+    rx.stroke();
+    // respingos
+    rx.globalAlpha = 1;
+    for (var j = splashes.length - 1; j >= 0; j--) {
+      var sp = splashes[j]; sp.t += dt;
+      if (sp.t > 360) { splashes.splice(j, 1); continue; }
+      var a = 1 - sp.t / 360;
+      rx.strokeStyle = acc; rx.globalAlpha = a * .8; rx.lineWidth = 1.2;
+      rx.beginPath(); rx.arc(sp.x, sp.y, 2 + sp.t / 60, Math.PI, 0); rx.stroke();
+    }
+    // guarda-chuva invisível, só um contorno
+    if (ptr.on > .05) {
+      rx.globalAlpha = .35 * ptr.on; rx.strokeStyle = acc2; rx.lineWidth = 2;
+      rx.beginPath(); rx.arc(ptr.x, ptr.y, UMB, Math.PI, 0); rx.stroke();
+      rx.beginPath(); rx.moveTo(ptr.x, ptr.y); rx.lineTo(ptr.x, ptr.y + 18); rx.stroke();
+    }
+    rx.globalAlpha = 1;
+  }
+  function drawRainStill() {
+    rx.clearRect(0, 0, RW, RH); rx.strokeStyle = ink; rx.globalAlpha = .18; rx.lineWidth = 1;
+    rx.beginPath();
+    drops.forEach(function (d) { rx.moveTo(d.x, d.y); rx.lineTo(d.x - d.l * WIND, d.y - d.l); });
+    rx.stroke(); rx.globalAlpha = 1;
+  }
+
+  ctx.onFrame(function (t, dt) {
+    dt = Math.min(dt || 16, 50);
+    if (!reduced) drawRain(dt);
+    drawTree(dt);
+  });
+
+  /* ---------- casal: desenho que se completa com o scroll ---------- */
+  var paths = $$('.rz-ink > *'), fillA = $('.rz-fillA'), fillB = $('.rz-fillB');
+  if (!reduced && ST) {
+    paths.forEach(function (p) { p.style.strokeDashoffset = 1; });
+    fillA.style.opacity = 0; fillB.style.opacity = 0;
+    var tl = gsap.timeline({ scrollTrigger: { trigger: $('.rz-couple'), start: 'top 85%', end: 'bottom 45%', scrub: .6 } });
+    tl.to(paths.slice(0, 4), { strokeDashoffset: 0, duration: 3, stagger: .25, ease: 'none' })
+      .to([fillA, fillB], { opacity: .22, duration: 1 }, '<1.5')
+      .to(paths.slice(4), { strokeDashoffset: 0, duration: 2, stagger: .2, ease: 'none' }, '<-1.2');
+  }
+
+  $('.rz-facts').addEventListener('click', function () { ctx.fact('ch-01'); });
+
+  /* ---------- ciclo de vida ---------- */
+  rainSize(); layout();
+  if (reduced) drawRainStill();
+  if (ST) ST.create({ trigger: stage, start: 'top 72%', once: true, onEnter: compile });
+  else compile();
+  if (window.ResizeObserver) new ResizeObserver(function () { layout(); }).observe(stage);
+
+  return {
+    enter: function () { rainSize(); layout(); },
+    leave: function () {},
+    resize: function () { rainSize(); layout(); if (reduced) drawRainStill(); }
+  };
+});
+</script>

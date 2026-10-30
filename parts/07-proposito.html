@@ -1,0 +1,716 @@
+<section class="chapter" id="ch-07" data-era="deep" data-title="Propósito" data-year="1987–2045">
+  <div class="snow" aria-hidden="true"><i></i><i></i></div>
+
+  <!-- ATO A · abertura -->
+  <div class="act a-open">
+    <div class="container">
+      <h2 class="d2">Propósito</h2>
+      <p class="lead">Em 1987, aos 31 anos, Bill Gates entrou na lista de bilionários da Forbes. Em 1999, segundo a mesma revista, tornou-se o primeiro a passar de US$&nbsp;100 bilhões. O que fazer com um número desses passou a ocupar o centro da vida pública dele.</p>
+      <p class="p dim">Daqui em diante a história desce. Menos ruído, mais escala.</p>
+    </div>
+  </div>
+
+  <!-- ATO B · escala da riqueza -->
+  <div class="act a-scale">
+    <div class="container">
+      <h3 class="d3">A escala da riqueza</h3>
+      <p class="p">Todas as barras estão na mesma régua, de 0 a 200 bilhões de dólares. Elas não medem a mesma coisa: leia a data e a nota de cada uma.</p>
+      <div class="scale-tools">
+        <button type="button" class="btn" id="c7-log" aria-pressed="false">Régua logarítmica</button>
+        <span class="caption" id="c7-scalenote">Escala linear: cada marca vale o mesmo tanto.</span>
+      </div>
+
+      <div class="plot" id="c7-plot">
+        <div class="gl" id="c7-grid" aria-hidden="true"></div>
+
+        <h4 class="grp">A fortuna</h4>
+        <div class="bar f" data-v="1.25">
+          <div class="bh"><span class="lab">1987 · primeira lista de bilionários</span><span class="val"><b data-count="1.25" data-decimals="2" data-prefix="US$ " data-suffix=" bi">US$ 1,25 bi</b></span></div>
+          <div class="track"><i class="fill"></i></div>
+          <p class="note">Aos 31 anos, o mais jovem bilionário. Uma linha fina nesta régua: de 1987 a 1999, mais de 80 vezes.</p>
+        </div>
+        <div class="bar f" data-v="100">
+          <div class="bh"><span class="lab">1999 · o primeiro centibilionário</span><span class="val"><b data-count="100" data-decimals="0" data-prefix="mais de US$ " data-suffix=" bi">mais de US$ 100 bi</b></span></div>
+          <div class="track"><i class="fill"></i></div>
+          <p class="note">Segundo a Forbes, por pouco tempo. Sites diferentes dão números muito diferentes para 1999; só o "passou de US$ 100 bi" se sustenta.</p>
+        </div>
+        <div class="bar f" data-v="106.5">
+          <div class="bh"><span class="lab">jul/2026 · Forbes, 19º do mundo</span><span class="val"><b data-count="106.5" data-decimals="1" data-prefix="cerca de US$ " data-suffix=" bi">cerca de US$ 106,5 bi</b></span></div>
+          <div class="track"><i class="fill"></i></div>
+          <p class="note">Estimativas de meados de 2026 ficam entre US$ 105 e 108 bi. Ele doa e vende ativos; a Microsoft, em contrapartida, vale perto de US$ 2 tri desde 2021. Esteve no topo da Forbes em 18 de 24 anos entre 1995 e 2017.</p>
+        </div>
+
+        <h4 class="grp">Para onde vai</h4>
+        <div class="bar g" data-v="100">
+          <div class="bh"><span class="lab">Já doado, segundo Gates à BBC (2025)</span><span class="val"><b data-count="100" data-decimals="0" data-prefix="cerca de US$ " data-suffix=" bi">cerca de US$ 100 bi</b></span></div>
+          <div class="track"><i class="fill"></i></div>
+          <p class="note">Dos quais cerca de US$ 60 bi para a fundação. É a soma dita por ele, sem série auditável.</p>
+        </div>
+        <div class="bar g" data-v="89">
+          <div class="bh"><span class="lab">Dotação da fundação · fim de 2025</span><span class="val"><b data-count="89" data-decimals="0" data-prefix="cerca de US$ " data-suffix=" bi">cerca de US$ 89 bi</b></span></div>
+          <div class="track"><i class="fill"></i></div>
+          <p class="note">O valor muda com a data: ficha de 2025 fala em US$ 89 bi (ativos de US$ 91 bi em 31/12/2025); na época do anúncio, em maio, era cerca de US$ 77 bi.</p>
+        </div>
+        <div class="bar g" data-v="48">
+          <div class="bh"><span class="lab">Warren Buffett → fundação, no total</span><span class="val"><b data-count="48" data-decimals="0" data-prefix="cerca de US$ " data-suffix=" bi">cerca de US$ 48 bi</b></span></div>
+          <div class="track"><i class="fill"></i></div>
+          <p class="note">A fundação não é só dinheiro de Gates. Em 2026, Buffett pulou pela primeira vez em cerca de 20 anos a doação anual (AP).</p>
+        </div>
+        <div class="bar plan" data-v="200">
+          <div class="bh"><span class="lab">Plano de gasto 2025–2045</span><span class="val"><b data-count="200" data-decimals="0" data-prefix="mais de US$ " data-suffix=" bi">mais de US$ 200 bi</b></span></div>
+          <div class="track"><i class="fill"></i></div>
+          <p class="note">É o gasto total planejado em 20 anos, incluindo a dotação existente e rendimentos futuros. Não é a fortuna pessoal dele. Quem escreve "quase toda a fortuna" simplifica.</p>
+        </div>
+
+        <div class="axis" id="c7-axis" aria-hidden="true"></div>
+      </div>
+      <p class="caption keyline"><span class="sw f"></span>fortuna pessoal <span class="sw g"></span>doado ou em caixa <span class="sw plan"></span>plano, ainda não gasto. Dólares correntes de cada data, sem correção de inflação; as barras não se somam.</p>
+    </div>
+  </div>
+
+  <!-- ATO C · relógio -->
+  <div class="act a-clock">
+    <div class="container">
+      <h3 class="d3">Um prazo de validade</h3>
+      <p class="p">Em 8 de maio de 2025, 25 anos depois do lançamento, Gates anunciou que a fundação gastaria mais de US$ 200 bilhões em duas décadas e fecharia as portas em 31 de dezembro de 2045. A regra anterior era encerrar décadas após a morte dos fundadores. Ele ligou a decisão aos cortes de ajuda externa dos Estados Unidos.</p>
+
+      <div class="clock" role="timer" aria-live="off" aria-label="Tempo restante até 31 de dezembro de 2045">
+        <div class="days"><span id="c7-days">—</span><small>dias até 31/12/2045</small></div>
+        <div class="hms mono" id="c7-hms" aria-hidden="true">—</div>
+        <div class="life" aria-hidden="true">
+          <div class="lifebar"><i id="c7-lifefill"></i><u id="c7-lifenow"></u></div>
+          <div class="lifelab mono"><span>8/5/2025</span><span id="c7-pct">—</span><span>31/12/2045</span></div>
+        </div>
+      </div>
+
+      <div class="goals">
+        <p class="goalsT">As três metas para 2045, na carta anual de 2026:</p>
+        <ol>
+          <li>Nenhuma mãe ou criança morre de causa evitável.</li>
+          <li>A próxima geração cresce sem doenças infecciosas mortais: pólio e malária erradicadas, tuberculose e HIV sob controle.</li>
+          <li>Centenas de milhões de pessoas saem da pobreza.</li>
+        </ol>
+        <p class="caption">Mais de 70% dos recursos vão às duas primeiras. O ritmo passaria a cerca de US$ 9 bi por ano.</p>
+      </div>
+
+      <ol class="rail" aria-label="Marcos da fundação e da filantropia">
+        <li><b>1994</b><span>nasce como William H. Gates Foundation</span></li>
+        <li><b>2000</b><span>lançamento como Bill &amp; Melinda Gates Foundation</span></li>
+        <li><b>2006</b><span>Buffett promete ações da Berkshire; a fundação se divide em duas</span></li>
+        <li><b>9/12/2010</b><span>Giving Pledge, com Melinda e Buffett: doar ao menos metade da fortuna</span></li>
+        <li><b>2015</b><span>Breakthrough Energy</span></li>
+        <li><b>2021</b><span>TerraPower anuncia o reator em Wyoming</span></li>
+        <li><b>8/5/2025</b><span>o anúncio do fim em 2045</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ATO D · globo -->
+  <div class="act a-globe">
+    <div class="container">
+      <h3 class="d3">Onde o dinheiro chega</h3>
+      <p class="p">Gire o globo e escolha um programa. Os arcos saem de Seattle, sede da fundação, e tocam lugares que a história de cada programa cita. Clique num ponto de luz para ler o fato.</p>
+
+      <div class="gwrap">
+        <div class="gstage">
+          <canvas id="c7-canvas" tabindex="0" role="application" aria-label="Globo terrestre interativo. Setas do teclado giram o globo. A lista de lugares abaixo é uma alternativa." aria-describedby="c7-ghint"></canvas>
+          <p class="hint" id="c7-ghint">Arraste para girar. No teclado, use as setas.</p>
+          <p class="gfail" id="c7-gfail" hidden>Este navegador não conseguiu abrir o globo 3D. A lista de lugares ao lado traz o mesmo conteúdo.</p>
+        </div>
+
+        <div class="gside">
+          <div class="layers" id="c7-layers" role="group" aria-label="Programas da fundação"></div>
+          <div class="gcard" id="c7-card" aria-live="polite">
+            <h4 id="c7-ct"></h4>
+            <p id="c7-cp"></p>
+            <p class="ctag caption" id="c7-cg"></p>
+          </div>
+          <ul class="places" id="c7-list" aria-label="Lugares do programa escolhido"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATO E · fecho -->
+  <div class="act a-end">
+    <div class="container narrow">
+      <p class="lead">Este capítulo mostra o dinheiro e o propósito declarado. Quem discorda, e com que argumentos, vem a seguir, junto com o resto da história que não cabe numa carta anual.</p>
+      <button type="button" class="btn" id="c7-facts">Ressalvas deste capítulo</button>
+    </div>
+  </div>
+</section>
+
+<style>
+/* era fixada localmente: o core só troca o body no meio da tela, então o capítulo se pinta sozinho e a emenda com o cap. 06 fica sem corte */
+#ch-07{position:relative;overflow:hidden;--bg:#06222b;--fg:#e8f6f1;--accent:#2fd1a0;--accent2:#ffd166;--muted:color-mix(in srgb,#e8f6f1 64%,#06222b);--line:color-mix(in srgb,#e8f6f1 22%,transparent);--panel:color-mix(in srgb,#e8f6f1 7%,#06222b);background:linear-gradient(#06222b,#06222b);color:var(--fg)}
+#ch-07 .act{position:relative;padding:clamp(72px,12vh,140px) 0}
+#ch-07 .a-open{min-height:78vh;display:flex;align-items:center}
+#ch-07 .dim{color:var(--muted)}
+#ch-07 .narrow{max-width:720px}
+#ch-07 h3.d3,#ch-07 h2.d2{margin:0 0 .5em;font-weight:600}
+#ch-07 .p,#ch-07 .lead{max-width:62ch}
+
+/* neve marinha */
+#ch-07 .snow{position:absolute;inset:0;pointer-events:none;z-index:0}
+#ch-07 .snow i{position:absolute;left:0;right:0;top:-20%;height:140%;opacity:.7;
+  background-image:
+   radial-gradient(1.5px 1.5px at 12% 18%,rgba(190,255,235,.55),transparent 60%),
+   radial-gradient(1px 1px at 78% 8%,rgba(190,255,235,.45),transparent 60%),
+   radial-gradient(2px 2px at 40% 34%,rgba(120,255,214,.35),transparent 60%),
+   radial-gradient(1px 1px at 90% 46%,rgba(255,255,255,.4),transparent 60%),
+   radial-gradient(1.5px 1.5px at 22% 62%,rgba(120,255,214,.4),transparent 60%),
+   radial-gradient(1px 1px at 64% 78%,rgba(190,255,235,.4),transparent 60%),
+   radial-gradient(2px 2px at 8% 90%,rgba(255,209,102,.25),transparent 60%);
+  background-size:520px 520px}
+#ch-07 .snow i+i{background-size:340px 340px;opacity:.45;background-position:130px 90px}
+#ch-07 .container{position:relative;z-index:1}
+
+/* escala */
+#ch-07 .scale-tools{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:22px 0 10px}
+#ch-07 .scale-tools .btn[aria-pressed="true"]{background:var(--accent);color:#04201a;border-color:var(--accent)}
+#ch-07 .plot{position:relative;margin-top:14px;padding-bottom:34px}
+#ch-07 .gl{position:absolute;inset:0 0 34px 0;pointer-events:none}
+#ch-07 .gl span{position:absolute;top:0;bottom:0;width:1px;background:var(--line);opacity:.7;transition:left .8s cubic-bezier(.2,.7,.2,1)}
+#ch-07 .axis{position:absolute;left:0;right:0;bottom:0;height:28px}
+#ch-07 .axis span{position:absolute;transform:translateX(-50%);font:12px/1 'IBM Plex Mono',ui-monospace,monospace;color:var(--muted);transition:left .8s cubic-bezier(.2,.7,.2,1)}
+#ch-07 .axis span:first-child{transform:none}
+#ch-07 .grp{margin:30px 0 8px;font-size:1.05rem;font-weight:600;color:var(--accent2);position:relative}
+#ch-07 .grp+.bar{margin-top:6px}
+#ch-07 .bar{position:relative;padding:12px 0 10px}
+#ch-07 .bh{display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap}
+#ch-07 .lab{font-weight:500}
+#ch-07 .val{font:500 .95rem 'IBM Plex Mono',ui-monospace,monospace;color:var(--fg)}
+#ch-07 .val b{font-weight:500}
+#ch-07 .track{height:12px;margin:8px 0 6px;position:relative;background:rgba(255,255,255,.05);border-radius:2px}
+#ch-07 .fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:2px;transition:width 1.6s cubic-bezier(.16,.8,.2,1)}
+#ch-07 .plot.in .fill{width:var(--w,0%)}
+#ch-07 .f .fill{background:linear-gradient(90deg,#c99a2e,var(--accent2));box-shadow:0 0 14px rgba(255,209,102,.45)}
+#ch-07 .g .fill{background:linear-gradient(90deg,#1a8f72,var(--accent));box-shadow:0 0 14px rgba(47,209,160,.45)}
+#ch-07 .plan .fill{background:repeating-linear-gradient(135deg,rgba(47,209,160,.75) 0 6px,rgba(47,209,160,.12) 6px 12px);border:1px dashed var(--accent);box-shadow:0 0 16px rgba(47,209,160,.25)}
+#ch-07 .bar:nth-of-type(n) .fill{transition-delay:.05s}
+#ch-07 .note{margin:0;font-size:.88rem;color:var(--muted);max-width:68ch;line-height:1.45}
+#ch-07 .keyline{margin-top:20px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+#ch-07 .sw{display:inline-block;width:22px;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle}
+#ch-07 .sw.f{background:var(--accent2)}#ch-07 .sw.g{background:var(--accent)}
+#ch-07 .sw.plan{background:repeating-linear-gradient(135deg,var(--accent) 0 3px,transparent 3px 6px);border:1px dashed var(--accent)}
+
+/* relógio */
+#ch-07 .clock{margin:36px 0 30px;max-width:760px}
+#ch-07 .days{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+#ch-07 .days span{font-size:clamp(4rem,14vw,10rem);font-weight:300;line-height:.95;color:var(--accent);letter-spacing:-.03em;font-variant-numeric:tabular-nums;text-shadow:0 0 40px rgba(47,209,160,.35)}
+#ch-07 .days small{font-size:1.1rem;color:var(--muted)}
+#ch-07 .hms{font-size:1.05rem;color:var(--accent2);margin:6px 0 22px;font-variant-numeric:tabular-nums}
+#ch-07 .lifebar{position:relative;height:6px;background:rgba(255,255,255,.08);border-radius:3px}
+#ch-07 .lifebar i{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,var(--accent2),var(--accent));border-radius:3px}
+#ch-07 .lifebar u{position:absolute;top:-5px;width:2px;height:16px;background:#fff;box-shadow:0 0 10px #fff;left:0;text-decoration:none}
+#ch-07 .lifelab{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);margin-top:8px}
+#ch-07 .goals{margin:0 0 40px;max-width:62ch}
+#ch-07 .goalsT{margin:0 0 8px;color:var(--muted)}
+#ch-07 .goals ol{margin:0 0 8px;padding-left:1.4em;list-style:decimal}
+#ch-07 .goals li{margin:6px 0}
+#ch-07 .rail{list-style:none;margin:0;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(160px,1fr);gap:0;overflow-x:auto;padding-bottom:10px;scrollbar-width:thin}
+#ch-07 .rail li{position:relative;padding:22px 16px 0 0;font-size:.88rem;color:var(--muted);line-height:1.4;min-width:160px}
+#ch-07 .rail li::before{content:"";position:absolute;left:0;top:6px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+#ch-07 .rail li::after{content:"";position:absolute;left:12px;right:4px;top:10px;height:1px;background:var(--line)}
+#ch-07 .rail li:last-child::after{display:none}
+#ch-07 .rail b{display:block;color:var(--fg);font:500 .95rem 'IBM Plex Mono',ui-monospace,monospace;margin-bottom:3px}
+
+/* globo */
+#ch-07 .gwrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.7fr);gap:clamp(20px,3vw,48px);align-items:start;margin-top:28px}
+#ch-07 .gstage{position:relative;aspect-ratio:1/1;max-height:84vh;width:100%;margin:0 auto}
+#ch-07 #c7-canvas{position:absolute;inset:-6%;width:112%;height:112%;display:block;touch-action:pan-y;cursor:grab;outline-offset:-4px}
+#ch-07 #c7-canvas:active{cursor:grabbing}
+#ch-07 #c7-canvas:focus-visible{outline:2px solid var(--accent2)}
+#ch-07 .gstage .hint{position:absolute;left:0;right:0;bottom:-6px;display:flex;justify-content:center;text-align:center;margin:0;font-size:.85rem;color:var(--muted);pointer-events:none}
+#ch-07 .gfail{position:absolute;inset:20% 10%;margin:0;color:var(--muted);text-align:center}
+#ch-07 .layers{display:flex;flex-wrap:wrap;gap:8px}
+#ch-07 .layers button{min-height:44px;padding:8px 14px;border-radius:22px;border:1px solid var(--line);background:transparent;color:var(--fg);font:inherit;font-size:.92rem;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background .25s,border-color .25s}
+#ch-07 .layers button i{width:10px;height:10px;border-radius:50%;background:var(--c);box-shadow:0 0 10px var(--c)}
+#ch-07 .layers button:hover{border-color:var(--c,var(--accent))}
+#ch-07 .layers button[aria-pressed="true"]{background:rgba(255,255,255,.1);border-color:var(--c,var(--accent))}
+#ch-07 .layers button:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+#ch-07 .gcard{margin:18px 0 12px;padding:4px 0 4px 18px;border-left:3px solid var(--cc,var(--accent));min-height:150px}
+#ch-07 .gcard h4{margin:0 0 6px;font-size:1.25rem;font-weight:600}
+#ch-07 .gcard p{margin:0 0 8px;line-height:1.5}
+#ch-07 .gcard .ctag{color:var(--muted)}
+#ch-07 .places{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+#ch-07 .places button{width:100%;min-height:44px;text-align:left;background:transparent;border:0;border-top:1px solid var(--line);color:var(--fg);font:inherit;font-size:.95rem;padding:8px 4px;cursor:pointer;display:flex;gap:10px;align-items:center}
+#ch-07 .places button i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c)}
+#ch-07 .places button small{color:var(--muted);margin-left:auto;padding-left:8px;font-size:.78rem}
+#ch-07 .places button[aria-current="true"]{background:rgba(255,255,255,.07)}
+#ch-07 .places button:hover{background:rgba(255,255,255,.05)}
+#ch-07 .places button:focus-visible{outline:2px solid var(--accent2);outline-offset:-2px}
+#ch-07 .a-end{padding-bottom:clamp(90px,16vh,180px)}
+#ch-07 .a-end .btn{margin-top:18px}
+
+@media (min-width:901px){
+  #ch-07 .container{padding-right:max(var(--gutter),calc(165px - max(0px,(100vw - 1276px) / 2)))}
+}
+@media (max-width:900px){
+  #ch-07 .gwrap{grid-template-columns:minmax(0,1fr)}
+  #ch-07 .gstage{max-height:none;margin-bottom:26px}
+  #ch-07 .bh{flex-direction:column;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){
+  #ch-07 .fill,#ch-07 .gl span,#ch-07 .axis span{transition:none}
+}
+</style>
+
+<script>
+Gates.chapter('ch-07', function (ctx) {
+  var $ = ctx.$, $$ = ctx.$$, gsap = ctx.gsap, ST = ctx.ScrollTrigger, THREE = ctx.THREE;
+  var fmt = function (n) { return n.toLocaleString('pt-BR'); };
+
+  Gates.facts = Gates.facts || {};
+  Gates.facts['ch-07'] = {
+    title: 'Ressalvas · Propósito',
+    items: [
+      { text: 'Patrimônio: a Forbes estima cerca de US$ 106,5 bi em julho de 2026 (19º); outras estimativas de meados de 2026 vão de US$ 105 a 108 bi. O valor de 1999 varia muito entre sites; só "passou de US$ 100 bi, segundo a Forbes" é sustentado.', url: 'https://en.wikipedia.org/wiki/Bill_Gates' },
+      { text: 'Dotação da fundação: US$ 89 bi na ficha de 2025 (ativos de US$ 91 bi em 31/12/2025) contra cerca de US$ 77 bi na época do anúncio (PBS). O número depende da data.', url: 'https://en.wikipedia.org/wiki/Bill_%26_Melinda_Gates_Foundation' },
+      { text: 'Os "mais de US$ 200 bi" são o gasto total planejado de 2025 a 2045 (inclui a dotação e ganhos futuros), não a fortuna pessoal. Fonte primária do anúncio não foi acessada; vale conferir.', url: 'https://www.alliancemagazine.org/blog/gates-to-give-away-200-billon-and-shutter-foundation-in-2045/' },
+      { text: 'Brasil: só são confirmadas a parceria da Agência Brasileira de Cooperação com a fundação (data não confirmada) e o artigo de Gates na CNN Brasil durante a COP30. Não há visita ao Brasil confirmada em 2025–2026.', url: 'https://anba.com.br/en/brazil-and-bill-gates-foundation-establish-partnership' },
+      { text: 'Omni Processor em Dacar (cerca de um terço do lodo fecal): vem de descrições do documentário "O Código Bill Gates" (2019), não de relatório independente. As certificações de pólio (Sudeste Asiático, incluindo a Índia, em março de 2014; região africana, em agosto de 2020), o piloto da vacina RTS,S (2019), o desafio do banheiro (2011) e a feira de Pequim (2018) são fatos amplamente documentados pela OMS e pela fundação, mas não constam das notas de pesquisa do projeto e não têm link aqui. Críticas (AGRA, Common Core) são de críticos, não achados estabelecidos.' },
+      { text: 'Horizon 1000 (OpenAI, US$ 50 mi, anunciado em 20/1/2026) e a parceria com a Anthropic (US$ 200 mi em quatro anos, anunciada em 14/5/2026) foram conferidos nos anúncios das próprias empresas. A carta anual da fundação, citada nas notas, é anterior a esses anúncios.', url: 'https://openai.com/index/horizon-1000/' }
+    ]
+  };
+
+  /* ---------- ATO B · escala ---------- */
+  var plot = $('#c7-plot'), logBtn = $('#c7-log'), logMode = false;
+  var bars = $$('.bar');
+  var MAXV = 200;
+  function pos(v) {
+    if (logMode) return Math.max(2, Math.log10(Math.max(v, 1)) / Math.log10(250) * 100);
+    return Math.max(v / MAXV * 100, 0.7);
+  }
+  function layoutScale() {
+    bars.forEach(function (b) { b.querySelector('.fill').parentNode.style.setProperty('--w', pos(parseFloat(b.dataset.v)) + '%'); b.style.setProperty('--w', pos(parseFloat(b.dataset.v)) + '%'); });
+    var ticks = logMode ? [1, 10, 100] : [0, 50, 100, 150, 200];
+    var g = $('#c7-grid'), a = $('#c7-axis');
+    var gh = '', ah = '';
+    ticks.forEach(function (t) {
+      var x = t === 0 ? 0 : pos(t);
+      if (!logMode && t === 0) x = 0;
+      gh += '<span style="left:' + x + '%"></span>';
+      ah += '<span style="left:' + x + '%">' + (t === 0 ? '0' : 'US$ ' + t + ' bi') + '</span>';
+    });
+    g.innerHTML = gh; a.innerHTML = ah;
+    $('#c7-scalenote').textContent = logMode
+      ? 'Escala logarítmica: cada marca vale dez vezes a anterior. Deixa a barra de 1987 visível, mas distorce a comparação.'
+      : 'Escala linear: cada marca vale o mesmo tanto.';
+  }
+  layoutScale();
+  logBtn.addEventListener('click', function () {
+    logMode = !logMode;
+    logBtn.setAttribute('aria-pressed', String(logMode));
+    ctx.audio.play('flip', { vol: .4 });
+    layoutScale();
+    ctx.say(logMode ? 'Régua logarítmica ativada' : 'Régua linear ativada');
+  });
+  /* as barras de cada linha leem --w do próprio .bar */
+  var st = document.createElement('style');
+  st.textContent = '#ch-07 .bar .fill{width:0}#ch-07 .plot.in .bar .fill{width:var(--w,0%)}';
+  ctx.root.appendChild(st);
+  ST.create({ trigger: plot, start: 'top 72%', once: true, onEnter: function () { plot.classList.add('in'); } });
+  if (ctx.reduced) plot.classList.add('in');
+
+  /* ---------- ATO C · relógio ---------- */
+  var END = new Date(2046, 0, 1, 0, 0, 0), START = new Date(2025, 4, 8, 0, 0, 0);
+  var elDays = $('#c7-days'), elHms = $('#c7-hms'), elPct = $('#c7-pct'), elFill = $('#c7-lifefill'), elNow = $('#c7-lifenow');
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function tickClock() {
+    var now = new Date(), ms = Math.max(0, END - now);
+    var days = Math.floor(ms / 864e5), rem = ms - days * 864e5;
+    var h = Math.floor(rem / 36e5), m = Math.floor(rem % 36e5 / 6e4), s = Math.floor(rem % 6e4 / 1e3);
+    elDays.textContent = fmt(days);
+    elHms.textContent = 'e mais ' + pad(h) + ' h ' + pad(m) + ' min' + (ctx.reduced ? '' : ' ' + pad(s) + ' s');
+    var p = Math.min(1, Math.max(0, (now - START) / (END - START)));
+    elFill.style.width = (p * 100) + '%'; elNow.style.left = (p * 100) + '%';
+    elPct.textContent = (p * 100).toFixed(1).replace('.', ',') + '% do caminho';
+  }
+  tickClock();
+  var clockTimer = null;
+
+  /* ---------- ATO D · dados do globo ---------- */
+  var SEA = { lat: 47.61, lon: -122.33 };
+  var LAYERS = [
+    { id: 'polio', name: 'Pólio', c: '#5ee7ff', lead: 'Em 2006 a fundação destinou US$ 86 milhões à pólio. Hoje afirma que 20 milhões de pessoas teriam sido paralisadas sem a vacinação. A meta para 2045 é a erradicação.' },
+    { id: 'malaria', name: 'Malária', c: '#ff8fb1', lead: 'Mais de US$ 1,3 bi em malária até 2012, e mais de US$ 6,6 bi ao Fundo Global, que cobre também aids e tuberculose. A meta para 2045 inclui a malária erradicada.' },
+    { id: 'sanea', name: 'Saneamento', c: '#ffd166', lead: 'O desafio "Reinvent the Toilet" buscava banheiros que funcionem sem esgoto encanado. Em Dacar, o Omni Processor trataria cerca de um terço do lodo fecal da cidade e produz água potável, segundo o documentário de 2019.' },
+    { id: 'energia', name: 'Energia', c: '#ff9a4d', lead: 'Breakthrough Energy (2015) e TerraPower (2021). Há controvérsia: em outubro de 2025, um memorando de Gates sobre o clima dividiu cientistas, e a Breakthrough Energy demitiu equipes de políticas públicas em março do mesmo ano.' },
+    { id: 'vacinas', name: 'Vacinas', c: '#b99bff', lead: 'Gavi, a aliança de vacinas: US$ 750 milhões em janeiro de 2005, US$ 1,553 bi em 2016–2020 e US$ 1,6 bi prometidos em junho de 2020.' },
+    { id: 'agro', name: 'Agricultura', c: '#7dffa0', lead: 'Em 2025, US$ 1,4 bi em quatro anos para adaptação climática de pequenos agricultores, anunciados na COP30. Também é o setor de algumas das críticas à fundação.' },
+    { id: 'mulher', name: 'Saúde materna', c: '#f6a6ff', lead: 'Em 2025, US$ 2,5 bi em pesquisa e desenvolvimento de saúde da mulher, e em janeiro de 2026 o Horizon 1000, com a OpenAI. A meta de 2045: nenhuma mãe ou criança morre de causa evitável.' },
+    { id: 'edu', name: 'Educação', c: '#8fb4ff', lead: 'Bolsas Gates Cambridge (US$ 210 milhões, em 2000) e a política de educação nos Estados Unidos, que gerou críticas.' },
+    { id: 'all', name: 'Tudo', c: '#ffffff', lead: 'Todos os programas ao mesmo tempo. Os arcos partem de Seattle.' }
+  ];
+  var LBY = {}; LAYERS.forEach(function (l) { LBY[l.id] = l; });
+  var M = [
+    { id: 'sea', layer: 'base', n: 'Seattle, sede', lat: SEA.lat, lon: SEA.lon, t: 'Criada em 1994 como William H. Gates Foundation e lançada como Bill & Melinda Gates Foundation em 2000. Desde 2025 chama-se Gates Foundation, com Bill como único presidente.' },
+    { id: 'ng', layer: 'polio', n: 'Nigéria', lat: 12.0, lon: 8.5, t: 'O documentário de 2019 mostra o esforço contra a pólio na Nigéria. A região africana da OMS foi certificada livre do poliovírus selvagem em agosto de 2020.' },
+    { id: 'in', layer: 'polio', n: 'Índia', lat: 28.6, lon: 77.2, t: 'Sem casos de pólio selvagem desde 2011; a região do Sudeste Asiático foi certificada em março de 2014. A fundação é uma das maiores financiadoras da iniciativa global de erradicação.' },
+    { id: 'pk', layer: 'polio', n: 'Paquistão e Afeganistão', lat: 32.0, lon: 67.5, t: 'Segundo a iniciativa global, os dois países onde o poliovírus selvagem ainda circulava na última atualização conhecida. Falta aqui a última milha.' },
+    { id: 'gva-f', layer: 'malaria', n: 'Genebra, Fundo Global', lat: 46.2, lon: 6.14, t: 'O Fundo Global contra aids, tuberculose e malária recebeu mais de US$ 6,6 bi da fundação.' },
+    { id: 'mw', layer: 'malaria', n: 'Malaui, Gana e Quênia', lat: -13.9, lon: 33.8, t: 'Países do programa-piloto da vacina RTS,S, coordenado pela OMS a partir de 2019. A vacina foi desenvolvida com apoio de financiadores como a Fundação Gates, segundo relatos.' },
+    { id: 'dkr', layer: 'sanea', n: 'Dacar, Senegal', lat: 14.7, lon: -17.45, t: 'O Omni Processor trata cerca de um terço do lodo fecal de Dacar e gera água potável, segundo o documentário "O Código Bill Gates".' },
+    { id: 'pek', layer: 'sanea', n: 'Pequim', lat: 39.9, lon: 116.4, t: 'Em 2018, a feira do banheiro reinventado mostrou protótipos do desafio lançado pela fundação em 2011.' },
+    { id: 'wy', layer: 'energia', n: 'Wyoming, EUA', lat: 41.8, lon: -110.5, t: 'TerraPower: com a PacifiCorp, empresa de Warren Buffett, anunciou em junho de 2021 um reator nuclear refrigerado a sódio no Wyoming.' },
+    { id: 'par', layer: 'energia', n: 'Paris', lat: 48.85, lon: 2.35, t: 'Breakthrough Energy, lançada em 2015, com US$ 1 bi próprio de Gates. Ajudou a lançar a Mission Innovation, com 20 governos.' },
+    { id: 'bel', layer: 'energia', n: 'Belém, Brasil', lat: -1.46, lon: -48.5, t: 'COP30, novembro de 2025: a fundação anunciou US$ 1,4 bi em quatro anos para adaptação de pequenos agricultores. Gates publicou um artigo na CNN Brasil; não há indício de que tenha ido a Belém.' },
+    { id: 'gavi', layer: 'vacinas', n: 'Genebra, Gavi', lat: 47.4, lon: 7.5, t: 'Sede da Gavi, a aliança de vacinas. Gates é um dos maiores doadores: US$ 750 mi em janeiro de 2005 e US$ 1,553 bi em 2016–2020.' },
+    { id: 'lon', layer: 'vacinas', n: 'Londres', lat: 51.5, lon: -0.12, t: 'Cúpula de doadores da Gavi, em junho de 2020, anfitriã pelo Reino Unido: a fundação prometeu US$ 1,6 bi.' },
+    { id: 'nbo', layer: 'agro', n: 'Nairóbi, AGRA', lat: -1.29, lon: 36.82, t: 'A AGRA, aliança para uma revolução verde na África, é apoiada pela fundação. Críticos, como o USRTK (grupo de advocacia), dizem que 15 anos não melhoraram a segurança alimentar; a AGRA mudou de marca em 2022. É crítica, não achado estabelecido.' },
+    { id: 'bsb', layer: 'agro', n: 'Brasília', lat: -15.8, lon: -47.9, t: 'A Agência Brasileira de Cooperação tem parceria com a fundação para pequenos agricultores na África e no sul da Ásia (data não confirmada). Em 2024, Gates citou a Embrapa ao dizer que o Brasil pode liderar em clima.' },
+    { id: 'us', layer: 'agro', n: 'Meio-Oeste, EUA', lat: 41.5, lon: -96.5, t: 'Dinheiro pessoal, não da fundação: via Cascade Investment, Gates é o maior proprietário privado de terras agrícolas dos EUA, cerca de 242 mil acres em 19 estados.' },
+    { id: 'ssa', layer: 'mulher', n: 'África subsaariana', lat: 3.0, lon: 22.0, t: 'Horizon 1000, parceria com a OpenAI anunciada em janeiro de 2026: US$ 50 milhões para chegar a 1.000 clínicas de atenção primária na África subsaariana até 2028, começando por Ruanda, segundo o anúncio da OpenAI.' },
+    { id: 'cam', layer: 'edu', n: 'Cambridge, Reino Unido', lat: 52.2, lon: 0.12, t: 'Gates Cambridge Scholarship: US$ 210 milhões, em 2000.' },
+    { id: 'usa', layer: 'edu', n: 'Estados Unidos (críticas)', lat: 38.0, lon: -98.0, t: 'Common Core, testes na avaliação de professores e escolas charter: Diane Ravitch e Tim Schwab criticam a influência da fundação. São visões de críticos, não achados estabelecidos.' }
+  ];
+  var MBY = {}; M.forEach(function (m, i) { m.i = i; MBY[m.id] = m; });
+
+  var curLayer = 'polio', selId = null;
+  var el = { layers: $('#c7-layers'), list: $('#c7-list'), ct: $('#c7-ct'), cp: $('#c7-cp'), cg: $('#c7-cg'), card: $('#c7-card') };
+  var gl3 = null; // preenchido ao criar o WebGL (hooks)
+
+  LAYERS.forEach(function (l) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.dataset.l = l.id; b.style.setProperty('--c', l.c);
+    b.setAttribute('aria-pressed', 'false');
+    b.innerHTML = '<i></i>' + l.name;
+    b.addEventListener('click', function () { setLayer(l.id, true); });
+    el.layers.appendChild(b);
+  });
+
+  function visible(m) { return m.layer === 'base' || curLayer === 'all' || m.layer === curLayer; }
+
+  function renderList() {
+    el.list.innerHTML = '';
+    M.forEach(function (m) {
+      if (!visible(m)) return;
+      var li = document.createElement('li'), b = document.createElement('button');
+      b.type = 'button';
+      var col = m.layer === 'base' ? '#ffffff' : LBY[m.layer].c;
+      b.style.setProperty('--c', col);
+      b.innerHTML = '<i></i>' + m.n + (curLayer === 'all' && m.layer !== 'base' ? '<small>' + LBY[m.layer].name + '</small>' : '');
+      if (m.id === selId) b.setAttribute('aria-current', 'true');
+      b.addEventListener('click', function () { selectMarker(m.id); });
+      li.appendChild(b); el.list.appendChild(li);
+    });
+  }
+
+  function showLayerCard() {
+    var l = LBY[curLayer];
+    el.card.style.setProperty('--cc', l.c);
+    el.ct.textContent = l.name;
+    el.cp.textContent = l.lead;
+    el.cg.textContent = 'Escolha um ponto de luz no globo ou um lugar na lista.';
+  }
+  function showMarkerCard(m) {
+    var col = m.layer === 'base' ? '#ffffff' : LBY[m.layer].c;
+    el.card.style.setProperty('--cc', col);
+    el.ct.textContent = m.n;
+    el.cp.textContent = m.t;
+    el.cg.textContent = m.layer === 'base' ? 'Sede da fundação' : 'Programa: ' + LBY[m.layer].name;
+  }
+
+  function setLayer(id, fly) {
+    curLayer = id; selId = null;
+    $$('#c7-layers button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.l === id)); });
+    renderList(); showLayerCard();
+    ctx.audio.play('pop', { vol: .35 });
+    ctx.say('Programa ' + LBY[id].name + ': ' + M.filter(function (m) { return m.layer === id || (id === 'all' && m.layer !== 'base'); }).length + ' lugares');
+    if (gl3) { gl3.applyLayer(); if (fly) gl3.flyToLayer(); }
+  }
+  function selectMarker(id) {
+    var m = MBY[id]; if (!m) return;
+    selId = id;
+    showMarkerCard(m);
+    renderList();
+    ctx.audio.play('chime', { vol: .3 });
+    ctx.say(m.n + '. ' + m.t);
+    if (gl3) { gl3.applySel(); gl3.flyTo(m.lat, m.lon); }
+  }
+  setLayer('polio', false);
+
+  $('#c7-facts').addEventListener('click', function () { ctx.fact('ch-07'); });
+
+  /* ---------- WebGL ---------- */
+  var MASK = 'gd,8,b,a,41,1,1,b,2,p,1i,1,27,2,4,3,1,5,4,o,g,5,11,4,1w,2,a,1,2,5,4,r,h,1,16,2,1z,3,3,1,1,1,1,6,b,j,12,2,d,d,d,3,1,2,17,3,1,1,3,1,3,1,1,2,1,4,1,2,a,h,11,2,c,l,1,2,q,1,a,2,f,1,2,7,4,2,2,8,a,d,1,1,n,2,d,1,5,3,1,1g,9,2j,9,c,3,1,2,1,1b,1,8,2m,e,1,1,1,c,1,1h,2,2,2k,5,2,4,1,1,1,26,11,9,2,1,1,7,4,p,5,2,27,7,7,1,s,8,4,b,3,o,6,2,1v,2,1,1,4,d,4,8,m,8,4,2,1,z,6,3,1n,5,1,3,1,k,1,b,m,7,7,s,2,5,1,1,2,3,1m,9,4,g,1,g,o,2,a,p,3,5,1,5,1m,a,3,y,o,2,b,n,2,1,2,2,1y,6,1,11,10,q,2,1,1x,1,1,19,1,1,r,1,1,3,2,q,1z,1,1,1a,u,5,1,p,1y,2,1,1a,s,1,2,u,7,1,8,2,1,1,5,2,16,1e,r,u,7,3,2,2,5,6,4,2,15,3,2,1a,q,w,4,4,1,2,2,1,4,1,a,2,12,5,1,1b,o,x,5,8,1,1,2,1,c,2,w,4,1,6,1,1c,n,z,2,4,3,1,1,6,b,2,y,2,2,3,2,1e,m,z,8,7,1,3,1,1,16,3,1,2,4,1f,j,10,a,c,16,5,2,1j,h,10,e,1,4,1,1a,1r,8,7,1,z,t,1,10,1q,1,1,6,8,1,x,o,1,7,2,x,1s,1,1,5,16,o,2,7,1,1,5,r,1v,4,7,2,w,q,1,b,5,n,2,1,1u,4,4,2,4,1,t,s,1,9,6,9,2,8,22,4,2,2,8,1,r,r,2,8,7,6,5,6,1,1,23,6,10,r,2,6,a,4,6,7,6,1,21,4,x,t,1,4,c,3,9,5,6,1,23,2,y,t,1,1,e,3,9,6,5,1,24,1,4,4,q,u,2,2,c,2,9,1,2,2,8,1,23,1,1,1,1,8,n,w,d,1,1,1,8,1,2,1,2g,a,n,v,f,1,l,1,26,d,l,2,1,1,4,l,o,1,1,2,5,2,2a,e,u,i,q,1,1,1,4,3,29,f,u,h,r,2,4,4,1,1,27,h,r,h,t,2,3,4,6,2,21,k,p,f,v,2,2,3,1,2,3,1,1,1,1,3,1w,n,o,e,w,1,8,1,7,4,1v,n,n,e,x,3,d,5,4,1,1q,l,o,e,12,1,3,1,7,2,1,1,6,1,1o,k,q,d,3e,j,p,e,4,1,14,3,3,1,1y,j,p,e,4,1,11,6,3,2,a,1,1o,g,q,d,3,3,10,8,2,2,20,f,q,c,4,3,10,c,20,f,r,b,4,2,y,h,7,1,1q,d,t,b,4,2,x,i,1y,b,v,a,5,1,y,j,1x,b,w,8,15,k,1v,b,x,8,15,k,1v,b,y,6,17,j,1v,a,z,5,18,4,5,9,1w,7,2f,1,a,6,b,1,1k,9,2q,5,c,1,1j,6,3a,2,1i,4,1,1,2v,2,c,2,1k,4,2x,1,b,2,1k,4,39,2,1l,4,4v,4,1w,1,2z,3,4y,3,4y,2,p2,1,4x,2,1l,4,f,1,5,9,2,c,21,2,1d,1,2,f,4,13,1u,5,w,x,2,1c,18,3,4,1,a,4,n,2k,p,g,1,1,2,i,n,2k,m,10,o,2p,h,1,2,13,e,3,4,2s,o,13,9,1,7,2q,n,4g,g,9,ei';
+  var MW = 180, MH = 90, mask = null;
+  function decodeMask() {
+    mask = new Uint8Array(MW * MH);
+    var runs = MASK.split(','), i = 0, v = 0;
+    runs.forEach(function (r) { var n = parseInt(r, 36); if (v) for (var k = 0; k < n; k++) mask[i + k] = 1; i += n; v ^= 1; });
+  }
+  function landAt(lat, lon) {
+    var fx = (lon + 180) / 2 - 0.5, fy = (90 - lat) / 2 - 0.5;
+    var x0 = Math.floor(fx), y0 = Math.floor(fy), tx = fx - x0, ty = fy - y0;
+    function g(x, y) { x = ((x % MW) + MW) % MW; y = Math.min(MH - 1, Math.max(0, y)); return mask[y * MW + x]; }
+    var a = g(x0, y0) * (1 - tx) + g(x0 + 1, y0) * tx, b = g(x0, y0 + 1) * (1 - tx) + g(x0 + 1, y0 + 1) * tx;
+    return a * (1 - ty) + b * ty;
+  }
+  var D2R = Math.PI / 180;
+  function ll2v(lat, lon, r) {
+    var la = lat * D2R, lo = lon * D2R;
+    return new THREE.Vector3(Math.cos(la) * Math.sin(lo) * r, Math.sin(la) * r, Math.cos(la) * Math.cos(lo) * r);
+  }
+
+  var inited = false;
+  function initGlobe() {
+    inited = true;
+    var canvas = $('#c7-canvas');
+    var handle;
+    try { handle = ctx.webgl(canvas, { alpha: true, antialias: true }); } catch (e) { handle = null; }
+    if (!handle || !handle.renderer) { $('#c7-gfail').hidden = false; canvas.style.display = 'none'; $('#c7-ghint').hidden = true; return; }
+    var renderer = handle.renderer;
+    decodeMask();
+    var touch = ctx.touch;
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(32, 1, 0.1, 30);
+    camera.position.set(0, 0, 4.15);
+    var group = new THREE.Group(); scene.add(group);
+    var uTime = { value: 0 }, uPR = { value: Math.min(window.devicePixelRatio || 1, 2) }, uScale = { value: 1 };
+
+    // oceano
+    var ocean = new THREE.Mesh(new THREE.SphereGeometry(0.992, 64, 48), new THREE.ShaderMaterial({
+      vertexShader: 'varying vec3 vN;void main(){vN=normalize(mat3(modelMatrix)*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+      fragmentShader: 'varying vec3 vN;void main(){vec3 L=normalize(vec3(-.45,.55,.75));float l=max(dot(vN,L),0.);vec3 c=mix(vec3(.02,.1,.13),vec3(.06,.32,.38),pow(l,1.4));gl_FragColor=vec4(c,1.);}'
+    }));
+    scene.add(ocean);
+    // atmosfera
+    scene.add(new THREE.Mesh(new THREE.SphereGeometry(1.16, 64, 48), new THREE.ShaderMaterial({
+      vertexShader: 'varying vec3 vN;void main(){vN=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+      fragmentShader: 'varying vec3 vN;void main(){float i=pow(max(.62-dot(vN,vec3(0.,0.,1.)),0.),5.);gl_FragColor=vec4(.18,.82,.63,1.)*i*.55;}',
+      side: THREE.BackSide, blending: THREE.AdditiveBlending, transparent: true, depthWrite: false
+    })));
+
+    // graticule: meridianos e paralelos muito sutis, como carta náutica
+    var gv = [], gp, gq;
+    for (var glo = -180; glo < 180; glo += 30) { gp = null; for (var gla = -80; gla <= 80; gla += 5) { gq = ll2v(gla, glo, 1.001); if (gp) gv.push(gp.x, gp.y, gp.z, gq.x, gq.y, gq.z); gp = gq; } }
+    for (var gla2 = -60; gla2 <= 60; gla2 += 30) { gp = null; for (var glo2 = -180; glo2 <= 180; glo2 += 5) { gq = ll2v(gla2, glo2, 1.001); if (gp) gv.push(gp.x, gp.y, gp.z, gq.x, gq.y, gq.z); gp = gq; } }
+    var ggeo = new THREE.BufferGeometry(); ggeo.setAttribute('position', new THREE.Float32BufferAttribute(gv, 3));
+    var grat = new THREE.LineSegments(ggeo, new THREE.LineBasicMaterial({ color: 0x2fd1a0, transparent: true, opacity: 0.1, depthWrite: false, blending: THREE.AdditiveBlending }));
+    group.add(grat);
+
+    // pontos de terra (Fibonacci) e plâncton
+    var N = touch ? 9000 : 18000, land = [], sea = [];
+    var ga = Math.PI * (3 - Math.sqrt(5));
+    var seedL = [], seedS = [];
+    for (var i = 0; i < N; i++) {
+      var y = 1 - 2 * (i + 0.5) / N, r = Math.sqrt(1 - y * y), th = i * ga;
+      var x = Math.cos(th) * r, z = Math.sin(th) * r;
+      var lat = Math.asin(y) / D2R, lon = Math.atan2(x, z) / D2R;
+      if (landAt(lat, lon) > 0.5) { land.push(x * 1.003, y * 1.003, z * 1.003); seedL.push(Math.random()); }
+      else if (i % (touch ? 22 : 16) === 0) { sea.push(x * 1.004, y * 1.004, z * 1.004); seedS.push(Math.random()); }
+    }
+    var dotVS = 'attribute float aSeed;uniform float uTime,uPR,uScale,uSize;varying vec3 vC;varying float vA;' +
+      'void main(){vec4 wp=modelMatrix*vec4(position,1.);vec3 n=normalize(wp.xyz);vec3 L=normalize(vec3(-.45,.55,.75));float l=dot(n,L)*.5+.5;' +
+      'float f=dot(n,normalize(cameraPosition-wp.xyz));vec4 mv=viewMatrix*wp;' +
+      'float tw=.78+.22*sin(uTime*.0012+aSeed*60.);' +
+      '\n#ifdef SEA\n vC=vec3(.55,1.,.95);vA=pow(max(sin(uTime*.0009+aSeed*90.),0.),12.)*.9*smoothstep(0.,.3,f);gl_PointSize=uSize*uPR*uScale*(.6+.5*aSeed);\n#else\n' +
+      ' vC=mix(vec3(.05,.42,.42),vec3(.42,1.,.82),pow(l,1.6))*tw;vA=smoothstep(-.02,.35,f)*(.55+.45*l);gl_PointSize=uSize*uPR*uScale*(.55+.45*smoothstep(0.,.8,f));\n#endif\n' +
+      'gl_Position=projectionMatrix*mv;}';
+    var dotFS = 'varying vec3 vC;varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.;float a=smoothstep(1.,.35,d)*vA;gl_FragColor=vec4(vC,a);}';
+    function pts(arr, seeds, sea_, size) {
+      var g = new THREE.BufferGeometry();
+      g.setAttribute('position', new THREE.Float32BufferAttribute(arr, 3));
+      g.setAttribute('aSeed', new THREE.Float32BufferAttribute(seeds, 1));
+      var m = new THREE.ShaderMaterial({
+        vertexShader: dotVS, fragmentShader: dotFS, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+        uniforms: { uTime: uTime, uPR: uPR, uScale: uScale, uSize: { value: size } }, defines: sea_ ? { SEA: 1 } : {}
+      });
+      var p = new THREE.Points(g, m); p.frustumCulled = false; return p;
+    }
+    group.add(pts(land, seedL, false, touch ? 6.4 : 5.6));
+    group.add(pts(sea, seedS, true, 5.0));
+
+    // marcadores
+    var mp = new Float32Array(M.length * 3), mc = new Float32Array(M.length * 3), mapp = new Float32Array(M.length), msel = new Float32Array(M.length), mseed = new Float32Array(M.length), mtarget = new Float32Array(M.length);
+    M.forEach(function (m, i) {
+      var v = ll2v(m.lat, m.lon, 1.012); mp[i * 3] = v.x; mp[i * 3 + 1] = v.y; mp[i * 3 + 2] = v.z;
+      var col = new THREE.Color(m.layer === 'base' ? '#ffe9b0' : LBY[m.layer].c); mc[i * 3] = col.r; mc[i * 3 + 1] = col.g; mc[i * 3 + 2] = col.b;
+      mseed[i] = (i * 0.37) % 1; mapp[i] = m.layer === 'base' ? 1 : 0;
+    });
+    var mg = new THREE.BufferGeometry();
+    mg.setAttribute('position', new THREE.BufferAttribute(mp, 3));
+    mg.setAttribute('aColor', new THREE.BufferAttribute(mc, 3));
+    var aAppAttr = new THREE.BufferAttribute(mapp, 1), aSelAttr = new THREE.BufferAttribute(msel, 1);
+    mg.setAttribute('aApp', aAppAttr); mg.setAttribute('aSel', aSelAttr); mg.setAttribute('aSeed', new THREE.BufferAttribute(mseed, 1));
+    var mm = new THREE.ShaderMaterial({
+      uniforms: { uTime: uTime, uPR: uPR, uScale: uScale }, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      vertexShader: 'attribute vec3 aColor;attribute float aApp,aSel,aSeed;uniform float uTime,uPR,uScale;varying vec3 vC;varying float vApp,vSel,vPh,vF;' +
+        'void main(){vC=aColor;vApp=aApp;vSel=aSel;vec4 wp=modelMatrix*vec4(position,1.);vF=dot(normalize(wp.xyz),normalize(cameraPosition-wp.xyz));' +
+        'vPh=fract(uTime*.00055+aSeed);gl_PointSize=(34.+16.*aSel)*aApp*uPR*uScale;gl_Position=projectionMatrix*viewMatrix*wp;}',
+      fragmentShader: 'varying vec3 vC;varying float vApp,vSel,vPh,vF;void main(){float d=length(gl_PointCoord-.5)*2.;if(d>1.)discard;' +
+        'float core=smoothstep(.2,.1,d);float glow=exp(-d*d*16.)*.6;float ring=smoothstep(.07,0.,abs(d-vPh*.95))*(1.-vPh);' +
+        'float sel=vSel*smoothstep(.06,0.,abs(d-.8))*.9;float a=(core+glow+ring*.9+sel)*vApp*smoothstep(0.02,.22,vF);' +
+        'vec3 c=mix(vC,vec3(1.),core*.75);gl_FragColor=vec4(c,clamp(a,0.,1.));}'
+    });
+    var markers = new THREE.Points(mg, mm); markers.frustumCulled = false; group.add(markers);
+
+    // arcos
+    var ARC = 72, arcs = [], origin = ll2v(SEA.lat, SEA.lon, 1);
+    var headPos = new Float32Array(M.length * 3), headCol = new Float32Array(M.length * 3);
+    var headGeo = new THREE.BufferGeometry();
+    headGeo.setAttribute('position', new THREE.BufferAttribute(headPos, 3));
+    headGeo.setAttribute('color', new THREE.BufferAttribute(headCol, 3));
+    var cvs = document.createElement('canvas'); cvs.width = cvs.height = 32;
+    var cx = cvs.getContext('2d'), gr = cx.createRadialGradient(16, 16, 0, 16, 16, 16);
+    gr.addColorStop(0, 'rgba(255,255,255,1)'); gr.addColorStop(.35, 'rgba(255,255,255,.6)'); gr.addColorStop(1, 'rgba(255,255,255,0)');
+    cx.fillStyle = gr; cx.fillRect(0, 0, 32, 32);
+    var headMat = new THREE.PointsMaterial({ size: touch ? 7 : 8, map: new THREE.CanvasTexture(cvs), vertexColors: true, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: false });
+    var heads = new THREE.Points(headGeo, headMat); heads.frustumCulled = false; group.add(heads);
+    M.forEach(function (m, i) {
+      if (m.layer === 'base') { arcs[i] = null; return; }
+      var b = ll2v(m.lat, m.lon, 1).normalize(), a = origin.clone().normalize();
+      var om = Math.acos(Math.min(1, Math.max(-1, a.dot(b)))), so = Math.sin(om) || 1, hgt = 0.05 + 0.26 * (om / Math.PI);
+      var p = new Float32Array(ARC * 3), pts3 = [];
+      for (var k = 0; k < ARC; k++) {
+        var t = k / (ARC - 1), v = a.clone().multiplyScalar(Math.sin((1 - t) * om) / so).add(b.clone().multiplyScalar(Math.sin(t * om) / so));
+        v.multiplyScalar(1.012 + hgt * Math.sin(Math.PI * t));
+        p[k * 3] = v.x; p[k * 3 + 1] = v.y; p[k * 3 + 2] = v.z; pts3.push(v);
+      }
+      var g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(p, 3)); g.setDrawRange(0, 0);
+      var col = new THREE.Color(LBY[m.layer].c);
+      var ln = new THREE.Line(g, new THREE.LineBasicMaterial({ color: col, transparent: true, opacity: .5, depthWrite: false, blending: THREE.AdditiveBlending }));
+      ln.frustumCulled = false; group.add(ln);
+      arcs[i] = { line: ln, pts: pts3, col: col, a: 0, seed: (i * 0.173) % 1 };
+      headCol[i * 3] = col.r; headCol[i * 3 + 1] = col.g; headCol[i * 3 + 2] = col.b;
+      headPos[i * 3] = headPos[i * 3 + 1] = headPos[i * 3 + 2] = 0;
+    });
+
+    // estado de rotação
+    var st = { lon: -40 * D2R, lat: 14 * D2R, vx: 0, vy: 0, tgt: null, drag: false, last: -1e9, sx: 0, sy: 0, moved: 0, px: 0, py: 0 };
+    function angDiff(a, b) { var d = b - a; while (d > Math.PI) d -= 2 * Math.PI; while (d < -Math.PI) d += 2 * Math.PI; return d; }
+
+    function applyLayer() {
+      M.forEach(function (m, i) { mtarget[i] = visible(m) ? 1 : 0; });
+      if (ctx.reduced) { for (var i = 0; i < M.length; i++) mapp[i] = mtarget[i]; aAppAttr.needsUpdate = true; }
+      applySel();
+    }
+    function applySel() {
+      M.forEach(function (m, i) { msel[i] = m.id === selId ? 1 : 0; if (arcs[i]) arcs[i].line.material.opacity = m.id === selId ? .95 : .45; });
+      aSelAttr.needsUpdate = true;
+    }
+    function flyTo(lat, lon) { st.tgt = { lon: lon * D2R, lat: Math.max(-1.0, Math.min(1.0, lat * D2R)) }; st.vx = st.vy = 0; }
+    function flyToLayer() {
+      var v = new THREE.Vector3(), n = 0;
+      M.forEach(function (m) { if (m.layer !== 'base' && (curLayer === 'all' || m.layer === curLayer)) { v.add(ll2v(m.lat, m.lon, 1)); n++; } });
+      if (curLayer === 'all' || !n || v.length() < 0.2) return;
+      v.normalize(); flyTo(Math.asin(v.y) / D2R, Math.atan2(v.x, v.z) / D2R);
+    }
+    gl3 = { applyLayer: applyLayer, applySel: applySel, flyTo: flyTo, flyToLayer: flyToLayer };
+    applyLayer(); flyToLayer();
+
+    function resize() {
+      var w = canvas.clientWidth || 600, h = canvas.clientHeight || 600;
+      if (handle.setSize) handle.setSize(w, h);
+      camera.aspect = w / h; camera.updateProjectionMatrix();
+      uScale.value = h / 700; uPR.value = Math.min(window.devicePixelRatio || 1, 2);
+    }
+    resize();
+    if (window.ResizeObserver) new ResizeObserver(resize).observe(canvas);
+    else window.addEventListener('resize', resize);
+
+    // seleção por ponteiro
+    var tmp = new THREE.Vector3();
+    function pick(clientX, clientY) {
+      var rc = canvas.getBoundingClientRect(), best = null, bd = (touch ? 30 : 24);
+      group.updateMatrixWorld(true);
+      M.forEach(function (m, i) {
+        if (!visible(m) || mapp[i] < .5) return;
+        tmp.set(mp[i * 3], mp[i * 3 + 1], mp[i * 3 + 2]).applyMatrix4(group.matrixWorld);
+        var f = tmp.clone().normalize().dot(camera.position.clone().sub(tmp).normalize());
+        if (f < 0.12) return;
+        tmp.project(camera);
+        var sx = (tmp.x * .5 + .5) * rc.width + rc.left, sy = (-tmp.y * .5 + .5) * rc.height + rc.top;
+        var d = Math.hypot(sx - clientX, sy - clientY);
+        if (d < bd) { bd = d; best = m; }
+      });
+      return best;
+    }
+    canvas.addEventListener('pointerdown', function (e) {
+      st.drag = true; st.moved = 0; st.px = e.clientX; st.py = e.clientY; st.tgt = null; st.last = performance.now();
+      try { canvas.setPointerCapture(e.pointerId); } catch (_) {}
+    });
+    canvas.addEventListener('pointermove', function (e) {
+      if (st.drag) {
+        var dx = e.clientX - st.px, dy = e.clientY - st.py; st.px = e.clientX; st.py = e.clientY;
+        st.moved += Math.abs(dx) + Math.abs(dy);
+        var k = 2.6 / (canvas.clientHeight || 600);
+        st.lon -= dx * k; st.vx = -dx * k;
+        if (e.pointerType !== 'touch') { st.lat = Math.max(-1.25, Math.min(1.25, st.lat + dy * k)); st.vy = dy * k; }
+        st.last = performance.now();
+      } else if (e.pointerType === 'mouse') {
+        canvas.style.cursor = pick(e.clientX, e.clientY) ? 'pointer' : 'grab';
+      }
+    });
+    function up(e) {
+      if (!st.drag) return; st.drag = false;
+      if (st.moved < 6 && e.type === 'pointerup') { var m = pick(e.clientX, e.clientY); if (m) selectMarker(m.id); }
+    }
+    canvas.addEventListener('pointerup', up);
+    canvas.addEventListener('pointercancel', function () { st.drag = false; });
+    canvas.addEventListener('keydown', function (e) {
+      var s = 0.12, used = true;
+      if (e.key === 'ArrowLeft') st.lon -= s; else if (e.key === 'ArrowRight') st.lon += s;
+      else if (e.key === 'ArrowUp') st.lat = Math.min(1.25, st.lat + s); else if (e.key === 'ArrowDown') st.lat = Math.max(-1.25, st.lat - s);
+      else used = false;
+      if (used) { e.preventDefault(); st.tgt = null; st.last = performance.now(); }
+    });
+
+    ctx.onFrame(function (t, dt) {
+      dt = Math.min(dt || 16, 50);
+      uTime.value = t;
+      if (st.tgt) {
+        var k = 1 - Math.pow(1 - 0.0045, dt);
+        st.lon += angDiff(st.lon, st.tgt.lon) * k; st.lat += (st.tgt.lat - st.lat) * k;
+        if (Math.abs(angDiff(st.lon, st.tgt.lon)) < 0.002 && Math.abs(st.tgt.lat - st.lat) < 0.002) st.tgt = null;
+      } else if (!st.drag) {
+        st.lon += st.vx; st.lat = Math.max(-1.25, Math.min(1.25, st.lat + st.vy));
+        var dec = Math.pow(0.93, dt / 16); st.vx *= dec; st.vy *= dec;
+        if (!ctx.reduced && !selId && t - st.last > 3500 && Math.abs(st.vx) < 1e-5) st.lon += dt * 0.00007;
+      }
+      group.rotation.set(st.lat, -st.lon, 0);
+      // marcadores e arcos
+      var chg = false;
+      for (var i = 0; i < M.length; i++) {
+        var d = mtarget[i] - mapp[i];
+        if (Math.abs(d) > 0.002) { mapp[i] += d * Math.min(1, dt * 0.006); chg = true; }
+        var a = arcs[i];
+        if (a) {
+          var want = (mapp[i] > .3 && mtarget[i] > 0) ? 1 : 0, dd = want - a.a;
+          if (Math.abs(dd) > 0.001) a.a += (ctx.reduced ? dd : Math.sign(dd) * Math.min(Math.abs(dd), dt * 0.0011));
+          if (ctx.reduced) a.a = want;
+          var n = Math.floor(a.a * ARC);
+          a.line.geometry.setDrawRange(0, n);
+          a.line.visible = n > 1;
+          if (a.a > .99 && !ctx.reduced) {
+            var s = (t * 0.00014 + a.seed) % 1, idx = Math.min(ARC - 1, Math.floor(s * ARC)), p = a.pts[idx];
+            headPos[i * 3] = p.x; headPos[i * 3 + 1] = p.y; headPos[i * 3 + 2] = p.z;
+          } else { headPos[i * 3] = headPos[i * 3 + 1] = headPos[i * 3 + 2] = 0; }
+        }
+      }
+      if (chg) aAppAttr.needsUpdate = true;
+      headGeo.attributes.position.needsUpdate = true; headGeo.attributes.color.needsUpdate = true;
+      renderer.setClearColor(0x000000, 0);
+      renderer.render(scene, camera);
+    });
+    gl3.handle = handle;
+  }
+
+  return {
+    enter: function () {
+      if (!inited) { try { initGlobe(); } catch (err) { console.error(err); $('#c7-gfail').hidden = false; $('#c7-canvas').style.display = 'none'; } }
+      tickClock();
+      if (!clockTimer) clockTimer = setInterval(tickClock, ctx.reduced ? 30000 : 1000);
+    },
+    leave: function () { if (clockTimer) { clearInterval(clockTimer); clockTimer = null; } },
+    progress: function (p) {
+      var s = $$('.snow i');
+      if (s[0]) s[0].style.transform = 'translate3d(0,' + (-p * 180) + 'px,0)';
+      if (s[1]) s[1].style.transform = 'translate3d(0,' + (-p * 380) + 'px,0)';
+    },
+    resize: function () { layoutScale(); }
+  };
+});
+</script>
