@@ -1,0 +1,66 @@
+<section class="chapter" id="ch-NN" data-era="ERA" data-title="TITULO" data-year="ANO">
+
+  <!-- ============ ABERTURA ============ -->
+  <header class="nn-hero">
+    <div class="container stack">
+      <h2 class="d2 nn-title">TITULO</h2>
+      <p class="lead">Uma frase-guia curta, no máximo ~60 caracteres por linha, que conduz à interação.</p>
+    </div>
+  </header>
+
+  <!-- ============ INTERAÇÃO CENTRAL ============ -->
+  <!-- Uma única interação que ensina algo sobre este momento. Desenhe o "objeto" da época. -->
+  <div class="container nn-stage">
+    <p class="hint nn-hint">Instrução da interação em uma linha.</p>
+    <button class="btn nn-act" type="button" aria-label="DESCREVA A AÇÃO">Agir</button>
+    <p class="p nn-out" aria-live="polite"></p>
+  </div>
+
+  <!-- ============ RESSALVAS ============ -->
+  <div class="container nn-foot">
+    <button class="btn nn-ress" type="button">Ressalvas deste capítulo</button>
+  </div>
+</section>
+
+<style>
+  /* TODO seletor começa com #ch-NN. Nada global. Use as variáveis da era:
+     --bg --fg --muted --accent --accent2 --line --panel */
+  #ch-NN .nn-hero { padding: 18vh 0 8vh; }
+  #ch-NN .nn-title { color: var(--fg); }
+  #ch-NN .nn-stage { min-height: 70vh; display: grid; align-content: center; gap: 1rem; }
+  #ch-NN .nn-act { min-height: 44px; }
+  #ch-NN .nn-foot { padding: 6vh 0 12vh; }
+</style>
+
+<script>
+Gates.chapter('ch-NN', function (ctx) {
+  const $ = ctx.$, $$ = ctx.$$;
+  const gsap = ctx.gsap, ScrollTrigger = ctx.ScrollTrigger;
+
+  /* ---------- ressalvas (2 a 5 itens, só o que é incerto ou conflitante) ---------- */
+  Gates.facts = Gates.facts || {};
+  Gates.facts['ch-NN'] = {
+    title: 'Ressalvas: TITULO, ANO',
+    items: [
+      { text: 'Descreva a incerteza ou o conflito entre fontes. Marque traduções livres e relatos não conferidos.', url: 'https://exemplo.com/fonte-real-das-notas' }
+    ]
+  };
+
+  /* ---------- interação central ---------- */
+  const act = $('.nn-act'), out = $('.nn-out');
+  act.addEventListener('click', function () {
+    ctx.audio.play('click');
+    out.textContent = 'Resultado da ação.';
+    ctx.say(out.textContent);
+  });
+
+  $('.nn-ress').addEventListener('click', function () { ctx.fact('ch-NN'); });
+
+  /* ---------- ciclo de vida (loops pesados só em enter, pause em leave) ---------- */
+  return {
+    enter()  {},
+    leave()  {},
+    resize() {}
+  };
+});
+</script>
