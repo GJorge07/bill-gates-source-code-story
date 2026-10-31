@@ -2,6 +2,38 @@
 
 Nota de método: a maioria dos fatos vem da Wikipedia EN (secundária) porque os fetches a fontes primárias falharam (CNBC 403, Wikipedia 86-DOS fetch com URL correta ok). Fontes primárias usadas: news.microsoft.com (2020). Dados de patrimônio/valor de mercado são fracos (ver Gaps).
 
+## 0. Harvard (1973–1976): da entrada à fundação da Microsoft
+
+### Takeaway
+Gates entrou em Harvard em set 1973, viveu dois anos de matemática pesada, pôquer e acesso ao PDP-10 do Aiken Lab; em dez 1974 a capa do Altair levou ele e Allen a escrever o BASIC em cerca de 8 semanas. Tirou licença em 1975, voltou em 1976 e saiu de vez, a dois semestres de se formar. Gostava de Harvard: a saída foi por causa da empresa, não por desgosto.
+
+### Cited Findings
+- Aceito em Harvard, Princeton e Yale; escolheu Harvard. Disse ter tratado cada candidatura como uma "performance" (à Princeton, quis ser engenheiro de software; à Yale, advogado ou funcionário do governo) — [Business Insider via Yahoo](https://www.yahoo.com/news/bill-gates-accepted-harvard-princeton-100102528.html)
+- Chegou em set 1973 como calouro, morando no Wigglesworth Hall — [Harvard Crimson, 2025](https://www.thecrimson.com/article/2025/6/7/bill-gates-reunion-1975/)
+- 1º ano: Math 55 e Applied Math 251a/251br (pós-graduação, prof. Jeffrey Buzen). 2º ano: Applied Math 122 (prof. Harry Lewis). Resolveu em 2 dias o "problema das panquecas" proposto por Lewis e depois publicou uma prova. Disse ter feito "um número ridículo de aulas", algumas só como ouvinte — Crimson, 2025
+- Morou na Currier House ("nerd world"); no 2º ano o colega de quarto era Monte Davidoff. Steve Ballmer também era da Currier; os dois jogavam pinball tarde da noite. Pôquer das 21h às 7h, sem muito sucesso (Gates "didn't have particular success") — Crimson, 2025
+- O prof. Tom Cheatham deu a Gates acesso raro, para um graduando, ao PDP-10 do Aiken Lab ("Harv-10"). Gates: "There was a big computer here that nobody was supervising" — Crimson, 2025
+- Dez 1974: Allen compra a *Popular Electronics* com o Altair na capa (75 centavos, banca Out of Town News, Harvard Square) e diz a Gates, aluno do 2º ano na Currier, que "isso está acontecendo sem a gente". Gates tinha convencido Allen a se mudar para Cambridge — [Harvard Gazette (Isaacson)](https://news.harvard.edu/gazette/story/2013/09/dawn-of-a-revolution/); [Harvard Magazine (Isaacson)](https://www.harvardmagazine.com/2013/10/bill-gates-at-harvard)
+- Natal 1974 + período de leitura de jan 1975: cerca de 8 semanas escrevendo o interpretador BASIC para o Intel 8080. Gates escreveu em blocos de papel amarelo; Allen montou no PDP-10 um simulador do Altair (não havia máquina real); Gates parou de jogar pôquer e ignorou as provas. Gates: "the coolest program I ever wrote". Versão final com 3,2K em fev 1975 — Gazette; Harvard Magazine
+- Monte Davidoff, colega de Harvard, escreveu as rotinas de ponto flutuante e virou o terceiro autor. Fonte do valor: US$ 400, citado só na Gazette — Gazette; [Wikipedia Monte Davidoff](https://en.wikipedia.org/wiki/Monte_Davidoff) (confirma o papel, não o valor). Manual de 1975 e cabeçalho do código listam Gates, Allen e Davidoff como autores — [Wikipedia Altair BASIC](https://en.wikipedia.org/wiki/Altair_BASIC)
+- A MITS não respondeu à carta; Gates ligou fingindo ser Allen, com voz grave (Allen é quem iria viajar). Ed Roberts disse já ter recebido muitas ligações iguais; o primeiro com BASIC funcionando levaria o contrato — Gazette
+- Demonstração em Albuquerque: a Teletype perguntou "MEMORY SIZE?", Allen respondeu 7168, a máquina disse "OK"; ao digitar `PRINT 2+2`, imprimiu "4". Roberts: "Oh my God, it printed '4'!". A MITS licenciou o BASIC; cerca de um mês depois Allen foi contratado como diretor de software — Gazette
+- Conselho Administrativo (Administrative Board): auditores do Departamento de Defesa, que financiava parte do PDP-10, notaram que um aluno do 2º ano ("W. H. Gates") usava a maior parte do tempo da máquina. Gates foi liberado de uso indevido do computador, mas advertido por dar acesso a Allen (não-aluno) com sua senha, e concordou em colocar uma versão antiga do BASIC em domínio público. Davidoff foi inocentado — Crimson, 2025; Gazette; Harvard Magazine; Wikipedia Davidoff (quatro fontes concordam)
+- Licença de Harvard na primavera de 1975, verão em Albuquerque. Voltou em primavera e outono de 1976, depois saiu de vez, a dois semestres de se formar. Gates: "Even Harvard had me marked down as being on leave" — Crimson, 2025; Harvard Magazine
+- Gates disse "I loved my time at Harvard"; voltou em jun 2007 para o discurso de formatura e recebeu um diploma honorário ("Dad, I always told you I'd come back and get my degree") — Crimson, 2025; Harvard Magazine
+
+### Inferences
+- A frase "largou Harvard em 1975" é simplificação: em 1975 foi licença; a saída definitiva é de 1976.
+- Sobre o boato de que Gates "roubou a ideia" de colegas: nenhuma fonte encontrada o sustenta (menos de 3, na prática 0). O documentado é outra coisa: uso intenso de computador financiado pelo governo e advertência formal (4 fontes), e crédito formal a Davidoff. Tratar como suposição que circula, nunca como fato.
+- As acusações de "cópia" que têm fontes são posteriores e de outra natureza (MS-DOS/CP/M, Xerox/Apple) e não pertencem a este capítulo.
+
+### Gaps
+- CONFLITO data de saída: a seção 1 abaixo e a Wikipedia EN falam em "licença em nov 1975"; as fontes de Harvard (Crimson 2025, Harvard Magazine) falam em licença na primavera/verão de 1975 e saída definitiva em 1976. Preferir as fontes de Harvard, com ressalva.
+- Matrícula como pré-direito: aparece só em BestColleges e em artigos de baixa qualidade; não usar como fato.
+- A Crimson dá a turma de Davidoff como '77 e também '78; o valor de US$ 400 vem de uma única fonte (Gazette).
+- Data exata da audiência no Conselho Administrativo não encontrada.
+- Não verificado: Wigglesworth como primeiro dormitório em fonte além da Crimson.
+
 ## 1. Fundação, nome, mudança de sede, primeiros negócios, Microsoft BASIC
 
 ### Takeaway
@@ -10,7 +42,7 @@ Gates e Paul Allen fundaram a Microsoft em 4 abr 1975 em Albuquerque para vender
 ### Cited Findings
 - 4 abr 1975: Gates e Allen fundam a Microsoft em Albuquerque, Novo México, após construírem um interpretador BASIC para o Altair 8800 — [Wikipedia History of Microsoft](https://en.wikipedia.org/wiki/History_of_Microsoft)
 - Allen criou o nome "Micro-Soft"; hífen caiu em cerca de um ano; nome "Microsoft" registrado no Novo México em 26 nov 1976 — [Wikipedia Bill Gates](https://en.wikipedia.org/wiki/Bill_Gates); [History of Microsoft](https://en.wikipedia.org/wiki/History_of_Microsoft)
-- Gates deixou Harvard em 1975 (licença em nov 1975 para trabalhar com Allen na MITS) — [Wikipedia Bill Gates](https://en.wikipedia.org/wiki/Bill_Gates)
+- Gates deixou Harvard em 1975 (licença em nov 1975 para trabalhar com Allen na MITS) — [Wikipedia Bill Gates](https://en.wikipedia.org/wiki/Bill_Gates). CONFLITO: as fontes de Harvard dão licença na primavera/verão de 1975 e saída definitiva em 1976 (ver seção 0).
 - Altair BASIC: MITS licenciou em jul 1975 com royalties por cópia e teto de US$ 180.000 — [Wikipedia Open Letter to Hobbyists](https://en.wikipedia.org/wiki/Open_Letter_to_Hobbyists)
 - Receita de 1976: US$ 16.005 — [History of Microsoft](https://en.wikipedia.org/wiki/History_of_Microsoft)
 - 1 jan 1979: mudança de Albuquerque para Bellevue, Washington — [History of Microsoft](https://en.wikipedia.org/wiki/History_of_Microsoft)
