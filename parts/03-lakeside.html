@@ -75,7 +75,7 @@
 </section>
 
 <style>
-#ch-03 { --ink:#4228b4; --paper:#e6d79c; --metal1:#3b3e42; --metal2:#1f2123; position:relative; padding:clamp(60px,10vh,120px) 0 clamp(60px,10vh,130px); font-family:'Courier New','IBM Plex Mono',ui-monospace,monospace; }
+#ch-03 { --ink:#4228b4; --paper:#e6d79c; --metal1:#3b3e42; --metal2:#1f2123; position:relative; padding:var(--space-section) 0 var(--space-section); font-family:'Courier New','IBM Plex Mono',ui-monospace,monospace; }
 @media (min-width:1100px) { #ch-03 > .container { padding-right:90px; } }
 #ch-03::before { content:''; position:absolute; left:0; right:0; top:0; height:clamp(120px,22vh,220px); background:linear-gradient(#05060d,rgba(5,6,13,0)); pointer-events:none; }
 #ch-03 .tt-intro { margin-bottom:clamp(28px,5vw,56px); max-width:62ch; }
@@ -94,7 +94,7 @@
 #ch-03 .tt-desk.is-hush .tt-rig { filter:brightness(.5) saturate(.7); }
 #ch-03 .tt-desk.is-booting, #ch-03 .tt-desk.is-booting * { transition:none !important; }
 #ch-03 .tt-rig { transition:filter 1.8s ease; position:relative; display:flex; flex-direction:column; align-items:stretch; outline:none; min-width:0; }
-#ch-03 .tt-rig:focus-visible { box-shadow:0 0 0 3px var(--accent2); border-radius:12px; }
+#ch-03 .tt-rig:focus-visible { box-shadow:0 0 0 3px var(--accent); border-radius:12px; }
 
 /* papel */
 #ch-03 .tt-sheet { position:relative; z-index:1; width:88%; margin:0 auto; --padx:22px; }
@@ -175,7 +175,7 @@
 #ch-03 .tt-btn { min-height:44px; padding:0 14px; font:700 13px 'Courier New','IBM Plex Mono',monospace; color:#ece7c9; background:rgba(0,0,0,.3); border:1px solid rgba(240,220,160,.4); border-radius:6px; cursor:pointer; transition:background .15s, transform .08s; }
 #ch-03 .tt-btn:hover:not(:disabled) { background:rgba(240,220,160,.14); }
 #ch-03 .tt-btn:active:not(:disabled) { transform:translateY(2px); }
-#ch-03 .tt-btn:focus-visible, #ch-03 .tt-tail:focus-visible, #ch-03 .btn:focus-visible { outline:3px solid var(--accent2); outline-offset:2px; }
+#ch-03 .tt-btn:focus-visible, #ch-03 .tt-tail:focus-visible, #ch-03 .btn:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
 #ch-03 .tt-btn[aria-pressed="true"] { background:#e6d27a; color:#1b1630; border-color:#e6d27a; }
 #ch-03 .tt-btn:disabled { opacity:.4; cursor:default; }
 #ch-03 .tt-meter { margin:0; font:12px 'Courier New',monospace; color:var(--muted,#b9b49a); }

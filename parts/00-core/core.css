@@ -7,6 +7,7 @@
 :root {
   --font-display: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --space-section: clamp(5rem, 14vh, 10rem);
   --ease: cubic-bezier(.2, .7, .1, 1);
   --gutter: clamp(20px, 4vw, 48px);
   color-scheme: dark;

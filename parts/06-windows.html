@@ -213,7 +213,7 @@
 <style>
 #ch-06{position:relative;overflow:clip;--sans:Tahoma,"Segoe UI",system-ui,sans-serif}
 #ch-06 button{font:inherit;color:inherit}
-#ch-06 .c6-intro{padding:clamp(72px,12vh,140px) 0 36px;color:#fff}
+#ch-06 .c6-intro{padding:var(--space-section) 0 36px;color:#fff}
 #ch-06 .c6-intro .d2{color:#fff;text-shadow:3px 3px 0 #003c3c;letter-spacing:-.01em}
 #ch-06 .c6-intro .lead{color:#fff;max-width:56ch;text-shadow:1px 1px 0 #003c3c}
 #ch-06 .c6-sub{color:#cfeeee;margin-top:.6em}
@@ -233,7 +233,7 @@
   --ic-a:#fff;--ic-b:#000;--ic-c:#8bd}
 #ch-06 .desk.warp{animation:c6warp .7s cubic-bezier(.2,.8,.2,1)}
 @keyframes c6warp{0%{filter:blur(0) saturate(1);transform:scale(1)}30%{filter:blur(6px) saturate(2.2) hue-rotate(40deg);transform:scale(1.025)}100%{filter:none;transform:none}}
-#ch-06 .desk-year{position:absolute;inset:0 0 var(--th) 0;display:grid;place-items:center;font:800 clamp(7rem,20vw,16rem)/1 "Bricolage Grotesque",system-ui,sans-serif;color:#fff;opacity:0;pointer-events:none;mix-blend-mode:overlay;z-index:1}
+#ch-06 .desk-year{position:absolute;inset:0 0 var(--th) 0;display:grid;place-items:center;font:800 clamp(7rem,20vw,16rem)/1 var(--font-display);color:#fff;opacity:0;pointer-events:none;mix-blend-mode:overlay;z-index:1}
 #ch-06 .desk.warp .desk-year{animation:c6yr .9s ease-out}
 @keyframes c6yr{0%{opacity:0;transform:scale(.7)}25%{opacity:.95}100%{opacity:0;transform:scale(1.3)}}
 #ch-06 .desk-flash{position:absolute;inset:0;background:radial-gradient(circle,#fff 0,#fff0 70%);opacity:0;pointer-events:none;z-index:900}
@@ -268,7 +268,7 @@
 #ch-06 .sys-dl dt{opacity:.7}
 #ch-06 .sys-dl dd{margin:0}
 #ch-06 .sys-dl .gk dd{font-weight:700}
-#ch-06 .np{background:var(--field);box-shadow:var(--fieldsh);padding:10px 12px;height:100%;min-height:150px;overflow:auto;font:13px/1.55 "IBM Plex Mono",ui-monospace,Consolas,monospace;white-space:pre-wrap;color:#000}
+#ch-06 .np{background:var(--field);box-shadow:var(--fieldsh);padding:10px 12px;height:100%;min-height:150px;overflow:auto;font:13px/1.55 var(--font-mono);white-space:pre-wrap;color:#000}
 #ch-06 .mn-top{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-bottom:8px}
 #ch-06 .mn-cnt{background:#000;color:#f33;padding:2px 6px;font-size:18px;min-width:52px;text-align:center}
 #ch-06 .mn-face{min-width:44px;font-weight:700}
@@ -286,8 +286,8 @@
 #ch-06 .nt{display:flex;flex-direction:column;gap:6px;padding:6px}
 #ch-06 .nt-bar{display:flex;gap:6px;align-items:center}
 #ch-06 .nt-url{flex:1;background:var(--field);box-shadow:var(--fieldsh);padding:6px 8px;font-size:12px;min-height:30px;overflow:hidden;white-space:nowrap}
-#ch-06 .nt-pg{flex:1;background:#fff;color:#111;box-shadow:var(--fieldsh);padding:14px 16px;overflow:auto;font:14px/1.5 Georgia,"Times New Roman",serif}
-#ch-06 .nt-pg h4{margin:0 0 .3em;font:700 1.5em/1.1 Georgia,serif;color:#00008b}
+#ch-06 .nt-pg{flex:1;background:#fff;color:#111;box-shadow:var(--fieldsh);padding:14px 16px;overflow:auto;font:14px/1.5 var(--font-display)}
+#ch-06 .nt-pg h4{margin:0 0 .3em;font:700 1.5em/1.1 var(--font-display);color:#00008b}
 #ch-06 .nt-pg p{margin:.5em 0}
 #ch-06 .nt-pg a,#ch-06 .nt-pg button.lk{color:#00e;text-decoration:underline;background:none;border:0;padding:0;cursor:pointer;font:inherit}
 #ch-06 .nt-pg .stamp{display:inline-block;border:2px solid #a00;color:#a00;padding:0 6px;font:700 11px var(--sans);transform:rotate(-2deg)}
@@ -324,7 +324,7 @@
 #ch-06 .desk[data-v="09"] .smenu .sm-list svg{filter:none}
 #ch-06 .prod{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
 #ch-06 .prod button{flex:1 1 150px;text-align:left;padding:6px 10px;font-size:13px;line-height:1.25}
-#ch-06 .prod b{display:block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px}
+#ch-06 .prod b{display:block;font-family:var(--font-mono);font-size:12px}
 #ch-06 .c6-hint{color:#e8fafa;margin-top:12px}
 
 /* ===== Apple ===== */
@@ -333,7 +333,7 @@
 #ch-06 .c6-apple .d2{margin-bottom:.35em;font-weight:800;letter-spacing:-.03em}
 #ch-06 .ap-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(24px,5vw,72px);align-items:center}
 #ch-06 .ap-big{margin-top:28px;display:flex;flex-direction:column}
-#ch-06 .ap-big>span{font:800 clamp(3.6rem,10vw,9rem)/.95 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.04em}
+#ch-06 .ap-big>span{font:800 clamp(3.6rem,10vw,9rem)/.95 var(--font-display);letter-spacing:-.04em}
 #ch-06 .ap-big small{font-size:1rem;margin-top:8px;color:#444}
 #ch-06 .ap-sat{aspect-ratio:4/3;background:#07090c;border-radius:14px;position:relative;overflow:hidden;color:#9fe;padding:18px;box-shadow:0 0 0 8px #d9d8d2,0 0 0 9px #0003;display:flex;flex-direction:column;justify-content:space-between}
 #ch-06 .ap-sat p{margin:0;color:#9fe!important;font-size:.85rem;line-height:1.6}
@@ -352,7 +352,7 @@
 #ch-06 .ap-bars>div{display:grid;grid-template-columns:minmax(150px,230px) 1fr auto;gap:12px;align-items:center;margin:10px 0}
 #ch-06 .ap-bars i{height:18px;background:#111;width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1);min-width:2px;display:block}
 #ch-06 .ap-bars.in i{width:calc(var(--v)/150*100%)}
-#ch-06 .ap-bars span{font-size:.9rem}#ch-06 .ap-bars b{font:600 .9rem "IBM Plex Mono",monospace}
+#ch-06 .ap-bars span{font-size:.9rem}#ch-06 .ap-bars b{font:600 .9rem var(--font-mono)}
 
 /* ===== tribunal ===== */
 #ch-06 .c6-court{background:#1b1713 linear-gradient(#1b1713,#14110e);color:#ece6d3;padding:clamp(72px,14vh,160px) 0;position:relative}
@@ -374,8 +374,8 @@
 #ch-06 .ct-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
 #ch-06 .ct-steps button{display:block;width:100%;text-align:left;background:#efe8d3;color:#1d1810;border:0;border-radius:2px;padding:16px 18px 16px 22px;cursor:pointer;position:relative;box-shadow:0 1px 0 #0004;min-height:44px;opacity:.58;transition:opacity .3s,transform .3s,box-shadow .3s;border-left:6px solid #b8aa83}
 #ch-06 .ct-steps button[aria-current="true"]{opacity:1;transform:translateX(8px);box-shadow:0 10px 30px #0008;border-left-color:#b02a1c}
-#ch-06 .ct-steps .dt{font:600 .85rem "IBM Plex Mono",monospace;color:#6a5a38}
-#ch-06 .ct-steps .tt{display:block;font:700 1.2rem/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:3px 0 5px}
+#ch-06 .ct-steps .dt{font:600 .85rem var(--font-mono);color:#6a5a38}
+#ch-06 .ct-steps .tt{display:block;font:700 1.2rem/1.2 var(--font-display);margin:3px 0 5px}
 #ch-06 .ct-steps .tx{display:block;font-size:.98rem;line-height:1.5;max-width:52ch}
 #ch-06 .ct-steps .stp{position:absolute;right:14px;top:14px;border:2px solid #b02a1c;color:#b02a1c;font:700 .7rem var(--sans);padding:1px 6px;transform:rotate(4deg);opacity:0;transition:opacity .3s}
 #ch-06 .ct-steps button[aria-current="true"] .stp{opacity:.9}
@@ -400,14 +400,14 @@
 #ch-06 .ty-txt{margin-top:16px;font-size:1.05rem;line-height:1.55;max-width:56ch;min-height:5.5em;color:#e9e1c9}
 
 /* ===== passagem ===== */
-#ch-06 .c6-pass{background:linear-gradient(#008080 0,#0a5d6a 35%,#06222b 100%);color:#fff;padding:clamp(72px,14vh,160px) 0 clamp(80px,14vh,160px)}
+#ch-06 .c6-pass{background:linear-gradient(#008080 0,#0a5d6a 35%,#06222b 100%);color:#fff;padding:clamp(72px,14vh,160px) 0 var(--space-section)}
 #ch-06 .c6-pass .d2,#ch-06 .c6-pass .d3,#ch-06 .c6-pass .lead,#ch-06 .c6-pass .p{color:#fff}
 #ch-06 .ps-grid{display:grid;grid-template-columns:1.2fr minmax(260px,.8fr);gap:clamp(24px,6vw,80px);margin-top:48px;align-items:start}
 #ch-06 .ps-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:clamp(18px,3vh,40px)}
 #ch-06 .ps-steps button{display:block;width:100%;text-align:left;background:#0003;border:0;border-left:4px solid #ffffff55;padding:16px 18px;cursor:pointer;color:#fff;min-height:44px;opacity:.55;transition:opacity .3s,background .3s,border-color .3s}
 #ch-06 .ps-steps button[aria-current="true"]{opacity:1;background:#0007;border-left-color:#ffd166}
-#ch-06 .ps-steps .dt{font:600 .85rem "IBM Plex Mono",monospace;color:#ffd166}
-#ch-06 .ps-steps .tt{display:block;font:700 1.35rem/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:2px 0 6px}
+#ch-06 .ps-steps .dt{font:600 .85rem var(--font-mono);color:#ffd166}
+#ch-06 .ps-steps .tt{display:block;font:700 1.35rem/1.2 var(--font-display);margin:2px 0 6px}
 #ch-06 .ps-steps .tx{display:block;line-height:1.5;max-width:52ch;color:#e8f4f4}
 #ch-06 .ps-side{position:sticky;top:90px}
 #ch-06 .badge{background:#f2f2ec;color:#111;width:min(100%,300px);margin:0 auto;border-radius:12px;padding:0 0 16px;box-shadow:0 0 0 2px #0003,0 24px 50px #0007;overflow:hidden;font-family:var(--sans)}
@@ -415,7 +415,7 @@
 #ch-06 .bd-ph{width:96px;height:96px;margin:16px auto 8px;background:#dde;border-radius:50%;display:grid;place-items:center;overflow:hidden}
 #ch-06 .bd-ph svg{width:80px;fill:#889}
 #ch-06 .bd-n{text-align:center;font-weight:700;font-size:1.05rem}
-#ch-06 .bd-r{text-align:center;font:800 1.3rem/1.15 "Bricolage Grotesque",system-ui,sans-serif;color:#000080;padding:4px 14px;min-height:2.5em;display:grid;place-items:center}
+#ch-06 .bd-r{text-align:center;font:800 1.3rem/1.15 var(--font-display);color:#000080;padding:4px 14px;min-height:2.5em;display:grid;place-items:center}
 #ch-06 .bd-d{text-align:center;font-size:.85rem;color:#555;margin-bottom:10px}
 #ch-06 .bd-row{display:flex;justify-content:space-between;gap:8px;padding:6px 18px;font-size:.85rem;border-top:1px solid #0002;align-items:center}
 #ch-06 .bd-pres{display:flex;gap:3px}#ch-06 .bd-pres i{width:14px;height:10px;background:#cdd;transition:background .4s}#ch-06 .bd-pres i.on{background:#000080}
@@ -428,7 +428,7 @@
 #ch-06 .rev-b>div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;gap:6px}
 #ch-06 .rev-b i{display:block;width:100%;background:#ffd166;height:0;transition:height 1.2s cubic-bezier(.2,.8,.2,1)}
 #ch-06 .rev-b.in i{height:calc(var(--v)/143*80%)}
-#ch-06 .rev-b b{font:700 1.15rem "IBM Plex Mono",monospace}#ch-06 .rev-b span{font:.85rem var(--sans);color:#cfe}
+#ch-06 .rev-b b{font:700 1.15rem var(--font-mono)}#ch-06 .rev-b span{font:.85rem var(--sans);color:#cfe}
 #ch-06 .rev .caption{color:#bfe3e3;max-width:60ch}
 #ch-06 .ps-end{margin-top:clamp(56px,10vh,110px);display:flex;flex-direction:column;gap:18px;align-items:flex-start}
 #ch-06 .ps-end .p{max-width:48ch}
