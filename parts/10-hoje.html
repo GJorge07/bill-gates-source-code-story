@@ -651,6 +651,17 @@ Gates.chapter('ch-10', function (ctx) {
   var srcWrap = $('[data-sources]');
   var nSrc = 0; SOURCES.forEach(function (g) { nSrc += g[1].length; });
   var nEl = $('[data-nsrc]'); if (nEl) nEl.textContent = nSrc;
+  var heroN = document.querySelector('[data-hero-nsrc]'); if (heroN) heroN.textContent = nSrc;
+  /* mesmo conteúdo no painel lateral "Fontes" (botão do dock) */
+  Gates.facts.sources = {
+    title: 'Fontes',
+    intro: 'As ' + nSrc + ' fontes em que a página se apoia, por capítulo. Os links abrem em nova aba.',
+    items: SOURCES.reduce(function (acc, g) {
+      acc.push({ h: g[0] });
+      g[1].forEach(function (l) { acc.push({ text: l[0], url: l[1], label: l[1].replace(/^https?:\/\/(www\.)?/, '').split('/')[0] }); });
+      return acc;
+    }, [])
+  };
   SOURCES.forEach(function (g) {
     var d = mk('div', 'h-sg'); d.appendChild(mk('h4', '', g[0]));
     var ul = mk('ul');

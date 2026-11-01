@@ -206,10 +206,18 @@ html.g-loaded .g-loader { opacity: 0; visibility: hidden; pointer-events: none; 
 .g-ibtn[aria-pressed="true"] .g-ico-off { display: none; }
 .g-ibtn[aria-pressed="true"] { border-color: var(--accent); }
 .g-dock .g-ibtn[aria-pressed="true"] { color: var(--bg); background: var(--accent); border-color: transparent; }
+/* "Fontes": ação principal na abertura (a classe is-hero vem do core.js); nos demais capítulos volta a ser discreto */
+.g-dock.is-hero .g-ibtn.g-src {
+  background: var(--accent); color: var(--bg); border-color: transparent;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent), 0 6px 22px -6px color-mix(in srgb, var(--accent) 75%, transparent);
+}
+.g-dock.is-hero .g-ibtn.g-src:hover { background: color-mix(in srgb, var(--accent) 82%, var(--fg)); color: var(--bg); }
+.g-facts-list li.g-grp { padding-left: 0; padding-top: 14px; margin-top: 6px; border-top: 1px solid var(--line); color: var(--accent2); }
+.g-facts-list li.g-grp::before { display: none; }
 .g-menu-btn { display: none; }
 @media (max-width: 520px) {
-  #g-sound span, #g-facts-btn span, #g-faq-btn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  #g-sound, #g-facts-btn, #g-faq-btn { padding: 0; width: 40px; }
+  #g-sound span, #g-facts-btn span, #g-faq-btn span, #g-menu span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  #g-sound, #g-facts-btn, #g-faq-btn, #g-menu { padding: 0; width: 40px; }
 }
 
 /* navegação: trilho de compilação */
@@ -325,6 +333,10 @@ html.g-loaded .g-loader { opacity: 0; visibility: hidden; pointer-events: none; 
   <button type="button" id="g-menu" class="g-ibtn g-menu-btn" aria-controls="g-nav" aria-expanded="false">
     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
     <span>Capítulos</span>
+  </button>
+  <button type="button" id="g-src-btn" class="g-ibtn g-src" aria-controls="g-facts" aria-haspopup="dialog">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 4.5h8l3.5 3.5v11.5h-11.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 12h5M9.5 15.5h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span>Fontes</span>
   </button>
   <button type="button" id="g-faq-btn" class="g-ibtn" aria-controls="g-facts" aria-haspopup="dialog">
     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 5.5h14v10H10l-4 3.5v-3.5H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10.2 9a1.9 1.9 0 113 1.5c-.7.4-1.2.8-1.2 1.6M12 14.1v.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
@@ -729,6 +741,7 @@ html.g-loaded .g-loader { opacity: 0; visibility: hidden; pointer-events: none; 
     D.getElementById('g-facts-close').addEventListener('click', closeFacts);
     factsBtn.addEventListener('click', function () { if (G.current) openFacts(G.current); });
     D.getElementById('g-faq-btn').addEventListener('click', function () { openFacts('faq'); });
+    D.getElementById('g-src-btn').addEventListener('click', function () { openFacts('sources'); });
   }
   function sourceLink(it) {
     var a = D.createElement('a'); a.href = it.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
@@ -743,7 +756,9 @@ html.g-loaded .g-loader { opacity: 0; visibility: hidden; pointer-events: none; 
     var items = f && f.items && f.items.length ? f.items : [{ text: 'Este capítulo não registrou ressalvas específicas.' }];
     items.forEach(function (it) {
       var li = D.createElement('li');
-      if (it.q) {
+      if (it.h) {
+        li.className = 'g-grp'; li.textContent = it.h;
+      } else if (it.q) {
         li.className = 'g-faq';
         var det = D.createElement('details'), sum = D.createElement('summary'), p = D.createElement('p');
         sum.textContent = it.q; p.textContent = it.text;
@@ -820,6 +835,7 @@ html.g-loaded .g-loader { opacity: 0; visibility: hidden; pointer-events: none; 
         if (j === best) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
         a.classList.toggle('is-past', j < best);
       });
+      if (dockEl) dockEl.classList.toggle('is-hero', sec.id === 'ch-00');
       flashLabel(navLinks[best]);
       if (factsBtn) factsBtn.hidden = !(G.facts[sec.id] && G.facts[sec.id].items && G.facts[sec.id].items.length);
       D.dispatchEvent(new CustomEvent('gates:chapter', { detail: { id: sec.id, era: era, index: best } }));
@@ -969,13 +985,17 @@ html.g-loaded .g-loader { opacity: 0; visibility: hidden; pointer-events: none; 
       <p class="h-status mono" id="h-status" aria-hidden="true"><i></i><span>build ok · 0 erros</span></p>
 
       <div class="h-termwrap container">
+        <div class="h-pitch" id="h-pitch">
+          <h2 class="d3">Sua carreira está começando. Aprenda com Bill Gates, em uma experiência interativa.</h2>
+          <p class="lead">Com base em <span class="h-pitch-n"><span data-hero-nsrc>62</span> fontes</span>, conheça valores e técnicas de Bill Gates e leve-os para melhorar sua carreira.</p>
+        </div>
         <div class="h-term mono" id="h-term">
           <div class="h-lines" id="h-lines" aria-hidden="true"></div>
 
           <div class="h-ask" id="h-ask" hidden>
             <p class="h-q">Esta história tem trilha sintetizada. Ativar o som? <span class="h-dim">(fones ajudam)</span></p>
             <div class="h-row">
-              <button type="button" class="btn is-primary" data-snd="1">Com som <kbd>S</kbd></button>
+              <button type="button" class="btn" data-snd="1">Com som <kbd>S</kbd></button>
               <button type="button" class="btn" data-snd="0">Sem som <kbd>N</kbd></button>
             </div>
           </div>
@@ -1024,7 +1044,21 @@ html.g-loaded .g-loader { opacity: 0; visibility: hidden; pointer-events: none; 
   #ch-00 .h-field { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
 
   /* terminal */
-  #ch-00 .h-termwrap { position: absolute; inset: 0; z-index: 3; display: flex; align-items: center; pointer-events: none; }
+  #ch-00 .h-termwrap { position: absolute; inset: 0; z-index: 3; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 1.8rem; pointer-events: none; }
+
+  /* pitch: a promessa da página, acima do terminal; some junto com ele quando o título aparece */
+  #ch-00 .h-pitch { width: min(780px, 100%); display: flex; flex-direction: column; gap: .85rem; transition: opacity .6s, transform .8s cubic-bezier(.2, .7, .1, 1), visibility 0s; }
+  #ch-00 .h-pitch .d3 { color: var(--h-fg); }
+  #ch-00 .h-pitch .lead { color: color-mix(in srgb, var(--h-fg) 74%, transparent); }
+  #ch-00 .h-pitch-n { color: var(--h-pink); white-space: nowrap; }
+  #ch-00.is-done .h-pitch { opacity: 0; transform: translateY(-14px); visibility: hidden; pointer-events: none; transition: opacity .6s, transform .8s cubic-bezier(.2, .7, .1, 1), visibility 0s .9s; }
+
+  /* pergunta do som: secundária, sem botão preenchido */
+  #ch-00 .h-ask { opacity: .8; }
+  #ch-00 .h-ask .h-q { color: color-mix(in srgb, var(--h-fg) 62%, transparent); font-size: .82em; }
+  #ch-00 .h-ask .h-row .btn { font-size: .8rem; }
+  #ch-00 .h-ask .h-row { margin-top: .5rem; gap: .5rem .6rem; }
+  #ch-00 .h-ask .btn { min-height: 40px; padding: .25em .85em; background: transparent; box-shadow: none; }
   #ch-00 .h-term {
     width: min(780px, 100%); font-size: clamp(.8rem, .66rem + .55vw, 1.02rem); line-height: 1.7;
     color: var(--h-fg); text-shadow: 0 0 14px rgba(122, 140, 255, .38);
@@ -1110,12 +1144,16 @@ html.g-loaded .g-loader { opacity: 0; visibility: hidden; pointer-events: none; 
   @keyframes h00-drip { 0% { transform: scaleY(0); opacity: 1; } 55% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(1); opacity: 0; } }
 
   @media (max-width: 760px) {
-    #ch-00 .h-termwrap { align-items: flex-start; padding-top: 22vh; }
+    #ch-00 .h-termwrap { justify-content: flex-start; padding-top: 76px; gap: 1.3rem; }
     #ch-00 .ln { grid-template-columns: 5.2em 1fr; }
     #ch-00 .h-code { min-height: 10.5em; }
   }
-  @media (max-width: 520px) { #ch-00 .h-status span { display: none; } #ch-00 .h-skip { font-size: .72rem; } }
-  @media (max-height: 560px) { #ch-00 .h-termwrap { align-items: flex-start; padding-top: 64px; } #ch-00 .h-lead, #ch-00 .h-playhint { display: none; } }
+  @media (max-width: 520px) {
+    #ch-00 .h-status span { display: none; } #ch-00 .h-skip { font-size: .72rem; }
+    #ch-00 .h-skip { top: calc(max(14px, env(safe-area-inset-top)) + 54px); }
+    #ch-00 .h-termwrap { padding-top: 132px; }
+  }
+  @media (max-height: 560px) { #ch-00 .h-termwrap { justify-content: flex-start; padding-top: 64px; gap: 1rem; } #ch-00 .h-lead, #ch-00 .h-playhint, #ch-00 .h-pitch .lead { display: none; } }
   @media (prefers-reduced-motion: reduce) { #ch-00 .h-screen { animation: none; } #ch-00 .h-caret { animation: none; } #ch-00 .h-cue i { animation: none; transform: none; } }
 </style>
 <script>
@@ -2660,7 +2698,7 @@ Gates.chapter('ch-02', function (ctx) {
       <p class="d3">1973. A sala de matemática ficou pequena.</p>
       <p class="p">Bill se formou na Lakeside como National Merit Scholar. O SAT:</p>
       <p class="tt-sat" aria-label="1590 em 1600 no SAT"><span class="tt-satn">1590</span><small> / 1600</small></p>
-      <p class="p">No outono, Harvard. O hábito de pedir a uma máquina que obedeça já tinha dono e sócio.</p>
+      <p class="p">No outono, Harvard. Dois anos depois, o hábito de pedir a uma máquina que obedeça já tinha virado empresa.</p>
       <p><button type="button" class="btn" data-act="facts2">Ressalvas deste capítulo</button></p>
     </footer>
   </div>
@@ -2820,7 +2858,12 @@ Gates.chapter('ch-03', function (ctx) {
       { text: 'Computer Center Corporation: banimento "por algumas semanas" e contratação posterior para achar falhas; a empresa faliu em 1970. A cena da lixeira vem de uma reencenação do documentário da Netflix, não de registro da época.', url: 'https://tatler.lakesideschool.org/7088/science-technology/a-history-of-cs-at-lakeside/' },
       { text: 'Horários das aulas: 1971 segundo a Wikipedia; o livro (via resenha) liga o projeto à morte do professor Bob Haig em 1972. Kent Evans morreu em 1972; a idade (17) aparece só na AP. A frase "the only negative thing in my childhood" vem de entrevistas sobre Source Code.', url: 'https://exame.com/tecnologia/prisoes-e-uso-de-drogas-autobiografia-de-bill-gates-mostra-sua-face-menos-conhecida/' },
       { text: '"Deixem o Bill ser o Bill" ("let young Bill be Bill") é o conselho do terapeuta segundo o relato de uma resenha do livro, não uma citação conferida no original.', url: 'https://www.cascadepbs.org/mossback/2025/03/becoming-bill-gates-new-memoir-retraces-road-microsoft' },
-      { text: 'Traf-O-Data: fundada em 1972, extinta em 1975. A idade de Gates na fundação diverge entre fontes e os valores também (o Tatler cita US$ 20.000; a Wikipedia não cita cifra).', url: 'https://en.wikipedia.org/wiki/Traf-O-Data' }
+      { text: 'Traf-O-Data: fundada em 1972, extinta em 1975. A idade de Gates na fundação diverge entre fontes e os valores também (o Tatler cita US$ 20.000; a Wikipedia não cita cifra).', url: 'https://en.wikipedia.org/wiki/Traf-O-Data' },
+      { text: 'Harvard, entrada e vida: aceitação em Harvard, Princeton e Yale e a "performance" vêm de reportagem da Business Insider; Wigglesworth, Currier, Ballmer, pôquer, aulas e Cheatham, da Harvard Crimson (2025). A matrícula como pré-direito aparece só em fonte fraca e não foi usada. As citações em português são traduções livres.', url: 'https://www.thecrimson.com/article/2025/6/7/bill-gates-reunion-1975/' },
+      { text: 'Altair e BASIC: revista na Harvard Square, oito semanas de trabalho, ligação à MITS e demonstração ("MEMORY SIZE?", "PRINT 2+2") seguem o relato de Walter Isaacson na Harvard Gazette e na Harvard Magazine, não registro da época. O pagamento de US$ 400 a Davidoff aparece só na Gazette.', url: 'https://news.harvard.edu/gazette/story/2013/09/dawn-of-a-revolution/' },
+      { text: 'Conselho Administrativo: advertência por dar acesso a Allen, liberação de uso indevido e BASIC em domínio público constam em quatro fontes (Crimson, Gazette, Harvard Magazine, Wikipedia sobre Davidoff). A data da audiência não foi encontrada.', url: 'https://www.harvardmagazine.com/2013/10/bill-gates-at-harvard' },
+      { text: 'Licença e saída: as fontes de Harvard dão licença na primavera de 1975 e saída definitiva em 1976, depois de voltar por dois semestres; a Wikipedia fala em licença em novembro de 1975. Seguimos Harvard. Fundação em 4 de abril de 1975 é a data convencional; o nome Microsoft é registrado em 26 de novembro de 1976.', url: 'https://en.wikipedia.org/wiki/History_of_Microsoft' },
+      { text: 'Boato: a história de que Gates "roubou" a ideia de colegas de Harvard não tem fonte que a sustente (nenhuma encontrada) e por isso aparece como suposição. As acusações de cópia com fontes são posteriores (MS-DOS e CP/M; Xerox e Apple) e ficam fora deste capítulo.', url: 'https://spectrum.ieee.org/did-bill-gates-steal-the-heart-of-dos' }
     ]
   };
 
@@ -3106,8 +3149,37 @@ Gates.chapter('ch-03', function (ctx) {
       'Com Paul Allen e Paul Gilbert, estudante de engenharia elétrica, Bill funda a Traf-O-Data. A ideia: ler as fitas de papel dos contadores de tráfego, fitas como esta, e transformar em relatórios.',
       'Gilbert monta o computador em volta de um chip Intel 8008. Allen escreve um emulador do chip num PDP-10. Na demonstração a um funcionário do condado, o protótipo não funciona. Depois, o estado oferece o serviço de graça, e o mercado some.',
       'Os valores variam: uma fonte fala em cerca de US$ 20 mil, outras não dão cifra. A empresa é extinta em 1975. Allen diria que ela foi fundamental para prepará-los para o primeiro produto da Microsoft (tradução livre).'] },
-    { t: 'ÚLTIMA CARTA', p: [
+    { t: '1973 · FORMATURA', p: [
       'Em 1972 Bill é pajem na Câmara dos Representantes dos Estados Unidos. Em 1973 se forma na Lakeside, com 1590 de 1600 no SAT.',
+      'A sala de matemática fica para trás. A próxima máquina está em Cambridge.'] },
+    { t: '1973 · HARVARD', p: [
+      'Bill é aceito em Harvard, Princeton e Yale. Ele contaria depois que tratou cada candidatura como uma performance: à Princeton disse querer ser engenheiro de software, à Yale, advogado ou funcionário do governo.',
+      'Escolhe Harvard. Em setembro de 1973 chega a Cambridge, com 17 anos, e mora no Wigglesworth Hall.',
+      'No primeiro ano faz Math 55, a introdução de matemática mais avançada da universidade, e cursos de pós-graduação em matemática aplicada. Diz ter feito “um número ridículo de aulas”, algumas só como ouvinte (tradução livre).'] },
+    { t: '1974 · CURRIER HOUSE', p: [
+      'No segundo ano Bill vai para a Currier House, que os alunos chamavam de “nerd world”. O colega de quarto é Monte Davidoff. Steve Ballmer mora no mesmo prédio, e os dois passam noites diante do pinball.',
+      'Há pôquer das nove da noite às sete da manhã. Bill não ia bem. Quando o professor Harry Lewis propõe o problema das panquecas, ele volta com a solução dois dias depois.',
+      'O que o prende de verdade é o PDP-10 do Aiken Lab, apelidado de Harv-10. O professor Tom Cheatham liberou o acesso, coisa rara para um graduando. Bill diria: “havia um computador enorme que ninguém supervisionava” (tradução livre).'] },
+    { t: 'DEZEMBRO DE 1974 · O ALTAIR', p: [
+      'É inverno em Cambridge. Paul Allen, que deixara a faculdade e fora morar perto de Bill, compra numa banca da Harvard Square a revista Popular Electronics. Na capa, o Altair 8800.',
+      'Ele mostra a revista a Bill: “isso está acontecendo sem a gente” (tradução livre). Eles não têm um Altair. Allen programa no PDP-10 um simulador do chip, e Bill escreve o BASIC em blocos de papel amarelo.',
+      'No Natal e nas semanas de leitura de janeiro, em vez de estudar para as provas, o tempo é do BASIC. O pôquer para. Monte Davidoff escreve as rotinas de ponto flutuante; uma fonte fala em US$ 400 pelo serviço.',
+      'Em cerca de oito semanas o programa cabe em 3,2K. Bill o chamaria de “o programa mais legal que já escrevi” (tradução livre).'] },
+    { t: '1975 · ALBUQUERQUE', p: [
+      'A MITS, fabricante do Altair, não responde à carta. Bill liga, com voz grave, dizendo ser Allen: seria Allen a viajar. O dono, Ed Roberts, já ouvira a mesma conversa de muita gente. Levaria o contrato quem chegasse primeiro com um BASIC funcionando.',
+      'Na demonstração, Allen carrega a fita. A Teletype pergunta MEMORY SIZE? Ele responde 7168. A máquina diz OK. Allen digita PRINT 2+2. A máquina imprime 4. “Meu Deus, ele imprimiu 4!”, grita Roberts (tradução livre).',
+      'A MITS licencia o BASIC. Cerca de um mês depois contrata Allen como diretor de software. Bill continua em Harvard, por enquanto.'] },
+    { t: 'O CONSELHO · A LICENÇA', p: [
+      'Auditores do Departamento de Defesa, que financiava parte do PDP-10, notam que um aluno do segundo ano, W. H. Gates, usava a maior parte do tempo da máquina. Bill é chamado ao Conselho Administrativo de Harvard.',
+      'O resultado: nenhum uso indevido do computador, mas uma advertência por deixar Allen, que não era aluno, entrar com a senha dele. Bill ainda concorda em pôr uma versão antiga do BASIC em domínio público. Davidoff é inocentado.',
+      'Ele termina o segundo ano na primavera de 1975 e passa o verão em Albuquerque. Em vez de voltar no outono, fica. Em 1976 retorna por dois semestres e então sai de vez, a dois semestres de se formar. Em Harvard, constava como em licença.',
+      'A Micro-Soft é de 1975 (a data convencional é 4 de abril). O nome Microsoft, sem hífen, só é registrado em 26 de novembro de 1976.'] },
+    { t: 'O BOATO', p: [
+      'Circula por aí que Bill teria “roubado” a ideia da empresa de colegas de Harvard. Nenhuma fonte consultada sustenta isso. É suposição.',
+      'O que está documentado é outro episódio: o uso pesado do computador do Aiken Lab, a advertência do Conselho e a entrega de uma versão antiga do BASIC ao domínio público. Davidoff, colega e autor da parte matemática, aparece como coautor no manual de 1975.',
+      'A ideia de fazer um BASIC para o Altair partiu de uma revista que Allen comprou.'] },
+    { t: 'ÚLTIMA CARTA', p: [
+      'Bill diria que amou o tempo em Harvard. Voltou em 2007 para receber um diploma honorário e disse ao pai: “sempre falei que voltaria para pegar meu diploma” (tradução livre).',
       'A sala de matemática ficou para trás. O papel, não: esta fita continua sua. Pode rolar, ler de novo, ou jogar mais uma.'] }
   ];
   let letterIdx = 0;
@@ -8476,6 +8548,17 @@ Gates.chapter('ch-10', function (ctx) {
   var srcWrap = $('[data-sources]');
   var nSrc = 0; SOURCES.forEach(function (g) { nSrc += g[1].length; });
   var nEl = $('[data-nsrc]'); if (nEl) nEl.textContent = nSrc;
+  var heroN = document.querySelector('[data-hero-nsrc]'); if (heroN) heroN.textContent = nSrc;
+  /* mesmo conteúdo no painel lateral "Fontes" (botão do dock) */
+  Gates.facts.sources = {
+    title: 'Fontes',
+    intro: 'As ' + nSrc + ' fontes em que a página se apoia, por capítulo. Os links abrem em nova aba.',
+    items: SOURCES.reduce(function (acc, g) {
+      acc.push({ h: g[0] });
+      g[1].forEach(function (l) { acc.push({ text: l[0], url: l[1], label: l[1].replace(/^https?:\/\/(www\.)?/, '').split('/')[0] }); });
+      return acc;
+    }, [])
+  };
   SOURCES.forEach(function (g) {
     var d = mk('div', 'h-sg'); d.appendChild(mk('h4', '', g[0]));
     var ul = mk('ul');

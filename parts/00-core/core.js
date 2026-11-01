@@ -366,6 +366,7 @@
     D.getElementById('g-facts-close').addEventListener('click', closeFacts);
     factsBtn.addEventListener('click', function () { if (G.current) openFacts(G.current); });
     D.getElementById('g-faq-btn').addEventListener('click', function () { openFacts('faq'); });
+    D.getElementById('g-src-btn').addEventListener('click', function () { openFacts('sources'); });
   }
   function sourceLink(it) {
     var a = D.createElement('a'); a.href = it.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
@@ -380,7 +381,9 @@
     var items = f && f.items && f.items.length ? f.items : [{ text: 'Este capítulo não registrou ressalvas específicas.' }];
     items.forEach(function (it) {
       var li = D.createElement('li');
-      if (it.q) {
+      if (it.h) {
+        li.className = 'g-grp'; li.textContent = it.h;
+      } else if (it.q) {
         li.className = 'g-faq';
         var det = D.createElement('details'), sum = D.createElement('summary'), p = D.createElement('p');
         sum.textContent = it.q; p.textContent = it.text;
@@ -457,6 +460,7 @@
         if (j === best) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
         a.classList.toggle('is-past', j < best);
       });
+      if (dockEl) dockEl.classList.toggle('is-hero', sec.id === 'ch-00');
       flashLabel(navLinks[best]);
       if (factsBtn) factsBtn.hidden = !(G.facts[sec.id] && G.facts[sec.id].items && G.facts[sec.id].items.length);
       D.dispatchEvent(new CustomEvent('gates:chapter', { detail: { id: sec.id, era: era, index: best } }));
