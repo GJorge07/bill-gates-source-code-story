@@ -103,7 +103,7 @@
         </div>
         <svg class="c5-chart" viewBox="0 0 800 300" role="img" aria-label="Gráfico em escala logarítmica de valores da Microsoft e de Gates entre 1976 e 1987" focusable="false">
           <g class="c5-grid" stroke="var(--accent)" stroke-opacity=".18"></g>
-          <g class="c5-axis" fill="var(--muted)" font-size="13" font-family="IBM Plex Mono, ui-monospace, monospace"></g>
+          <g class="c5-axis" fill="var(--muted)" font-size="13" style="font-family:var(--font-mono)"></g>
           <polyline class="c5-line" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
           <g class="c5-pts"></g>
           <g class="c5-mark"><circle r="11" fill="none" stroke="var(--accent2)" stroke-width="2"/><circle r="4.5" fill="var(--accent2)"/></g>
@@ -124,10 +124,10 @@
 </section>
 
 <style>
-#ch-05{ --c5-ph:#ffb000; --c5-ph2:#ffd37a; position:relative; padding:clamp(72px,12vh,140px) 0 clamp(80px,14vh,160px); }
+#ch-05{ --c5-ph:#ffb000; --c5-ph2:#ffd37a; position:relative; padding:var(--space-section) 0 var(--space-section); }
 @media(min-width:901px){#ch-05 .container{ padding-right:calc(var(--gutter) + max(0px,min(150px - var(--gutter),788px - 50vw - var(--gutter)))) }}
 #ch-05 .container{ display:flex; flex-direction:column; gap:clamp(96px,18vh,190px); }
-#ch-05 .mono{ font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace; }
+#ch-05 .mono{ font-family:var(--font-mono); }
 
 /* ato 1 */
 #ch-05 .c5-head{ display:flex; flex-direction:column; gap:18px; align-items:flex-start; }
@@ -169,7 +169,7 @@
 #ch-05 .c5-glass{ position:relative; overflow:hidden; border-radius:7% / 9%; background:#0b0602; box-shadow:inset 0 0 0 3px #000, inset 0 0 70px rgba(0,0,0,.95), 0 0 0 5px #8e846a, 0 0 0 7px #5e563f;
   min-height:clamp(380px,62vh,520px); display:flex; }
 #ch-05 .c5-screen{ position:relative; z-index:1; display:flex; flex-direction:column; width:100%; padding:clamp(18px,3.4vw,38px) clamp(16px,3.6vw,44px); color:var(--c5-ph);
-  font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace; font-size:clamp(12.5px,1.45vw,16.5px); line-height:1.5; text-shadow:0 0 5px rgba(255,170,0,.6),0 0 16px rgba(255,110,0,.28); }
+  font-family:var(--font-mono); font-size:clamp(12.5px,1.45vw,16.5px); line-height:1.5; text-shadow:0 0 5px rgba(255,170,0,.6),0 0 16px rgba(255,110,0,.28); }
 #ch-05 .c5-log{ flex:1; min-height:200px; max-height:clamp(240px,40vh,340px); overflow-y:auto; scrollbar-width:thin; scrollbar-color:#7a5200 transparent; padding-right:6px; outline-offset:4px; }
 #ch-05 .c5-log:focus-visible{ outline:2px dashed var(--c5-ph2); }
 #ch-05 .ln{ white-space:pre-wrap; overflow-wrap:anywhere; animation:c5ln .12s steps(3) both; min-height:1.5em; }
@@ -207,7 +207,7 @@
 #ch-05 .c5-knob{ width:22px; height:22px; border-radius:50%; background:radial-gradient(circle at 35% 30%,#e9e0c7,#8a8064); box-shadow:0 2px 3px rgba(0,0,0,.5); }
 
 #ch-05 .c5-keys{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:26px; }
-#ch-05 .c5-key{ min-width:72px; min-height:46px; padding:0 14px; font:600 .85rem "IBM Plex Mono",ui-monospace,monospace; color:#2c2314; cursor:pointer; border-radius:8px; border:0;
+#ch-05 .c5-key{ min-width:72px; min-height:46px; padding:0 14px; font:600 .85rem var(--font-mono); color:#2c2314; cursor:pointer; border-radius:8px; border:0;
   background:linear-gradient(#efe6ce,#cdbf9c); box-shadow:0 5px 0 #8c7b52,0 8px 12px rgba(60,35,10,.4); transition:transform .08s,box-shadow .08s; }
 #ch-05 .c5-key:active{ transform:translateY(4px); box-shadow:0 1px 0 #8c7b52,0 2px 4px rgba(60,35,10,.4); }
 #ch-05 .c5-key:focus-visible{ outline:3px solid #150a00; outline-offset:3px; }
@@ -217,7 +217,7 @@
 #ch-05 .c5-disk::before{ content:""; position:absolute; left:50%; top:0; width:44%; height:30%; transform:translateX(-50%); background:linear-gradient(90deg,#bdb8ad,#e9e5da,#bdb8ad); border-radius:0 0 3px 3px; }
 #ch-05 .c5-disk::after{ content:""; position:absolute; left:50%; bottom:6%; width:22%; height:7%; transform:translateX(-50%); background:#0b0a09; border-radius:2px; }
 #ch-05 .c5-dl{ position:absolute; left:9%; right:9%; top:36%; height:42%; background:#f1ead3; color:#241b0c; display:flex; align-items:center; justify-content:center; text-align:center;
-  font:600 clamp(.58rem,1.5vw,.74rem)/1.15 "IBM Plex Mono",ui-monospace,monospace; padding:3px; transform:rotate(-1.5deg); border-radius:2px; }
+  font:600 clamp(.58rem,1.5vw,.74rem)/1.15 var(--font-mono); padding:3px; transform:rotate(-1.5deg); border-radius:2px; }
 
 /* fortuna */
 #ch-05 .c5-fort{ display:flex; flex-direction:column; gap:30px; }
@@ -229,9 +229,9 @@
 #ch-05 .c5-chart{ grid-column:2; grid-row:1 / span 2; width:100%; height:auto; touch-action:pan-y; cursor:pointer; }
 #ch-05 .c5-scale{ grid-column:1; max-width:34ch; }
 #ch-05 .c5-steps{ grid-column:1 / -1; display:grid; grid-template-columns:repeat(7,1fr); gap:6px; }
-#ch-05 .c5-step{ min-height:48px; padding:4px 2px; font:600 .78rem "IBM Plex Mono",ui-monospace,monospace; color:var(--fg); background:transparent; border:1px solid var(--line); border-radius:4px; cursor:pointer; transition:background .15s,color .15s; }
+#ch-05 .c5-step{ min-height:48px; padding:4px 2px; font:600 .78rem var(--font-mono); color:var(--fg); background:transparent; border:1px solid var(--line); border-radius:4px; cursor:pointer; transition:background .15s,color .15s; }
 #ch-05 .c5-step[aria-pressed="true"]{ background:var(--accent); color:#150a00; border-color:var(--accent); }
-#ch-05 .c5-step:focus-visible{ outline:2px solid var(--accent2); outline-offset:2px; }
+#ch-05 .c5-step:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
 #ch-05 .c5-card{ grid-column:1 / -1; max-width:70ch; border-left:3px solid var(--accent2); padding:4px 0 4px 18px; min-height:7.5em; }
 #ch-05 .c5-card h4{ margin:0 0 6px; }
 #ch-05 .c5-end{ display:flex; flex-direction:column; align-items:flex-start; gap:20px; max-width:56ch; }

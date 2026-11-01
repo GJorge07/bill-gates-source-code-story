@@ -144,7 +144,7 @@
 /* era fixada localmente: o core só troca o body no meio da tela, então o capítulo se pinta sozinho e a emenda com o cap. 06 fica sem corte */
 #ch-07{position:relative;overflow:hidden;--bg:#06222b;--fg:#e8f6f1;--accent:#2fd1a0;--accent2:#ffd166;--muted:color-mix(in srgb,#e8f6f1 64%,#06222b);--line:color-mix(in srgb,#e8f6f1 22%,transparent);--panel:color-mix(in srgb,#e8f6f1 7%,#06222b);background:linear-gradient(#06222b,#06222b);color:var(--fg)}
 #ch-07 .act{position:relative;padding:clamp(72px,12vh,140px) 0}
-#ch-07 .a-open{min-height:62vh;display:flex;align-items:flex-end;padding-bottom:24px}
+#ch-07 .a-open{min-height:62vh;display:flex;align-items:flex-end;padding-top:var(--space-section);padding-bottom:24px}
 #ch-07 .dim{color:var(--muted)}
 #ch-07 .narrow{max-width:720px}
 #ch-07 h3.d3,#ch-07 h2.d2{margin:0 0 .5em;font-weight:600}
@@ -172,14 +172,14 @@
 #ch-07 .gl{position:absolute;inset:0 0 34px 0;pointer-events:none}
 #ch-07 .gl span{position:absolute;top:0;bottom:0;width:1px;background:var(--line);opacity:.7;transition:left .8s cubic-bezier(.2,.7,.2,1)}
 #ch-07 .axis{position:absolute;left:0;right:0;bottom:0;height:28px}
-#ch-07 .axis span{position:absolute;transform:translateX(-50%);font:12px/1 'IBM Plex Mono',ui-monospace,monospace;color:var(--muted);transition:left .8s cubic-bezier(.2,.7,.2,1)}
+#ch-07 .axis span{position:absolute;transform:translateX(-50%);font:12px/1 var(--font-mono);color:var(--muted);transition:left .8s cubic-bezier(.2,.7,.2,1)}
 #ch-07 .axis span:first-child{transform:none}
 #ch-07 .grp{margin:30px 0 8px;font-size:1.05rem;font-weight:600;color:var(--accent2);position:relative}
 #ch-07 .grp+.bar{margin-top:6px}
 #ch-07 .bar{position:relative;padding:12px 0 10px}
 #ch-07 .bh{display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap}
 #ch-07 .lab{font-weight:500}
-#ch-07 .val{font:500 .95rem 'IBM Plex Mono',ui-monospace,monospace;color:var(--fg)}
+#ch-07 .val{font:500 .95rem var(--font-mono);color:var(--fg)}
 #ch-07 .val b{font-weight:500}
 #ch-07 .track{height:12px;margin:8px 0 6px;position:relative;background:rgba(255,255,255,.05);border-radius:2px}
 #ch-07 .fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:2px;transition:width 1.6s cubic-bezier(.16,.8,.2,1)}
@@ -213,14 +213,14 @@
 #ch-07 .rail li::before{content:"";position:absolute;left:0;top:6px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
 #ch-07 .rail li::after{content:"";position:absolute;left:12px;right:4px;top:10px;height:1px;background:var(--line)}
 #ch-07 .rail li:last-child::after{display:none}
-#ch-07 .rail b{display:block;color:var(--fg);font:500 .95rem 'IBM Plex Mono',ui-monospace,monospace;margin-bottom:3px}
+#ch-07 .rail b{display:block;color:var(--fg);font:500 .95rem var(--font-mono);margin-bottom:3px}
 
 /* globo */
 #ch-07 .gwrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.7fr);gap:clamp(20px,3vw,48px);align-items:start;margin-top:28px}
 #ch-07 .gstage{position:relative;aspect-ratio:1/1;max-height:84vh;width:100%;margin:0 auto}
 #ch-07 #c7-canvas{position:absolute;inset:-6%;width:112%;height:112%;display:block;touch-action:pan-y;cursor:grab;outline-offset:-4px}
 #ch-07 #c7-canvas:active{cursor:grabbing}
-#ch-07 #c7-canvas:focus-visible{outline:2px solid var(--accent2)}
+#ch-07 #c7-canvas:focus-visible{outline:2px solid var(--accent)}
 #ch-07 .gstage .hint{position:absolute;left:0;right:0;bottom:-6px;display:flex;justify-content:center;text-align:center;margin:0;font-size:.85rem;color:var(--muted);pointer-events:none}
 #ch-07 .gfail{position:absolute;inset:20% 10%;margin:0;color:var(--muted);text-align:center}
 #ch-07 .layers{display:flex;flex-wrap:wrap;gap:8px}
@@ -228,7 +228,7 @@
 #ch-07 .layers button i{width:10px;height:10px;border-radius:50%;background:var(--c);box-shadow:0 0 10px var(--c)}
 #ch-07 .layers button:hover{border-color:var(--c,var(--accent))}
 #ch-07 .layers button[aria-pressed="true"]{background:rgba(255,255,255,.1);border-color:var(--c,var(--accent))}
-#ch-07 .layers button:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+#ch-07 .layers button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 #ch-07 .gcard{margin:18px 0 12px;padding:4px 0 4px 18px;border-left:3px solid var(--cc,var(--accent));min-height:150px}
 #ch-07 .gcard h4{margin:0 0 6px;font-size:1.25rem;font-weight:600}
 #ch-07 .gcard p{margin:0 0 8px;line-height:1.5}
@@ -239,8 +239,8 @@
 #ch-07 .places button small{color:var(--muted);margin-left:auto;padding-left:8px;font-size:.78rem}
 #ch-07 .places button[aria-current="true"]{background:rgba(255,255,255,.07)}
 #ch-07 .places button:hover{background:rgba(255,255,255,.05)}
-#ch-07 .places button:focus-visible{outline:2px solid var(--accent2);outline-offset:-2px}
-#ch-07 .a-end{padding-bottom:clamp(90px,16vh,180px)}
+#ch-07 .places button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+#ch-07 .a-end{padding-bottom:var(--space-section)}
 #ch-07 .a-end .btn{margin-top:18px}
 
 @media (min-width:901px){

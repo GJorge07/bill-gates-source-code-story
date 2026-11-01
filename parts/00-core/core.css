@@ -7,6 +7,7 @@
 :root {
   --font-display: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --space-section: clamp(5rem, 14vh, 10rem);
   --ease: cubic-bezier(.2, .7, .1, 1);
   --gutter: clamp(20px, 4vw, 48px);
   color-scheme: dark;
@@ -190,10 +191,18 @@ html.g-loaded .g-loader { opacity: 0; visibility: hidden; pointer-events: none; 
 .g-ibtn[aria-pressed="true"] .g-ico-off { display: none; }
 .g-ibtn[aria-pressed="true"] { border-color: var(--accent); }
 .g-dock .g-ibtn[aria-pressed="true"] { color: var(--bg); background: var(--accent); border-color: transparent; }
+/* "Fontes": ação principal na abertura (a classe is-hero vem do core.js); nos demais capítulos volta a ser discreto */
+.g-dock.is-hero .g-ibtn.g-src {
+  background: var(--accent); color: var(--bg); border-color: transparent;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent), 0 6px 22px -6px color-mix(in srgb, var(--accent) 75%, transparent);
+}
+.g-dock.is-hero .g-ibtn.g-src:hover { background: color-mix(in srgb, var(--accent) 82%, var(--fg)); color: var(--bg); }
+.g-facts-list li.g-grp { padding-left: 0; padding-top: 14px; margin-top: 6px; border-top: 1px solid var(--line); color: var(--accent2); }
+.g-facts-list li.g-grp::before { display: none; }
 .g-menu-btn { display: none; }
 @media (max-width: 520px) {
-  #g-sound span, #g-facts-btn span, #g-faq-btn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  #g-sound, #g-facts-btn, #g-faq-btn { padding: 0; width: 40px; }
+  #g-sound span, #g-facts-btn span, #g-faq-btn span, #g-menu span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  #g-sound, #g-facts-btn, #g-faq-btn, #g-menu { padding: 0; width: 40px; }
 }
 
 /* navegação: trilho de compilação */

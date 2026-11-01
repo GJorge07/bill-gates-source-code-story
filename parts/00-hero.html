@@ -10,13 +10,17 @@
       <p class="h-status mono" id="h-status" aria-hidden="true"><i></i><span>build ok · 0 erros</span></p>
 
       <div class="h-termwrap container">
+        <div class="h-pitch" id="h-pitch">
+          <h2 class="d3">Sua carreira está começando. Aprenda com Bill Gates, em uma experiência interativa.</h2>
+          <p class="lead">Com base em <span class="h-pitch-n"><span data-hero-nsrc>62</span> fontes</span>, conheça valores e técnicas de Bill Gates e leve-os para melhorar sua carreira.</p>
+        </div>
         <div class="h-term mono" id="h-term">
           <div class="h-lines" id="h-lines" aria-hidden="true"></div>
 
           <div class="h-ask" id="h-ask" hidden>
             <p class="h-q">Esta história tem trilha sintetizada. Ativar o som? <span class="h-dim">(fones ajudam)</span></p>
             <div class="h-row">
-              <button type="button" class="btn is-primary" data-snd="1">Com som <kbd>S</kbd></button>
+              <button type="button" class="btn" data-snd="1">Com som <kbd>S</kbd></button>
               <button type="button" class="btn" data-snd="0">Sem som <kbd>N</kbd></button>
             </div>
           </div>
@@ -65,7 +69,21 @@
   #ch-00 .h-field { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
 
   /* terminal */
-  #ch-00 .h-termwrap { position: absolute; inset: 0; z-index: 3; display: flex; align-items: center; pointer-events: none; }
+  #ch-00 .h-termwrap { position: absolute; inset: 0; z-index: 3; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 1.8rem; pointer-events: none; }
+
+  /* pitch: a promessa da página, acima do terminal; some junto com ele quando o título aparece */
+  #ch-00 .h-pitch { width: min(780px, 100%); display: flex; flex-direction: column; gap: .85rem; transition: opacity .6s, transform .8s cubic-bezier(.2, .7, .1, 1), visibility 0s; }
+  #ch-00 .h-pitch .d3 { color: var(--h-fg); }
+  #ch-00 .h-pitch .lead { color: color-mix(in srgb, var(--h-fg) 74%, transparent); }
+  #ch-00 .h-pitch-n { color: var(--h-pink); white-space: nowrap; }
+  #ch-00.is-done .h-pitch { opacity: 0; transform: translateY(-14px); visibility: hidden; pointer-events: none; transition: opacity .6s, transform .8s cubic-bezier(.2, .7, .1, 1), visibility 0s .9s; }
+
+  /* pergunta do som: secundária, sem botão preenchido */
+  #ch-00 .h-ask { opacity: .8; }
+  #ch-00 .h-ask .h-q { color: color-mix(in srgb, var(--h-fg) 62%, transparent); font-size: .82em; }
+  #ch-00 .h-ask .h-row .btn { font-size: .8rem; }
+  #ch-00 .h-ask .h-row { margin-top: .5rem; gap: .5rem .6rem; }
+  #ch-00 .h-ask .btn { min-height: 40px; padding: .25em .85em; background: transparent; box-shadow: none; }
   #ch-00 .h-term {
     width: min(780px, 100%); font-size: clamp(.8rem, .66rem + .55vw, 1.02rem); line-height: 1.7;
     color: var(--h-fg); text-shadow: 0 0 14px rgba(122, 140, 255, .38);
@@ -151,12 +169,16 @@
   @keyframes h00-drip { 0% { transform: scaleY(0); opacity: 1; } 55% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(1); opacity: 0; } }
 
   @media (max-width: 760px) {
-    #ch-00 .h-termwrap { align-items: flex-start; padding-top: 22vh; }
+    #ch-00 .h-termwrap { justify-content: flex-start; padding-top: 76px; gap: 1.3rem; }
     #ch-00 .ln { grid-template-columns: 5.2em 1fr; }
     #ch-00 .h-code { min-height: 10.5em; }
   }
-  @media (max-width: 520px) { #ch-00 .h-status span { display: none; } #ch-00 .h-skip { font-size: .72rem; } }
-  @media (max-height: 560px) { #ch-00 .h-termwrap { align-items: flex-start; padding-top: 64px; } #ch-00 .h-lead, #ch-00 .h-playhint { display: none; } }
+  @media (max-width: 520px) {
+    #ch-00 .h-status span { display: none; } #ch-00 .h-skip { font-size: .72rem; }
+    #ch-00 .h-skip { top: calc(max(14px, env(safe-area-inset-top)) + 54px); }
+    #ch-00 .h-termwrap { padding-top: 132px; }
+  }
+  @media (max-height: 560px) { #ch-00 .h-termwrap { justify-content: flex-start; padding-top: 64px; gap: 1rem; } #ch-00 .h-lead, #ch-00 .h-playhint, #ch-00 .h-pitch .lead { display: none; } }
   @media (prefers-reduced-motion: reduce) { #ch-00 .h-screen { animation: none; } #ch-00 .h-caret { animation: none; } #ch-00 .h-cue i { animation: none; transform: none; } }
 </style>
 <script>
