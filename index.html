@@ -1665,6 +1665,14 @@ Gates.chapter('ch-00', function (ctx) {
 #ch-01 .rz-lead { max-width: 56ch; margin: 0; }
 #ch-01 .rz-lead b { color: var(--accent); font-weight: 700; }
 #ch-01 .rz-hint { color: var(--muted); }
+@media (min-width: 900px) {
+  #ch-01 .rz-open { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); grid-template-rows: auto auto auto; grid-template-areas: "code ." "title lead" "title hint"; align-content: center; column-gap: clamp(32px, 4vw, 64px); }
+  #ch-01 .rz-code { grid-area: code; }
+  #ch-01 .rz-title { grid-area: title; align-self: center; }
+  #ch-01 .rz-title em { background-position: 0 87%; }
+  #ch-01 .rz-lead { grid-area: lead; align-self: end; }
+  #ch-01 .rz-hint { grid-area: hint; align-self: start; }
+}
 
 #ch-01 .rz-h3 { font-size: clamp(1.8rem, 4.2vw, 3.2rem); font-weight: 800; letter-spacing: -.03em; margin: 0 0 .3rem; line-height: 1; }
 #ch-01 .rz-sub { color: var(--muted); margin: 0 0 1.6rem; max-width: 56ch; }
